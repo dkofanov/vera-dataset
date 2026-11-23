@@ -1,0 +1,1144 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "b"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "A"
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "é"
+        ],
+        [
+          "s",
+          "e"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "中"
+        ],
+        [
+          "s",
+          "文"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "ab"
+        ],
+        [
+          "s",
+          "ba"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "xyz"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "a b"
+        ],
+        [
+          "s",
+          "a\tb"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\r\n"
+        ],
+        [
+          "s",
+          "\n\r"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "é中x"
+        ],
+        [
+          "s",
+          "e中y"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          " "
+        ],
+        [
+          "s",
+          "A"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "A"
+        ],
+        [
+          "s",
+          "\t"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "aé Aé\n?"
+        ],
+        [
+          "s",
+          "\né文\n?\t/"
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          " 中文\t文文AA \n??/中\t\n/\n a文中AAa中\té"
+        ],
+        [
+          "s",
+          "\n?/A\néé?文 \n/\ta文a中é中?A文\nAAAé "
+        ]
+      ],
+      "expect": [
+        "n",
+        27
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          " ?a?a?Aa\tA中é\t\né中  /"
+        ],
+        [
+          "s",
+          " ?a?a?Aa\tA中é\t\né中  /"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?\t\ta\t/\nAA中文 é\t?\n文A aa文/\n\n A/ "
+        ],
+        [
+          "s",
+          "文 ?中文\n\téa 中\n文 中é\nA文文文中Aéa文/?\n"
+        ]
+      ],
+      "expect": [
+        "n",
+        28
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "é?\t é\n文文é"
+        ],
+        [
+          "s",
+          "é?\t é\n文文é"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "aé \na\t文\n?A文\t?\t中?\n?文é?\té\n\tA"
+        ],
+        [
+          "s",
+          "\nA文 \n\néééé\n中/文Aéa\t中文?A\né文 "
+        ]
+      ],
+      "expect": [
+        "n",
+        25
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "é\na\nA 文é?文"
+        ],
+        [
+          "s",
+          "é\na\nA 文é?文"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "éé\n?\n  文\t中a文中文a// é"
+        ],
+        [
+          "s",
+          "\n? 中\té \n\t/?a中\n/文/??"
+        ]
+      ],
+      "expect": [
+        "n",
+        15
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "中 文中\n中aéa\t中/\té?é\n/ \nA\t/a\t?  "
+        ],
+        [
+          "s",
+          "\n?/?\t中\n\n/é\tAAAa\t a/文?\nAA\n/ /"
+        ]
+      ],
+      "expect": [
+        "n",
+        26
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文Aa\ta文A A?\t/ 文?éa/中\t/中a"
+        ],
+        [
+          "s",
+          "/\t??中\n?文中文文/文a\n\n文中/A/\t\t"
+        ]
+      ],
+      "expect": [
+        "n",
+        21
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "A中?/\t \n"
+        ],
+        [
+          "s",
+          "A中?/\t \n"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\naaé A\n\t文\t\nA\tA中A\n\n\n?"
+        ],
+        [
+          "s",
+          "文文?\nA\n/中/\n文/a\t /\nA//"
+        ]
+      ],
+      "expect": [
+        "n",
+        19
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "AA?\t?\t中文A"
+        ],
+        [
+          "s",
+          "é?\n中 中a 文"
+        ]
+      ],
+      "expect": [
+        "n",
+        9
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?"
+        ],
+        [
+          "s",
+          "\t"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "a/文é\n//中"
+        ],
+        [
+          "s",
+          "\n中A/a?Aa"
+        ]
+      ],
+      "expect": [
+        "n",
+        8
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "Aé\n?/aa\tA/\té?\n中文??/\ta aA A\t"
+        ],
+        [
+          "s",
+          "éa文文a文é文\n\tA\n中éAa/中/ Aa文 ?é\t"
+        ]
+      ],
+      "expect": [
+        "n",
+        25
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?\n 中é中\t?é//文\t? 中"
+        ],
+        [
+          "s",
+          "中éA/\tA?a文中é\t中é文?"
+        ]
+      ],
+      "expect": [
+        "n",
+        16
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "/é/é中\n\t/?/\néa中"
+        ],
+        [
+          "s",
+          "??\n文中 \t/?/中\n文文"
+        ]
+      ],
+      "expect": [
+        "n",
+        9
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\n \t"
+        ],
+        [
+          "s",
+          "a\n文"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?é\t?? \n中/Aé\t?文"
+        ],
+        [
+          "s",
+          "?\t?/\t中\t/\nA中?中\n"
+        ]
+      ],
+      "expect": [
+        "n",
+        12
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          " 中/? A文/?aéa"
+        ],
+        [
+          "s",
+          " é文 文/A\n\n?a?"
+        ]
+      ],
+      "expect": [
+        "n",
+        11
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "中\n/A?"
+        ],
+        [
+          "s",
+          "中\n/A?"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "/\t中 Aa\t文??\n中"
+        ],
+        [
+          "s",
+          "?/中é\naéA\t/A\t"
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文a \t\n"
+        ],
+        [
+          "s",
+          "文a \t\n"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?文/\n\t?AA?/"
+        ],
+        [
+          "s",
+          "?文/\n\t?AA?/"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "é//\té/A中/\n中é/中\tAa\n / "
+        ],
+        [
+          "s",
+          "A\t 中/\n?a?中 A文 中éA文\n\n中"
+        ]
+      ],
+      "expect": [
+        "n",
+        21
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?a/\t中éa\t? \t\n/\ta中é\n\té\nAé\t文"
+        ],
+        [
+          "s",
+          "/A文\téaé\n é A ?\t \t文A \nA\nA文"
+        ]
+      ],
+      "expect": [
+        "n",
+        21
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文é//é/ ? aééé\n/\n éA文??文Aa\naaa"
+        ],
+        [
+          "s",
+          "?/?/ 文?\né\n/ a\n?a  文A? 文 ?\n?a文"
+        ]
+      ],
+      "expect": [
+        "n",
+        22
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文中/?/\t "
+        ],
+        [
+          "s",
+          " A/A文中中"
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "a Aa\n文\t中"
+        ],
+        [
+          "s",
+          "文A?Aé\nA/"
+        ]
+      ],
+      "expect": [
+        "n",
+        8
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\nAé\t\t中\naAAé a中 é/?é文a"
+        ],
+        [
+          "s",
+          " ?a\tA\ta?\téAa é é\n A\t\n"
+        ]
+      ],
+      "expect": [
+        "n",
+        18
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "A"
+        ],
+        [
+          "s",
+          "?"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\n?é?文\n/é  \t中é?文 \t "
+        ],
+        [
+          "s",
+          "\t文A文\t/\na?a? 中/aa中a"
+        ]
+      ],
+      "expect": [
+        "n",
+        18
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文文中"
+        ],
+        [
+          "s",
+          "\na/"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "Aa\t éé\t"
+        ],
+        [
+          "s",
+          "a\n\t?AA文"
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\n文"
+        ],
+        [
+          "s",
+          "\n?"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          " \ta文?\t"
+        ],
+        [
+          "s",
+          "中aa? \n"
+        ]
+      ],
+      "expect": [
+        "n",
+        5
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文\n \na "
+        ],
+        [
+          "s",
+          "文\n \na "
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "/?文\t?中a?é AA\nA//\ta\n a/"
+        ],
+        [
+          "s",
+          "a\né Aaa文/?文?A a\t\t Aa中A"
+        ]
+      ],
+      "expect": [
+        "n",
+        20
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?\n/A\téAA? é??\t\n/a文\n\t\t文"
+        ],
+        [
+          "s",
+          "中A?/?é?/\n \t文\nAa\t\n?/\n\né"
+        ]
+      ],
+      "expect": [
+        "n",
+        20
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "文\n中中Aé文é"
+        ],
+        [
+          "s",
+          "ééé中A中\na"
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\té\n/文"
+        ],
+        [
+          "s",
+          "中文?/\t"
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?中"
+        ],
+        [
+          "s",
+          "\n中"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "\t?\t??  A中 /?A\t文\nA\n\n中\n\t"
+        ],
+        [
+          "s",
+          " \n/AAAAA \n\ta 文/\t?\té文 a"
+        ]
+      ],
+      "expect": [
+        "n",
+        21
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "?文中éa中A文Aa??aa??\n文é\nA/中A?中中a\n"
+        ],
+        [
+          "s",
+          "?文中éa中A文Aa??aa??\n文é\nA/中A?中中a\n"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "hammingDistance",
+      "args": [
+        [
+          "s",
+          "中//\t文文/ aAéa\n中A \n\na/\n\t\n中?a? ?"
+        ],
+        [
+          "s",
+          "中//\t文文/ aAéa\n中A \n\na/\n\t\n中?a? ?"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

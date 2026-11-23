@@ -1,0 +1,11 @@
+function buildCaseInsensitiveGlob(query: string): string {
+  let out: string = "*";
+  for (let c: string of query) {
+    let lo: string = strings.toLowerCase(c);
+    let up: string = strings.toUpperCase(c);
+    if (lo !== up) { out = out + "[" + lo + up + "]"; }
+    else if (strings.contains("*?[]", c)) { out = out + "[" + c + "]"; }
+    else { out = out + c; }
+  }
+  return out + "*";
+}

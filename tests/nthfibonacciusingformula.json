@@ -1,0 +1,619 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        5
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        55
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          20
+        ]
+      ],
+      "expect": [
+        "n",
+        6765
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          30
+        ]
+      ],
+      "expect": [
+        "n",
+        832040
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          35
+        ]
+      ],
+      "expect": [
+        "n",
+        9227465
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          39
+        ]
+      ],
+      "expect": [
+        "n",
+        63245986
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          40
+        ]
+      ],
+      "expect": [
+        "n",
+        102334155
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          16
+        ]
+      ],
+      "expect": [
+        "n",
+        987
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          37
+        ]
+      ],
+      "expect": [
+        "n",
+        24157817
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          25
+        ]
+      ],
+      "expect": [
+        "n",
+        75025
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        89
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          32
+        ]
+      ],
+      "expect": [
+        "n",
+        2178309
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          22
+        ]
+      ],
+      "expect": [
+        "n",
+        17711
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "n",
+        21
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          14
+        ]
+      ],
+      "expect": [
+        "n",
+        377
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          27
+        ]
+      ],
+      "expect": [
+        "n",
+        196418
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          23
+        ]
+      ],
+      "expect": [
+        "n",
+        28657
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        13
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          18
+        ]
+      ],
+      "expect": [
+        "n",
+        2584
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          13
+        ]
+      ],
+      "expect": [
+        "n",
+        233
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          36
+        ]
+      ],
+      "expect": [
+        "n",
+        14930352
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          26
+        ]
+      ],
+      "expect": [
+        "n",
+        121393
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        34
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          19
+        ]
+      ],
+      "expect": [
+        "n",
+        4181
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "n",
+        8
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          34
+        ]
+      ],
+      "expect": [
+        "n",
+        5702887
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          31
+        ]
+      ],
+      "expect": [
+        "n",
+        1346269
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          38
+        ]
+      ],
+      "expect": [
+        "n",
+        39088169
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          28
+        ]
+      ],
+      "expect": [
+        "n",
+        317811
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          33
+        ]
+      ],
+      "expect": [
+        "n",
+        3524578
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          24
+        ]
+      ],
+      "expect": [
+        "n",
+        46368
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          17
+        ]
+      ],
+      "expect": [
+        "n",
+        1597
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        144
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          29
+        ]
+      ],
+      "expect": [
+        "n",
+        514229
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          21
+        ]
+      ],
+      "expect": [
+        "n",
+        10946
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "nthFibonacciUsingFormula",
+      "args": [
+        [
+          "n",
+          15
+        ]
+      ],
+      "expect": [
+        "n",
+        610
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

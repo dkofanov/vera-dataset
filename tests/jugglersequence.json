@@ -1,0 +1,1144 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        11
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        5
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          5
+        ],
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        5
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        36
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          5
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        11
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        11
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          8
+        ],
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          8
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        27
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          5
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        36
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          8
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          8
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        18
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          8
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          9
+        ],
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          8
+        ],
+        [
+          "n",
+          11
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "jugglerSequence",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

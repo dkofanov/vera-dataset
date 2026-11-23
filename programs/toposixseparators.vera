@@ -1,0 +1,9 @@
+function toPosixSeparators(query: string): string {
+  let drive: boolean = false;
+  if (strings.length(query) >= 2) {
+    let first: string = strings.substring(query, 0, 1);
+    drive = strings.contains("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", first) && strings.substring(query, 1, 2) === ":";
+  }
+  if (!drive && !strings.startsWith(query, "\\")) { return query; }
+  return strings.replace(query, "\\", "/");
+}

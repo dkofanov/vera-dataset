@@ -1,0 +1,904 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          20
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          30
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          49
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          56
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          72
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1000000
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          795
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1678
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          141
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1574
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1158
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1162
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          154
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          570
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          631
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          114
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1688
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1860
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1846
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          604
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          90
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          270
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1836
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1300
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          363
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          527
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          188
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          53
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          710
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          52
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          103
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          436
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          715
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1358
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          641
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1712
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          646
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1030
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          130
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          102
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          120
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          981
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          602
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          854
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          911
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          43
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          720
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          118
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1948
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          1496
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          434
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          480
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          431
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "pronicNumber",
+      "args": [
+        [
+          "n",
+          428
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

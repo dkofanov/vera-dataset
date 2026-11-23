@@ -1,0 +1,10 @@
+function binaryConvert(num: number): string {
+  let binary: string = "";
+  let n: number = num;
+  while (n !== 0) {
+    let digit: number = n % 2;
+    binary = ui.numberToString(digit) + binary;
+    n = math.floor(n / 2);
+  }
+  return binary;
+}

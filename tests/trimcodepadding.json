@@ -1,0 +1,904 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " "
+        ]
+      ],
+      "expect": [
+        "s",
+        " "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\t"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\n\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " \nfoo\n "
+        ]
+      ],
+      "expect": [
+        "s",
+        "foo"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\n  foo  \n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  foo  "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\r\nfoo\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\r\nfoo\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\n\nfoo\n\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "foo"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\nfoo\n\nbar\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "foo\n\nbar"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\t\n é中\n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        " é中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "a\nb"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\nb"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "/x y132/İ256/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/x y132/İ256/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "ß57\nBeta143\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß57\nBeta143"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " 中文965 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " 中文965 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "École325"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École325"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\tΩ990\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tΩ990\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "a.b589\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b589"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "[a]*?754"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?754"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "ß605/İ655\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß605/İ655"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " ß181 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " ß181 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "a.b12\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b12"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " Ω610 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " Ω610 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\t"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "École941\nß255\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École941\nß255"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "Ω855\n[a]*?687"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω855\n[a]*?687"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " a.b17 \n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        " a.b17 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "/Ω210/a.b286/\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/Ω210/a.b286/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "ß180/alpha376"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß180/alpha376"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\tİ946\r\n\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tİ946\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "0374/0535\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0374/0535"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "Ω14/ß356"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω14/ß356"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\alpha993\\a\\b809"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\alpha993\\a\\b809"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "x y620\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y620"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\tÉcole605\r\n\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tÉcole605\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " a.b310 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " a.b310 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "Ω452/[a]*?671"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω452/[a]*?671"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "alpha87/İ852\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha87/İ852"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "École916\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École916"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "x y468\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y468"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " [a]*?429 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " [a]*?429 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\talpha381\r\n\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\talpha381\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "a\\b366/中文940"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b366/中文940"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "x y629/a\\b347"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y629/a\\b347"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " 中文937 \n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        " 中文937 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          " Ω471 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " Ω471 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "ß434\n[a]*?97"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß434\n[a]*?97"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\tİ197\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tİ197\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\0697\\a.b272"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\0697\\a.b272"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\[a]*?378\\alpha786"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\[a]*?378\\alpha786"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\x y217\\Beta541"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\x y217\\Beta541"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "中文807\nß153"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文807\nß153"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\[a]*?27\\a.b453\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\[a]*?27\\a.b453"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "[a]*?172/İ12"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?172/İ12"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\a.b852\\a.b753\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\a.b852\\a.b753"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "/École717/Beta702/\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/École717/Beta702/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "/ß296/a.b237/\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/ß296/a.b237/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\t[a]*?406\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\t[a]*?406\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "\tBeta215\r\n\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tBeta215\r"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "trimCodePadding",
+      "args": [
+        [
+          "s",
+          "C:\\École90\\ß476\n \n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\École90\\ß476"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

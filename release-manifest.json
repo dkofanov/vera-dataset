@@ -1,0 +1,346 @@
+{
+  "schema": "vera-dataset-release-v1",
+  "status": "draft-license-pending",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6007,
+      "sha256": "4461f117024250b1cc70026ed3960653c63bdc0cabe0b14051d66c9b411856b7",
+      "treatment": "generated"
+    },
+    {
+      "path": "build-report.json",
+      "bytes": 843,
+      "sha256": "2a2d4b42c1baa56151c7549fa214ec056a0077a006255249616bbed0d68b47b3",
+      "treatment": "sanitized"
+    },
+    {
+      "path": "construction-report.json",
+      "bytes": 11201,
+      "sha256": "c89f40fbcdb2046f0f7b7c7f5b6a99e3303f78ec97c5eb755c9d07d43971fab9",
+      "treatment": "copied"
+    },
+    {
+      "path": "dataset.jsonl",
+      "bytes": 1031469,
+      "sha256": "180e08e4a8d0a3f0de8960cb899d4ed213360e443d8d18a842f312c48237f303",
+      "treatment": "copied"
+    },
+    {
+      "path": "isolation-summary.json",
+      "bytes": 1791,
+      "sha256": "13cf5d9c74626cd4cefb30a818e779a118793f6453d635a4357b7450a6d5766d",
+      "treatment": "generated"
+    },
+    {
+      "path": "licenses/TheAlgorithms-TypeScript-LICENSE",
+      "bytes": 1071,
+      "sha256": "4eae8735ffc9b94b81d06f78799a937b51b466c1b083036ea8a52943a57c35a0",
+      "treatment": "copied"
+    },
+    {
+      "path": "licenses/es-toolkit-LICENSE",
+      "bytes": 1077,
+      "sha256": "51f3674294d988d89dbebd31273baaeb3c697a15482d9699b14d1fded2e132a7",
+      "treatment": "copied"
+    },
+    {
+      "path": "licenses/llama.cpp-LICENSE",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/addbinary.vera",
+      "bytes": 982,
+      "sha256": "aa471d86d594f83fff260b153671e7673af1b76edb4b832391f407c95aab22a1",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/binaryconvert.vera",
+      "bytes": 245,
+      "sha256": "557b96c3501cdcaa84b2adaca188cd65895a09b9b48f8280668fa590a90a9d57",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/buildcaseinsensitiveglob.vera",
+      "bytes": 390,
+      "sha256": "95fd823a58b116270b33a051c6b66cee612dd893935ed5114b5467536b175a19",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/dedentimpl.vera",
+      "bytes": 1157,
+      "sha256": "68eb1e33347f49ec9f04895bcd0b7efa6c6dc59a6e52c125dd00ad7e069365f7",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/escapecode.vera",
+      "bytes": 152,
+      "sha256": "58665c498f2b04ece53d8a4146f5ed2ff5828d8ec9ab9969d1244bac02fc7f85",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/hammingdistance.vera",
+      "bytes": 368,
+      "sha256": "f728cd2adaa349721a761688c60e974941559990bd6207bca8d6831acbcad4e2",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/isvalidmodelname.vera",
+      "bytes": 756,
+      "sha256": "b37b24d28353f415c3f601e1c5fe18074fbdfaa849bd293e34327b815872edc9",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/joinpath.vera",
+      "bytes": 418,
+      "sha256": "1b3c72c1f8fa4f677de69f642bee03a0685394aa38f366696659c269f567439b",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/jugglersequence.vera",
+      "bytes": 313,
+      "sha256": "531a85afcbb37eafe414ddf3bdc36812ebda7695219d8f9dfe4b680bbf167465",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/lastpathsegment.vera",
+      "bytes": 538,
+      "sha256": "09cc3805f95f54864f0363f9502c3e771f1c25fa735cf4eae1a2f57bce702604",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/normalizemodelname.vera",
+      "bytes": 637,
+      "sha256": "44aff10add54d44447d82f3e7e4790bacd8bcce26e0379b56dc7b096bb5479b2",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/normalizeresourceuri.vera",
+      "bytes": 1022,
+      "sha256": "e5a2ccd4eaa14872e92f180844cf9a80fa5258350456f0e0dd5f60c52e6de483",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/nthfibonacciusingformula.vera",
+      "bytes": 264,
+      "sha256": "8e5eed7699d75dc4d02bc06aa862e8d0e8f6e9cfa5a4bb3d29107e9a1b70f157",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/pronicnumber.vera",
+      "bytes": 339,
+      "sha256": "3ef74ab3499eee6f620f89c8610e861cfa5740bebf60a2dc59e8aeecc3a7861a",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/range.vera",
+      "bytes": 284,
+      "sha256": "bf400aa27b3034d06c9c567004300694d5afb8f90a5cae7c0b438cdc0f8cd00a",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/rankscore.vera",
+      "bytes": 868,
+      "sha256": "79b2d202b2ed46d3ad83950115559c7d91ef7c61fae2ff5a018f4aa27c2bbf3e",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/rootprefixlength.vera",
+      "bytes": 886,
+      "sha256": "5f35036452f32fff750f118449dee65570431a2ae4f969f83e1669fcf54e0cf8",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/splitgluedclosingcodefences.vera",
+      "bytes": 1537,
+      "sha256": "ba5c1117542ccdbc311b1bf4e29d8df1b7f1041936fec7184867cdd460896513",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/toposixseparators.vera",
+      "bytes": 427,
+      "sha256": "a9ce8f54006f9c5f4c4fd7808177824451e899d57bdf4aead3c4c4da3b6963c3",
+      "treatment": "copied"
+    },
+    {
+      "path": "programs/trimcodepadding.vera",
+      "bytes": 606,
+      "sha256": "7256f0814f76d40a0d96e6db73a66bdb10b3694074590ff22f6e10db63ac9c0a",
+      "treatment": "copied"
+    },
+    {
+      "path": "records.json",
+      "bytes": 552573,
+      "sha256": "78287e5d62e0ff24ae09d01e086ff385f3512b96384d168d358ce41e0f20a2da",
+      "treatment": "copied"
+    },
+    {
+      "path": "signature-audit.json",
+      "bytes": 4611,
+      "sha256": "84d1fe6092c8090d725b3c611305f442188885bb1aa3a57eae37f0c901438a0b",
+      "treatment": "copied"
+    },
+    {
+      "path": "splits.json",
+      "bytes": 2902,
+      "sha256": "c6e55e8eac93804742e299b3c0e19fd6ee07ffed77de9b0777707a0a20970505",
+      "treatment": "copied"
+    },
+    {
+      "path": "stdlib-coverage.json",
+      "bytes": 1481785,
+      "sha256": "3fc9bb00a92c4a3c14f55a187bf1985aa138fb5c317180cd1415d463bbca9d5b",
+      "treatment": "copied"
+    },
+    {
+      "path": "test.jsonl",
+      "bytes": 446018,
+      "sha256": "39dfb24fa77b4fff1e0f87880c69b0dd693074192e36f9d655a0b313d3af3afe",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/addbinary.json",
+      "bytes": 18676,
+      "sha256": "f726ce54458a3a50e8dccda7a9bfb47eab8927b805f4afce637c83d048ce9872",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/binaryconvert.json",
+      "bytes": 15131,
+      "sha256": "ab1e0df8d9c798e00660e4df7e5897559c4fe79c14d605b143d320a4cfae60de",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/buildcaseinsensitiveglob.json",
+      "bytes": 17115,
+      "sha256": "8330144e2262a3e636f71e0836296be28b04a9a7df4f6bc88e6852dea267bab4",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/dedentimpl.json",
+      "bytes": 15648,
+      "sha256": "e379c28aa11fceacec49c810f112b19d6a1c93404af398c81145c29f0025a7d6",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/escapecode.json",
+      "bytes": 16094,
+      "sha256": "479ef529e39dd0cb66395dfd6714132a4789c63856c5b0d666ec1fcc70a49348",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/hammingdistance.json",
+      "bytes": 18777,
+      "sha256": "dfe86b2cde8b5a388ac05fb6530e44fd3aad9474c03c31d211cf2adb9bd5f8c2",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/isvalidmodelname.json",
+      "bytes": 16096,
+      "sha256": "3389a1f6531c0370a13ec2178fbc8f60136ccacab234d49128a639b3603d2fdb",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/joinpath.json",
+      "bytes": 19125,
+      "sha256": "e2d0df0bdf7bebc436187b5120ae6c4fcd5f61cb5cd265a339c3a9bef33a9026",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/jugglersequence.json",
+      "bytes": 16413,
+      "sha256": "9549406c0af233bf8a6c0d65092c0946a2523ec498e87f26aa83568d9daf5052",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/lastpathsegment.json",
+      "bytes": 15729,
+      "sha256": "4e272799d54e402ee1cdda6a5769ec093fcb905bd420ce6f87e53cfcb5cac91b",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/normalizemodelname.json",
+      "bytes": 16640,
+      "sha256": "6c78dfc7670abc7fc3f445c8351220c1588803f3d33edd732267deaf85bcacb0",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/normalizeresourceuri.json",
+      "bytes": 16215,
+      "sha256": "8b1628d0c4a6009316f3ce6655ba7781118bc6a66c33c2f3ead2e126e2193de5",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/nthfibonacciusingformula.json",
+      "bytes": 9765,
+      "sha256": "93ff8085294c18ee540e1d6ae5ea5db167e707b6a108b26f0a174cc2de86cbdf",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/pronicnumber.json",
+      "bytes": 13671,
+      "sha256": "95c51b6a3ea92d1603df428669233d2c2d29e9bf353726d7aacae67f5135d6c6",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/range.json",
+      "bytes": 277097,
+      "sha256": "0e989f02d7319d91cd1eed0a4151075de522ee6b8f1c93534b560f992e594f6a",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/rankscore.json",
+      "bytes": 17531,
+      "sha256": "4537d50376f065d03c31d43e0736e7d813d22cf3ecd1bbd3ed65ca54a5249131",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/rootprefixlength.json",
+      "bytes": 15037,
+      "sha256": "6cd11bc9b266dbd4fcda632141a7eb21232931be44bf7b265e268929d402feb4",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/splitgluedclosingcodefences.json",
+      "bytes": 18445,
+      "sha256": "ddac11f5d0d49a1d7b0ff4b2083d55d8c5f88ebfa94320c9ad0e2b248eb6ea49",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/toposixseparators.json",
+      "bytes": 15715,
+      "sha256": "ddbfb124bc0d971e5bbac5e405ba04ce570e5e05a7162d634ff3a75701efef6e",
+      "treatment": "copied"
+    },
+    {
+      "path": "tests/trimcodepadding.json",
+      "bytes": 15079,
+      "sha256": "d0a8e449064f40230a23717ab05aad925adbf3c2cf8780033ad1eb91451f1bb4",
+      "treatment": "copied"
+    },
+    {
+      "path": "training.jsonl",
+      "bytes": 1217263,
+      "sha256": "170f9d13b1bb8da13f306b40a081d63ce95a65bf5130306097246b90acb08d3d",
+      "treatment": "copied"
+    },
+    {
+      "path": "validation.jsonl",
+      "bytes": 95616,
+      "sha256": "3a9ff8e5ad6a4f159c5c0fde381d3f122816bd29da50a3b71d7e22b88931841d",
+      "treatment": "copied"
+    }
+  ],
+  "counts": {
+    "records": 20,
+    "examples": 60,
+    "testCases": 1219,
+    "splits": {
+      "train": 36,
+      "validation": 3,
+      "test": 21
+    }
+  }
+}

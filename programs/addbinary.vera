@@ -1,0 +1,21 @@
+function addBinary(firstBinaryNo: string, secondBinaryNo: string): string {
+  let lengthOfFirstNumber: number = strings.length(firstBinaryNo) - 1;
+  let lengthOfSecondNumber: number = strings.length(secondBinaryNo) - 1;
+  let solution: string = "";
+  let carry: number = 0;
+  while (lengthOfFirstNumber >= 0 || lengthOfSecondNumber >= 0) {
+    let sum: number = carry;
+    if (lengthOfFirstNumber >= 0) {
+      sum = sum + strings.toNumber(strings.substring(firstBinaryNo, lengthOfFirstNumber, lengthOfFirstNumber + 1), 0);
+    }
+    if (lengthOfSecondNumber >= 0) {
+      sum = sum + strings.toNumber(strings.substring(secondBinaryNo, lengthOfSecondNumber, lengthOfSecondNumber + 1), 0);
+    }
+    solution = ui.numberToString(sum % 2) + solution;
+    carry = math.floor(sum / 2);
+    lengthOfFirstNumber = lengthOfFirstNumber - 1;
+    lengthOfSecondNumber = lengthOfSecondNumber - 1;
+  }
+  if (carry !== 0) { solution = ui.numberToString(carry) + solution; }
+  return solution;
+}

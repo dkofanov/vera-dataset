@@ -1,0 +1,19 @@
+function trimCodePadding(code: string): string {
+  let start: number = 0;
+  let end: number = strings.length(code);
+  let scan: number = start;
+  while (scan < end) {
+    let c: string = strings.substring(code, scan, scan + 1);
+    if (c === "\n") { start = scan + 1; }
+    else if (c !== " " && c !== "\t") { break; }
+    scan = scan + 1;
+  }
+  scan = end;
+  while (scan > start) {
+    let c: string = strings.substring(code, scan - 1, scan);
+    if (c === "\n") { end = scan - 1; }
+    else if (c !== " " && c !== "\t") { break; }
+    scan = scan - 1;
+  }
+  return strings.substring(code, start, end);
+}

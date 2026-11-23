@@ -1,0 +1,132 @@
+{
+  "schema": "vera-signature-audit-v1",
+  "counts": {
+    "valid": 20,
+    "invalid": 0,
+    "unreviewed": 0
+  },
+  "invalid": [],
+  "unreviewed": [],
+  "rows": [
+    {
+      "id": "function/stdlib-llama-to-posix-separators",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-algorithms-binary-convert",
+      "project": "TheAlgorithms/TypeScript",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-trim-code-padding",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-normalize-model-name",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-escape-code",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-es-toolkit-range",
+      "project": "toss/es-toolkit",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-es-toolkit-dedent-impl",
+      "project": "toss/es-toolkit",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-normalize-resource-uri",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-algorithms-hamming-distance",
+      "project": "TheAlgorithms/TypeScript",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-last-path-segment",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-is-valid-model-name",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-build-case-insensitive-glob",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-algorithms-add-binary",
+      "project": "TheAlgorithms/TypeScript",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-algorithms-juggler-sequence",
+      "project": "TheAlgorithms/TypeScript",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-root-prefix-length",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-rank-score",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-algorithms-nth-fibonacci-using-formula",
+      "project": "TheAlgorithms/TypeScript",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-algorithms-pronic-number",
+      "project": "TheAlgorithms/TypeScript",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-join-path",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    },
+    {
+      "id": "function/stdlib-llama-split-glued-closing-code-fences",
+      "project": "ggml-org/llama.cpp",
+      "status": "valid",
+      "reason": "actual TypeScript declaration and checker-derived contract preserved"
+    }
+  ]
+}

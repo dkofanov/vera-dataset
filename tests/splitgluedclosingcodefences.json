@@ -1,0 +1,934 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "plain"
+        ]
+      ],
+      "expect": [
+        "s",
+        "plain"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```ts\nx\n```"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```ts\nx\n```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```ts\nx\n```next words"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```ts\nx\n```\nnext words"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```ts\nx\n```python"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```ts\nx\n```python"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```md\n```python\nx"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```md\n```python\nx"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```ts\nx\n``` `x` words"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```ts\nx\n``` `x` words"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   ```ts\nx\n   ``` more text"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   ```ts\nx\n   ```\nmore text"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ```ts\nx\n``` more text"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ```ts\nx\n``` more text"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```ts\nx\n```  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "```ts\nx\n```\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```a\nx\n```one two\n```b\ny\n```three four"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```a\nx\n```\none two\n```b\ny\n```\nthree four"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "é中"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```x\r\nx\r\n```next words"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```x\r\nx\r\n```next words"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ```ts\nÉcole209\n  ``` `x` more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ```ts\nÉcole209\n  ``` `x` more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  `````ts\na\\b633\n  ````` `x` more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  `````ts\na\\b633\n  ````` `x` more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ````ts\nBeta792\n ````\talpha559"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ````ts\nBeta792\n ````\nalpha559"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   ```ts\n055\n   ```École883"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   ```ts\n055\n   ```École883"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " `````ts\nß690\n `````\tΩ311"
+        ]
+      ],
+      "expect": [
+        "s",
+        " `````ts\nß690\n `````\nΩ311"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   ````ts\n[a]*?652\n   ````İ774"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   ````ts\n[a]*?652\n   ````İ774"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ```ts\nx y579\n    ``` 中文191 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ```ts\nx y579\n    ``` 中文191 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   `````ts\n[a]*?447\n   `````\t0838"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   `````ts\n[a]*?447\n   `````\n0838"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ````ts\n[a]*?861\n    ````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ````ts\n[a]*?861\n    ````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "```ts\na.b254\n```\tBeta436"
+        ]
+      ],
+      "expect": [
+        "s",
+        "```ts\na.b254\n```\nBeta436"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    `````ts\nİ756\n    `````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    `````ts\nİ756\n    `````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   `````ts\n0948\n   ````` `x` more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   `````ts\n0948\n   ````` `x` more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ````ts\n0727\n    ````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ````ts\n0727\n    ````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "`````ts\nÉcole805\n`````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "`````ts\nÉcole805\n`````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    `````ts\na\\b878\n    `````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    `````ts\na\\b878\n    `````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    `````ts\nBeta844\n    `````\talpha344"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    `````ts\nBeta844\n    `````\talpha344"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ```ts\nBeta68\n  ``` Beta333 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ```ts\nBeta68\n  ```\nBeta333 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ````ts\n中文634\n ```` ß536 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ````ts\n中文634\n ````\nß536 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ````ts\nΩ332\n    ```` İ833 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ````ts\nΩ332\n    ```` İ833 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    `````ts\nΩ695\n    ````` İ843 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    `````ts\nΩ695\n    ````` İ843 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ````ts\nΩ436\n ````"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ````ts\nΩ436\n ````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   `````ts\nİ701\n   `````École508"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   `````ts\nİ701\n   `````École508"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   ```ts\nx y387\n   ```\tİ165"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   ```ts\nx y387\n   ```\nİ165"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ````ts\nİ976\n  ```` 0863 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ````ts\nİ976\n  ````\n0863 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ````ts\n0694\n    ````中文316"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ````ts\n0694\n    ````中文316"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ````ts\n中文259\n    ````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ````ts\n中文259\n    ````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ```ts\n中文738\n ```"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ```ts\n中文738\n ```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   `````ts\nΩ585\n   ````` a\\b300 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   `````ts\nΩ585\n   `````\na\\b300 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ```ts\na.b104\n  ```"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ```ts\na.b104\n  ```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ````ts\na\\b864\n  ````\ta.b395"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ````ts\na\\b864\n  ````\na.b395"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  `````ts\n中文31\n  ````` ß822 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  `````ts\n中文31\n  `````\nß822 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ```ts\nΩ973\n  ```"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ```ts\nΩ973\n  ```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   ```ts\n中文962\n   ``` 中文83 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   ```ts\n中文962\n   ```\n中文83 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ```ts\na\\b331\n ``` a.b328 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ```ts\na\\b331\n ```\na.b328 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ```ts\nalpha779\n    ``` `x` more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ```ts\nalpha779\n    ``` `x` more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ```ts\nÉcole547\n  ```"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ```ts\nÉcole547\n  ```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ````ts\nalpha270\n ```` 0160 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ````ts\nalpha270\n ````\n0160 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ````ts\nx y938\n    ````\tx y175"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ````ts\nx y938\n    ````\tx y175"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   `````ts\n中文74\n   `````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   `````ts\n中文74\n   `````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ```ts\n[a]*?709\n    ``` [a]*?582 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ```ts\n[a]*?709\n    ``` [a]*?582 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   `````ts\na\\b288\n   `````Beta32"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   `````ts\na\\b288\n   `````Beta32"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "````ts\nBeta107\n````"
+        ]
+      ],
+      "expect": [
+        "s",
+        "````ts\nBeta107\n````"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "   ```ts\nß745\n   ``` `x` more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "   ```ts\nß745\n   ``` `x` more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          " ````ts\nÉcole963\n ```` ß723 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ````ts\nÉcole963\n ````\nß723 more"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  ```ts\na.b24\n  ```"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  ```ts\na.b24\n  ```"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "  `````ts\nx y612\n  `````a.b948"
+        ]
+      ],
+      "expect": [
+        "s",
+        "  `````ts\nx y612\n  `````a.b948"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "    ```ts\nÉcole257\n    ```ß210"
+        ]
+      ],
+      "expect": [
+        "s",
+        "    ```ts\nÉcole257\n    ```ß210"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "splitGluedClosingCodeFences",
+      "args": [
+        [
+          "s",
+          "`````ts\nİ29\n````` alpha456 more"
+        ]
+      ],
+      "expect": [
+        "s",
+        "`````ts\nİ29\n`````\nalpha456 more"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

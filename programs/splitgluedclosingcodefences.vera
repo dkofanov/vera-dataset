@@ -1,0 +1,35 @@
+function splitGluedClosingCodeFences(markdown: string): string {
+  if (!strings.contains(markdown, "\u0060\u0060\u0060")) { return markdown; }
+  let lines: string[] = strings.split(markdown, "\n");
+  let inside: boolean = false;
+  let changed: boolean = false;
+  let out: string = "";
+  let i: number = 0;
+  while (i < lines.length()) {
+    let line: string = lines[i];
+    let size: number = strings.length(line);
+    let at: number = 0;
+    while (at < size && at < 3 && strings.substring(line, at, at + 1) === " ") { at = at + 1; }
+    let tickStart: number = at;
+    while (at < size && strings.substring(line, at, at + 1) === "\u0060") { at = at + 1; }
+    let matched: boolean = at - tickStart >= 3 && !strings.contains(line, "\u000d") && !strings.contains(line, "\u2028") && !strings.contains(line, "\u2029");
+    let split: boolean = false;
+    let trailing: string = "";
+    if (matched) {
+      if (!inside) { inside = true; }
+      else {
+        inside = false;
+        trailing = strings.substring(line, at, size);
+        split = !strings.contains(trailing, "\u0060") && (strings.contains(trailing, " ") || strings.contains(trailing, "\t") || strings.contains(trailing, "\u000d") || strings.contains(trailing, "\n"));
+      }
+    }
+    if (i > 0) { out = out + "\n"; }
+    if (split) {
+      out = out + strings.substring(line, 0, size - strings.length(trailing)) + "\n" + strings.trim(trailing);
+      changed = true;
+    } else { out = out + line; }
+    i = i + 1;
+  }
+  if (changed) { return out; }
+  return markdown;
+}

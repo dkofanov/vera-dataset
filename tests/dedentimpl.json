@@ -1,0 +1,904 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          " \n \n "
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n  a\n  b\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\nb"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\tfoo\n\t\tbar"
+        ]
+      ],
+      "expect": [
+        "s",
+        "foo\n\tbar"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n  é\r\n  中\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é\n中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "a\n b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\n b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n\n  a\n\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\na\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  a\n\n    b\n  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\n\n  b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  \talpha815\r\n  \t[a]*?810"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha815\n[a]*?810"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          " \ta.b974\r\n \t[a]*?230"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b974\n[a]*?230"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "    x y722\n    中文216"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y722\n中文216"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "Beta372\r\n  alpha999\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta372\n  alpha999"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "    \t中文81\r\n    \t  0564\r\n    \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文81\n  0564"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "     \t中文771\r\n     \t École328\r\n     \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文771\n École328"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "    \talpha141\n    \t [a]*?752"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha141\n [a]*?752"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  \t[a]*?417\n  \t  [a]*?395\n  \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?417\n  [a]*?395"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n     中文302\r\n        [a]*?551\r\n     "
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文302\n   [a]*?551"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  \ta\\b812\n  \t  Ω474\n  \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b812\n  Ω474"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   Beta885\r\n      Ω343\r\n   "
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta885\n   Ω343"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n   alpha713\n   Ω460\n   "
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha713\nΩ460"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          " Ω863\r\n   a\\b336\r\n "
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω863\n  a\\b336"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          " Beta165\r\n  alpha865"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta165\n alpha865"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   中文20\n     x y707"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文20\n  x y707"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          " [a]*?639\r\n İ977"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?639\nİ977"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n     Ω800\n      中文910"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω800\n 中文910"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n     \talpha737\r\n     \t   Beta655\r\n     \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha737\n   Beta655"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n     ß921\r\n       a.b871"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß921\n  a.b871"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n  İ649\n  a.b974"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ649\na.b974"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   \tß851\r\n   \t [a]*?782"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß851\n [a]*?782"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  \ta\\b971\r\n  \t   中文27"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b971\n   中文27"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n\t中文471\n\t  École647\n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文471\n  École647"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n Ω420\r\n   ß32\r\n "
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω420\n  ß32"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\ta.b388\r\n\tx y57"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b388\nx y57"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "Ω836\n  0626"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω836\n  0626"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\ta\\b406\r\n\t中文949"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b406\n中文949"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   \tBeta381\r\n   \ta\\b903\r\n   \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta381\na\\b903"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "    \tİ299\r\n    \tΩ376\r\n    \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ299\nΩ376"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\nΩ315\n  İ788"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω315\n  İ788"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  中文555\n     a.b928\n  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文555\n   a.b928"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n    a\\b309\n       a.b592"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b309\n   a.b592"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n  École441\r\n  中文526"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École441\n中文526"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n     a\\b452\r\n     İ292\r\n     "
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b452\nİ292"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n\tÉcole802\r\n\t  İ997\r\n\t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École802\n  İ997"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "  x y524\n     053\n  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y524\n   053"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   Ω165\n     x y728"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω165\n  x y728"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n    \ta\\b493\n    \tx y593"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b493\nx y593"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n  中文285\r\n   İ238\r\n  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文285\n İ238"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   0684\n    École873\n   "
+        ]
+      ],
+      "expect": [
+        "s",
+        "0684\n École873"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   0261\n     090"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0261\n  090"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n     alpha981\r\n      İ12"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha981\n İ12"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\n    \tBeta401\n    \ta.b36\n    \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta401\na.b36"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          " \tß695\r\n \tİ670"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß695\nİ670"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "\r\n中文777\r\n  École19\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文777\n  École19"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "    a\\b503\n     İ258"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b503\n İ258"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "   Ω738\n      École644"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω738\n   École644"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "dedentImpl",
+      "args": [
+        [
+          "s",
+          "     \t中文410\r\n     \t  ß846\r\n     \t"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文410\n  ß846"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+function dedentImpl(text: string): string {
+  let lines: string[] = strings.split(strings.replace(text, "\u000d\n", "\n"), "\n");
+  let start: number = 0;
+  let end: number = lines.length();
+  if (start < end && strings.trim(lines[start]) === "") { start = start + 1; }
+  if (start < end && strings.trim(lines[end - 1]) === "") { end = end - 1; }
+  let commonIndent: number = -1;
+  let i: number = start;
+  while (i < end) {
+    let line: string = lines[i];
+    if (strings.trim(line) !== "") {
+      let indent: number = 0;
+      while (indent < strings.length(line)) {
+        let c: string = strings.substring(line, indent, indent + 1);
+        if (c !== " " && c !== "\t") { break; }
+        indent = indent + 1;
+      }
+      if (commonIndent < 0 || indent < commonIndent) { commonIndent = indent; }
+    }
+    i = i + 1;
+  }
+  if (commonIndent < 0) { return ""; }
+  let out: string = "";
+  i = start;
+  while (i < end) {
+    if (i > start) { out = out + "\n"; }
+    let line: string = lines[i];
+    if (strings.trim(line) !== "") {
+      out = out + strings.substring(line, commonIndent, strings.length(line));
+    }
+    i = i + 1;
+  }
+  return out;
+}

@@ -1,0 +1,949 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "**"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "A"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "["
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[[]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a*b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA][*][bB]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "file.txt"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[fF][iI][lL][eE].[tT][xX][tT]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a/b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA]/[bB]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "é中"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[éÉ]中*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "ßİ"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[ßSS][i̇İ]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "Ωσς"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[ωΩ][σΣ][ςΣ]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "😀"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*😀*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "x y"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[xX] [yY]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a.b703\na.b532"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA].[bB]703\n[aA].[bB]532*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\Ω835\\ß964"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\[ωΩ]835\\[ßSS]964*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a.b218/a.b406"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA].[bB]218/[aA].[bB]406*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "0673\nß522[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*0673\n[ßSS]522[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "/Ω495/a\\b553/*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*/[ωΩ]495/[aA]\\[bB]553/[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "x y439\n中文487*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[xX] [yY]439\n中文487[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\0812\\[a]*?103"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\0812\\[[][aA][]][*][?]103*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "École584/a.b156[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[éÉ][cC][oO][lL][eE]584/[aA].[bB]156[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " İ558 ?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [i̇İ]558 [?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " İ302 ?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [i̇İ]302 [?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "x y811[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[xX] [yY]811[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a.b848ßİ"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA].[bB]848[ßSS][i̇İ]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " a.b401 *"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [aA].[bB]401 [*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " Ω313 😀"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [ωΩ]313 😀*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "[a]*?518[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[[][aA][]][*][?]518[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " [a]*?468 *"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [[][aA][]][*][?]468 [*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "/Ω302/alpha251/ßİ"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*/[ωΩ]302/[aA][lL][pP][hH][aA]251/[ßSS][i̇İ]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "Ω857/ß198?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[ωΩ]857/[ßSS]198[?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "x y462"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[xX] [yY]462*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\ta.b425\r\n?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[aA].[bB]425\r\n[?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\0462\\École573"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\0462\\[éÉ][cC][oO][lL][eE]573*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "a.b183"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA].[bB]183*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\tİ448\r\n?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[i̇İ]448\r\n[?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "0618\nΩ182*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*0618\n[ωΩ]182[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\talpha517\r\n*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[aA][lL][pP][hH][aA]517\r\n[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\t中文520\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t中文520\r\n*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "ß352\nİ880*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[ßSS]352\n[i̇İ]880[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\talpha400\r\n😀"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[aA][lL][pP][hH][aA]400\r\n😀*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "alpha124/a\\b56ßİ"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA][lL][pP][hH][aA]124/[aA]\\[bB]56[ßSS][i̇İ]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "/École405/ß285/😀"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*/[éÉ][cC][oO][lL][eE]405/[ßSS]285/😀*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\ß993\\École133"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\[ßSS]993\\[éÉ][cC][oO][lL][eE]133*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " [a]*?614 ?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [[][aA][]][*][?]614 [?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "İ155\n0414[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[i̇İ]155\n0414[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "/ß482/ß617/*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*/[ßSS]482/[ßSS]617/[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "ß117*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[ßSS]117[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\tx y563\r\n*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[xX] [yY]563\r\n[*]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\中文727\\École396?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\中文727\\[éÉ][cC][oO][lL][eE]396[?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\[a]*?843\\Beta100?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\[[][aA][]][*][?]843\\[bB][eE][tT][aA]100[?]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\École334\\中文710[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\[éÉ][cC][oO][lL][eE]334\\中文710[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " 中文629 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "* 中文629 *"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\tİ206\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[i̇İ]206\r\n*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "C:\\ß431\\中文896ßİ"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[cC]:\\[ßSS]431\\中文896[ßSS][i̇İ]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "alpha606/a\\b530😀"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[aA][lL][pP][hH][aA]606/[aA]\\[bB]530😀*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "/Ω645/Beta199/[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*/[ωΩ]645/[bB][eE][tT][aA]199/[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "Ω168/0584[]"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*[ωΩ]168/0584[[][]]*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          " a.b271 😀"
+        ]
+      ],
+      "expect": [
+        "s",
+        "* [aA].[bB]271 😀*"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "buildCaseInsensitiveGlob",
+      "args": [
+        [
+          "s",
+          "\talpha270\r\n*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*\t[aA][lL][pP][hH][aA]270\r\n[*]*"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

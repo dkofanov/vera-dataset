@@ -1,0 +1,17 @@
+function joinPath(base: string, rel: string): string {
+  if (strings.length(base) === 0) {
+    return rel;
+  }
+  let end: number = strings.length(base);
+  while (end > 0) {
+    let ch: string = strings.substring(base, end - 1, end);
+    if (ch === "/") {
+      end = end - 1;
+    } else {
+      end = end;
+      break;
+    }
+  }
+  let trimmed: string = strings.substring(base, 0, end);
+  return trimmed + "/" + rel;
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "vera-family-splits-v1",
+  "locked": true,
+  "method": "Preserved assignments from pre-isolation combined dataset",
+  "origin": {
+    "dataset": "vera-sections-v1",
+    "recordsSha256": "ccb4b052b18750217e8d0201bf22ca3f0ddcca65387ef2d9cb23328c3416f2bf",
+    "splitsSha256": "69a0e6e0b0057577c9cf5070c98ed43c97f9d9ef483a79dfd22c9e0c82b2680e"
+  },
+  "units": {
+    "function/stdlib-llama-to-posix-separators": {
+      "split": "test",
+      "group": "family-01d93b5ef3e44ae4"
+    },
+    "function/stdlib-algorithms-binary-convert": {
+      "split": "test",
+      "group": "family-0d626d9fcaf726cc"
+    },
+    "function/stdlib-llama-trim-code-padding": {
+      "split": "train",
+      "group": "family-6cfe5ac87be4e8df"
+    },
+    "function/stdlib-llama-normalize-model-name": {
+      "split": "train",
+      "group": "family-a16dc358be5b99bf"
+    },
+    "function/stdlib-llama-escape-code": {
+      "split": "train",
+      "group": "family-6cfe5ac87be4e8df"
+    },
+    "function/stdlib-es-toolkit-range": {
+      "split": "train",
+      "group": "family-5e396466cd24dc4a"
+    },
+    "function/stdlib-es-toolkit-dedent-impl": {
+      "split": "validation",
+      "group": "family-4a96bd72bda2578d"
+    },
+    "function/stdlib-llama-normalize-resource-uri": {
+      "split": "train",
+      "group": "family-59afc3e9e8abe9f6"
+    },
+    "function/stdlib-algorithms-hamming-distance": {
+      "split": "train",
+      "group": "family-6a9edb6c56bc8153"
+    },
+    "function/stdlib-llama-last-path-segment": {
+      "split": "test",
+      "group": "family-01d93b5ef3e44ae4"
+    },
+    "function/stdlib-llama-is-valid-model-name": {
+      "split": "train",
+      "group": "family-a16dc358be5b99bf"
+    },
+    "function/stdlib-llama-build-case-insensitive-glob": {
+      "split": "test",
+      "group": "family-01d93b5ef3e44ae4"
+    },
+    "function/stdlib-algorithms-add-binary": {
+      "split": "train",
+      "group": "family-902f06042306efae"
+    },
+    "function/stdlib-algorithms-juggler-sequence": {
+      "split": "train",
+      "group": "family-9bac61e4d6a9354f"
+    },
+    "function/stdlib-llama-root-prefix-length": {
+      "split": "test",
+      "group": "family-01d93b5ef3e44ae4"
+    },
+    "function/stdlib-llama-rank-score": {
+      "split": "test",
+      "group": "family-01d93b5ef3e44ae4"
+    },
+    "function/stdlib-algorithms-nth-fibonacci-using-formula": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "function/stdlib-algorithms-pronic-number": {
+      "split": "train",
+      "group": "family-d8e8900c1b67b678"
+    },
+    "function/stdlib-llama-join-path": {
+      "split": "test",
+      "group": "family-01d93b5ef3e44ae4"
+    },
+    "function/stdlib-llama-split-glued-closing-code-fences": {
+      "split": "train",
+      "group": "family-6cfe5ac87be4e8df"
+    }
+  },
+  "examples": {
+    "train": 36,
+    "validation": 3,
+    "test": 21
+  }
+}

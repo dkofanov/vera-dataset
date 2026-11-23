@@ -1,0 +1,1182 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "x/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "b"
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "b/a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a/"
+        ],
+        [
+          "s",
+          "b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a///"
+        ],
+        [
+          "s",
+          "/b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a//b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "/"
+        ],
+        [
+          "s",
+          "x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "//"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "C:\\x"
+        ],
+        [
+          "s",
+          "y"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\x/y"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "é/"
+        ],
+        [
+          "s",
+          "中"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é/中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x"
+        ],
+        [
+          "s",
+          "../y"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x/../y"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x"
+        ],
+        [
+          "s",
+          "/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x//"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x"
+        ],
+        [
+          "s",
+          "\\y"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x/\\y"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "\tx y386\r\n"
+        ],
+        [
+          "s",
+          "[a]*?673"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tx y386\r\n/[a]*?673"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "088"
+        ],
+        [
+          "s",
+          "C:\\[a]*?716\\Ω962"
+        ]
+      ],
+      "expect": [
+        "s",
+        "088/C:\\[a]*?716\\Ω962"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "C:\\alpha355\\alpha366"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\alpha355\\alpha366/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " x y649 "
+        ],
+        [
+          "s",
+          "/中文230/alpha204/"
+        ]
+      ],
+      "expect": [
+        "s",
+        " x y649 //中文230/alpha204/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "0294\nx y136"
+        ],
+        [
+          "s",
+          " [a]*?68 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "0294\nx y136/ [a]*?68 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "École829\nx y903"
+        ],
+        [
+          "s",
+          "C:\\[a]*?141\\alpha468"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École829\nx y903/C:\\[a]*?141\\alpha468"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "École931"
+        ],
+        [
+          "s",
+          " 012 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "École931/ 012 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " a\\b434 "
+        ],
+        [
+          "s",
+          "C:\\x y307\\a.b889"
+        ]
+      ],
+      "expect": [
+        "s",
+        " a\\b434 /C:\\x y307\\a.b889"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "Beta337\na.b550"
+        ],
+        [
+          "s",
+          "a\\b474/a\\b283"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta337\na.b550/a\\b474/a\\b283"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " alpha277 "
+        ],
+        [
+          "s",
+          "中文853"
+        ]
+      ],
+      "expect": [
+        "s",
+        " alpha277 /中文853"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "İ33\na\\b576"
+        ],
+        [
+          "s",
+          "/Beta824/x y629/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ33\na\\b576//Beta824/x y629/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "/alpha901/École813/"
+        ],
+        [
+          "s",
+          "x y0\nİ509"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/alpha901/École813/x y0\nİ509"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x y543\n中文592"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y543\n中文592/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "alpha98/Beta911"
+        ],
+        [
+          "s",
+          "\talpha850\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha98/Beta911/\talpha850\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " 0523 "
+        ],
+        [
+          "s",
+          "C:\\[a]*?3\\alpha270"
+        ]
+      ],
+      "expect": [
+        "s",
+        " 0523 /C:\\[a]*?3\\alpha270"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " [a]*?483 "
+        ],
+        [
+          "s",
+          "a\\b677"
+        ]
+      ],
+      "expect": [
+        "s",
+        " [a]*?483 /a\\b677"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "\tx y481\r\n"
+        ],
+        [
+          "s",
+          "C:\\a\\b187\\x y309"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tx y481\r\n/C:\\a\\b187\\x y309"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a.b93/中文624"
+        ],
+        [
+          "s",
+          "中文710"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b93/中文624/中文710"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "Beta102"
+        ],
+        [
+          "s",
+          "中文735\n0360"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta102/中文735\n0360"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "İ356"
+        ],
+        [
+          "s",
+          "[a]*?780\n0222"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ356/[a]*?780\n0222"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "alpha514\n0714"
+        ],
+        [
+          "s",
+          "C:\\中文662\\Ω838"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha514\n0714/C:\\中文662\\Ω838"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "C:\\İ533\\[a]*?237"
+        ],
+        [
+          "s",
+          "Ω602/Ω894"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\İ533\\[a]*?237/Ω602/Ω894"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "C:\\ß164\\ß139"
+        ],
+        [
+          "s",
+          "/Ω230/Beta645/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\ß164\\ß139//Ω230/Beta645/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a.b155\nß355"
+        ],
+        [
+          "s",
+          "\tß850\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b155\nß355/\tß850\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " ß219 "
+        ],
+        [
+          "s",
+          "/Beta126/alpha23/"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ß219 //Beta126/alpha23/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "\tÉcole101\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tÉcole101\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "\ta.b826\r\n"
+        ],
+        [
+          "s",
+          "\t中文333\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\ta.b826\r\n/\t中文333\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "École109"
+        ],
+        [
+          "s",
+          "/Ω716/Ω993/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École109//Ω716/Ω993/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " Beta459 "
+        ],
+        [
+          "s",
+          "C:\\0780\\ß98"
+        ]
+      ],
+      "expect": [
+        "s",
+        " Beta459 /C:\\0780\\ß98"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " Ω663 "
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        " Ω663 /"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " ß538 "
+        ],
+        [
+          "s",
+          "\t[a]*?611\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        " ß538 /\t[a]*?611\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "Beta896/Beta711"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta896/Beta711/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "\talpha557\r\n"
+        ],
+        [
+          "s",
+          "中文430\nΩ505"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\talpha557\r\n/中文430\nΩ505"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x y457"
+        ],
+        [
+          "s",
+          "Beta221"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y457/Beta221"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "İ663\n中文607"
+        ],
+        [
+          "s",
+          "\tß444\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ663\n中文607/\tß444\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "alpha883/中文714"
+        ],
+        [
+          "s",
+          "\tx y591\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha883/中文714/\tx y591\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          " 0600 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " 0600 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x y363/alpha483"
+        ],
+        [
+          "s",
+          "a.b769/Ω906"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y363/alpha483/a.b769/Ω906"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a.b100\nİ85"
+        ],
+        [
+          "s",
+          "\talpha973\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b100\nİ85/\talpha973\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x y461\na.b452"
+        ],
+        [
+          "s",
+          "\t[a]*?328\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y461\na.b452/\t[a]*?328\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " a.b806 "
+        ],
+        [
+          "s",
+          "C:\\Ω658\\alpha598"
+        ]
+      ],
+      "expect": [
+        "s",
+        " a.b806 /C:\\Ω658\\alpha598"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "ß814\n0433"
+        ],
+        [
+          "s",
+          " Ω566 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß814\n0433/ Ω566 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "École626\nİ35"
+        ],
+        [
+          "s",
+          "C:\\École531\\Ω796"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École626\nİ35/C:\\École531\\Ω796"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "x y111/ß259"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y111/ß259/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "alpha417/École938"
+        ],
+        [
+          "s",
+          "C:\\alpha534\\École262"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha417/École938/C:\\alpha534\\École262"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "C:\\066\\中文723"
+        ],
+        [
+          "s",
+          " 中文997 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\066\\中文723/ 中文997 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          " 中文369 "
+        ],
+        [
+          "s",
+          "\tÉcole213\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        " 中文369 /\tÉcole213\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "joinPath",
+      "args": [
+        [
+          "s",
+          "a.b266"
+        ],
+        [
+          "s",
+          "C:\\0340\\İ111"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b266/C:\\0340\\İ111"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

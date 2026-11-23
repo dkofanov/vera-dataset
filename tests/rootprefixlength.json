@@ -1,0 +1,964 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/a"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "///"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//host/share"
+        ]
+      ],
+      "expect": [
+        "n",
+        12
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//host/share/"
+        ]
+      ],
+      "expect": [
+        "n",
+        13
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//host/share/x"
+        ]
+      ],
+      "expect": [
+        "n",
+        13
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:/"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:/x"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:\\x"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "a/b"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "é:/"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\\\host\\share"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:relative"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\École930"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "alpha4"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "[a]*?399"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "İ784"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:0483"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "中文234"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/Ω444"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "Ω7"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:a.b972"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\İ929"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:a.b462"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/alpha369"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "alpha935"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/École813"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "ß267"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//İ459"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/a\\b405"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/中文159"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//host16/share/Beta4"
+        ]
+      ],
+      "expect": [
+        "n",
+        15
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:Ω657"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/ß548"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/x y621"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/Ω374"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/中文914"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "İ917"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//a.b456"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/a\\b376"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/x y413"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\ß791"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//ß835"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\École183"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//a.b353"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/ß964"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:a.b273"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/alpha484"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//a\\b597"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//host92/share/a\\b881"
+        ]
+      ],
+      "expect": [
+        "n",
+        15
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//alpha604"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\x y899"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:x y867"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:ß997"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "\\a.b295"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/ß664"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "/中文860"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "//Beta331"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/x y999"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "C:İ796"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "rootPrefixLength",
+      "args": [
+        [
+          "s",
+          "z:/[a]*?18"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

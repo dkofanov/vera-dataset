@@ -1,0 +1,1009 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "A"
+        ]
+      ],
+      "expect": [
+        "s",
+        "A"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "é"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "中"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a/b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "//"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:/x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a//b/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a//b/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " x "
+        ]
+      ],
+      "expect": [
+        "s",
+        "x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\t\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "org/model"
+        ]
+      ],
+      "expect": [
+        "s",
+        "org/model"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a/b/c"
+        ]
+      ],
+      "expect": [
+        "s",
+        "c"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "[x]*?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[x]*?"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " org / model "
+        ]
+      ],
+      "expect": [
+        "s",
+        "org/model"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a/b/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a/b/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\\host\\share\\model"
+        ]
+      ],
+      "expect": [
+        "s",
+        "model"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "/École966/alpha883/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/École966/alpha883/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\İ670\\Beta405"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta405"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a.b646\nx y628"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b646\nx y628"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\t0885\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0885"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\t中文659\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文659"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "Ω95\nİ314"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω95\nİ314"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "ß699"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß699"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\ta.b619\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b619"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a.b320/a\\b114"
+        ]
+      ],
+      "expect": [
+        "s",
+        "b114"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " École678 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "École678"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "Beta402/École777"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta402/École777"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " Ω902 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω902"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\ß248\\中文380"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文380"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "/中文540/中文698/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/中文540/中文698/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "École650/[a]*?582"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École650/[a]*?582"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\t[a]*?437\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?437"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\a.b577\\ß648"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß648"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "a\\b7/ß652"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß652"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "alpha128\nBeta272"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha128\nBeta272"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\alpha140\\a\\b489"
+        ]
+      ],
+      "expect": [
+        "s",
+        "b489"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\中文549\\x y801"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y801"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " 029 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "029"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "Ω28\nalpha276"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω28\nalpha276"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\ta.b984\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b984"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "Ω257/İ413"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω257/İ413"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " Beta509 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta509"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "0117\nx y32"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0117\nx y32"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "x y182\nBeta963"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y182\nBeta963"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " Beta338 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta338"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "ß428\nΩ54"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß428\nΩ54"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\tBeta659\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta659"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          " alpha691 "
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha691"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "/[a]*?818/İ634/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/[a]*?818/İ634/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "École583\n[a]*?191"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École583\n[a]*?191"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\ta.b17\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b17"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\tİ552\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ552"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "/a.b445/ß897/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/a.b445/ß897/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\İ111\\ß62"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß62"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "İ878"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ878"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "C:\\İ845\\0102"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0102"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\tBeta9\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta9"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "中文915"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文915"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\tBeta467\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta467"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "Ω404"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω404"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "\talpha184\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha184"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "alpha844\na\\b406"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha844\na/b406"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "ß656\nİ883"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß656\nİ883"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "normalizeModelName",
+      "args": [
+        [
+          "s",
+          "0842\n084"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0842\n084"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

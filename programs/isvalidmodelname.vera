@@ -1,0 +1,19 @@
+function normalizeModelName(modelName: string): string {
+  let trimmed: string = strings.trim(modelName);
+  if (trimmed === "") { return ""; }
+  let segments: string[] = strings.split(strings.replace(trimmed, "\\", "/"), "/");
+  if (segments.length() === 2) {
+    let trimmedOrg: string = strings.trim(segments[0]);
+    let trimmedModel: string = strings.trim(segments[1]);
+    if (trimmedOrg !== "" && trimmedModel !== "") {
+      return trimmedOrg + "/" + trimmedModel;
+    }
+  }
+  let normalized: string = strings.trim(segments[segments.length() - 1]);
+  if (strings.length(normalized) > 0) { return normalized; }
+  return trimmed;
+}
+
+function isValidModelName(modelName: string): boolean {
+  return strings.length(normalizeModelName(modelName)) > 0;
+}

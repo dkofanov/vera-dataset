@@ -1,0 +1,1182 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "b"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "z"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/x/ABC/"
+        ],
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "ABC"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "é中"
+        ],
+        [
+          "s",
+          "中"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "École"
+        ],
+        [
+          "s",
+          "é"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "a\\b"
+        ],
+        [
+          "s",
+          "b"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "bc"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/ß183/"
+        ],
+        [
+          "s",
+          "ß183"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École86/"
+        ],
+        [
+          "s",
+          "École86"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a\\b637"
+        ],
+        [
+          "s",
+          "Beta683"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/Beta604"
+        ],
+        [
+          "s",
+          "Beta308"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/İ853/"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a.b156"
+        ],
+        [
+          "s",
+          ".b156"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/[a]*?107"
+        ],
+        [
+          "s",
+          "[a"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École174"
+        ],
+        [
+          "s",
+          "École174"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/İ191"
+        ],
+        [
+          "s",
+          "İ1"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/ß193"
+        ],
+        [
+          "s",
+          "ß1"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a\\b918"
+        ],
+        [
+          "s",
+          "\\b918"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/Beta876/"
+        ],
+        [
+          "s",
+          "a\\b841"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a\\b375/"
+        ],
+        [
+          "s",
+          "a\\"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/alpha59/"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a.b589"
+        ],
+        [
+          "s",
+          "a.b589"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/x y101/"
+        ],
+        [
+          "s",
+          "x "
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École166"
+        ],
+        [
+          "s",
+          "Éc"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/[a]*?841/"
+        ],
+        [
+          "s",
+          "[a"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a.b164/"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/alpha310"
+        ],
+        [
+          "s",
+          "al"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École22"
+        ],
+        [
+          "s",
+          "École22"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École692"
+        ],
+        [
+          "s",
+          "École692"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/x y819/"
+        ],
+        [
+          "s",
+          "x "
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École558"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a.b80/"
+        ],
+        [
+          "s",
+          ".b80"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/中文863"
+        ],
+        [
+          "s",
+          "中文863"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/ß13"
+        ],
+        [
+          "s",
+          "中文591"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/Beta976"
+        ],
+        [
+          "s",
+          "eta976"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/x y332"
+        ],
+        [
+          "s",
+          "x "
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/İ150"
+        ],
+        [
+          "s",
+          "150"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/0277"
+        ],
+        [
+          "s",
+          "02"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/ß451/"
+        ],
+        [
+          "s",
+          "ß4"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/Beta21/"
+        ],
+        [
+          "s",
+          "İ972"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a\\b340/"
+        ],
+        [
+          "s",
+          "İ608"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/École299"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/[a]*?225"
+        ],
+        [
+          "s",
+          "a\\b247"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/0686/"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/alpha260/"
+        ],
+        [
+          "s",
+          "alpha260"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/0598/"
+        ],
+        [
+          "s",
+          "0598"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a\\b117"
+        ],
+        [
+          "s",
+          "中文696"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/alpha835"
+        ],
+        [
+          "s",
+          "lpha835"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a.b300/"
+        ],
+        [
+          "s",
+          "a\\b545"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/Beta811"
+        ],
+        [
+          "s",
+          "eta811"
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/a.b444/"
+        ],
+        [
+          "s",
+          "a.b444"
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/Ω300"
+        ],
+        [
+          "s",
+          "a.b967"
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/ß288/"
+        ],
+        [
+          "s",
+          "ß2"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/ß269/"
+        ],
+        [
+          "s",
+          "ß2"
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "rankScore",
+      "args": [
+        [
+          "s",
+          "/tmp/[a]*?72"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

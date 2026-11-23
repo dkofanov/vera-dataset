@@ -1,0 +1,38 @@
+function lastPathSegment(p: string): string {
+  let end: number = strings.length(p);
+  let trimming: boolean = true;
+  while (trimming && end > 0) {
+    if (strings.substring(p, end - 1, end) === "/") {
+      end = end - 1;
+    } else {
+      trimming = false;
+    }
+  }
+  let idx: number = -1;
+  let i: number = 0;
+  while (i < end) {
+    if (strings.substring(p, i, i + 1) === "/") {
+      idx = i;
+    }
+    i = i + 1;
+  }
+  if (idx === -1) {
+    return strings.substring(p, 0, end);
+  }
+  return strings.substring(p, idx + 1, end);
+}
+
+function rankScore(path: string, query: string): number {
+  let name: string = strings.toLowerCase(lastPathSegment(path));
+  let q: string = strings.toLowerCase(query);
+  if (name === q) {
+    return 0;
+  }
+  if (strings.startsWith(name, q)) {
+    return 1;
+  }
+  if (strings.contains(name, q)) {
+    return 2;
+  }
+  return 3;
+}

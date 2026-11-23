@@ -1,0 +1,7 @@
+function nthFibonacciUsingFormula(n: number): number {
+  let sqrt5: number = math.sqrt(5);
+  let phi: number = (1 + sqrt5) / 2;
+  let psi: number = (1 - sqrt5) / 2;
+  let value: number = (math.pow(phi, n) - math.pow(psi, n)) / sqrt5;
+  return math.round(value);
+}

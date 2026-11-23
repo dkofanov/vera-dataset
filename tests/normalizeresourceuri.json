@@ -1,0 +1,934 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "file://"
+        ]
+      ],
+      "expect": [
+        "s",
+        "file://"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "file:///"
+        ]
+      ],
+      "expect": [
+        "s",
+        "file://"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "file:///a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "file://a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "svelte:////x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "svelte://x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x://a/b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x://a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x://a://b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x://a://b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          ":///"
+        ]
+      ],
+      "expect": [
+        "s",
+        "://"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x:/a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x:/a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "HTTP:////é中"
+        ]
+      ],
+      "expect": [
+        "s",
+        "HTTP://é中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x://\\a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x://\\a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x:////?q=/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x://?q=/"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b410/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b410/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "İ487/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ487/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "ß749/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß749/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "ß601://///////0566"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß601://0566"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "ß467/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß467/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x y924://////İ94"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y924://İ94"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x y835://///0738"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y835://0738"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "中文15://///a\\b588"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文15://a\\b588"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Beta922/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta922/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Beta286://///////[a]*?862"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta286://[a]*?862"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b361://///[a]*?103"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b361://[a]*?103"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "İ121/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ121/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b452:////ß733"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b452://ß733"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "alpha181/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha181/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "[a]*?623:///alpha448"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?623://alpha448"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "alpha206:////中文579"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha206://中文579"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a.b483:///////İ135"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b483://İ135"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x y61:///[a]*?853"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y61://[a]*?853"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Ω744/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω744/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "[a]*?477:///[a]*?208"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?477://[a]*?208"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "İ259:////////中文601"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ259://中文601"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "alpha292://x y705"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha292://x y705"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "[a]*?637/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?637/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "İ468:////////alpha898"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ468://alpha898"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Ω57://///////a.b716"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω57://a.b716"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x y879/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y879/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Beta890/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta890/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "[a]*?401:////////a\\b133"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?401://a\\b133"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "İ34://////École769"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ34://École769"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b82://///0184"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b82://0184"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b42:////Ω573"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b42://Ω573"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "ß749:///İ24"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß749://İ24"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "École760://///////a\\b565"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École760://a\\b565"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Ω908/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω908/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "0531://alpha7"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0531://alpha7"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Beta345://İ660"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta345://İ660"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "[a]*?647:////École55"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?647://École55"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "alpha766://///中文784"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha766://中文784"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "ß809/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß809/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a.b141:////Ω854"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b141://Ω854"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "x y40:///////0366"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y40://0366"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a.b79:////alpha347"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b79://alpha347"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "École598/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École598/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "Beta908:////////Beta830"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta908://Beta830"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b147:////ß3"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b147://ß3"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "a\\b387:///////中文377"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b387://中文377"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "École147/no-scheme"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École147/no-scheme"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "normalizeResourceUri",
+      "args": [
+        [
+          "s",
+          "0153://////中文926"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0153://中文926"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

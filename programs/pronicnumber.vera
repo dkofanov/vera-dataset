@@ -1,0 +1,13 @@
+function pronicNumber(n: number): boolean {
+  if (n === 0) {
+    return true;
+  }
+  let root: number = math.sqrt(n);
+  let floored: number = math.floor(root);
+  let ceiled: number = math.ceil(root);
+  let isPerfectSquare: boolean = floored * floored === n;
+  if (isPerfectSquare) {
+    return false;
+  }
+  return floored * ceiled === n;
+}

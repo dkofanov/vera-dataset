@@ -1,0 +1,14 @@
+function hammingDistance(str1: string, str2: string): number {
+  let dist: number = 0;
+  let i: number = 0;
+  let len: number = strings.length(str1);
+  while (i < len) {
+    let c1: string = strings.substring(str1, i, i + 1);
+    let c2: string = strings.substring(str2, i, i + 1);
+    if (c1 !== c2) {
+      dist = dist + 1;
+    }
+    i = i + 1;
+  }
+  return dist;
+}

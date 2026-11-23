@@ -1,0 +1,15 @@
+function jugglerSequence(a: number, n: number): number {
+  let k: number = a;
+  let i: number = 0;
+  while (i < n) {
+    let exponent: number = 0;
+    if (k % 2 === 0) {
+      exponent = 1 / 2;
+    } else {
+      exponent = 3 / 2;
+    }
+    k = math.floor(math.pow(k, exponent));
+    i = i + 1;
+  }
+  return k;
+}

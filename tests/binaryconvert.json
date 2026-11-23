@@ -1,0 +1,904 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "s",
+        "1"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "s",
+        "10"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "s",
+        "11"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "s",
+        "100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "s",
+        "111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "s",
+        "1000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          15
+        ]
+      ],
+      "expect": [
+        "s",
+        "1111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          16
+        ]
+      ],
+      "expect": [
+        "s",
+        "10000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          255
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          1024
+        ]
+      ],
+      "expect": [
+        "s",
+        "10000000000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          9007199254740991
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111111111111111111111111111111111111111111111111111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          39309824
+        ]
+      ],
+      "expect": [
+        "s",
+        "10010101111101001000000000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          73429196
+        ]
+      ],
+      "expect": [
+        "s",
+        "100011000000111000011001100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          13476938
+        ]
+      ],
+      "expect": [
+        "s",
+        "110011011010010001001010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          36348753
+        ]
+      ],
+      "expect": [
+        "s",
+        "10001010101010001101010001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          61695665
+        ]
+      ],
+      "expect": [
+        "s",
+        "11101011010110011010110001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          70590029
+        ]
+      ],
+      "expect": [
+        "s",
+        "100001101010001111001001101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          40058720
+        ]
+      ],
+      "expect": [
+        "s",
+        "10011000110011111101100000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          78812307
+        ]
+      ],
+      "expect": [
+        "s",
+        "100101100101001010010010011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          164366
+        ]
+      ],
+      "expect": [
+        "s",
+        "101000001000001110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          59820268
+        ]
+      ],
+      "expect": [
+        "s",
+        "11100100001100100011101100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          44650948
+        ]
+      ],
+      "expect": [
+        "s",
+        "10101010010101000111000100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          27232004
+        ]
+      ],
+      "expect": [
+        "s",
+        "1100111111000011100000100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          92002786
+        ]
+      ],
+      "expect": [
+        "s",
+        "101011110111101100111100010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          90317131
+        ]
+      ],
+      "expect": [
+        "s",
+        "101011000100010000101001011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          29626266
+        ]
+      ],
+      "expect": [
+        "s",
+        "1110001000000111110011010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          96620570
+        ]
+      ],
+      "expect": [
+        "s",
+        "101110000100101000000011010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          91593740
+        ]
+      ],
+      "expect": [
+        "s",
+        "101011101011001110000001100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          50048723
+        ]
+      ],
+      "expect": [
+        "s",
+        "10111110111010111011010011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          32977547
+        ]
+      ],
+      "expect": [
+        "s",
+        "1111101110011001010001011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          72379781
+        ]
+      ],
+      "expect": [
+        "s",
+        "100010100000110110110000101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          39175713
+        ]
+      ],
+      "expect": [
+        "s",
+        "10010101011100011000100001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          97364495
+        ]
+      ],
+      "expect": [
+        "s",
+        "101110011011010101000001111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          59014739
+        ]
+      ],
+      "expect": [
+        "s",
+        "11100001000111111001010011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          25425166
+        ]
+      ],
+      "expect": [
+        "s",
+        "1100000111111010100001110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          6739467
+        ]
+      ],
+      "expect": [
+        "s",
+        "11001101101011000001011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          19502182
+        ]
+      ],
+      "expect": [
+        "s",
+        "1001010011001010001100110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          52990310
+        ]
+      ],
+      "expect": [
+        "s",
+        "11001010001001000101100110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          49940868
+        ]
+      ],
+      "expect": [
+        "s",
+        "10111110100000100110000100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          65298333
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111001000101111110011101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          28797414
+        ]
+      ],
+      "expect": [
+        "s",
+        "1101101110110100111100110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          15402271
+        ]
+      ],
+      "expect": [
+        "s",
+        "111010110000010100011111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          44748611
+        ]
+      ],
+      "expect": [
+        "s",
+        "10101010101100111101000011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          49635071
+        ]
+      ],
+      "expect": [
+        "s",
+        "10111101010101111011111111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          87233278
+        ]
+      ],
+      "expect": [
+        "s",
+        "101001100110001001011111110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          78894697
+        ]
+      ],
+      "expect": [
+        "s",
+        "100101100111101011001101001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          94293119
+        ]
+      ],
+      "expect": [
+        "s",
+        "101100111101100110001111111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          81489935
+        ]
+      ],
+      "expect": [
+        "s",
+        "100110110110111000000001111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          47809569
+        ]
+      ],
+      "expect": [
+        "s",
+        "10110110011000010000100001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          26017335
+        ]
+      ],
+      "expect": [
+        "s",
+        "1100011001111111000110111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          36594330
+        ]
+      ],
+      "expect": [
+        "s",
+        "10001011100110001010011010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          32843749
+        ]
+      ],
+      "expect": [
+        "s",
+        "1111101010010011111100101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          65588734
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111010001100110111111110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          29078915
+        ]
+      ],
+      "expect": [
+        "s",
+        "1101110111011010110000011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          79754286
+        ]
+      ],
+      "expect": [
+        "s",
+        "100110000001111010000101110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          66436927
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111101011011111100111111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          37931696
+        ]
+      ],
+      "expect": [
+        "s",
+        "10010000101100101010110000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          66539930
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111101110101000110011010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "binaryConvert",
+      "args": [
+        [
+          "n",
+          56223999
+        ]
+      ],
+      "expect": [
+        "s",
+        "11010110011110100011111111"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

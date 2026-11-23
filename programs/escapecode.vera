@@ -1,0 +1,3 @@
+function escapeCode(code: string): string {
+  return strings.replace(strings.replace(strings.replace(code, "&", "&amp;"), "<", "&lt;"), ">", "&gt;");
+}

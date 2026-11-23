@@ -1,0 +1,934 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "s",
+        "abc"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "&"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&amp;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "<"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&lt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          ">"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&gt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "&<>"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&amp;&lt;&gt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "&&"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&amp;&amp;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "<<>>"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&lt;&lt;&gt;&gt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "&amp;"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&amp;amp;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "<a x=\"y\">"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&lt;a x=\"y\"&gt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "'\""
+        ]
+      ],
+      "expect": [
+        "s",
+        "'\""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "é中\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é中\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "<&>"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&lt;&amp;&gt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "&lt;"
+        ]
+      ],
+      "expect": [
+        "s",
+        "&amp;lt;"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "x y545&&amp;École457"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y545&amp;&amp;amp;École457"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "ß948<x>&</x>x y179"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß948&lt;x&gt;&amp;&lt;/x&gt;x y179"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "alpha376&&amp;0338"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha376&amp;&amp;amp;0338"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "0160<x>&</x>[a]*?706"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0160&lt;x&gt;&amp;&lt;/x&gt;[a]*?706"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "中文413&&amp;ß421"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文413&amp;&amp;amp;ß421"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ491\"'[a]*?621"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ491\"'[a]*?621"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ974&&amp;ß934"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ974&amp;&amp;amp;ß934"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ713&&amp;ß924"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ713&amp;&amp;amp;ß924"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "x y673<x>&</x>[a]*?450"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y673&lt;x&gt;&amp;&lt;/x&gt;[a]*?450"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a\\b205&<>alpha637"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b205&amp;&lt;&gt;alpha637"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "中文960<x>&</x>alpha132"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文960&lt;x&gt;&amp;&lt;/x&gt;alpha132"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "[a]*?274\"'École992"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?274\"'École992"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "0680<x>&</x>alpha521"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0680&lt;x&gt;&amp;&lt;/x&gt;alpha521"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a.b141&&amp;École353"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b141&amp;&amp;amp;École353"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Ω906\"'Ω846"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω906\"'Ω846"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a.b931&<>a.b936"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b931&amp;&lt;&gt;a.b936"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ766&&amp;a\\b864"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ766&amp;&amp;amp;a\\b864"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Ω34&<>0538"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω34&amp;&lt;&gt;0538"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "alpha184<x>&</x>École493"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha184&lt;x&gt;&amp;&lt;/x&gt;École493"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "[a]*?261&&amp;x y668"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?261&amp;&amp;amp;x y668"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Ω204<x>&</x>alpha326"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω204&lt;x&gt;&amp;&lt;/x&gt;alpha326"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ244<x>&</x>a\\b146"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ244&lt;x&gt;&amp;&lt;/x&gt;a\\b146"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a\\b524<x>&</x>a\\b970"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b524&lt;x&gt;&amp;&lt;/x&gt;a\\b970"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "[a]*?583&<>Ω58"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?583&amp;&lt;&gt;Ω58"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "École949<x>&</x>École744"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École949&lt;x&gt;&amp;&lt;/x&gt;École744"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "alpha224\"'École925"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha224\"'École925"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a\\b130&<>0486"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b130&amp;&lt;&gt;0486"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "[a]*?335\"'Beta317"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?335\"'Beta317"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "ß233\"'İ676"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß233\"'İ676"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Ω51&<>Beta486"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω51&amp;&lt;&gt;Beta486"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "0265<x>&</x>ß28"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0265&lt;x&gt;&amp;&lt;/x&gt;ß28"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "École788<x>&</x>ß721"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École788&lt;x&gt;&amp;&lt;/x&gt;ß721"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a.b739\"'中文433"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b739\"'中文433"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "x y305&&amp;alpha714"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y305&amp;&amp;amp;alpha714"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "École986&<>Ω112"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École986&amp;&lt;&gt;Ω112"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Ω196&&amp;[a]*?565"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω196&amp;&amp;amp;[a]*?565"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Beta126&<>a.b41"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta126&amp;&lt;&gt;a.b41"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ268&<>Ω972"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ268&amp;&lt;&gt;Ω972"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "[a]*?887&<>Beta617"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?887&amp;&lt;&gt;Beta617"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "ß600&&amp;中文251"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß600&amp;&amp;amp;中文251"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "İ616\"'a.b352"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ616\"'a.b352"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "0683&<>a\\b846"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0683&amp;&lt;&gt;a\\b846"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "alpha726&<>Beta718"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha726&amp;&lt;&gt;Beta718"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "x y778&&amp;Ω48"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y778&amp;&amp;amp;Ω48"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "Ω271\"'[a]*?389"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω271\"'[a]*?389"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a\\b998\"'a\\b248"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b998\"'a\\b248"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "a.b382&<>a\\b127"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b382&amp;&lt;&gt;a\\b127"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "escapeCode",
+      "args": [
+        [
+          "s",
+          "alpha397<x>&</x>İ483"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha397&lt;x&gt;&amp;&lt;/x&gt;İ483"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "/a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/a\\b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:\\a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:/a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "c:a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "c:a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/a/b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\share"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/share"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "é:\\x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é:\\x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "A:/x\\y"
+        ]
+      ],
+      "expect": [
+        "s",
+        "A:/x/y"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "1:\\x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1:\\x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "~\\x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "~\\x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "/中文345\\alpha984"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/中文345\\alpha984"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:Beta246\\ß208"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:Beta246/ß208"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:a.b181\\x y947"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:a.b181/x y947"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "İ582\\Ω47"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ582\\Ω47"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\Ω956\\a.b908"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/Ω956/a.b908"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:École190\\École217"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:École190\\École217"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\ß170\\Beta448"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/ß170/Beta448"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "063\\x y64"
+        ]
+      ],
+      "expect": [
+        "s",
+        "063\\x y64"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "Ω697\\a.b30"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω697\\a.b30"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\x y792\\Beta990"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/x y792/Beta990"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:Beta212\\ß608"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:Beta212\\ß608"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:0972\\中文233"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:0972\\中文233"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\ß275\\a\\b379"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/ß275/a/b379"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "ß857\\a\\b302"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß857\\a\\b302"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\x y240\\École779"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/x y240/École779"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:Ω970\\a\\b560"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:Ω970\\a\\b560"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\Ω508\\ß154"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/Ω508/ß154"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\a.b84\\x y446"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/a.b84/x y446"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "İ490\\0810"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ490\\0810"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "a.b747\\中文574"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b747\\中文574"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\École967\\Beta537"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/École967/Beta537"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\0290\\中文986"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/0290/中文986"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:Ω817\\École349"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:Ω817/École349"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\İ475\\Beta390"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/İ475/Beta390"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:[a]*?444\\ß364"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:[a]*?444/ß364"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "0397\\[a]*?879"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0397\\[a]*?879"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:x y31\\École984"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:x y31\\École984"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:Ω919\\中文489"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:Ω919/中文489"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "Beta838\\a.b356"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta838\\a.b356"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:a.b537\\0699"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:a.b537/0699"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中文970\\a.b922"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文970\\a.b922"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "[a]*?826\\[a]*?39"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[a]*?826\\[a]*?39"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\a.b736\\a\\b750"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/a.b736/a/b750"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\a.b29\\a\\b109"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/a.b29/a/b109"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:中文576\\Ω10"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:中文576\\Ω10"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:[a]*?959\\Beta573"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:[a]*?959/Beta573"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\İ499\\Beta683"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/İ499/Beta683"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\Ω428\\[a]*?130"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/Ω428/[a]*?130"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:0811\\x y330"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:0811/x y330"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\x y138\\a.b729"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/x y138/a.b729"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "C:İ314\\a\\b853"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:İ314/a/b853"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\0269\\0877"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/0269/0877"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "/a\\b99\\École602"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/a\\b99\\École602"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "/Ω200\\x y169"
+        ]
+      ],
+      "expect": [
+        "s",
+        "/Ω200\\x y169"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "\\\\host\\中文801\\İ454"
+        ]
+      ],
+      "expect": [
+        "s",
+        "//host/中文801/İ454"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "z:\\Ω705\\0670"
+        ]
+      ],
+      "expect": [
+        "s",
+        "z:/Ω705/0670"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "中:ß712\\İ172"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中:ß712\\İ172"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "toPosixSeparators",
+      "args": [
+        [
+          "s",
+          "a.b303\\0474"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b303\\0474"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

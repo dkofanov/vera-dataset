@@ -1,0 +1,1182 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "1"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "1"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "0"
+        ],
+        [
+          "s",
+          "0"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          "1"
+        ]
+      ],
+      "expect": [
+        "s",
+        "10"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          "10"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "10"
+        ],
+        [
+          "s",
+          "1"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "000"
+        ],
+        [
+          "s",
+          "1"
+        ]
+      ],
+      "expect": [
+        "s",
+        "001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          "000"
+        ]
+      ],
+      "expect": [
+        "s",
+        "001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "001"
+        ],
+        [
+          "s",
+          "001"
+        ]
+      ],
+      "expect": [
+        "s",
+        "010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1111"
+        ],
+        [
+          "s",
+          "1"
+        ]
+      ],
+      "expect": [
+        "s",
+        "10000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1010"
+        ],
+        [
+          "s",
+          "0101"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "0"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "0"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "000"
+        ]
+      ],
+      "expect": [
+        "s",
+        "000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "11111110101"
+        ],
+        [
+          "s",
+          "111"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11111111100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          "100001"
+        ]
+      ],
+      "expect": [
+        "s",
+        "100010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1001110011011011111"
+        ],
+        [
+          "s",
+          "101110000001000"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1010100001011100111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "00111"
+        ],
+        [
+          "s",
+          "00111101100111001101"
+        ]
+      ],
+      "expect": [
+        "s",
+        "00111101100111010100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "01110"
+        ],
+        [
+          "s",
+          "010010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "100000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "0001010011111101101011"
+        ],
+        [
+          "s",
+          "10100011010010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0001010110100000111101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "00010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "00010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "110100000011000101000010"
+        ],
+        [
+          "s",
+          "001010110110000010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "110100001101111011000100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "011101110100111"
+        ],
+        [
+          "s",
+          "0110001000000000011011"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0110001011101111000010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "11101"
+        ],
+        [
+          "s",
+          "01011"
+        ]
+      ],
+      "expect": [
+        "s",
+        "101000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1011000"
+        ],
+        [
+          "s",
+          "0000000010001100110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0000000010010111110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "011010"
+        ],
+        [
+          "s",
+          "01"
+        ]
+      ],
+      "expect": [
+        "s",
+        "011011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "010"
+        ],
+        [
+          "s",
+          "11001011"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11001101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "01000010100000100"
+        ],
+        [
+          "s",
+          "1100100101101100"
+        ]
+      ],
+      "expect": [
+        "s",
+        "10100111001110000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "0001000000100111101"
+        ],
+        [
+          "s",
+          "110111000111011000010001"
+        ]
+      ],
+      "expect": [
+        "s",
+        "110111001111011101001110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "110101011110111110101"
+        ]
+      ],
+      "expect": [
+        "s",
+        "110101011110111110101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "11010001011100100"
+        ],
+        [
+          "s",
+          "0111111000"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11010010011011100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "110"
+        ],
+        [
+          "s",
+          "1010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "10000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "000110000011011101"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "000110000011011101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "00000110010010110111"
+        ],
+        [
+          "s",
+          "00000110101001101"
+        ]
+      ],
+      "expect": [
+        "s",
+        "00000111001000000100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "010010000000011001001110"
+        ],
+        [
+          "s",
+          "001"
+        ]
+      ],
+      "expect": [
+        "s",
+        "010010000000011001001111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "000000001100110010101100"
+        ],
+        [
+          "s",
+          "000011100000000011001101"
+        ]
+      ],
+      "expect": [
+        "s",
+        "000011101100110101111001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "001011"
+        ],
+        [
+          "s",
+          "01110000010101110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "01110000010111001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "001110010000"
+        ],
+        [
+          "s",
+          "101000100000110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "101010010010110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "11101010110"
+        ],
+        [
+          "s",
+          "0111101010001111111011"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0111101010101101010001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "010111110111001"
+        ],
+        [
+          "s",
+          "00001"
+        ]
+      ],
+      "expect": [
+        "s",
+        "010111110111010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "010"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        "010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "00110"
+        ],
+        [
+          "s",
+          "10100"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1011001101"
+        ],
+        [
+          "s",
+          "11111010001"
+        ]
+      ],
+      "expect": [
+        "s",
+        "101010011110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          "1100110110011011111111"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1100110110011100000000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "00000101100110100001011"
+        ],
+        [
+          "s",
+          "101100001010011011111110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "101100110111010000001001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "111000"
+        ],
+        [
+          "s",
+          "11"
+        ]
+      ],
+      "expect": [
+        "s",
+        "111011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "10100100100110111"
+        ],
+        [
+          "s",
+          "0001010100111111101110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0001101001100100100101"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "100100000100000110"
+        ],
+        [
+          "s",
+          "100000000101101001110101"
+        ]
+      ],
+      "expect": [
+        "s",
+        "100000101001101101111011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "111"
+        ],
+        [
+          "s",
+          "00011110111000111001011"
+        ]
+      ],
+      "expect": [
+        "s",
+        "00011110111000111010010"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "110100110011100011010001"
+        ],
+        [
+          "s",
+          "00101010110110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "110100110100001110000111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "010011100010101"
+        ],
+        [
+          "s",
+          "100100"
+        ]
+      ],
+      "expect": [
+        "s",
+        "010011100111001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "0010100"
+        ],
+        [
+          "s",
+          "1001011"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1011111"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "00111001001000011"
+        ],
+        [
+          "s",
+          "0110010001111100000"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0111001011000100011"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "01"
+        ]
+      ],
+      "expect": [
+        "s",
+        "01"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "000111000001000000111"
+        ],
+        [
+          "s",
+          "10"
+        ]
+      ],
+      "expect": [
+        "s",
+        "000111000001000001001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1000"
+        ],
+        [
+          "s",
+          "000111001110"
+        ]
+      ],
+      "expect": [
+        "s",
+        "000111010110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "0001111111000000100"
+        ],
+        [
+          "s",
+          "11000110101100001010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "11010110100100001110"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "01"
+        ],
+        [
+          "s",
+          "0"
+        ]
+      ],
+      "expect": [
+        "s",
+        "01"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "111000110001000"
+        ],
+        [
+          "s",
+          "11111011100011100100"
+        ]
+      ],
+      "expect": [
+        "s",
+        "100000010101001101100"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "001"
+        ],
+        [
+          "s",
+          "00001111"
+        ]
+      ],
+      "expect": [
+        "s",
+        "00010000"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1"
+        ],
+        [
+          "s",
+          "0011100000000"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0011100000001"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "addBinary",
+      "args": [
+        [
+          "s",
+          "1100111001110001101"
+        ],
+        [
+          "s",
+          "010"
+        ]
+      ],
+      "expect": [
+        "s",
+        "1100111001110001111"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

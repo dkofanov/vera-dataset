@@ -1,0 +1,40 @@
+function normalizeResourceUri(uri: string): string {
+  let schemeEnd: number = -1;
+  let i: number = 0;
+  while (i < strings.length(uri)) {
+    if (i + 3 <= strings.length(uri)) {
+      if (strings.substring(uri, i, i + 3) === "://") {
+        schemeEnd = i;
+        i = strings.length(uri);
+      } else {
+        i = i + 1;
+      }
+    } else {
+      i = strings.length(uri);
+    }
+  }
+
+  if (schemeEnd === -1) {
+    return uri;
+  }
+
+  let scheme: string = strings.substring(uri, 0, schemeEnd);
+  let restStart: number = schemeEnd + 3;
+  let rest: string = strings.substring(uri, restStart, strings.length(uri));
+
+  let slashCount: number = 0;
+  let j: number = 0;
+  let counting: boolean = true;
+  while (j < strings.length(rest) && counting) {
+    if (strings.substring(rest, j, j + 1) === "/") {
+      slashCount = slashCount + 1;
+      j = j + 1;
+    } else {
+      counting = false;
+    }
+  }
+
+  let trimmed: string = strings.substring(rest, slashCount, strings.length(rest));
+
+  return scheme + "://" + trimmed;
+}

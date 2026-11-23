@@ -1,0 +1,964 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "A"
+        ]
+      ],
+      "expect": [
+        "s",
+        "A"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "é"
+        ]
+      ],
+      "expect": [
+        "s",
+        "é"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "中"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a/b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "/"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "//"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\x"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\x"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a\\b"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a//b/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "b"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " x "
+        ]
+      ],
+      "expect": [
+        "s",
+        " x "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\t\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\t\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "org/model"
+        ]
+      ],
+      "expect": [
+        "s",
+        "model"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a/b/c"
+        ]
+      ],
+      "expect": [
+        "s",
+        "c"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "[x]*?"
+        ]
+      ],
+      "expect": [
+        "s",
+        "[x]*?"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 1",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " ß369 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " ß369 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\Ω853\\École616"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\Ω853\\École616"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "Beta292/a\\b2"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b2"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " [a]*?425 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " [a]*?425 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "中文461"
+        ]
+      ],
+      "expect": [
+        "s",
+        "中文461"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "x y120\nß39"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y120\nß39"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 7",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "Ω47/x y950"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y950"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "Beta770\nİ255"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta770\nİ255"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "ß45"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ß45"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 10",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\a\\b6\\a\\b486"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\a\\b6\\a\\b486"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a\\b114/a.b548"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a.b548"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 12",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "/École978/Ω432/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω432"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 13",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\tBeta330\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tBeta330\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 14",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\École41\\a.b286"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\École41\\a.b286"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 15",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "İ901\nalpha407"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ901\nalpha407"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 16",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " École566 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " École566 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 17",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " École751 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " École751 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 18",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a.b305/a\\b876"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a\\b876"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 19",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\tBeta866\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tBeta866\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 20",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " Beta417 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " Beta417 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 21",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "Beta206/İ818"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ818"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 22",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " İ673 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " İ673 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 23",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " École167 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " École167 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 24",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\tBeta999\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tBeta999\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 25",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\talpha897\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\talpha897\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 26",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "/İ849/Beta646/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Beta646"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 27",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "İ36"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ36"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 28",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\tBeta749\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tBeta749\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 29",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "Ω260"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω260"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 30",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "/Beta17/École761/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "École761"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 31",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "0226"
+        ]
+      ],
+      "expect": [
+        "s",
+        "0226"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 32",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\a\\b676\\中文490"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\a\\b676\\中文490"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 33",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\a.b836\\ß779"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\a.b836\\ß779"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 34",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "/中文681/Ω248/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Ω248"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 35",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "/ß524/İ128/"
+        ]
+      ],
+      "expect": [
+        "s",
+        "İ128"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 36",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " 中文26 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " 中文26 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 37",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "École199/x y359"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y359"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 38",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "ß173/x y209"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y209"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 39",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\t中文287\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\t中文287\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 40",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "a\\b660/x y908"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y908"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 41",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " alpha400 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " alpha400 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 42",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          " Ω189 "
+        ]
+      ],
+      "expect": [
+        "s",
+        " Ω189 "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 43",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "x y208\nÉcole70"
+        ]
+      ],
+      "expect": [
+        "s",
+        "x y208\nÉcole70"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 44",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "alpha362/alpha898"
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha898"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 45",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\tΩ72\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tΩ72\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 46",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "C:\\İ869\\中文383"
+        ]
+      ],
+      "expect": [
+        "s",
+        "C:\\İ869\\中文383"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 47",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\ta\\b203\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\ta\\b203\r\n"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 48",
+      "function": "lastPathSegment",
+      "args": [
+        [
+          "s",
+          "\tΩ851\r\n"
+        ]
+      ],
+      "expect": [
+        "s",
+        "\tΩ851\r\n"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}
