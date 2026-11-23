@@ -1,0 +1,741 @@
+{
+  "tests": [
+    {
+      "suite": "curated",
+      "args": [
+        1,
+        0
+      ],
+      "expect": 0,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        2,
+        90
+      ],
+      "expect": 2,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        3,
+        -180
+      ],
+      "expect": -3.6739403974420594e-16,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        612,
+        -585.4
+      ],
+      "expect": 435.75994014648984,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        50,
+        -327.5
+      ],
+      "expect": 26.86498041734121,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        441,
+        -587.6
+      ],
+      "expect": 325.6588052160151,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        210,
+        -164.2
+      ],
+      "expect": -57.178851878520675,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        854,
+        -553.3
+      ],
+      "expect": 196.46247555864065,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        652,
+        7.6
+      ],
+      "expect": 86.23116644764383,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        807,
+        203.4
+      ],
+      "expect": -320.4983477422681,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        50,
+        995.6
+      ],
+      "expect": -49.76136999909156,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        292,
+        -513.2
+      ],
+      "expect": -131.6562418813137,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        833,
+        -278.6
+      ],
+      "expect": 823.6340654121558,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        575,
+        -162.2
+      ],
+      "expect": -175.77480035378593,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        664,
+        -996.7
+      ],
+      "expect": 659.4653112935548,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        493,
+        -792.3
+      ],
+      "expect": -469.6621102580179,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        299,
+        -88.9
+      ],
+      "expect": -298.9448979243716,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        986,
+        346.2
+      ],
+      "expect": -235.19398917248108,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        568,
+        599.6
+      ],
+      "expect": -489.90776410972194,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        234,
+        -943
+      ],
+      "expect": 159.58761625462446,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        515,
+        27.6
+      ],
+      "expect": 238.59745808672878,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        47,
+        -19
+      ],
+      "expect": -15.301703259486363,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        944,
+        -533.3
+      ],
+      "expect": -110.13717582177236,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        390,
+        -941.8
+      ],
+      "expect": 259.94766339728545,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        905,
+        -791.7
+      ],
+      "expect": -859.2300572659229,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        198,
+        330.6
+      ],
+      "expect": -97.19894321579794,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        871,
+        373.6
+      ],
+      "expect": 204.80878051235672,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        863,
+        -763.5
+      ],
+      "expect": -594.0499988237086,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        624,
+        233.7
+      ],
+      "expect": -502.89924812307356,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        26,
+        -942.9
+      ],
+      "expect": 17.698742592931808,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        128,
+        -54.7
+      ],
+      "expect": -104.46561153026052,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        590,
+        -330.9
+      ],
+      "expect": 286.9378744498597,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        886,
+        109.4
+      ],
+      "expect": 835.6952749415744,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        53,
+        259.8
+      ],
+      "expect": -52.16236722236982,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        557,
+        57.5
+      ],
+      "expect": 469.7690353177773,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        605,
+        161.8
+      ],
+      "expect": 188.96262569990063,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        855,
+        -726.6
+      ],
+      "expect": -98.27126367140048,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        576,
+        463.2
+      ],
+      "expect": 560.7814480549404,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        979,
+        -144.1
+      ],
+      "expect": -574.0585372443379,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        166,
+        -451.1
+      ],
+      "expect": -165.96940821219295,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        102,
+        -572
+      ],
+      "expect": 54.05176495178694,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        580,
+        230.6
+      ],
+      "expect": -448.18547262846363,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        687,
+        401
+      ],
+      "expect": 450.71255291647833,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        950,
+        619.9
+      ],
+      "expect": -935.2780209757148,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        625,
+        -3.3
+      ],
+      "expect": -35.97751684972955,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        709,
+        -597.5
+      ],
+      "expect": 597.9645350813357,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        495,
+        -62.7
+      ],
+      "expect": -439.8655301641997,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        292,
+        669.4
+      ],
+      "expect": -225.6382034612266,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        424,
+        -793.8
+      ],
+      "expect": -407.1645227270238,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        296,
+        -40.6
+      ],
+      "expect": -192.6291683106919,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        345,
+        -211.7
+      ],
+      "expect": 181.28771961993226,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        514,
+        -326.8
+      ],
+      "expect": 281.4474968751707,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        647,
+        -205.9
+      ],
+      "expect": 282.6107570739032,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        460,
+        510.5
+      ],
+      "expect": 226.514837647595,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        486,
+        875.7
+      ],
+      "expect": 199.99597828208323,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        292,
+        89.8
+      ],
+      "expect": 291.99822103607477,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        293,
+        -660.2
+      ],
+      "expect": 253.2325169724354,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        264,
+        406.6
+      ],
+      "expect": 191.81571313633776,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        205,
+        863.9
+      ],
+      "expect": 120.7852532574352,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        101,
+        284.7
+      ],
+      "expect": -97.69404303036356,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        482,
+        -777.5
+      ],
+      "expect": -406.5146768818107,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        939,
+        -521.3
+      ],
+      "expect": -301.0555981599512,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        130,
+        -70.4
+      ],
+      "expect": -122.46746886234858,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        715,
+        -417.4
+      ],
+      "expect": -602.3534638601103,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        283,
+        202.8
+      ],
+      "expect": -109.66691096594514,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        160,
+        -598.5
+      ],
+      "expect": 136.42242629665478,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        88,
+        -843.5
+      ],
+      "expect": -73.38195234191087,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "function range count", "function": "functionRangeCount", "args": [["o", "local:FunctionCov", [["functionName", ["s", "run"]], ["ranges", ["a", [["o", "local:RangeCov", [["startOffset", ["n", 0]], ["endOffset", ["n", 2]], ["count", ["n", 1]]]], ["o", "local:RangeCov", [["startOffset", ["n", 2]], ["endOffset", ["n", 4]], ["count", ["n", 1]]]]]]], ["isBlockCoverage", ["b", true]]]]], "expect": ["n", 2]},
+    {"name": "empty function ranges", "function": "functionRangeCount", "args": [["o", "local:FunctionCov", [["functionName", ["s", "empty"]], ["ranges", ["a", []]], ["isBlockCoverage", ["b", false]]]]], "expect": ["n", 0]},
+    {"name": "function factory", "function": "makeFunction", "args": [["s", "f"], ["a", [["o", "local:RangeCov", [["startOffset", ["n", 0]], ["endOffset", ["n", 1]], ["count", ["n", 1]]]]]], ["b", true]], "expect": ["o", "local:FunctionCov", [["functionName", ["s", "f"]], ["ranges", ["a", [["o", "local:RangeCov", [["startOffset", ["n", 0]], ["endOffset", ["n", 1]], ["count", ["n", 1]]]]]]], ["isBlockCoverage", ["b", true]]]]}
+  ]
+}

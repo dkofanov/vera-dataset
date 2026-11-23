@@ -1,0 +1,26 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "bf0a8f63b5672d5e8d6e27dd218f6e92aea753d2515dc8368524c9cda8558c73",
+  "contracts": [
+    {
+      "name": "signedDeviation",
+      "signature": "function signedDeviation(observed: number, target: number): number",
+      "paramNames": [
+        "observed",
+        "target"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged."
+  ]
+}

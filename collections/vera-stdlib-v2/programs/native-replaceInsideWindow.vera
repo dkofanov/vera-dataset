@@ -1,0 +1,3 @@
+function replaceInsideWindow(text: string, start: number, end: number, search: string, replacement: string): string {
+  return strings.substring(text, 0, start) + strings.replace(strings.substring(text, start, end), search, replacement) + strings.substring(text, end, strings.length(text));
+}

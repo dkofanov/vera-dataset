@@ -1,0 +1,208 @@
+{
+  "schema": "vera-dataset-catalogue-v1",
+  "status": "draft-license-pending",
+  "policy": "Active records only; original collection splits preserved; not a joint leakage-safe benchmark.",
+  "exclusions": [
+    "quarantine",
+    "rejected candidates and variants",
+    "unreferenced artifacts",
+    "archives",
+    "mixed raw teacher logs",
+    "historical aggregate reports containing rejected records"
+  ],
+  "collections": [
+    {
+      "name": "vera-sections-v1",
+      "path": "collections/vera-sections-v1",
+      "records": 88,
+      "examples": 220,
+      "examplesBySplit": {
+        "train": 161,
+        "validation": 40,
+        "test": 19
+      },
+      "testCases": 784,
+      "recordsSourceSha256": "042f7e2b7b9201f5d1c074a5ae9b329a614d10e0efe314d6a66e1bac836fdb63",
+      "programsAndTestsBytePreserved": true,
+      "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+      "origin": "Upstream-backed manual/cloud adaptations, classes and composed modules"
+    },
+    {
+      "name": "vera-stdlib-v1",
+      "path": "collections/vera-stdlib-v1",
+      "records": 20,
+      "examples": 60,
+      "examplesBySplit": {
+        "train": 36,
+        "validation": 3,
+        "test": 21
+      },
+      "testCases": 1219,
+      "recordsSourceSha256": "78287e5d62e0ff24ae09d01e086ff385f3512b96384d168d358ce41e0f20a2da",
+      "programsAndTestsBytePreserved": true,
+      "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+      "origin": "20 genuine TypeScript function adaptations"
+    },
+    {
+      "name": "vera-stdlib-v2",
+      "path": "collections/vera-stdlib-v2",
+      "records": 110,
+      "examples": 110,
+      "examplesBySplit": {
+        "train": 92,
+        "validation": 8,
+        "test": 10
+      },
+      "testCases": 7934,
+      "recordsSourceSha256": "6514f6927e7f6f5ef283e83ab13bae749dfb68e2c7e7c9a61e5227b0b63f62c9",
+      "programsAndTestsBytePreserved": true,
+      "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+      "origin": "13 upstream-derived and 97 explicitly authored VERA-native tasks"
+    },
+    {
+      "name": "vera-stdlib-illustrative-v1",
+      "path": "collections/vera-stdlib-illustrative-v1",
+      "records": 111,
+      "examples": 111,
+      "examplesBySplit": {
+        "train": 111,
+        "validation": 0,
+        "test": 0
+      },
+      "testCases": 11338,
+      "recordsSourceSha256": "31aa9209207cf36f4d38b1e706b2b89692c73b4526cac51c17ea5425747eb808",
+      "programsAndTestsBytePreserved": true,
+      "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+      "origin": "111 teacher-authored training-only variants of 38 existing v2 parents; zero independent new tasks"
+    }
+  ],
+  "totals": {
+    "records": 329,
+    "examples": 501,
+    "examplesBySplit": {
+      "train": 400,
+      "validation": 51,
+      "test": 50
+    },
+    "testCases": 21275
+  },
+  "knownSourceLinks": [
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/algorithms/degreesToRadians",
+        "split": "validation"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/degrees-to-radians",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/algorithms/radiansToDegrees",
+        "split": "validation"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/radians-to-degrees",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/algorithms/isPalindrome",
+        "split": "train"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/is-palindrome",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/algorithms/perfectCube",
+        "split": "train"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/perfect-cube",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/algorithms/perfectSquare",
+        "split": "train"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/perfect-square",
+        "split": "test"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/es-toolkit/drop",
+        "split": "train"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/drop",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/es-toolkit/initial",
+        "split": "train"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/initial",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/es-toolkit/upperFirst",
+        "split": "test"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/upper-first",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    },
+    {
+      "from": {
+        "collection": "vera-stdlib-v2",
+        "id": "function/es-toolkit/lowerFirst",
+        "split": "test"
+      },
+      "to": {
+        "collection": "vera-sections-v1",
+        "id": "function/lower-first",
+        "split": "train"
+      },
+      "warning": "Preserved cross-collection provenance link; not a jointly deduplicated evaluation."
+    }
+  ]
+}

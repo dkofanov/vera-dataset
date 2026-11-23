@@ -1,0 +1,905 @@
+{
+  "id": "illustrative/blankOrFallback-v1",
+  "cases": [
+    {
+      "args": [
+        " x ",
+        " "
+      ],
+      "expected": " x ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "x",
+        " y "
+      ],
+      "expected": "y",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "x",
+        "﻿"
+      ],
+      "expected": "﻿",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "",
+        ""
+      ],
+      "expected": "",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "/B中",
+        "  "
+      ],
+      "expected": "/B中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "éaéßß.$.B/",
+        ",$a,😀  中😀,a,İ.."
+      ],
+      "expected": ",$a,😀  中😀,a,İ..",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "é/",
+        "İé/a $😀İ"
+      ],
+      "expected": "İé/a $😀İ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "中ß😀.  BB中😀,aİ ",
+        "  "
+      ],
+      "expected": "中ß😀.  BB中😀,aİ ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "😀İ😀中é İ.ßß",
+        "  "
+      ],
+      "expected": "😀İ😀中é İ.ßß",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "$Bİa ,İİ😀.",
+        " İ.ß İ B/$ "
+      ],
+      "expected": "İ.ß İ B/$",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "$中İéB中ßéİ中./ß",
+        "é.a,😀é中 😀éİİ."
+      ],
+      "expected": "é.a,😀é中 😀éİİ.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "$ß/B中",
+        ",.İa$"
+      ],
+      "expected": ",.İa$",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " ßé",
+        "  "
+      ],
+      "expected": " ßé",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "a",
+        "  "
+      ],
+      "expected": "a",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "",
+        "  "
+      ],
+      "expected": "",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "😀/😀,$ßaB/",
+        "  "
+      ],
+      "expected": "😀/😀,$ßaB/",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ",中İé,ß😀中中a//.İ/",
+        "  "
+      ],
+      "expected": ",中İé,ß😀中中a//.İ/",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ".ß$中İİİa",
+        "é中Ba "
+      ],
+      "expected": "é中Ba",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "中aB 😀aß$.$",
+        "  "
+      ],
+      "expected": "中aB 😀aß$.$",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " ß😀 ßé$ .$/",
+        "ßB中"
+      ],
+      "expected": "ßB中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " BBéİ",
+        "  "
+      ],
+      "expected": " BBéİ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "İ.ß😀 ,Bé, aéß中",
+        ",ééBİ"
+      ],
+      "expected": ",ééBİ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "$中.,.İB/中İß$éßß",
+        " "
+      ],
+      "expected": "$中.,.İB/中İß$éßß",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "éB$$😀/中/ 😀,",
+        "/😀é"
+      ],
+      "expected": "/😀é",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ",😀/  İ,B,ß.",
+        "  "
+      ],
+      "expected": ",😀/  İ,B,ß.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "İ ßß ,$İ中/中",
+        ""
+      ],
+      "expected": "İ ßß ,$İ中/中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "中",
+        "  "
+      ],
+      "expected": "中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "İ 😀/",
+        "a $ß中a $中"
+      ],
+      "expected": "a $ß中a $中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " İB😀./é中$",
+        "a😀.é,.aBßé"
+      ],
+      "expected": "a😀.é,.aBßé",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "ß,.İaB.😀,,/,😀",
+        "  "
+      ],
+      "expected": "ß,.İaB.😀,,/,😀",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "",
+        "😀Bßé😀/,BB"
+      ],
+      "expected": "😀Bßé😀/,BB",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "$İß中é, //$",
+        "  "
+      ],
+      "expected": "$İß中é, //$",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "中İaa .",
+        "/$,İ/B"
+      ],
+      "expected": "/$,İ/B",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "é😀İ,$中😀a.中😀$😀😀",
+        "/ß"
+      ],
+      "expected": "/ß",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " ß😀中Bİ",
+        "  "
+      ],
+      "expected": " ß😀中Bİ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "Béa😀",
+        "  "
+      ],
+      "expected": "Béa😀",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "/ß,İéé a",
+        "中"
+      ],
+      "expected": "中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "   中 😀ß😀/İ😀",
+        "😀éİßé中,/İ "
+      ],
+      "expected": "😀éİßé中,/İ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "ß😀.ßéİİ Bé$/",
+        "中"
+      ],
+      "expected": "中",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "B é$中.",
+        "  "
+      ],
+      "expected": "B é$中.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "ß 中/,/😀😀a aßa$",
+        "  "
+      ],
+      "expected": "ß 中/,/😀😀a aßa$",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "😀a😀/,ßa,İ/,,",
+        ""
+      ],
+      "expected": "😀a😀/,ßa,İ/,,",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "Béİa",
+        "ß,..,aaß$$é."
+      ],
+      "expected": "ß,..,aaß$$é.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "ß😀éİ",
+        "  "
+      ],
+      "expected": "ß😀éİ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ",aİİB.Béa$ß/😀a,",
+        "😀ß/"
+      ],
+      "expected": "😀ß/",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "é中./é.",
+        "/$éBéa,é$"
+      ],
+      "expected": "/$éBéa,é$",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ",😀İB 😀/é$é.,./",
+        "  "
+      ],
+      "expected": ",😀İB 😀/é$é.,./",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "Bİ,中中$$a,ßé,/",
+        ".$/$ ß.é中.,.a/."
+      ],
+      "expected": ".$/$ ß.é中.,.a/.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "é,, 😀/.,",
+        "  "
+      ],
+      "expected": "é,, 😀/.,",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ".B.😀,,中 中",
+        ".Ba a.İ/.,$ a"
+      ],
+      "expected": ".Ba a.İ/.,$ a",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "/a😀,..İİ",
+        "ß中,"
+      ],
+      "expected": "ß中,",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "//$ßé,B",
+        ".B/. /"
+      ],
+      "expected": ".B/. /",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ",B.ßé/İéa,$.ß😀.",
+        "中İß ,B中a.İ..😀"
+      ],
+      "expected": "中İß ,B中a.İ..😀",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "İ",
+        "  "
+      ],
+      "expected": "İ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "/,aa$😀😀.,/.",
+        "中İß$."
+      ],
+      "expected": "中İß$.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "ß,ß$😀中",
+        "ß😀😀"
+      ],
+      "expected": "ß😀😀",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "é$$ 中😀中Ba😀. é",
+        "  "
+      ],
+      "expected": "é$$ 中😀中Ba😀. é",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "İ$İ",
+        "  "
+      ],
+      "expected": "İ$İ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "Baaİ ",
+        "Ba中中ßİaé B"
+      ],
+      "expected": "Ba中中ßİaé B",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ".😀/中,",
+        "  "
+      ],
+      "expected": ".😀/中,",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ".İß😀.İ 😀B",
+        "  "
+      ],
+      "expected": ".İß😀.İ 😀B",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "😀 .aa./$$$İß/é",
+        "  "
+      ],
+      "expected": "😀 .aa./$$$İß/é",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "/B😀,ßéB中İ",
+        "  "
+      ],
+      "expected": "/B😀,ßéB中İ",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        ". é.",
+        "  "
+      ],
+      "expected": ". é.",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "é$ßa😀a😀,ß.",
+        "/,éB😀中.é中İBßa"
+      ],
+      "expected": "/,éB😀中.é中İBßa",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " é😀ßİé",
+        "  "
+      ],
+      "expected": " é😀ßİé",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "中 /aéé.😀",
+        "  "
+      ],
+      "expected": "中 /aéé.😀",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        " é中,ßé$ ,/aé",
+        "  "
+      ],
+      "expected": " é中,ßé$ ,/aé",
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        "éBß中$  .$中😀/İa😀",
+        "$,,,$éß $.."
+      ],
+      "expected": "$,,,$éß $..",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        " ß.éİİ é.$$B$,😀",
+        "  "
+      ],
+      "expected": " ß.éİİ é.$$B$,😀",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "😀, İaß,B😀/B,",
+        "$,中Ba中a"
+      ],
+      "expected": "$,中Ba中a",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        ",😀",
+        "  "
+      ],
+      "expected": ",😀",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "$ ,  中$Bİé",
+        "  "
+      ],
+      "expected": "$ ,  中$Bİé",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "$//B./aB😀",
+        "  "
+      ],
+      "expected": "$//B./aB😀",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        " ",
+        "//,."
+      ],
+      "expected": "//,.",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "中ßİ aİ/ßBB.中é",
+        "İ$/$.,a😀İé/a"
+      ],
+      "expected": "İ$/$.,a😀İé/a",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "İ中aaİ  ,İ$a",
+        "  "
+      ],
+      "expected": "İ中aaİ  ,İ$a",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "",
+        " é中éß.,../,😀"
+      ],
+      "expected": "é中éß.,../,😀",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "İéé",
+        "  "
+      ],
+      "expected": "İéé",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        " 中$B,,中$İ,$/",
+        "  "
+      ],
+      "expected": " 中$B,,中$İ,$/",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "/",
+        "  "
+      ],
+      "expected": "/",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "//😀.é中éİ$B,Bß/B",
+        "$😀,,İ./中"
+      ],
+      "expected": "$😀,,İ./中",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        ",😀é 😀$Ba😀Bé/ßéß",
+        "/"
+      ],
+      "expected": "/",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        ".ßé/a中$a",
+        "  "
+      ],
+      "expected": ".ßé/a中$a",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "İé😀aB,",
+        "  "
+      ],
+      "expected": "İé😀aB,",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "ßa中😀ß.é,.",
+        "中a é 中İ"
+      ],
+      "expected": "中a é 中İ",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        " ",
+        "  "
+      ],
+      "expected": " ",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "./İ$aB ß😀$$.a",
+        "...İ B"
+      ],
+      "expected": "...İ B",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "İ 中a😀ßé$中 aé",
+        "B/$B😀,"
+      ],
+      "expected": "B/$B😀,",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "ß😀éé😀.中",
+        "  "
+      ],
+      "expected": "ß😀éé😀.中",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "/",
+        "中.$中İé"
+      ],
+      "expected": "中.$中İé",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        ",a中a,",
+        "  "
+      ],
+      "expected": ",a中a,",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        ",中é/ß",
+        "  "
+      ],
+      "expected": ",中é/ß",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "İ中中",
+        "  "
+      ],
+      "expected": "İ中中",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        " a",
+        "  "
+      ],
+      "expected": " a",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        " .é 😀😀",
+        ",$,Ba/中"
+      ],
+      "expected": ",$,Ba/中",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        ".,.Bé .,中$.",
+        "  "
+      ],
+      "expected": ".,.Bé .,中$.",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "aßBa",
+        "中İİB"
+      ],
+      "expected": "中İİB",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "a.İ 😀😀😀 😀é,中éB",
+        "é中.ßßaİ$"
+      ],
+      "expected": "é中.ßßaİ$",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        "ß  .中é $,//BB",
+        "aa/ 😀😀. ß/a/"
+      ],
+      "expected": "aa/ 😀😀. ß/a/",
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    }
+  ]
+}

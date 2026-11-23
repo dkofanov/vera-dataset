@@ -1,0 +1,3 @@
+function inspectTrimUnicodeSpace(message: string): string {
+  return strings.trim(message);
+}

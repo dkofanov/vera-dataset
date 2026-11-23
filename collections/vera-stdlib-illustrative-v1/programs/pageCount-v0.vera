@@ -1,0 +1,7 @@
+function inspectPageCount(itemsInput: number, pageSizeInput: number): number {
+  let pages: number = math.floor(itemsInput / pageSizeInput);
+  if (itemsInput % pageSizeInput !== 0) {
+    pages = pages + 1;
+  }
+  return pages;
+}

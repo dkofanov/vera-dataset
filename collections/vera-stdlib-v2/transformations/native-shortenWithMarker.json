@@ -1,0 +1,41 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "18ff5ce8a15326e437854158c980ddb5fbb425d499bca86b16b971eec7330e13",
+  "contracts": [
+    {
+      "name": "shortenWithMarker",
+      "signature": "function shortenWithMarker(text: string, limit: number, marker: string): string",
+      "paramNames": [
+        "text",
+        "limit",
+        "marker"
+      ],
+      "paramTypes": [
+        "string",
+        "number",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, 0, limit - strings.length(marker))"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(marker)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Limit is an integer from 0 through 64 and marker length is at most limit."
+  ]
+}

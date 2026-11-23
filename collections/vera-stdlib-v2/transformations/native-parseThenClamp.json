@@ -1,0 +1,43 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "b1b93d3d6e6817f5b481db386364a857d4473e6657f3463e8bf25ee72acf3e2d",
+  "contracts": [
+    {
+      "name": "parseThenClamp",
+      "signature": "function parseThenClamp(text: string, fallback: number, lower: number, upper: number): number",
+      "paramNames": [
+        "text",
+        "fallback",
+        "lower",
+        "upper"
+      ],
+      "paramTypes": [
+        "string",
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(upper, math.max(lower, strings.toNumber(text, fallback)))"
+    },
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(lower, strings.toNumber(text, fallback))"
+    },
+    {
+      "sourceApi": "strings.toNumber",
+      "text": "strings.toNumber(text, fallback)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Text is at most 20 characters and any accepted value is finite. Numeric arguments are finite from -1000 through 1000; lower <= upper."
+  ]
+}

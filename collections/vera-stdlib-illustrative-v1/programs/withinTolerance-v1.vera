@@ -1,0 +1,1 @@
+function evaluateWithinTolerance(toleranceValue: number, targetValue: number, observedValue: number): boolean { let difference: number = math.abs(observedValue - targetValue); return difference <= toleranceValue; }

@@ -1,0 +1,4 @@
+function inspectHorizontalOffset(radiusInput: number, angleInput: number): number {
+  let horizontal: number = radiusInput * math.cos(angleInput);
+  return horizontal;
+}

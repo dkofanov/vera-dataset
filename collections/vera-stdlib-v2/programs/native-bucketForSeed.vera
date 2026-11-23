@@ -1,0 +1,3 @@
+function bucketForSeed(seed: number, bound: number): number {
+  return math.randomBelow(seed, bound);
+}

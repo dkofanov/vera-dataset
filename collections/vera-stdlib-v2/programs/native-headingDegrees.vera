@@ -1,0 +1,3 @@
+function headingDegrees(dx: number, dy: number): number {
+  return math.atan2(dy, dx) * 180 / math.pi();
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "f974eec7b2ab9a889ec927029a8baf16e3d241dc2805fe8d5a19a2594f8a5a46",
+  "contracts": [
+    {
+      "name": "growthDifference",
+      "signature": "function growthDifference(initial: number, rate: number, periods: number): number",
+      "paramNames": [
+        "initial",
+        "rate",
+        "periods"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.pow",
+      "text": "math.pow(1 + rate, periods)"
+    }
+  ],
+  "preconditions": [
+    "Initial is between 0 and 1000; rate is between -0.5 and 0.5; periods is an integer from 0 through 20."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "fib zero", "function": "nthFibonacciRecursively", "args": [["n", 0]], "expect": ["n", 0]},
+    {"name": "fib one", "function": "nthFibonacciRecursively", "args": [["n", 1]], "expect": ["n", 1]},
+    {"name": "fib two", "function": "nthFibonacciRecursively", "args": [["n", 2]], "expect": ["n", 1]},
+    {"name": "fib five", "function": "nthFibonacciRecursively", "args": [["n", 5]], "expect": ["n", 5]},
+    {"name": "fib ten", "function": "nthFibonacciRecursively", "args": [["n", 10]], "expect": ["n", 55]},
+    {"name": "fib fifteen", "function": "nthFibonacciRecursively", "args": [["n", 15]], "expect": ["n", 610]}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {"name": "twenty seven", "function": "perfectCube", "args": [["n", 27]], "expect": ["b", true]},
+    {"name": "nine", "function": "perfectCube", "args": [["n", 9]], "expect": ["b", false]},
+    {"name": "eight", "function": "perfectCube", "args": [["n", 8]], "expect": ["b", true]},
+    {"name": "sixty four", "function": "perfectCube", "args": [["n", 64]], "expect": ["b", true]},
+    {"name": "one hundred twenty five", "function": "perfectCube", "args": [["n", 125]], "expect": ["b", true]}
+  ]
+}

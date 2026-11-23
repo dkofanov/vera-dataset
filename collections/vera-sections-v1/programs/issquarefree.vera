@@ -1,0 +1,23 @@
+function isSquareFree(n: number): boolean {
+  let m: number = n
+  if (m < 0) {
+    return false
+  }
+  if (m % 2 === 0) {
+    m = m / 2
+  }
+  if (m % 2 === 0) {
+    return false
+  }
+  let i: number = 3
+  while (i <= math.sqrt(m)) {
+    if (m % i === 0) {
+      m = m / i
+      if (m % i === 0) {
+        return false
+      }
+    }
+    i = i + 2
+  }
+  return true
+}

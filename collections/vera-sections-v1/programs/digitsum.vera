@@ -1,0 +1,9 @@
+function digitSum(num: number): number {
+  let n: number = num
+  let sum: number = 0
+  while (n !== 0) {
+    sum = sum + (n % 10)
+    n = math.floor(n / 10)
+  }
+  return sum
+}

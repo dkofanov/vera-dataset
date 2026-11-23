@@ -1,0 +1,193 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        5
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        7
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "curated 3",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          123
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          1000
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          999
+        ]
+      ],
+      "expect": [
+        "n",
+        27
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          102030
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "digitSum",
+      "args": [
+        [
+          "n",
+          987654
+        ]
+      ],
+      "expect": [
+        "n",
+        39
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

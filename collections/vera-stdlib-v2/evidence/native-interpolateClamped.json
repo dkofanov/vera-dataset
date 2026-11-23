@@ -1,0 +1,44 @@
+{
+  "id": "function/vera-native/interpolateClamped",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Clamp fraction to [0,1], then return start + (stop - start) * clampedFraction. Start may be greater than stop. Preserve this arithmetic order.",
+    "domain": "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged.",
+    "inputRoles": {
+      "start": "output at fraction zero",
+      "stop": "output at fraction one",
+      "fraction": "possibly out-of-range progress to clamp"
+    },
+    "outputRole": "start plus delta times clamped fraction",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [
+    {
+      "kind": "swapped-arguments",
+      "swap": [
+        0,
+        1
+      ],
+      "caseIndex": 0,
+      "wrongArgs": [
+        20,
+        10,
+        0.25
+      ],
+      "wrongExpect": 17.5,
+      "negativeZeroPaths": []
+    }
+  ],
+  "reference": {
+    "language": "JavaScript",
+    "source": "function(...args) { const cp = s => Array.from(s);\nconst trim = s => s.replace(/^[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+|[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+$/gu, '');\nconst split = (s, sep) => sep === '' ? cp(s) : s.split(sep);\nconst replace = (s, a, b) => a === '' ? s : s.split(a).join(b);\nconst parse = (s, fallback) => { let t = s.replace(/\\s/g, ''); if (!t.includes('.')) t = t.replace(',', '.'); return /^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/.test(t) ? parseFloat(t) : fallback; };\nconst step = seed => { let x = seed | 0; if (x === 0) x = 0x2545F491; x ^= x << 13; x ^= x >>> 17; x ^= x << 5; return x | 0; };\nreturn ((start, stop, fraction) => start + (stop - start) * Math.min(1, Math.max(0, fraction)))(...args); }",
+    "sha256": "ac1dff96266112f5e5915e6e40400ae0654a8d34fb58a75ea04325db7befb629"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

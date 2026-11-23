@@ -1,0 +1,8 @@
+{
+  "tests": [
+    {"name": "single", "function": "isSortedArray", "args": [["a", [["n", 100]]]], "expect": ["b", true]},
+    {"name": "unsorted", "function": "isSortedArray", "args": [["a", [["n", 9], ["n", 2], ["n", 3]]]], "expect": ["b", false]},
+    {"name": "sorted", "function": "isSortedArray", "args": [["a", [["n", 1], ["n", 2], ["n", 3]]]], "expect": ["b", true]},
+    {"name": "duplicates are not strictly sorted", "function": "isSortedArray", "args": [["a", [["n", 1], ["n", 2], ["n", 2]]]], "expect": ["b", false]}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "function/vera-native/trimUnicodeSpace",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Remove leading and trailing Unicode White_Space characters, preserving interior text. Include U+0085 as whitespace; do not remove U+FEFF. The whitespace set is U+0009..U+000D, U+0020, U+0085, U+00A0, U+1680, U+2000..U+200A, U+2028, U+2029, U+202F, U+205F, U+3000.",
+    "domain": "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded.",
+    "inputRoles": {
+      "text": "source text"
+    },
+    "outputRole": "source without edge Unicode White_Space",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "text => text.replace(/^[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+|[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+$/gu, '')",
+    "sha256": "4b2cd982f5520646995d783982ed475986329a5a48759693f59fc4367908cae1"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

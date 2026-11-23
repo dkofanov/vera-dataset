@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "9a22c847337ef50b2bd16b91f76059de1cfd7e3b6a90a9acc7a1edcbc50e19c4",
+  "contracts": [
+    {
+      "name": "horizontalOffset",
+      "signature": "function horizontalOffset(radius: number, angle: number): number",
+      "paramNames": [
+        "radius",
+        "angle"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.cos",
+      "text": "math.cos(angle)"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated."
+  ]
+}

@@ -1,0 +1,7 @@
+function measureOverLimitAmount(limitArg: number, usedArg: number): number {
+  let overage: number = usedArg - limitArg;
+  if (overage > 0) {
+    return overage;
+  }
+  return 0;
+}

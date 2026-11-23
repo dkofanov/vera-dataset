@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "6af77f6f65dce28477a28fb18878e95961b8c8f98d00826ef753698b532daf97",
+  "contracts": [
+    {
+      "name": "literalOccurrenceCount",
+      "signature": "function literalOccurrenceCount(text: string, search: string): number",
+      "paramNames": [
+        "text",
+        "search"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, search)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Search is nonempty."
+  ]
+}

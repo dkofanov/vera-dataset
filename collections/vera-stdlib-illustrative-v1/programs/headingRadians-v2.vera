@@ -1,0 +1,6 @@
+function measureHeadingRadians(dyArg: number, dxArg: number): number {
+  if (dxArg === 0 && dyArg === 0) {
+    return 0;
+  }
+  return math.atan2(dyArg, dxArg);
+}

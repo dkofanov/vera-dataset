@@ -1,0 +1,4 @@
+function inspectTrimmedUppercase(message: string): string {
+  let trimmed: string = strings.trim(message);
+  return strings.toUpperCase(trimmed);
+}

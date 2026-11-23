@@ -1,0 +1,37 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "c9e5984fdcdb4f397bd4b5edcd59034509ae03f0643ed6e760f5b84d7ef1ce35",
+  "contracts": [
+    {
+      "name": "interpolateClamped",
+      "signature": "function interpolateClamped(start: number, stop: number, fraction: number): number",
+      "paramNames": [
+        "start",
+        "stop",
+        "fraction"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(1, math.max(0, fraction))"
+    },
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(0, fraction)"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged."
+  ]
+}

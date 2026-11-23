@@ -1,0 +1,4 @@
+function evaluateTrimmedLowercase(content: string): string {
+  let trimmed: string = strings.trim(content);
+  return strings.toLowerCase(trimmed);
+}

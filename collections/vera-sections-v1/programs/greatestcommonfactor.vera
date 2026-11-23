@@ -1,0 +1,20 @@
+function binaryGCF(a: number, b: number): number {
+  let x: number = math.abs(a);
+  let y: number = math.abs(b);
+  while (y !== 0) {
+    let t: number = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
+
+function greatestCommonFactor(nums: number[]): number {
+  let result: number = 0;
+  let i: number = 0;
+  while (i < nums.length()) {
+    result = binaryGCF(result, nums[i]);
+    i = i + 1;
+  }
+  return result;
+}

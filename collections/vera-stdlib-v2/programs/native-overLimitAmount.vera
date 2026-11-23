@@ -1,0 +1,3 @@
+function overLimitAmount(used: number, limit: number): number {
+  return math.max(used - limit, 0);
+}

@@ -1,0 +1,3 @@
+function inspectCharacterWindow(message: string, first: number, stopAt: number): string {
+  return strings.substring(message, first, stopAt);
+}

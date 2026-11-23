@@ -1,0 +1,3 @@
+function measureCharacterWindow(fromPosition: number, limitPosition: number, phrase: string): string {
+  return strings.substring(phrase, fromPosition, limitPosition);
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "b432ddd838713cb67d1f12729b9d9044799a6091ee3f0a1227458d584ca08b08",
+  "contracts": [
+    {
+      "name": "clampEachValue",
+      "signature": "function clampEachValue(values: number[], lower: number, upper: number): number[]",
+      "paramNames": [
+        "values",
+        "lower",
+        "upper"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(math.max(value, lower), upper)"
+    },
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(value, lower)"
+    }
+  ],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Bounds are finite between -100 and 100 with lower <= upper."
+  ]
+}

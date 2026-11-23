@@ -1,0 +1,39 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "6d4b3bbd501ebca6c9adbf660cf30ea449d37aaa82db4cf8d58ce9c4a2297f78",
+  "contracts": [
+    {
+      "name": "prefixCharacters",
+      "signature": "function prefixCharacters(text: string, count: number): string",
+      "paramNames": [
+        "text",
+        "count"
+      ],
+      "paramTypes": [
+        "string",
+        "number"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, 0, math.min(count, strings.length(text)))"
+    },
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(count, strings.length(text))"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Count is an integer from 0 through 64."
+  ]
+}

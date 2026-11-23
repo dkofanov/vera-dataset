@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "lower word", "function": "capitalize", "args": [["s", "fred"]], "expect": ["s", "Fred"]},
+    {"name": "upper word", "function": "capitalize", "args": [["s", "FRED"]], "expect": ["s", "Fred"]},
+    {"name": "special", "function": "capitalize", "args": [["s", "special@characters!"]], "expect": ["s", "Special@characters!"]},
+    {"name": "hyphen", "function": "capitalize", "args": [["s", "hyphen-text"]], "expect": ["s", "Hyphen-text"]},
+    {"name": "leading space", "function": "capitalize", "args": [["s", " fred"]], "expect": ["s", " fred"]},
+    {"name": "empty", "function": "capitalize", "args": [["s", ""]], "expect": ["s", ""]}
+  ]
+}

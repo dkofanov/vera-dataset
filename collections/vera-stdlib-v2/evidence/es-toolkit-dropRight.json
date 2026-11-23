@@ -1,0 +1,124 @@
+{
+  "id": "function/es-toolkit/dropRight",
+  "symbol": {
+    "project": "toss/es-toolkit",
+    "repository": "https://github.com/toss/es-toolkit",
+    "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+    "path": "src/array/dropRight.ts",
+    "export": "dropRight",
+    "sourceFileSha256": "5eb748d9ee70c60419cfe5b64453c8207533450c74f4e2997d242237970ed8e5",
+    "declarationSha256": "75ec1891d7e8793f4294108e2deaf4f3c42902364b45651f6666e0a7dac6952b",
+    "start": 668,
+    "end": 876
+  },
+  "documentation": "/**\n * Removes a specified number of elements from the end of an array and returns the rest.\n *\n * This function takes an array and a number, and returns a new array with the specified number\n * of elements removed from the end.\n *\n * @template T - The type of elements in the array.\n * @param arr - The array from which to drop elements.\n * @param itemsCount - The number of elements to drop from the end of the array.\n * @returns A new array with the specified number of elements removed from the end.\n *\n * @example\n * const array = [1, 2, 3, 4, 5];\n * const result = dropRight(array, 2);\n * // result will be [1, 2, 3] since the last two elements are dropped.\n */",
+  "originalSource": "export function dropRight<T>(arr: readonly T[], itemsCount: number): T[] {\n  itemsCount = Math.min(-itemsCount, 0);\n\n  if (itemsCount === 0) {\n    return arr.slice();\n  }\n\n  return arr.slice(0, itemsCount);\n}",
+  "sourceUses": [
+    {
+      "api": "Math.min",
+      "kind": "call",
+      "receiverKind": "math",
+      "receiverType": "Math",
+      "sourceSpan": {
+        "sourcePath": "src/array/dropRight.ts",
+        "start": 758,
+        "end": 782,
+        "startLine": 18,
+        "startColumn": 16,
+        "endLine": 18,
+        "endColumn": 40
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/dropRight.ts",
+        "start": 758,
+        "end": 766,
+        "startLine": 18,
+        "startColumn": 16,
+        "endLine": 18,
+        "endColumn": 24
+      },
+      "text": "Math.min(-itemsCount, 0)",
+      "arguments": [
+        "-itemsCount",
+        "0"
+      ]
+    },
+    {
+      "api": "Array.prototype.slice",
+      "kind": "call",
+      "receiverKind": "array",
+      "receiverType": "readonly T[]",
+      "sourceSpan": {
+        "sourcePath": "src/array/dropRight.ts",
+        "start": 822,
+        "end": 833,
+        "startLine": 21,
+        "startColumn": 12,
+        "endLine": 21,
+        "endColumn": 23
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/dropRight.ts",
+        "start": 822,
+        "end": 831,
+        "startLine": 21,
+        "startColumn": 12,
+        "endLine": 21,
+        "endColumn": 21
+      },
+      "text": "arr.slice()",
+      "arguments": []
+    },
+    {
+      "api": "Array.prototype.slice",
+      "kind": "call",
+      "receiverKind": "array",
+      "receiverType": "readonly T[]",
+      "sourceSpan": {
+        "sourcePath": "src/array/dropRight.ts",
+        "start": 849,
+        "end": 873,
+        "startLine": 24,
+        "startColumn": 10,
+        "endLine": 24,
+        "endColumn": 34
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/dropRight.ts",
+        "start": 849,
+        "end": 858,
+        "startLine": 24,
+        "startColumn": 10,
+        "endLine": 24,
+        "endColumn": 19
+      },
+      "text": "arr.slice(0, itemsCount)",
+      "arguments": [
+        "0",
+        "itemsCount"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "src/array/dropRight.spec.ts",
+    "sha256": "666440fafb748ab3e9c0eee0f5a62d777eb04558dc98590b792171a433b3cfce",
+    "text": "import { describe, expect, it } from 'vitest';\nimport { dropRight } from './dropRight';\n\ndescribe('dropRight', () => {\n  it('should drop `itemsCount` elements from an array from the end', () => {\n    expect(dropRight([1.2, 2.3, 3.4], 1)).toEqual([1.2, 2.3]);\n    expect(dropRight(['a', 'b', 'c', 'd'], 2)).toEqual(['a', 'b']);\n  });\n\n  it('should return all elements if itemsCount < 1', () => {\n    expect(dropRight([1.2, 2.3, 3.4], 0)).toEqual([1.2, 2.3, 3.4]);\n    expect(dropRight([1.2, 2.3, 3.4], -1)).toEqual([1.2, 2.3, 3.4]);\n  });\n\n  it('should coerce itemsCount to an integer', () => {\n    expect(dropRight([1.2, 2.3, 3.4], 1.5)).toEqual([1.2, 2.3]);\n  });\n\n  it('should return empty array if itemsCount >= arr.length', () => {\n    expect(dropRight([1.2, 2.3, 3.4], 4)).toEqual([]);\n  });\n});\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return a copy after removing count elements from the end. Negative counts act as zero; counts at least as large as the length produce an empty array.",
+    "domain": "The input is a dense array of at most 128 finite numbers, each between -1000 and 1000. The input must not be modified. Return a fresh array even when its contents are unchanged. The count is an integer between -128 and 256.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "arr": "source sequence",
+      "itemsCount": "number of trailing elements to discard; negative acts as zero"
+    },
+    "outputRole": "fresh remaining prefix",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "b15c3bbd098304cb116445175c9d44dd66a7b0e0996b1769e230f229f8c74c20",
+  "contracts": [
+    {
+      "name": "firstMatchingField",
+      "signature": "function firstMatchingField(text: string, separator: string, query: string, fallback: string): string",
+      "paramNames": [
+        "text",
+        "separator",
+        "query",
+        "fallback"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    },
+    {
+      "sourceApi": "strings.contains",
+      "text": "strings.contains(field, query)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty."
+  ]
+}

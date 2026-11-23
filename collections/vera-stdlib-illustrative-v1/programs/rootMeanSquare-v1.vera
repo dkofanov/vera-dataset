@@ -1,0 +1,6 @@
+function evaluateRootMeanSquare(bValue: number, aValue: number): number {
+  let bSquared: number = bValue * bValue;
+  let aSquared: number = aValue * aValue;
+  let average: number = (bSquared + aSquared) / 2;
+  return math.sqrt(average);
+}

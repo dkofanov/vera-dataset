@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "339f805f24db8d5b04b3a00fb6a6b2b0f460cd38ecbab16db44eacac92752997",
+  "contracts": [
+    {
+      "name": "batchesWithReserve",
+      "signature": "function batchesWithReserve(items: number, reserve: number, batchSize: number): number",
+      "paramNames": [
+        "items",
+        "reserve",
+        "batchSize"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.ceil",
+      "text": "math.ceil((items + reserve) / batchSize)"
+    }
+  ],
+  "preconditions": [
+    "Items and reserve are integers from 0 through 1000; batchSize is an integer from 1 through 1000. Inputs are unchanged."
+  ]
+}

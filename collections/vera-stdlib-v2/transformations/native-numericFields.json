@@ -1,0 +1,37 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "8cc5d2dae0bc66365f4e01925bf0fcb89cef665b1b1f199b6e1b2e750926a66d",
+  "contracts": [
+    {
+      "name": "numericFields",
+      "signature": "function numericFields(text: string, separator: string, fallback: number): number[]",
+      "paramNames": [
+        "text",
+        "separator",
+        "fallback"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    },
+    {
+      "sourceApi": "strings.toNumber",
+      "text": "strings.toNumber(field, fallback)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty. Each field has at most 20 characters; accepted values are finite between -1000 and 1000. Fallback is finite between -1000 and 1000."
+  ]
+}

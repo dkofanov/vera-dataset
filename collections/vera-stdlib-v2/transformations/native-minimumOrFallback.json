@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "e9642b7ee7a41a9b583276562c7234c70e425d50beca1d6f7ccc1da0cc8992a4",
+  "contracts": [
+    {
+      "name": "minimumOrFallback",
+      "signature": "function minimumOrFallback(values: number[], fallback: number): number",
+      "paramNames": [
+        "values",
+        "fallback"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(best, value)"
+    }
+  ],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Fallback is finite between -100 and 100."
+  ]
+}

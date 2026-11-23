@@ -1,0 +1,4 @@
+function suffixCharacters(text: string, count: number): string {
+  let size: number = strings.length(text);
+  return strings.substring(text, math.max(0, size - count), size);
+}

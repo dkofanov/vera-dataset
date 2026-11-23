@@ -1,0 +1,46 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "6ee0047c9eecb741eefef46c6b8d1e23f946a9c1b3657ec080a970b2037cb984",
+  "programSha256": "65a730831e48baab323a25664412ff78f16645f642286d09af0425b30b6cf3b8",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "degreesToRadians",
+      "signature": "function degreesToRadians(degrees: number): number",
+      "paramNames": [
+        "degrees"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "math.pi",
+      "sourceApi": "Math.PI",
+      "strategy": "constant",
+      "domain": "unrestricted",
+      "text": "Math.PI",
+      "start": 80,
+      "end": 87
+    }
+  ],
+  "helpers": [],
+  "normalization": {
+    "source": "export function degreesToRadians(degrees: number): number {\n  return (degrees * Math.PI) / 180\n}\n",
+    "sourceSha256": "6ee0047c9eecb741eefef46c6b8d1e23f946a9c1b3657ec080a970b2037cb984",
+    "adaptations": [
+      "Lift arrow-function block to a named function; body is unchanged.",
+      "Select the actual implementation body, not overload-only declarations."
+    ]
+  },
+  "originalDeclarationSha256": "4c2a981a1b8527a63c5e0c87c40aca25f1b28e57e5c3b63b83fafe2f3af09eed"
+}

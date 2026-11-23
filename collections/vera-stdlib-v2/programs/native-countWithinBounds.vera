@@ -1,0 +1,5 @@
+function countWithinBounds(values: number[], lower: number, upper: number): number {
+  let count: number = 0;
+  for (let value: number of values) { if (value >= lower && value <= upper) { count = count + 1; } }
+  return count;
+}

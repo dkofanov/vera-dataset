@@ -1,0 +1,67 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "0709b2c5d2dad04c17c18f2a26ab10db6eb435e64f32c77bc4e91bfa19612e7c",
+  "programSha256": "f4129a6d24446b167977727c4535a04871fdf00f16cbbeacdbabf8bf2385e903",
+  "textDomain": "bmp-no-surrogates",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits",
+    "all input and intermediate strings contain no UTF-16 surrogate code units"
+  ],
+  "contracts": [
+    {
+      "name": "upperFirst",
+      "signature": "function upperFirst(str: string): string",
+      "paramNames": [
+        "str"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "string.substring",
+      "sourceApi": "String.prototype.substring",
+      "strategy": "substring",
+      "domain": "BMP strings without surrogates; finite indices; omitted end supported",
+      "text": "str.substring(0, 1)",
+      "start": 59,
+      "end": 78
+    },
+    {
+      "rule": "string.toUpperCase",
+      "sourceApi": "String.prototype.toUpperCase",
+      "strategy": "direct",
+      "domain": "string operands; no optional position argument; host ECMAScript casing",
+      "text": "str.substring(0, 1).toUpperCase()",
+      "start": 59,
+      "end": 92
+    },
+    {
+      "rule": "string.substring",
+      "sourceApi": "String.prototype.substring",
+      "strategy": "substring",
+      "domain": "BMP strings without surrogates; finite indices; omitted end supported",
+      "text": "str.substring(1)",
+      "start": 95,
+      "end": 111
+    }
+  ],
+  "helpers": [
+    {
+      "id": "substring",
+      "sha256": "000ba5ab85485330eb665bf3340700afbc0c120e00160f6c1bfcfcb15daad62f"
+    }
+  ],
+  "normalization": {
+    "source": "export function upperFirst(str: string): string {\n  return str.substring(0, 1).toUpperCase() + str.substring(1);\n}\n",
+    "sourceSha256": "0709b2c5d2dad04c17c18f2a26ab10db6eb435e64f32c77bc4e91bfa19612e7c",
+    "adaptations": []
+  },
+  "originalDeclarationSha256": "07f61a0dd67267eb93b556e8905acae18c5ec3ec4913d9c46289b6527b90c28c"
+}

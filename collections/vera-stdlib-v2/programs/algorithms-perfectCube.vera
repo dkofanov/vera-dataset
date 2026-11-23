@@ -1,0 +1,3 @@
+function perfectCube(n: number): boolean {
+return (math.pow(math.round(math.pow(n, ((1 / 3)))), 3) === n);
+}

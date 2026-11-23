@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "24fc503e912f94c429edb73d0a07e8701d750d8ae8d79b9c9355516130b11611",
+  "contracts": [
+    {
+      "name": "decayedAmount",
+      "signature": "function decayedAmount(initial: number, retention: number, periods: number): number",
+      "paramNames": [
+        "initial",
+        "retention",
+        "periods"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.pow",
+      "text": "math.pow(retention, periods)"
+    }
+  ],
+  "preconditions": [
+    "Initial is between 0 and 1000; retention is between 0 and 1; periods is an integer from 0 through 20."
+  ]
+}

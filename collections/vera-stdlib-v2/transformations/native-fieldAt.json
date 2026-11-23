@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "83a3178ce21d83cd983da8d853cfa77f43bb1a135c267351c06e7a9f73a88f7e",
+  "contracts": [
+    {
+      "name": "fieldAt",
+      "signature": "function fieldAt(text: string, separator: string, index: number, fallback: string): string",
+      "paramNames": [
+        "text",
+        "separator",
+        "index",
+        "fallback"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "number",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty. Index is an integer from -2 through 70."
+  ]
+}

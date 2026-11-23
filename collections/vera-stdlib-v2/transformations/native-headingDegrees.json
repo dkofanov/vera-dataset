@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "072d4a95ac3abbe29e179b2f17bcb769f25e1fde46ef8f2467988cd089a7b319",
+  "contracts": [
+    {
+      "name": "headingDegrees",
+      "signature": "function headingDegrees(dx: number, dy: number): number",
+      "paramNames": [
+        "dx",
+        "dy"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.atan2",
+      "text": "math.atan2(dy, dx)"
+    },
+    {
+      "sourceApi": "math.pi",
+      "text": "math.pi()"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated. Inputs do not contain negative zero."
+  ]
+}

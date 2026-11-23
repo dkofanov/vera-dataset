@@ -1,0 +1,3 @@
+function rootMeanSquare(a: number, b: number): number {
+  return math.sqrt((a * a + b * b) / 2);
+}

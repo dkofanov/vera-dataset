@@ -1,0 +1,763 @@
+{
+  "tests": [
+    {
+      "suite": "curated",
+      "args": [
+        "abc",
+        "c"
+      ],
+      "expect": "abc",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "abc",
+        "x"
+      ],
+      "expect": "abcx",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "",
+        "x"
+      ],
+      "expect": "x",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "x",
+        ""
+      ],
+      "expect": "x",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "A",
+        "a"
+      ],
+      "expect": "Aa",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "é 😀😀a ß中İ ß中aİ",
+        ",éB. ,éaB/é.$😀$"
+      ],
+      "expect": "é 😀😀a ß中İ ß中aİ,éB. ,éaB/é.$😀$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "/a/😀ßB,a.",
+        "B中中İ"
+      ],
+      "expect": "/a/😀ßB,a.B中中İ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "Bİa/İa",
+        "中中İ 中,😀,"
+      ],
+      "expect": "Bİa/İa中中İ 中,😀,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀😀😀ßéé 中😀ß,ß$",
+        ",B  éßİ$.Bé中"
+      ],
+      "expect": "😀😀😀ßéé 中😀ß,ß$,B  éßİ$.Bé中",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ",aBé B/ßaBß中.aB",
+        "$ß"
+      ],
+      "expect": ",aBé B/ßaBß中.aB$ß",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ß/.ß😀中,ß ,😀éİa",
+        "中中/中a😀İ,😀"
+      ],
+      "expect": "ß/.ß😀中,ß ,😀éİa中中/中a😀İ,😀",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "é B,a中$ .",
+        ",😀aé$,中.é"
+      ],
+      "expect": "é B,a中$ .,😀aé$,中.é",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "Baßİ/aİé",
+        "/é/B"
+      ],
+      "expect": "Baßİ/aİé/é/B",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "aß,$",
+        "😀"
+      ],
+      "expect": "aß,$😀",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "B,é,",
+        "é,/İ/éİ"
+      ],
+      "expect": "B,é,é,/İ/éİ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ßB/a😀İ.,",
+        " 中B"
+      ],
+      "expect": "ßB/a😀İ., 中B",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "//Bß中,é😀中. éé.",
+        "ß"
+      ],
+      "expect": "//Bß中,é😀中. éé.ß",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀/😀é😀ß aaB$😀 İ",
+        "İßB Bİ😀,中"
+      ],
+      "expect": "😀/😀é😀ß aaB$😀 İİßB Bİ😀,中",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀ßBB / /😀İa😀中B",
+        ",😀 😀$/$ß中a.ß$"
+      ],
+      "expect": "😀ßBB / /😀İa😀中B,😀 😀$/$ß中a.ß$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "BBİ中.a 中",
+        "中"
+      ],
+      "expect": "BBİ中.a 中",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "a/$.Bß😀é$😀İ",
+        " 😀,中BaB / ß$"
+      ],
+      "expect": "a/$.Bß😀é$😀İ 😀,中BaB / ß$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "B/İB",
+        ". 😀İ$,.é😀a.$İ./"
+      ],
+      "expect": "B/İB. 😀İ$,.é😀a.$İ./",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "B$a中B,",
+        "Bİ$a./B,ßßİ,中中"
+      ],
+      "expect": "B$a中B,Bİ$a./B,ßßİ,中中",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "$ ",
+        "$$aİ中/B"
+      ],
+      "expect": "$ $$aİ中/B",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀İ",
+        "/"
+      ],
+      "expect": "😀İ/",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        " B",
+        ""
+      ],
+      "expect": " B",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀$.İéß😀ßB中BB😀",
+        "ß$中aß/$/B.B中,$"
+      ],
+      "expect": "😀$.İéß😀ßB中BB😀ß$中aß/$/B.B中,$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ßé a.İ中B😀$$$/.",
+        "😀中"
+      ],
+      "expect": "ßé a.İ中B😀$$$/.😀中",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ".$ßé,😀ßéa/$$",
+        ",./.😀"
+      ],
+      "expect": ".$ßé,😀ßéa/$$,./.😀",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ", é aé😀İ",
+        "é."
+      ],
+      "expect": ", é aé😀İé.",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "$é中$B/.😀 é",
+        "$.中😀$.中ß "
+      ],
+      "expect": "$é中$B/.😀 é$.中😀$.中ß ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "$.İ,BB$.,İ😀éB",
+        "/Bé$"
+      ],
+      "expect": "$.İ,BB$.,İ😀éB/Bé$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ",éß😀İ.$.中aß",
+        "éB"
+      ],
+      "expect": ",éß😀İ.$.中aßéB",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀,,é/. Bé/中$,é",
+        "é😀a"
+      ],
+      "expect": "😀,,é/. Bé/中$,éé😀a",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "B 😀ß . ,😀İİéé,/",
+        "B$中 BB.Béİa中.😀é"
+      ],
+      "expect": "B 😀ß . ,😀İİéé,/B$中 BB.Béİa中.😀é",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "B中😀aİ",
+        "中/ß 中ß中,Baİİ"
+      ],
+      "expect": "B中😀aİ中/ß 中ß中,Baİİ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "  ,a/İ/,$$ßa",
+        "/"
+      ],
+      "expect": "  ,a/İ/,$$ßa/",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ".a/é,/",
+        "中/,İ.中é,,,中Ba"
+      ],
+      "expect": ".a/é,/中/,İ.中é,,,中Ba",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "$/B,B   $",
+        "a//ß.$😀,中,"
+      ],
+      "expect": "$/B,B   $a//ß.$😀,中,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ".İaa$B.é",
+        "ß,$$😀a.$Ba/a."
+      ],
+      "expect": ".İaa$B.éß,$$😀a.$Ba/a.",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "",
+        "中B,B,a$/İaBİ"
+      ],
+      "expect": "中B,B,a$/İaBİ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ßß,$a😀$中a/BBa$İ",
+        "İaß,ß.,/ß"
+      ],
+      "expect": "ßß,$a😀$中a/BBa$İİaß,ß.,/ß",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ",/ßaééaaİ ,ß",
+        "B中//Bß,"
+      ],
+      "expect": ",/ßaééaaİ ,ßB中//Bß,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ß😀",
+        "a,éBßéaa B/$"
+      ],
+      "expect": "ß😀a,éBßéaa B/$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "中éİB",
+        "中"
+      ],
+      "expect": "中éİB中",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ß,İ,B$😀,B .😀é",
+        ""
+      ],
+      "expect": "ß,İ,B$😀,B .😀é",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "/,ß中😀",
+        "ßİİ😀/ß,"
+      ],
+      "expect": "/,ß中😀ßİİ😀/ß,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "a",
+        ".😀ßa/B$"
+      ],
+      "expect": "a.😀ßa/B$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "/中,ß$B中 中İ/éa",
+        "😀/"
+      ],
+      "expect": "/中,ß$B中 中İ/éa😀/",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ß.😀 aé$a😀",
+        ".,$😀$BBİ😀/İ "
+      ],
+      "expect": "ß.😀 aé$a😀.,$😀$BBİ😀/İ ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "/",
+        "$😀ßa"
+      ],
+      "expect": "/$😀ßa",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "İ..//",
+        "😀"
+      ],
+      "expect": "İ..//😀",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "/,é",
+        " ,.İ😀😀a"
+      ],
+      "expect": "/,é ,.İ😀😀a",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        " ,",
+        "BBé.$ßßé."
+      ],
+      "expect": " ,BBé.$ßßé.",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ",中/éß",
+        "éßéİ.中 aB,"
+      ],
+      "expect": ",中/éßéßéİ.中 aB,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        " ß",
+        "$"
+      ],
+      "expect": " ß$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        " İB/ aß😀 ß$/",
+        "$BßBa,ßaß"
+      ],
+      "expect": " İB/ aß😀 ß$/$BßBa,ßaß",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀İ.中,",
+        "中İB İ😀ß,é"
+      ],
+      "expect": "😀İ.中,中İB İ😀ß,é",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "",
+        "./a"
+      ],
+      "expect": "./a",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ".ß😀/中,$ßé中aß",
+        "B"
+      ],
+      "expect": ".ß😀/中,$ßé中aßB",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ß/",
+        ". /$."
+      ],
+      "expect": "ß/. /$.",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "İé中ß.B中ß /a,",
+        ""
+      ],
+      "expect": "İé中ß.B中ß /a,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        " é, İé",
+        ",a😀😀😀/ß中😀/BB😀İB"
+      ],
+      "expect": " é, İé,a😀😀😀/ß中😀/BB😀İB",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀a,İ,/ß$😀a.,ß/",
+        "/İ$😀.ßß B.ééß ,"
+      ],
+      "expect": "😀a,İ,/ß$😀a.,ß//İ$😀.ßß B.ééß ,",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "ß中 $é./a,中B/😀",
+        "/ "
+      ],
+      "expect": "ß中 $é./a,中B/😀/ ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        ".,a$a İ",
+        "ß.. a.éé. "
+      ],
+      "expect": ".,a$a İß.. a.éé. ",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "éé,éß/ /BB//a ,",
+        "ß aßa.."
+      ],
+      "expect": "éé,éß/ /BB//a ,ß aßa..",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "😀éa中İé/😀B😀$B",
+        "ßßß$ß$"
+      ],
+      "expect": "😀éa中İé/😀B😀$Bßßß$ß$",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "$😀B.中ß/$$é$$ß/B",
+        "ßé,$中,😀Bßİ /."
+      ],
+      "expect": "$😀B.中ß/$$é$$ß/Bßé,$中,😀Bßİ /.",
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    }
+  ]
+}

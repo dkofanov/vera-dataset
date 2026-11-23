@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "middle", "function": "exponentialSearch", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4], ["n", 5]]], ["n", 3]], "expect": ["n", 2]},
+    {"name": "missing", "function": "exponentialSearch", "args": [["a", [["n", 10], ["n", 20], ["n", 30], ["n", 40], ["n", 50]]], ["n", 35]], "expect": ["z"]},
+    {"name": "first", "function": "exponentialSearch", "args": [["a", [["n", 10], ["n", 20], ["n", 30], ["n", 40], ["n", 50]]], ["n", 10]], "expect": ["n", 0]},
+    {"name": "last", "function": "exponentialSearch", "args": [["a", [["n", 10], ["n", 20], ["n", 30], ["n", 40], ["n", 50]]], ["n", 50]], "expect": ["n", 4]},
+    {"name": "above", "function": "exponentialSearch", "args": [["a", [["n", 10], ["n", 20], ["n", 30], ["n", 40], ["n", 50]]], ["n", 60]], "expect": ["z"]},
+    {"name": "empty", "function": "exponentialSearch", "args": [["a", []], ["n", 10]], "expect": ["z"]}
+  ]
+}

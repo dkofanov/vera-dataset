@@ -1,0 +1,4 @@
+function firstMatchingField(text: string, separator: string, query: string, fallback: string): string {
+  for (let field: string of strings.split(text, separator)) { if (strings.contains(field, query)) { return field; } }
+  return fallback;
+}

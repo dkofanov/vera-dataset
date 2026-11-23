@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {"name": "found", "function": "fibonacciSearch", "args": [["a", [["n", 1], ["n", 2], ["n", 3]]], ["n", 2]], "expect": ["n", 1]},
+    {"name": "missing", "function": "fibonacciSearch", "args": [["a", [["n", 4], ["n", 5], ["n", 6]]], ["n", 2]], "expect": ["z"]},
+    {"name": "large", "function": "fibonacciSearch", "args": [["a", [["n", 10], ["n", 22], ["n", 35], ["n", 40], ["n", 45], ["n", 50], ["n", 80], ["n", 82], ["n", 85], ["n", 90], ["n", 100]]], ["n", 85]], "expect": ["n", 8]},
+    {"name": "empty", "function": "fibonacciSearch", "args": [["a", []], ["n", 1]], "expect": ["z"]},
+    {"name": "single", "function": "fibonacciSearch", "args": [["a", [["n", 1]]], ["n", 1]], "expect": ["n", 0]}
+  ]
+}

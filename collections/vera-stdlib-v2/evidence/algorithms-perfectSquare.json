@@ -1,0 +1,95 @@
+{
+  "id": "function/algorithms/perfectSquare",
+  "symbol": {
+    "project": "TheAlgorithms/TypeScript",
+    "repository": "https://github.com/TheAlgorithms/TypeScript",
+    "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+    "path": "maths/perfect_square.ts",
+    "export": "perfectSquare",
+    "sourceFileSha256": "b74d66f3718bcebd2390c8d2f2a8ae656ea77838687381abe31f441e4b6c9500",
+    "declarationSha256": "6fc8ab2cf2f53a968d1fc42372d3bae704fe56b7faeeca56520c1d8e9151272e",
+    "start": 251,
+    "end": 329
+  },
+  "documentation": "/**\n * @function perfectSquare\n * @description the square root of a number should be an integer\n * @see [Perfect square](https://www.cuemath.com/algebra/perfect-squares/)\n * @example Perfect square - 9, 16, 25\n * @param {num} number\n */",
+  "originalSource": "perfectSquare = (num: number) => {\n  return Number.isInteger(Math.sqrt(num))\n}",
+  "sourceUses": [
+    {
+      "api": "Number.isInteger",
+      "kind": "call",
+      "receiverKind": "Number-static",
+      "receiverType": "NumberConstructor",
+      "sourceSpan": {
+        "sourcePath": "maths/perfect_square.ts",
+        "start": 295,
+        "end": 327,
+        "startLine": 10,
+        "startColumn": 10,
+        "endLine": 10,
+        "endColumn": 42
+      },
+      "accessSpan": {
+        "sourcePath": "maths/perfect_square.ts",
+        "start": 295,
+        "end": 311,
+        "startLine": 10,
+        "startColumn": 10,
+        "endLine": 10,
+        "endColumn": 26
+      },
+      "text": "Number.isInteger(Math.sqrt(num))",
+      "arguments": [
+        "Math.sqrt(num)"
+      ]
+    },
+    {
+      "api": "Math.sqrt",
+      "kind": "call",
+      "receiverKind": "math",
+      "receiverType": "Math",
+      "sourceSpan": {
+        "sourcePath": "maths/perfect_square.ts",
+        "start": 312,
+        "end": 326,
+        "startLine": 10,
+        "startColumn": 27,
+        "endLine": 10,
+        "endColumn": 41
+      },
+      "accessSpan": {
+        "sourcePath": "maths/perfect_square.ts",
+        "start": 312,
+        "end": 321,
+        "startLine": 10,
+        "startColumn": 27,
+        "endLine": 10,
+        "endColumn": 36
+      },
+      "text": "Math.sqrt(num)",
+      "arguments": [
+        "num"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "maths/test/perfect_square.test.ts",
+    "sha256": "a42a1323620623e5702c20b0d2d541247b687721e2ca651358d84003dabab8e0",
+    "text": "import { perfectSquare } from '../perfect_square'\n\ntest('Check perfect square', () => {\n  expect(perfectSquare(16)).toBe(true)\n  expect(perfectSquare(12)).toBe(false)\n  expect(perfectSquare(19)).toBe(false)\n  expect(perfectSquare(25)).toBe(true)\n  expect(perfectSquare(42)).toBe(false)\n})\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return whether the square root of the nonnegative input is an integer. Zero is a perfect square. Return a boolean rather than the root.",
+    "domain": "The input is a finite number between 0 and 1000000000.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "num": "nonnegative number whose square root is tested"
+    },
+    "outputRole": "whether its square root is an integer",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

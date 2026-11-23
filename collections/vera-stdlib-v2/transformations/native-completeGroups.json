@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "e2a36ac0ef7642985382cfd7af6ecba3ca061be87595fb88cb260da62f13b086",
+  "contracts": [
+    {
+      "name": "completeGroups",
+      "signature": "function completeGroups(items: number, groupSize: number): number",
+      "paramNames": [
+        "items",
+        "groupSize"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.floor",
+      "text": "math.floor(items / groupSize)"
+    }
+  ],
+  "preconditions": [
+    "Items is an integer from 0 through 100000; groupSize is an integer from 1 through 1000."
+  ]
+}

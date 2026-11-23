@@ -1,0 +1,15 @@
+class FilterAsyncOptions {
+  concurrency: number;
+}
+
+function makeFilterAsyncOptions(concurrency: number): FilterAsyncOptions {
+  return {concurrency: concurrency};
+}
+
+function FilterAsyncOptionsConcurrency(value: FilterAsyncOptions): number {
+  return value.concurrency;
+}
+
+function withFilterAsyncOptionsConcurrency(value: FilterAsyncOptions, concurrency: number): FilterAsyncOptions {
+  return {concurrency: concurrency};
+}

@@ -1,0 +1,3 @@
+function parseThenScale(text: string, fallback: number, factor: number): number {
+  return strings.toNumber(text, fallback) * factor;
+}

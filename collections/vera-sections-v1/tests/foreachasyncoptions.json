@@ -1,0 +1,86 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeForEachAsyncOptions",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:ForEachAsyncOptions",
+        [
+          [
+            "concurrency",
+            [
+              "n",
+              4
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read concurrency",
+      "function": "ForEachAsyncOptionsConcurrency",
+      "args": [
+        [
+          "o",
+          "local:ForEachAsyncOptions",
+          [
+            [
+              "concurrency",
+              [
+                "n",
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withForEachAsyncOptionsConcurrency",
+      "args": [
+        [
+          "o",
+          "local:ForEachAsyncOptions",
+          [
+            [
+              "concurrency",
+              [
+                "n",
+                4
+              ]
+            ]
+          ]
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:ForEachAsyncOptions",
+        [
+          [
+            "concurrency",
+            [
+              "n",
+              7
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

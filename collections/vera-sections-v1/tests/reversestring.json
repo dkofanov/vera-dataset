@@ -1,0 +1,401 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 3",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "A"
+        ]
+      ],
+      "expect": [
+        "s",
+        "A"
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "s",
+        "cba"
+      ]
+    },
+    {
+      "name": "curated 3",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "Hello"
+        ]
+      ],
+      "expect": [
+        "s",
+        "olleH"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          " hello "
+        ]
+      ],
+      "expect": [
+        "s",
+        " olleh "
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "racecar"
+        ]
+      ],
+      "expect": [
+        "s",
+        "racecar"
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "abba"
+        ]
+      ],
+      "expect": [
+        "s",
+        "abba"
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "123"
+        ]
+      ],
+      "expect": [
+        "s",
+        "321"
+      ]
+    },
+    {
+      "name": "case 10",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "a,b,c"
+        ]
+      ],
+      "expect": [
+        "s",
+        "c,b,a"
+      ]
+    },
+    {
+      "name": "case 11",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "The quick brown fox"
+        ]
+      ],
+      "expect": [
+        "s",
+        "xof nworb kciuq ehT"
+      ]
+    },
+    {
+      "name": "curated 17",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "  trim  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "  mirt  "
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "fooBar"
+        ]
+      ],
+      "expect": [
+        "s",
+        "raBoof"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "XMLHttpRequest"
+        ]
+      ],
+      "expect": [
+        "s",
+        "tseuqeRpttHLMX"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "foo-bar_baz"
+        ]
+      ],
+      "expect": [
+        "s",
+        "zab_rab-oof"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "a1B2"
+        ]
+      ],
+      "expect": [
+        "s",
+        "2B1a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "Crème brûlée"
+        ]
+      ],
+      "expect": [
+        "s",
+        "eélûrb emèrC"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "déjàVu"
+        ]
+      ],
+      "expect": [
+        "s",
+        "uVàjéd"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 10",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "Привет мир"
+        ]
+      ],
+      "expect": [
+        "s",
+        "рим тевирП"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 11",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "你好世界"
+        ]
+      ],
+      "expect": [
+        "s",
+        "界世好你"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 12",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "😀a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a😀"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 13",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "a+b(c).*"
+        ]
+      ],
+      "expect": [
+        "s",
+        "*.)c(b+a"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 14",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "&<>\"'"
+        ]
+      ],
+      "expect": [
+        "s",
+        "'\"><&"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 15",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "&amp;&lt;&gt;&quot;&#39;"
+        ]
+      ],
+      "expect": [
+        "s",
+        ";93#&;touq&;tg&;tl&;pma&"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 16",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "a\nb\tc"
+        ]
+      ],
+      "expect": [
+        "s",
+        "c\tb\na"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 18",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ]
+      ],
+      "expect": [
+        "s",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 19",
+      "function": "reverseString",
+      "args": [
+        [
+          "s",
+          "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
+        ]
+      ],
+      "expect": [
+        "s",
+        "cbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacba"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

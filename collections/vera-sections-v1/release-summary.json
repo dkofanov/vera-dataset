@@ -1,0 +1,16 @@
+{
+  "name": "vera-sections-v1",
+  "path": "collections/vera-sections-v1",
+  "records": 88,
+  "examples": 220,
+  "examplesBySplit": {
+    "train": 161,
+    "validation": 40,
+    "test": 19
+  },
+  "testCases": 784,
+  "recordsSourceSha256": "042f7e2b7b9201f5d1c074a5ae9b329a614d10e0efe314d6a66e1bac836fdb63",
+  "programsAndTestsBytePreserved": true,
+  "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+  "origin": "Upstream-backed manual/cloud adaptations, classes and composed modules"
+}

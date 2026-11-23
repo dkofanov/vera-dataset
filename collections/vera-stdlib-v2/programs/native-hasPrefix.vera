@@ -1,0 +1,3 @@
+function hasPrefix(text: string, needle: string): boolean {
+  return strings.startsWith(text, needle);
+}

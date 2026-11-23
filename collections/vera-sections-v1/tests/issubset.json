@@ -1,0 +1,587 @@
+{
+  "tests": [
+    {
+      "name": "curated 3",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          []
+        ],
+        [
+          "a",
+          []
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              1
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              -1
+            ],
+            [
+              "n",
+              0
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              -1
+            ],
+            [
+              "n",
+              0
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              10
+            ],
+            [
+              "n",
+              20
+            ],
+            [
+              "n",
+              30
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              10
+            ],
+            [
+              "n",
+              20
+            ],
+            [
+              "n",
+              30
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              2.5
+            ],
+            [
+              "n",
+              1.5
+            ],
+            [
+              "n",
+              3.5
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              2.5
+            ],
+            [
+              "n",
+              1.5
+            ],
+            [
+              "n",
+              3.5
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          []
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ],
+        [
+          "a",
+          []
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isSubset",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              -1
+            ],
+            [
+              "n",
+              0
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "a",
+          [
+            [
+              "n",
+              0
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+function inspectRemainingCapacity(capacityInput: number, usedInput: number): number {
+  let remaining: number = capacityInput - usedInput;
+  if (remaining < 0) {
+    return 0;
+  }
+  return remaining;
+}

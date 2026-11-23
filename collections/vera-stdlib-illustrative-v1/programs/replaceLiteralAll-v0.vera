@@ -1,0 +1,3 @@
+function inspectReplaceLiteralAll(message: string, token: string, substitute: string): string {
+  return strings.replace(message, token, substitute);
+}

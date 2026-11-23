@@ -1,0 +1,209 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 2",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 3",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          100
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          400
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          1900
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          1999
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          2000
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          2024
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "isLeapYear",
+      "args": [
+        [
+          "n",
+          2100
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

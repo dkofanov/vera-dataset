@@ -1,0 +1,3 @@
+function evaluateCharacterWindow(untilPosition: number, beginAt: number, content: string): string {
+  return strings.substring(content, beginAt, untilPosition);
+}

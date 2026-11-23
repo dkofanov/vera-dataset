@@ -1,0 +1,36 @@
+import * as math from "std/math"
+
+function fibonacciSearch(array: number[], target: number): number | null {
+  let length: number = array.length();
+  if (length === 0) {
+    return null;
+  }
+  let a: number = 0;
+  let b: number = 1;
+  let c: number = a + b;
+  while (c < length) {
+    a = b;
+    b = c;
+    c = a + b;
+  }
+  let offset: number = -1;
+  while (c > 1) {
+    let index: number = math.min(offset + a, length - 1);
+    if (array[index] < target) {
+      c = b;
+      b = a;
+      a = c - b;
+      offset = index;
+    } else if (array[index] > target) {
+      c = a;
+      b = b - a;
+      a = c - b;
+    } else {
+      return index;
+    }
+  }
+  if (b !== 0 && offset + 1 < length && array[offset + 1] === target) {
+    return offset + 1;
+  }
+  return null;
+}

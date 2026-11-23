@@ -1,0 +1,4 @@
+function inspectUppercaseLength(message: string): number {
+  let upper: string = strings.toUpperCase(message);
+  return strings.length(upper);
+}

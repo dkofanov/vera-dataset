@@ -1,0 +1,9 @@
+function inspectSuffixCharacters(message: string, width: number): string {
+  let total: number = strings.length(message);
+  let keep: number = math.min(width, total);
+  if (keep === 0) {
+    return "";
+  }
+  let start: number = total - keep;
+  return strings.substring(message, start, total);
+}

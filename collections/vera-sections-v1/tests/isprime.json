@@ -1,0 +1,196 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 5",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          25
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          49
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          97
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          121
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 10",
+      "function": "isPrime",
+      "args": [
+        [
+          "n",
+          997
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

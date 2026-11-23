@@ -1,0 +1,5 @@
+function inspectContainsAfterLowercase(message: string, searchText: string): boolean {
+  let lowerMessage: string = strings.toLowerCase(message);
+  let lowerSearch: string = strings.toLowerCase(searchText);
+  return strings.contains(lowerMessage, lowerSearch);
+}

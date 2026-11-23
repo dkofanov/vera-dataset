@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "ae94b14cb0f8bab6478ca135eba6b4602479328361baf431438dc88daa3b36d1",
+  "contracts": [
+    {
+      "name": "roundEachValue",
+      "signature": "function roundEachValue(values: number[], step: number): number[]",
+      "paramNames": [
+        "values",
+        "step"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.round",
+      "text": "math.round(value / step)"
+    }
+  ],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Step is finite between 0.5 and 10."
+  ]
+}

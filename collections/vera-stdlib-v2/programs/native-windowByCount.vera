@@ -1,0 +1,3 @@
+function windowByCount(text: string, start: number, count: number): string {
+  return strings.substring(text, start, math.min(strings.length(text), start + count));
+}

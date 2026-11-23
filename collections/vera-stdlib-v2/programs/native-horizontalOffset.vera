@@ -1,0 +1,3 @@
+function horizontalOffset(radius: number, angle: number): number {
+  return radius * math.cos(angle);
+}

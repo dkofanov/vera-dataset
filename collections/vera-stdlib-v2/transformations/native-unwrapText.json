@@ -1,0 +1,53 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "fd369ca14523267620c621294dcf5f413de957a9376e2f96333d266c6c7413ad",
+  "contracts": [
+    {
+      "name": "unwrapText",
+      "signature": "function unwrapText(text: string, opening: string, closing: string): string",
+      "paramNames": [
+        "text",
+        "opening",
+        "closing"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(opening)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(closing)"
+    },
+    {
+      "sourceApi": "strings.startsWith",
+      "text": "strings.startsWith(text, opening)"
+    },
+    {
+      "sourceApi": "strings.endsWith",
+      "text": "strings.endsWith(text, closing)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, left, size - right)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

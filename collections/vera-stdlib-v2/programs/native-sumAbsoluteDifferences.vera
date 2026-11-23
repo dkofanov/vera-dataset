@@ -1,0 +1,5 @@
+function sumAbsoluteDifferences(values: number[], target: number): number {
+  let total: number = 0;
+  for (let value: number of values) { total = total + math.abs(value - target); }
+  return total;
+}

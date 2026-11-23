@@ -1,0 +1,17 @@
+function isPrime(num: number): boolean {
+  if (num <= 0) {
+    return false
+  }
+  if (num === 1) {
+    return false
+  }
+  let i: number = 2
+  let limit: number = math.floor(math.sqrt(num))
+  while (i <= limit) {
+    if (num % i === 0) {
+      return false
+    }
+    i = i + 1
+  }
+  return true
+}

@@ -1,0 +1,314 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 2",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "curated 2",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              -1
+            ],
+            [
+              "n",
+              0
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        -1
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              10
+            ],
+            [
+              "n",
+              20
+            ],
+            [
+              "n",
+              30
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              2.5
+            ],
+            [
+              "n",
+              1.5
+            ],
+            [
+              "n",
+              3.5
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1.5
+      ]
+    },
+    {
+      "name": "curated 3",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              -5
+            ],
+            [
+              "n",
+              -1
+            ],
+            [
+              "n",
+              -3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        -5
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1.5
+            ],
+            [
+              "n",
+              -2.5
+            ],
+            [
+              "n",
+              0
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        -2.5
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "findMin",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              9
+            ],
+            [
+              "n",
+              9
+            ],
+            [
+              "n",
+              9
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        9
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

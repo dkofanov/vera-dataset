@@ -1,0 +1,3 @@
+function advanceSeed(seed: number): number {
+  return math.randomStep(seed);
+}

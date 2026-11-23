@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "empty", "function": "jumpSearch", "args": [["a", []], ["n", 1]], "expect": ["n", -1]},
+    {"name": "middle", "function": "jumpSearch", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4], ["n", 5]]], ["n", 4]], "expect": ["n", 3]},
+    {"name": "missing between", "function": "jumpSearch", "args": [["a", [["n", 1], ["n", 3], ["n", 5], ["n", 8], ["n", 9]]], ["n", 4]], "expect": ["n", -1]},
+    {"name": "last", "function": "jumpSearch", "args": [["a", [["n", 1], ["n", 3], ["n", 5], ["n", 8]]], ["n", 8]], "expect": ["n", 3]},
+    {"name": "above", "function": "jumpSearch", "args": [["a", [["n", 1], ["n", 3], ["n", 5], ["n", 8]]], ["n", 9]], "expect": ["n", -1]},
+    {"name": "single", "function": "jumpSearch", "args": [["a", [["n", 5]]], ["n", 5]], "expect": ["n", 0]}
+  ]
+}

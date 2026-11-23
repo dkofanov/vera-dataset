@@ -1,0 +1,808 @@
+{
+  "tests": [
+    {
+      "suite": "curated",
+      "args": [
+        "1;bad;;2,5",
+        ";",
+        -9
+      ],
+      "expect": -14.5,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "",
+        ";",
+        7
+      ],
+      "expect": 7,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "1;2;3",
+        ";",
+        0
+      ],
+      "expect": 6,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-98;bad;bad;bad;bad",
+        ";",
+        -86
+      ],
+      "expect": -528,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad",
+        ";",
+        56
+      ],
+      "expect": 168,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-7",
+        "|",
+        96
+      ],
+      "expect": 89,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-26;54;-63;bad",
+        ";",
+        19
+      ],
+      "expect": -16,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "6;bad;-22;-85;bad;bad;bad;bad",
+        ";",
+        -14
+      ],
+      "expect": -171,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|83|bad|bad|bad|bad",
+        "|",
+        -79
+      ],
+      "expect": -312,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "47;-8;bad;bad;65;57",
+        ";",
+        87
+      ],
+      "expect": 335,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad|bad|97|bad|9|-36",
+        "|",
+        94
+      ],
+      "expect": 540,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "33",
+        "|",
+        -90
+      ],
+      "expect": 33,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "97|bad|31|bad|-95|64",
+        "|",
+        85
+      ],
+      "expect": 267,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-84;bad;bad;25;31",
+        ";",
+        -21
+      ],
+      "expect": -70,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-75|bad|25|12|16|bad|bad",
+        "|",
+        34
+      ],
+      "expect": 80,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad",
+        "|",
+        28
+      ],
+      "expect": 84,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;47",
+        ";",
+        19
+      ],
+      "expect": 66,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad",
+        ";",
+        -12
+      ],
+      "expect": -12,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;80;-47;98;bad",
+        ";",
+        -62
+      ],
+      "expect": 7,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|56|bad|75",
+        "|",
+        -50
+      ],
+      "expect": -19,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-10|bad",
+        "|",
+        -91
+      ],
+      "expect": -192,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad",
+        "|",
+        31
+      ],
+      "expect": 62,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-43|bad|bad|bad|bad",
+        "|",
+        11
+      ],
+      "expect": 1,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "74;bad;bad",
+        ";",
+        74
+      ],
+      "expect": 222,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad|bad|bad",
+        "|",
+        70
+      ],
+      "expect": 350,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "47|bad",
+        "|",
+        39
+      ],
+      "expect": 86,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "77|86",
+        "|",
+        82
+      ],
+      "expect": 163,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "13|bad|-83|-11|-47",
+        "|",
+        -8
+      ],
+      "expect": -136,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "20|-97",
+        "|",
+        85
+      ],
+      "expect": -77,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad",
+        "|",
+        -42
+      ],
+      "expect": -126,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-57;5;bad;bad",
+        ";",
+        12
+      ],
+      "expect": -28,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "81|67|bad|17|bad|bad",
+        "|",
+        -12
+      ],
+      "expect": 129,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "7;bad;-62;bad;bad;57;bad;78",
+        ";",
+        -100
+      ],
+      "expect": -320,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;56",
+        ";",
+        -42
+      ],
+      "expect": -28,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;-28;81;bad",
+        ";",
+        -72
+      ],
+      "expect": -163,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-14;bad;bad;bad;bad;89",
+        ";",
+        -77
+      ],
+      "expect": -310,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad",
+        "|",
+        -43
+      ],
+      "expect": -86,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad|bad",
+        "|",
+        -23
+      ],
+      "expect": -92,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-85;bad;bad;-37",
+        ";",
+        87
+      ],
+      "expect": 52,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-25;31;89;48",
+        ";",
+        -74
+      ],
+      "expect": 143,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "29;-79;54;33",
+        ";",
+        -99
+      ],
+      "expect": 37,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad|bad|34|60|bad",
+        "|",
+        42
+      ],
+      "expect": 304,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-61;bad",
+        ";",
+        -44
+      ],
+      "expect": -105,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "8;-82;bad",
+        ";",
+        50
+      ],
+      "expect": -24,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|71|bad|-67|90|bad",
+        "|",
+        -94
+      ],
+      "expect": -188,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad;-15",
+        ";",
+        29
+      ],
+      "expect": 72,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "8;bad;bad;-88;93",
+        ";",
+        4
+      ],
+      "expect": 21,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|44|bad|-79|-51",
+        "|",
+        -43
+      ],
+      "expect": -172,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;66;bad;1;bad;bad;-88",
+        ";",
+        -98
+      ],
+      "expect": -413,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-81;-29",
+        ";",
+        -65
+      ],
+      "expect": -110,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad",
+        ";",
+        -24
+      ],
+      "expect": -72,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-20|bad|-7",
+        "|",
+        -82
+      ],
+      "expect": -109,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|94|-53|bad|bad",
+        "|",
+        -79
+      ],
+      "expect": -196,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-90",
+        "|",
+        98
+      ],
+      "expect": 8,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "68;98;33;-73;bad;-27;37;4",
+        ";",
+        14
+      ],
+      "expect": 154,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad|-14|53|-74",
+        "|",
+        5
+      ],
+      "expect": -20,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-30;-49;bad;11;83",
+        ";",
+        2
+      ],
+      "expect": 19,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad;bad",
+        ";",
+        87
+      ],
+      "expect": 348,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "85;bad",
+        ";",
+        85
+      ],
+      "expect": 170,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;93;-71;bad;bad;-38;-46",
+        ";",
+        81
+      ],
+      "expect": 181,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-80|bad|bad|bad|bad|-82|-79",
+        "|",
+        -100
+      ],
+      "expect": -641,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-99|bad|bad|bad|bad|bad|bad",
+        "|",
+        -5
+      ],
+      "expect": -129,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad",
+        "|",
+        -79
+      ],
+      "expect": -79,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|-62|-76|bad|-42|0",
+        "|",
+        -91
+      ],
+      "expect": -453,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad",
+        "|",
+        -61
+      ],
+      "expect": -61,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-14",
+        ";",
+        20
+      ],
+      "expect": 6,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-71|82|bad|bad|6|bad",
+        "|",
+        65
+      ],
+      "expect": 277,
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": null
+    }
+  ]
+}

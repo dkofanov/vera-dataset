@@ -1,0 +1,7 @@
+function seedSequence(seed: number, count: number): number[] {
+  let state: number = seed;
+  let result: number[] = [];
+  let index: number = 0;
+  while (index < count) { state = math.randomStep(state); result.push(state); index = index + 1; }
+  return result;
+}

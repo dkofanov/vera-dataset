@@ -1,0 +1,3 @@
+function hasSuffix(text: string, needle: string): boolean {
+  return strings.endsWith(text, needle);
+}

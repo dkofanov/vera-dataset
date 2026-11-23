@@ -1,0 +1,10 @@
+function inspectClampedFraction(amount: number, lowerInput: number, upperInput: number): number {
+  let fraction: number = (amount - lowerInput) / (upperInput - lowerInput);
+  if (fraction < 0) {
+    return 0;
+  }
+  if (fraction > 1) {
+    return 1;
+  }
+  return fraction;
+}

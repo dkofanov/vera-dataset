@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "zero", "function": "isPalindrome", "args": [["n", 0]], "expect": ["b", true]},
+    {"name": "one digit", "function": "isPalindrome", "args": [["n", 5]], "expect": ["b", true]},
+    {"name": "not palindrome", "function": "isPalindrome", "args": [["n", 1234]], "expect": ["b", false]},
+    {"name": "palindrome", "function": "isPalindrome", "args": [["n", 12321]], "expect": ["b", true]},
+    {"name": "negative", "function": "isPalindrome", "args": [["n", -11]], "expect": ["b", false]},
+    {"name": "trailing zero", "function": "isPalindrome", "args": [["n", 10]], "expect": ["b", false]}
+  ]
+}

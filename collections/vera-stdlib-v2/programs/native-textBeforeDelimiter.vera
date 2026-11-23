@@ -1,0 +1,4 @@
+function textBeforeDelimiter(text: string, delimiter: string): string {
+  let parts: string[] = strings.split(text, delimiter);
+  return parts[0];
+}

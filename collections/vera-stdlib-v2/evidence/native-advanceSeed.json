@@ -1,0 +1,26 @@
+{
+  "id": "function/vera-native/advanceSeed",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Advance a deterministic signed 32-bit xorshift state. First substitute 0x2545F491 when seed is zero. In signed 32-bit arithmetic apply x ^= x << 13, then x ^= x >>> 17, then x ^= x << 5. Return the signed 32-bit result; this is deterministic, not a fresh random sample.",
+    "domain": "Seed is an integer in the signed 32-bit range.",
+    "inputRoles": {
+      "seed": "initial signed 32-bit state"
+    },
+    "outputRole": "next signed 32-bit state, not a bucket or entropy sample",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "seed => { let x = seed | 0; if (x === 0) x = 0x2545F491; x ^= x << 13; x ^= x >>> 17; x ^= x << 5; return x | 0 }",
+    "sha256": "bd5297f2c3d3c7f3a279b6acf011429110c1ace8f706f483b52342db9f946b97"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

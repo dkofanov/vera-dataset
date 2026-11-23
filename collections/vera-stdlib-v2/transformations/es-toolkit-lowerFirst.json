@@ -1,0 +1,67 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "d292eaff9b224b5380d81037a621e1e41d5a16f6bced529953bb7ee58f0f866a",
+  "programSha256": "1616ae14b1f6adbaa2038648397fa8491ef11d26eabf39694b9f5889e38e5347",
+  "textDomain": "bmp-no-surrogates",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits",
+    "all input and intermediate strings contain no UTF-16 surrogate code units"
+  ],
+  "contracts": [
+    {
+      "name": "lowerFirst",
+      "signature": "function lowerFirst(str: string): string",
+      "paramNames": [
+        "str"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "string.substring",
+      "sourceApi": "String.prototype.substring",
+      "strategy": "substring",
+      "domain": "BMP strings without surrogates; finite indices; omitted end supported",
+      "text": "str.substring(0, 1)",
+      "start": 59,
+      "end": 78
+    },
+    {
+      "rule": "string.toLowerCase",
+      "sourceApi": "String.prototype.toLowerCase",
+      "strategy": "direct",
+      "domain": "string operands; no optional position argument; host ECMAScript casing",
+      "text": "str.substring(0, 1).toLowerCase()",
+      "start": 59,
+      "end": 92
+    },
+    {
+      "rule": "string.substring",
+      "sourceApi": "String.prototype.substring",
+      "strategy": "substring",
+      "domain": "BMP strings without surrogates; finite indices; omitted end supported",
+      "text": "str.substring(1)",
+      "start": 95,
+      "end": 111
+    }
+  ],
+  "helpers": [
+    {
+      "id": "substring",
+      "sha256": "000ba5ab85485330eb665bf3340700afbc0c120e00160f6c1bfcfcb15daad62f"
+    }
+  ],
+  "normalization": {
+    "source": "export function lowerFirst(str: string): string {\n  return str.substring(0, 1).toLowerCase() + str.substring(1);\n}\n",
+    "sourceSha256": "d292eaff9b224b5380d81037a621e1e41d5a16f6bced529953bb7ee58f0f866a",
+    "adaptations": []
+  },
+  "originalDeclarationSha256": "b033e3a63e47c1c5a41098f0a2ac605c47d20b7356f59e679c442c1360b5cd1a"
+}

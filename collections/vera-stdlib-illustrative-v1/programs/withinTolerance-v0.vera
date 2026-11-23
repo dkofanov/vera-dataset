@@ -1,0 +1,1 @@
+function inspectWithinTolerance(observedInput: number, targetInput: number, toleranceInput: number): boolean { let deviation: number = math.abs(observedInput - targetInput); return deviation <= toleranceInput; }

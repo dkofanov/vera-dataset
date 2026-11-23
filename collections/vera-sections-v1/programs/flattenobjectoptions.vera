@@ -1,0 +1,20 @@
+class FlattenObjectOptions {
+  delimiter: string;
+  preserveArrays: boolean;
+}
+
+function makeFlattenObjectOptions(delimiter: string, preserveArrays: boolean): FlattenObjectOptions {
+  return {delimiter: delimiter, preserveArrays: preserveArrays};
+}
+
+function FlattenObjectOptionsDelimiter(value: FlattenObjectOptions): string {
+  return value.delimiter;
+}
+
+function FlattenObjectOptionsPreserveArrays(value: FlattenObjectOptions): boolean {
+  return value.preserveArrays;
+}
+
+function withFlattenObjectOptionsDelimiter(value: FlattenObjectOptions, delimiter: string): FlattenObjectOptions {
+  return {delimiter: delimiter, preserveArrays: value.preserveArrays};
+}

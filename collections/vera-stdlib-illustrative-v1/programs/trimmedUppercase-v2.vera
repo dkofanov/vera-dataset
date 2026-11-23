@@ -1,0 +1,4 @@
+function measureTrimmedUppercase(phrase: string): string {
+  let trimmed: string = strings.trim(phrase);
+  return strings.toUpperCase(trimmed);
+}

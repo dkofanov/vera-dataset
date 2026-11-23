@@ -1,0 +1,3 @@
+function measureReplacePlaceholder(placeholderArg: string, sample: string, templateArg: string): string {
+  return strings.replace(templateArg, placeholderArg, sample);
+}

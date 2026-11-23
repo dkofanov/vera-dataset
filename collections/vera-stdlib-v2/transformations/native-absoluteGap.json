@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "e8eb8d1aa2a4f95d94f0c1e883897188f22e9873887d1385d4ab717d8f5336e9",
+  "contracts": [
+    {
+      "name": "absoluteGap",
+      "signature": "function absoluteGap(a: number, b: number): number",
+      "paramNames": [
+        "a",
+        "b"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.abs",
+      "text": "math.abs(a - b)"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated."
+  ]
+}

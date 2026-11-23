@@ -1,0 +1,3 @@
+function measureRedactToken(tokenArg: string, maskArg: string, phrase: string): string {
+  return strings.replace(phrase, tokenArg, maskArg);
+}

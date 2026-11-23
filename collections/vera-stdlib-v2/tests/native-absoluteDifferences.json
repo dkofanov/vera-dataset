@@ -1,0 +1,2395 @@
+{
+  "tests": [
+    {
+      "suite": "curated",
+      "args": [
+        [
+          1,
+          4,
+          1
+        ],
+        2
+      ],
+      "expect": [
+        1,
+        2,
+        1
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "curated",
+      "args": [
+        [],
+        0
+      ],
+      "expect": [],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "curated",
+      "args": [
+        [
+          -3,
+          3
+        ],
+        0
+      ],
+      "expect": [
+        3,
+        3
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [],
+        -69.5
+      ],
+      "expect": [],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -12,
+          8,
+          -42.5,
+          -5,
+          -91.5,
+          83.5
+        ],
+        -55
+      ],
+      "expect": [
+        43,
+        63,
+        12.5,
+        50,
+        36.5,
+        138.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          39,
+          69.5,
+          -95,
+          -35,
+          74.5,
+          23.5,
+          -60,
+          50,
+          78,
+          -25.5,
+          -95,
+          12,
+          -39,
+          -23.5,
+          42.5,
+          -24.5
+        ],
+        -15.5
+      ],
+      "expect": [
+        54.5,
+        85,
+        79.5,
+        19.5,
+        90,
+        39,
+        44.5,
+        65.5,
+        93.5,
+        10,
+        79.5,
+        27.5,
+        23.5,
+        8,
+        58,
+        9
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          88.5,
+          98.5,
+          -98.5,
+          57.5,
+          11.5,
+          36.5,
+          20,
+          -77,
+          -26.5,
+          -91,
+          -79,
+          -9,
+          -21,
+          34.5,
+          0.5,
+          -87.5,
+          -91,
+          -13.5,
+          68
+        ],
+        24
+      ],
+      "expect": [
+        64.5,
+        74.5,
+        122.5,
+        33.5,
+        12.5,
+        12.5,
+        4,
+        101,
+        50.5,
+        115,
+        103,
+        33,
+        45,
+        10.5,
+        23.5,
+        111.5,
+        115,
+        37.5,
+        44
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -32.5,
+          85,
+          -38.5,
+          27.5,
+          -76.5,
+          -42.5,
+          -4,
+          81,
+          -92,
+          -21.5,
+          -5,
+          -90.5,
+          23.5,
+          -70.5,
+          -20,
+          -84,
+          -60.5,
+          -58.5,
+          -100,
+          -35,
+          20.5,
+          17.5,
+          78
+        ],
+        8.5
+      ],
+      "expect": [
+        41,
+        76.5,
+        47,
+        19,
+        85,
+        51,
+        12.5,
+        72.5,
+        100.5,
+        30,
+        13.5,
+        99,
+        15,
+        79,
+        28.5,
+        92.5,
+        69,
+        67,
+        108.5,
+        43.5,
+        12,
+        9,
+        69.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          18.5,
+          53.5,
+          -79,
+          62,
+          -72.5,
+          -17.5,
+          100
+        ],
+        -51.5
+      ],
+      "expect": [
+        70,
+        105,
+        27.5,
+        113.5,
+        21,
+        34,
+        151.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          14.5,
+          29.5,
+          -44,
+          37.5,
+          -97,
+          72.5,
+          87.5,
+          39,
+          -18.5,
+          -22,
+          78,
+          -1.5,
+          50.5,
+          72,
+          -44.5,
+          -14.5,
+          8,
+          -78,
+          -58.5,
+          -41.5
+        ],
+        83.5
+      ],
+      "expect": [
+        69,
+        54,
+        127.5,
+        46,
+        180.5,
+        11,
+        4,
+        44.5,
+        102,
+        105.5,
+        5.5,
+        85,
+        33,
+        11.5,
+        128,
+        98,
+        75.5,
+        161.5,
+        142,
+        125
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -21,
+          -10.5,
+          -17,
+          26.5,
+          33
+        ],
+        -9.5
+      ],
+      "expect": [
+        11.5,
+        1,
+        7.5,
+        36,
+        42.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -24.5,
+          -54,
+          25.5
+        ],
+        -26.5
+      ],
+      "expect": [
+        2,
+        27.5,
+        52
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -95.5
+        ],
+        -62.5
+      ],
+      "expect": [
+        33
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -35,
+          -16.5,
+          64.5,
+          -69
+        ],
+        42.5
+      ],
+      "expect": [
+        77.5,
+        59,
+        22,
+        111.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          72,
+          38,
+          -15.5,
+          -4
+        ],
+        -12
+      ],
+      "expect": [
+        84,
+        50,
+        3.5,
+        8
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -35.5,
+          -48.5,
+          -40,
+          38.5,
+          69.5,
+          -32
+        ],
+        -86.5
+      ],
+      "expect": [
+        51,
+        38,
+        46.5,
+        125,
+        156,
+        54.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -62,
+          -93.5,
+          -53,
+          67.5
+        ],
+        15
+      ],
+      "expect": [
+        77,
+        108.5,
+        68,
+        52.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -68.5,
+          -81,
+          19
+        ],
+        31.5
+      ],
+      "expect": [
+        100,
+        112.5,
+        12.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          13,
+          86,
+          -17.5,
+          56.5,
+          97,
+          80,
+          38.5,
+          67,
+          -95.5,
+          38,
+          -12,
+          -11,
+          98.5,
+          -62,
+          -4,
+          89.5,
+          64.5,
+          54.5
+        ],
+        -79
+      ],
+      "expect": [
+        92,
+        165,
+        61.5,
+        135.5,
+        176,
+        159,
+        117.5,
+        146,
+        16.5,
+        117,
+        67,
+        68,
+        177.5,
+        17,
+        75,
+        168.5,
+        143.5,
+        133.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          81.5,
+          -3,
+          58.5,
+          41.5,
+          15.5,
+          -8.5,
+          85,
+          -18.5,
+          -27.5,
+          0,
+          64,
+          20.5,
+          -42.5,
+          -60.5,
+          -14.5,
+          -81.5,
+          72.5,
+          96.5,
+          -8,
+          54,
+          2.5,
+          94.5,
+          74.5
+        ],
+        31
+      ],
+      "expect": [
+        50.5,
+        34,
+        27.5,
+        10.5,
+        15.5,
+        39.5,
+        54,
+        49.5,
+        58.5,
+        31,
+        33,
+        10.5,
+        73.5,
+        91.5,
+        45.5,
+        112.5,
+        41.5,
+        65.5,
+        39,
+        23,
+        28.5,
+        63.5,
+        43.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          17.5,
+          84,
+          68,
+          -26.5,
+          -58.5,
+          -53,
+          -66.5,
+          -62.5,
+          -27.5,
+          26,
+          70.5,
+          -33,
+          -44,
+          11
+        ],
+        -30
+      ],
+      "expect": [
+        47.5,
+        114,
+        98,
+        3.5,
+        28.5,
+        23,
+        36.5,
+        32.5,
+        2.5,
+        56,
+        100.5,
+        3,
+        14,
+        41
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          48,
+          -4.5,
+          -55,
+          75.5,
+          9.5,
+          9.5,
+          59,
+          -8.5,
+          -76,
+          -31.5,
+          56,
+          74,
+          93.5,
+          13.5,
+          -41,
+          -38,
+          -94,
+          92,
+          70,
+          69,
+          -47,
+          71,
+          -55
+        ],
+        -42.5
+      ],
+      "expect": [
+        90.5,
+        38,
+        12.5,
+        118,
+        52,
+        52,
+        101.5,
+        34,
+        33.5,
+        11,
+        98.5,
+        116.5,
+        136,
+        56,
+        1.5,
+        4.5,
+        51.5,
+        134.5,
+        112.5,
+        111.5,
+        4.5,
+        113.5,
+        12.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -85.5,
+          -16,
+          -90,
+          38,
+          -75.5,
+          94.5,
+          88.5,
+          79.5,
+          84.5,
+          -25,
+          -35.5,
+          -43.5,
+          -13,
+          -12,
+          -70.5,
+          26,
+          -94.5,
+          50.5,
+          51.5
+        ],
+        53
+      ],
+      "expect": [
+        138.5,
+        69,
+        143,
+        15,
+        128.5,
+        41.5,
+        35.5,
+        26.5,
+        31.5,
+        78,
+        88.5,
+        96.5,
+        66,
+        65,
+        123.5,
+        27,
+        147.5,
+        2.5,
+        1.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          23,
+          -10.5,
+          35.5,
+          -38.5,
+          -78,
+          -57.5,
+          89.5,
+          33,
+          -61
+        ],
+        -63.5
+      ],
+      "expect": [
+        86.5,
+        53,
+        99,
+        25,
+        14.5,
+        6,
+        153,
+        96.5,
+        2.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -5.5,
+          86,
+          22.5,
+          44,
+          58,
+          -45.5,
+          -3.5,
+          -60.5,
+          55,
+          -86,
+          -87,
+          20,
+          -34,
+          -81,
+          -97.5,
+          91.5,
+          -93.5,
+          -33.5,
+          59.5,
+          70.5,
+          -40,
+          74.5,
+          17.5
+        ],
+        -36
+      ],
+      "expect": [
+        30.5,
+        122,
+        58.5,
+        80,
+        94,
+        9.5,
+        32.5,
+        24.5,
+        91,
+        50,
+        51,
+        56,
+        2,
+        45,
+        61.5,
+        127.5,
+        57.5,
+        2.5,
+        95.5,
+        106.5,
+        4,
+        110.5,
+        53.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -94,
+          79.5,
+          -71.5,
+          89,
+          30.5,
+          11,
+          -84,
+          -98,
+          31,
+          73.5,
+          59.5,
+          58,
+          -45.5,
+          -98,
+          2,
+          97.5,
+          20,
+          -100,
+          18,
+          -90,
+          -30.5,
+          66.5,
+          37.5
+        ],
+        40.5
+      ],
+      "expect": [
+        134.5,
+        39,
+        112,
+        48.5,
+        10,
+        29.5,
+        124.5,
+        138.5,
+        9.5,
+        33,
+        19,
+        17.5,
+        86,
+        138.5,
+        38.5,
+        57,
+        20.5,
+        140.5,
+        22.5,
+        130.5,
+        71,
+        26,
+        3
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          12.5,
+          -81,
+          -37,
+          -32,
+          1,
+          -21,
+          -21,
+          -45,
+          53.5,
+          27,
+          10.5,
+          38.5,
+          57,
+          15,
+          39.5,
+          30,
+          23,
+          48.5,
+          -12.5,
+          -99.5,
+          -70.5,
+          -32.5
+        ],
+        67.5
+      ],
+      "expect": [
+        55,
+        148.5,
+        104.5,
+        99.5,
+        66.5,
+        88.5,
+        88.5,
+        112.5,
+        14,
+        40.5,
+        57,
+        29,
+        10.5,
+        52.5,
+        28,
+        37.5,
+        44.5,
+        19,
+        80,
+        167,
+        138,
+        100
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -3.5,
+          -55.5,
+          100,
+          -41.5,
+          -83,
+          10.5,
+          -59,
+          49,
+          15,
+          52.5,
+          8,
+          -37.5
+        ],
+        -67
+      ],
+      "expect": [
+        63.5,
+        11.5,
+        167,
+        25.5,
+        16,
+        77.5,
+        8,
+        116,
+        82,
+        119.5,
+        75,
+        29.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -61.5,
+          55.5,
+          -69.5,
+          -80.5,
+          85,
+          84,
+          91,
+          99.5,
+          -27.5,
+          45,
+          21,
+          52.5,
+          -74.5,
+          3,
+          44.5,
+          66.5,
+          86,
+          24.5,
+          -38,
+          -25,
+          -71.5,
+          10.5,
+          93
+        ],
+        -15.5
+      ],
+      "expect": [
+        46,
+        71,
+        54,
+        65,
+        100.5,
+        99.5,
+        106.5,
+        115,
+        12,
+        60.5,
+        36.5,
+        68,
+        59,
+        18.5,
+        60,
+        82,
+        101.5,
+        40,
+        22.5,
+        9.5,
+        56,
+        26,
+        108.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          40.5,
+          -37.5,
+          0.5,
+          -68.5,
+          -81,
+          50,
+          60,
+          -18,
+          47.5,
+          66,
+          -81,
+          -85.5,
+          -8.5
+        ],
+        72
+      ],
+      "expect": [
+        31.5,
+        109.5,
+        71.5,
+        140.5,
+        153,
+        22,
+        12,
+        90,
+        24.5,
+        6,
+        153,
+        157.5,
+        80.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [],
+        36
+      ],
+      "expect": [],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          9,
+          -9,
+          -33.5,
+          74,
+          51,
+          56,
+          -60,
+          -97,
+          47.5,
+          60
+        ],
+        -92
+      ],
+      "expect": [
+        101,
+        83,
+        58.5,
+        166,
+        143,
+        148,
+        32,
+        5,
+        139.5,
+        152
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -28,
+          -38.5,
+          10.5,
+          3,
+          -58.5
+        ],
+        -27.5
+      ],
+      "expect": [
+        0.5,
+        11,
+        38,
+        30.5,
+        31
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -97.5,
+          27,
+          -59.5,
+          -21.5,
+          24,
+          -94.5,
+          -84.5,
+          19.5,
+          89.5,
+          97.5
+        ],
+        5
+      ],
+      "expect": [
+        102.5,
+        22,
+        64.5,
+        26.5,
+        19,
+        99.5,
+        89.5,
+        14.5,
+        84.5,
+        92.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -61.5,
+          -82.5,
+          62
+        ],
+        20
+      ],
+      "expect": [
+        81.5,
+        102.5,
+        42
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -4,
+          21.5,
+          82.5
+        ],
+        -92.5
+      ],
+      "expect": [
+        88.5,
+        114,
+        175
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -70.5,
+          65,
+          -93,
+          72.5,
+          -27.5,
+          76,
+          33.5,
+          30,
+          55.5,
+          38.5,
+          -20
+        ],
+        -20
+      ],
+      "expect": [
+        50.5,
+        85,
+        73,
+        92.5,
+        7.5,
+        96,
+        53.5,
+        50,
+        75.5,
+        58.5,
+        0
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          64.5,
+          -69.5,
+          -12.5,
+          -20.5
+        ],
+        32.5
+      ],
+      "expect": [
+        32,
+        102,
+        45,
+        53
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          6,
+          -13,
+          -90.5,
+          -92.5,
+          70.5,
+          -58.5,
+          11.5,
+          -9.5,
+          -34.5,
+          -22.5,
+          30,
+          -39.5
+        ],
+        37
+      ],
+      "expect": [
+        31,
+        50,
+        127.5,
+        129.5,
+        33.5,
+        95.5,
+        25.5,
+        46.5,
+        71.5,
+        59.5,
+        7,
+        76.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -60,
+          -85.5,
+          54,
+          75.5,
+          -97,
+          -21,
+          94,
+          14,
+          -27.5,
+          22.5,
+          66.5,
+          -18,
+          39.5,
+          -32.5,
+          -61,
+          -43.5,
+          -97,
+          82,
+          -21.5,
+          76,
+          15.5,
+          74.5,
+          -21.5
+        ],
+        -16.5
+      ],
+      "expect": [
+        43.5,
+        69,
+        70.5,
+        92,
+        80.5,
+        4.5,
+        110.5,
+        30.5,
+        11,
+        39,
+        83,
+        1.5,
+        56,
+        16,
+        44.5,
+        27,
+        80.5,
+        98.5,
+        5,
+        92.5,
+        32,
+        91,
+        5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          77,
+          87.5,
+          66,
+          -32,
+          38,
+          96.5,
+          34,
+          -8,
+          -92.5,
+          -84.5,
+          -44,
+          -46,
+          42.5,
+          -8.5,
+          91.5,
+          87.5,
+          -96.5,
+          84,
+          -73.5,
+          -29.5,
+          -13.5
+        ],
+        78.5
+      ],
+      "expect": [
+        1.5,
+        9,
+        12.5,
+        110.5,
+        40.5,
+        18,
+        44.5,
+        86.5,
+        171,
+        163,
+        122.5,
+        124.5,
+        36,
+        87,
+        13,
+        9,
+        175,
+        5.5,
+        152,
+        108,
+        92
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          97.5,
+          -52.5,
+          -65.5,
+          -78.5,
+          38,
+          -33.5,
+          -53,
+          20.5,
+          -11.5,
+          15.5,
+          -71.5,
+          -43.5,
+          -55.5,
+          -31,
+          -13.5,
+          18.5,
+          -7,
+          -75,
+          -0.5,
+          -70
+        ],
+        57.5
+      ],
+      "expect": [
+        40,
+        110,
+        123,
+        136,
+        19.5,
+        91,
+        110.5,
+        37,
+        69,
+        42,
+        129,
+        101,
+        113,
+        88.5,
+        71,
+        39,
+        64.5,
+        132.5,
+        58,
+        127.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -28,
+          9.5,
+          98,
+          -99.5,
+          71,
+          -43.5,
+          -9.5,
+          93.5,
+          14.5
+        ],
+        -69.5
+      ],
+      "expect": [
+        41.5,
+        79,
+        167.5,
+        30,
+        140.5,
+        26,
+        60,
+        163,
+        84
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -54,
+          -65,
+          4,
+          -61,
+          65.5,
+          69,
+          -37,
+          -97,
+          35,
+          99,
+          48
+        ],
+        76
+      ],
+      "expect": [
+        130,
+        141,
+        72,
+        137,
+        10.5,
+        7,
+        113,
+        173,
+        41,
+        23,
+        28
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          12,
+          89.5,
+          32.5,
+          -91,
+          -14,
+          -59.5,
+          7,
+          92.5,
+          75.5,
+          -33.5,
+          -67,
+          93.5,
+          -95,
+          -15,
+          97,
+          46.5
+        ],
+        46.5
+      ],
+      "expect": [
+        34.5,
+        43,
+        14,
+        137.5,
+        60.5,
+        106,
+        39.5,
+        46,
+        29,
+        80,
+        113.5,
+        47,
+        141.5,
+        61.5,
+        50.5,
+        0
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          96
+        ],
+        -80
+      ],
+      "expect": [
+        176
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          28.5,
+          46,
+          5.5,
+          29,
+          -1,
+          15,
+          -34.5,
+          46.5,
+          67
+        ],
+        -59
+      ],
+      "expect": [
+        87.5,
+        105,
+        64.5,
+        88,
+        58,
+        74,
+        24.5,
+        105.5,
+        126
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -33,
+          66,
+          -86,
+          -96.5,
+          97,
+          -42.5,
+          -37.5,
+          48.5
+        ],
+        -69.5
+      ],
+      "expect": [
+        36.5,
+        135.5,
+        16.5,
+        27,
+        166.5,
+        27,
+        32,
+        118
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -60.5,
+          -34.5,
+          -93,
+          51.5,
+          -48,
+          58,
+          -35,
+          -22.5,
+          9,
+          16.5,
+          15.5,
+          -69,
+          50,
+          -26,
+          -97,
+          -5
+        ],
+        -74
+      ],
+      "expect": [
+        13.5,
+        39.5,
+        19,
+        125.5,
+        26,
+        132,
+        39,
+        51.5,
+        83,
+        90.5,
+        89.5,
+        5,
+        124,
+        48,
+        23,
+        69
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          62,
+          67,
+          -12.5,
+          -33,
+          -62.5,
+          -52.5,
+          -41,
+          58,
+          94,
+          -19.5,
+          48.5,
+          59,
+          -41.5,
+          -10.5,
+          79.5,
+          2.5,
+          37
+        ],
+        -75.5
+      ],
+      "expect": [
+        137.5,
+        142.5,
+        63,
+        42.5,
+        13,
+        23,
+        34.5,
+        133.5,
+        169.5,
+        56,
+        124,
+        134.5,
+        34,
+        65,
+        155,
+        78,
+        112.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -8.5,
+          51,
+          63.5,
+          63.5,
+          84.5,
+          -79.5,
+          75,
+          9.5,
+          -88,
+          -43,
+          97,
+          57,
+          -93.5,
+          75,
+          31.5,
+          -73.5,
+          63.5,
+          -100,
+          -89.5,
+          2,
+          22,
+          81.5
+        ],
+        36.5
+      ],
+      "expect": [
+        45,
+        14.5,
+        27,
+        27,
+        48,
+        116,
+        38.5,
+        27,
+        124.5,
+        79.5,
+        60.5,
+        20.5,
+        130,
+        38.5,
+        5,
+        110,
+        27,
+        136.5,
+        126,
+        34.5,
+        14.5,
+        45
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          91.5,
+          -29.5,
+          44,
+          -71.5,
+          95,
+          95
+        ],
+        -98.5
+      ],
+      "expect": [
+        190,
+        69,
+        142.5,
+        27,
+        193.5,
+        193.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -33.5,
+          75.5,
+          86.5,
+          -98.5,
+          77.5,
+          -80,
+          51,
+          -52.5,
+          -87,
+          47,
+          -74,
+          41.5,
+          -5,
+          56.5,
+          71,
+          -64,
+          -46.5,
+          -79.5,
+          -89.5,
+          -5,
+          -49.5,
+          -98,
+          -19.5
+        ],
+        -58.5
+      ],
+      "expect": [
+        25,
+        134,
+        145,
+        40,
+        136,
+        21.5,
+        109.5,
+        6,
+        28.5,
+        105.5,
+        15.5,
+        100,
+        53.5,
+        115,
+        129.5,
+        5.5,
+        12,
+        21,
+        31,
+        53.5,
+        9,
+        39.5,
+        39
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -31,
+          -82.5,
+          80.5,
+          -65.5,
+          -78,
+          7,
+          34,
+          -46.5,
+          -100,
+          -60,
+          84.5,
+          50.5,
+          -22.5,
+          78,
+          54.5,
+          24.5,
+          20.5,
+          -15.5,
+          -69.5
+        ],
+        -46.5
+      ],
+      "expect": [
+        15.5,
+        36,
+        127,
+        19,
+        31.5,
+        53.5,
+        80.5,
+        0,
+        53.5,
+        13.5,
+        131,
+        97,
+        24,
+        124.5,
+        101,
+        71,
+        67,
+        31,
+        23
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          24.5,
+          58.5,
+          -13,
+          -43,
+          80,
+          4.5,
+          -98.5,
+          -59,
+          97,
+          27,
+          57.5,
+          -54.5,
+          -0.5,
+          -57.5
+        ],
+        17.5
+      ],
+      "expect": [
+        7,
+        41,
+        30.5,
+        60.5,
+        62.5,
+        13,
+        116,
+        76.5,
+        79.5,
+        9.5,
+        40,
+        72,
+        18,
+        75
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -6,
+          34.5,
+          -23,
+          78.5,
+          97,
+          85.5,
+          -37,
+          -2.5,
+          4.5,
+          84.5,
+          45.5,
+          -85.5
+        ],
+        51.5
+      ],
+      "expect": [
+        57.5,
+        17,
+        74.5,
+        27,
+        45.5,
+        34,
+        88.5,
+        54,
+        47,
+        33,
+        6,
+        137
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          29.5,
+          13.5,
+          59,
+          3,
+          -36.5,
+          57,
+          -70,
+          13,
+          36,
+          -77.5
+        ],
+        96.5
+      ],
+      "expect": [
+        67,
+        83,
+        37.5,
+        93.5,
+        133,
+        39.5,
+        166.5,
+        83.5,
+        60.5,
+        174
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          91,
+          84.5,
+          -41.5,
+          -60.5,
+          43,
+          54,
+          -57,
+          85.5,
+          -86,
+          53.5,
+          6.5
+        ],
+        95
+      ],
+      "expect": [
+        4,
+        10.5,
+        136.5,
+        155.5,
+        52,
+        41,
+        152,
+        9.5,
+        181,
+        41.5,
+        88.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          25.5,
+          -94.5,
+          -43,
+          -70.5,
+          -41,
+          -16.5,
+          -96.5,
+          73.5,
+          -66,
+          69,
+          -56,
+          -63,
+          -41,
+          -50,
+          -81,
+          16,
+          -88,
+          -81.5,
+          13.5,
+          -54,
+          -42
+        ],
+        -59
+      ],
+      "expect": [
+        84.5,
+        35.5,
+        16,
+        11.5,
+        18,
+        42.5,
+        37.5,
+        132.5,
+        7,
+        128,
+        3,
+        4,
+        18,
+        9,
+        22,
+        75,
+        29,
+        22.5,
+        72.5,
+        5,
+        17
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -88.5
+        ],
+        44.5
+      ],
+      "expect": [
+        133
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          45,
+          95.5,
+          -41.5,
+          98,
+          19.5,
+          -41,
+          47.5,
+          85,
+          -40,
+          -16.5,
+          -28,
+          -84,
+          -33.5,
+          -62.5,
+          -86,
+          79,
+          -79,
+          15.5,
+          92.5
+        ],
+        8
+      ],
+      "expect": [
+        37,
+        87.5,
+        49.5,
+        90,
+        11.5,
+        49,
+        39.5,
+        77,
+        48,
+        24.5,
+        36,
+        92,
+        41.5,
+        70.5,
+        94,
+        71,
+        87,
+        7.5,
+        84.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          9.5,
+          -83.5,
+          -68.5,
+          -13
+        ],
+        -43
+      ],
+      "expect": [
+        52.5,
+        40.5,
+        25.5,
+        30
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -28.5,
+          -88,
+          -70
+        ],
+        -24.5
+      ],
+      "expect": [
+        4,
+        63.5,
+        45.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          35,
+          -96,
+          19,
+          -23.5,
+          80.5,
+          76,
+          -10.5,
+          75,
+          -56.5,
+          66.5,
+          -36.5,
+          63,
+          92.5,
+          81,
+          -73,
+          39.5,
+          40,
+          -42,
+          -23,
+          -51.5,
+          -6,
+          86.5,
+          82.5
+        ],
+        -68.5
+      ],
+      "expect": [
+        103.5,
+        27.5,
+        87.5,
+        45,
+        149,
+        144.5,
+        58,
+        143.5,
+        12,
+        135,
+        32,
+        131.5,
+        161,
+        149.5,
+        4.5,
+        108,
+        108.5,
+        26.5,
+        45.5,
+        17,
+        62.5,
+        155,
+        151
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          8.5,
+          -40.5,
+          -48,
+          13.5,
+          6,
+          93,
+          99.5,
+          44.5,
+          -22.5,
+          -50.5,
+          28.5,
+          14.5
+        ],
+        -0.5
+      ],
+      "expect": [
+        9,
+        40,
+        47.5,
+        14,
+        6.5,
+        93.5,
+        100,
+        45,
+        22,
+        50,
+        29,
+        15
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          34.5,
+          -74
+        ],
+        -10
+      ],
+      "expect": [
+        44.5,
+        64
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        [
+          -84,
+          9.5,
+          -39,
+          -12
+        ],
+        30
+      ],
+      "expect": [
+        114,
+        20.5,
+        69,
+        42
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+function replaceFirstLiteral(text: string, search: string, replacement: string): string {
+  let width: number = strings.length(search);
+  let size: number = strings.length(text);
+  let position: number = 0;
+  while (position + width <= size) {
+    if (strings.substring(text, position, position + width) === search) { return strings.substring(text, 0, position) + replacement + strings.substring(text, position + width, size); }
+    position = position + 1;
+  }
+  return text;
+}

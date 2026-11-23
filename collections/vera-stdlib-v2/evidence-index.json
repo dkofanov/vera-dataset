@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "function/algorithms/degreesToRadians",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "TheAlgorithms/TypeScript",
+      "repository": "https://github.com/TheAlgorithms/TypeScript",
+      "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+      "path": "maths/degrees_to_radians.ts",
+      "export": "degreesToRadians",
+      "sourceFileSha256": "dee6c6e6dd0381b7412657bc84fa896fa64cbec59ebe7be2db1b5f2e4ee6605b",
+      "declarationSha256": "4c2a981a1b8527a63c5e0c87c40aca25f1b28e57e5c3b63b83fafe2f3af09eed",
+      "start": 339,
+      "end": 425
+    },
+    "accepted": true,
+    "constructs": [
+      "Math.PI"
+    ]
+  },
+  {
+    "id": "function/algorithms/radiansToDegrees",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "TheAlgorithms/TypeScript",
+      "repository": "https://github.com/TheAlgorithms/TypeScript",
+      "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+      "path": "maths/radians_to_degrees.ts",
+      "export": "radiansToDegrees",
+      "sourceFileSha256": "d8a361fcfb39ceaa0a4f2e665aefca27e0bf5cdeece3ff6f81c235013f709d26",
+      "declarationSha256": "805e271e5ecdf00c24da1a65b59191a4e700c93b2cf8bb8412a5820e31aca143",
+      "start": 340,
+      "end": 426
+    },
+    "accepted": true,
+    "constructs": [
+      "Math.PI"
+    ]
+  },
+  {
+    "id": "function/algorithms/isPalindrome",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "TheAlgorithms/TypeScript",
+      "repository": "https://github.com/TheAlgorithms/TypeScript",
+      "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+      "path": "maths/is_palindrome.ts",
+      "export": "isPalindrome",
+      "sourceFileSha256": "a2bf9b358cb6454b3fe06ccbfedb99889aa1b36364e8eb1d4afd0e5c4ca8947d",
+      "declarationSha256": "58e71d7def123663c794fecc37ca416662256840ea4e88b00b043ddd649e7c0b",
+      "start": 330,
+      "end": 671
+    },
+    "accepted": true,
+    "constructs": [
+      "Math.floor"
+    ]
+  },
+  {
+    "id": "function/algorithms/perfectCube",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "TheAlgorithms/TypeScript",
+      "repository": "https://github.com/TheAlgorithms/TypeScript",
+      "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+      "path": "maths/perfect_cube.ts",
+      "export": "perfectCube",
+      "sourceFileSha256": "a40e84b3dd6617492c2613ae7435b2cae34115025a49c0c979b91cfb7cf633e3",
+      "declarationSha256": "69e848b3d943000291368e545fbd2b12bd8c4ebe5843e2e798e986faa82eb10f",
+      "start": 121,
+      "end": 207
+    },
+    "accepted": true,
+    "constructs": [
+      "operator.**",
+      "Math.round"
+    ]
+  },
+  {
+    "id": "function/algorithms/perfectSquare",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "TheAlgorithms/TypeScript",
+      "repository": "https://github.com/TheAlgorithms/TypeScript",
+      "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+      "path": "maths/perfect_square.ts",
+      "export": "perfectSquare",
+      "sourceFileSha256": "b74d66f3718bcebd2390c8d2f2a8ae656ea77838687381abe31f441e4b6c9500",
+      "declarationSha256": "6fc8ab2cf2f53a968d1fc42372d3bae704fe56b7faeeca56520c1d8e9151272e",
+      "start": 251,
+      "end": 329
+    },
+    "accepted": true,
+    "constructs": [
+      "Number.isInteger",
+      "Math.sqrt"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/drop",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/array/drop.ts",
+      "export": "drop",
+      "sourceFileSha256": "5c4579441945e6bf3289034f9069d6c71dcd4a56c02dcc437aad79ca3c78882e",
+      "declarationSha256": "b63aeffdd6c27fb1bc214877d74df4b8f0cbc1d62573f9c16c990b2d9e80322d",
+      "start": 680,
+      "end": 824
+    },
+    "accepted": true,
+    "constructs": [
+      "Math.max",
+      "Array.prototype.slice"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/dropRight",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/array/dropRight.ts",
+      "export": "dropRight",
+      "sourceFileSha256": "5eb748d9ee70c60419cfe5b64453c8207533450c74f4e2997d242237970ed8e5",
+      "declarationSha256": "75ec1891d7e8793f4294108e2deaf4f3c42902364b45651f6666e0a7dac6952b",
+      "start": 668,
+      "end": 876
+    },
+    "accepted": true,
+    "constructs": [
+      "Math.min",
+      "Array.prototype.slice"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/take",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/array/take.ts",
+      "export": "take",
+      "sourceFileSha256": "8f2527f0e2f1579f01f6efb22ea75ff3f0fdce43a2b18034077a921487f55444",
+      "declarationSha256": "e4388f2e628b82dc6ae27f32bc4a4097b2f64e11ea864daa7bdbe9608cb992b8",
+      "start": 610,
+      "end": 706
+    },
+    "accepted": true,
+    "constructs": [
+      "Array.prototype.slice"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/takeRight",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/array/takeRight.ts",
+      "export": "takeRight",
+      "sourceFileSha256": "fcb383d481363d7ab0164c223e32977e940bf996d926a9e315d29fbe43cbf020",
+      "declarationSha256": "a7c47a97a6ca378942f1992710e91e7b834b460b222cda6ca06cccd1cdf95d16",
+      "start": 615,
+      "end": 773
+    },
+    "accepted": true,
+    "constructs": [
+      "Array.prototype.length",
+      "Array.prototype.slice"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/tail",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/array/tail.ts",
+      "export": "tail",
+      "sourceFileSha256": "702f87a09c5fa48fa95cdaba7121a5293b62722d31532b7d2fb52966a4451681",
+      "declarationSha256": "616613175b4da52beb09bba027acf05f4a9dbbf05b9eeb508d16acf6ee20f9b8",
+      "start": 2725,
+      "end": 2799
+    },
+    "accepted": true,
+    "constructs": [
+      "Array.prototype.slice"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/initial",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/array/initial.ts",
+      "export": "initial",
+      "sourceFileSha256": "0c12f85a5f45251c16a1512ee26a4b52908c19c2105fe915785d28b3b19a8987",
+      "declarationSha256": "1e534c19b306f1080caf2568eab048b4afb044cb646d3877bdec3eb83035ced8",
+      "start": 2235,
+      "end": 2316
+    },
+    "accepted": true,
+    "constructs": [
+      "Array.prototype.slice"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/upperFirst",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/string/upperFirst.ts",
+      "export": "upperFirst",
+      "sourceFileSha256": "afc2584da491015b29b7bd1383dc8dfabae11671751c1c3c6da5b67953793162",
+      "declarationSha256": "07f61a0dd67267eb93b556e8905acae18c5ec3ec4913d9c46289b6527b90c28c",
+      "start": 352,
+      "end": 466
+    },
+    "accepted": true,
+    "constructs": [
+      "String.prototype.toUpperCase",
+      "String.prototype.substring"
+    ]
+  },
+  {
+    "id": "function/es-toolkit/lowerFirst",
+    "origin": "upstream-derived",
+    "symbol": {
+      "project": "toss/es-toolkit",
+      "repository": "https://github.com/toss/es-toolkit",
+      "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+      "path": "src/string/lowerFirst.ts",
+      "export": "lowerFirst",
+      "sourceFileSha256": "ccb6e2498e4f918570eef4a80500c03a9b9456bc47b68c20463b91acc527b179",
+      "declarationSha256": "b033e3a63e47c1c5a41098f0a2ac605c47d20b7356f59e679c442c1360b5cd1a",
+      "start": 352,
+      "end": 466
+    },
+    "accepted": true,
+    "constructs": [
+      "String.prototype.toLowerCase",
+      "String.prototype.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/verticalOffset",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.sin"
+    ]
+  },
+  {
+    "id": "function/vera-native/horizontalOffset",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.cos"
+    ]
+  },
+  {
+    "id": "function/vera-native/headingRadians",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.atan2"
+    ]
+  },
+  {
+    "id": "function/vera-native/headingDegrees",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.atan2",
+      "math.pi"
+    ]
+  },
+  {
+    "id": "function/vera-native/rootMeanSquare",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.sqrt"
+    ]
+  },
+  {
+    "id": "function/vera-native/compoundAmount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.pow"
+    ]
+  },
+  {
+    "id": "function/vera-native/pageCount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.ceil"
+    ]
+  },
+  {
+    "id": "function/vera-native/completeGroups",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.floor"
+    ]
+  },
+  {
+    "id": "function/vera-native/roundToStep",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.round"
+    ]
+  },
+  {
+    "id": "function/vera-native/absoluteGap",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.abs"
+    ]
+  },
+  {
+    "id": "function/vera-native/boundedValue",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min",
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/advanceSeed",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.randomStep"
+    ]
+  },
+  {
+    "id": "function/vera-native/bucketForSeed",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.randomBelow"
+    ]
+  },
+  {
+    "id": "function/vera-native/characterCount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/characterWindow",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/containsText",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.contains"
+    ]
+  },
+  {
+    "id": "function/vera-native/hasPrefix",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.startsWith"
+    ]
+  },
+  {
+    "id": "function/vera-native/hasSuffix",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.endsWith"
+    ]
+  },
+  {
+    "id": "function/vera-native/replaceLiteralAll",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.replace"
+    ]
+  },
+  {
+    "id": "function/vera-native/splitLiteral",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/trimUnicodeSpace",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.trim"
+    ]
+  },
+  {
+    "id": "function/vera-native/uppercaseText",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.toUpperCase"
+    ]
+  },
+  {
+    "id": "function/vera-native/lowercaseText",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.toLowerCase"
+    ]
+  },
+  {
+    "id": "function/vera-native/parseTypedDecimal",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.toNumber"
+    ]
+  },
+  {
+    "id": "function/vera-native/prefixCharacters",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.substring",
+      "math.min",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/suffixCharacters",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.substring",
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/windowByCount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.substring",
+      "math.min",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/removePrefixOnce",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.startsWith",
+      "strings.substring",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/removeSuffixOnce",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.endsWith",
+      "strings.substring",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/ensurePrefix",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.startsWith"
+    ]
+  },
+  {
+    "id": "function/vera-native/ensureSuffix",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.endsWith"
+    ]
+  },
+  {
+    "id": "function/vera-native/enclosedText",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.startsWith",
+      "strings.endsWith",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/unwrapText",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.startsWith",
+      "strings.endsWith",
+      "strings.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/shortenWithMarker",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/replaceInsideWindow",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.substring",
+      "strings.replace",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/replaceInOrder",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.replace"
+    ]
+  },
+  {
+    "id": "function/vera-native/replaceFirstLiteral",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/literalOccurrenceCount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/containsAfterLowercase",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.contains",
+      "strings.toLowerCase"
+    ]
+  },
+  {
+    "id": "function/vera-native/trimmedLowercase",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.toLowerCase",
+      "strings.trim"
+    ]
+  },
+  {
+    "id": "function/vera-native/trimmedUppercase",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.toUpperCase",
+      "strings.trim"
+    ]
+  },
+  {
+    "id": "function/vera-native/blankOrFallback",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.trim",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/trimmedLength",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.trim"
+    ]
+  },
+  {
+    "id": "function/vera-native/uppercaseLength",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.toUpperCase"
+    ]
+  },
+  {
+    "id": "function/vera-native/fieldAt",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/fieldCount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/trimmedFields",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.trim"
+    ]
+  },
+  {
+    "id": "function/vera-native/nonblankFields",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.trim",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/joinFieldsWith",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/lastPathSegment",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/parentPathText",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/filenameMatchesExtension",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.endsWith",
+      "strings.toLowerCase"
+    ]
+  },
+  {
+    "id": "function/vera-native/replacePathSeparator",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.replace"
+    ]
+  },
+  {
+    "id": "function/vera-native/redactToken",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.replace"
+    ]
+  },
+  {
+    "id": "function/vera-native/replacePlaceholder",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.replace"
+    ]
+  },
+  {
+    "id": "function/vera-native/surroundMatches",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.replace"
+    ]
+  },
+  {
+    "id": "function/vera-native/firstMatchPosition",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/lastMatchPosition",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.length",
+      "strings.substring"
+    ]
+  },
+  {
+    "id": "function/vera-native/textBeforeDelimiter",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split"
+    ]
+  },
+  {
+    "id": "function/vera-native/textAfterDelimiter",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.substring",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/signedDeviation",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": []
+  },
+  {
+    "id": "function/vera-native/withinTolerance",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.abs"
+    ]
+  },
+  {
+    "id": "function/vera-native/clampedFraction",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min",
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/interpolateClamped",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min",
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/roundUpToStep",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.ceil"
+    ]
+  },
+  {
+    "id": "function/vera-native/roundDownToStep",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.floor"
+    ]
+  },
+  {
+    "id": "function/vera-native/decimalRounding",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.pow",
+      "math.round"
+    ]
+  },
+  {
+    "id": "function/vera-native/remainingCapacity",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/overLimitAmount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/batchesWithReserve",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.ceil"
+    ]
+  },
+  {
+    "id": "function/vera-native/pageOffset",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": []
+  },
+  {
+    "id": "function/vera-native/lastPageItems",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.ceil"
+    ]
+  },
+  {
+    "id": "function/vera-native/distanceBetweenPoints",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.sqrt"
+    ]
+  },
+  {
+    "id": "function/vera-native/polarXDegrees",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.cos",
+      "math.pi"
+    ]
+  },
+  {
+    "id": "function/vera-native/polarYDegrees",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.sin",
+      "math.pi"
+    ]
+  },
+  {
+    "id": "function/vera-native/circleArea",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.pi"
+    ]
+  },
+  {
+    "id": "function/vera-native/circleCircumference",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.pi"
+    ]
+  },
+  {
+    "id": "function/vera-native/decayedAmount",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.pow"
+    ]
+  },
+  {
+    "id": "function/vera-native/growthDifference",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.pow"
+    ]
+  },
+  {
+    "id": "function/vera-native/parseThenClamp",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min",
+      "math.max",
+      "strings.toNumber"
+    ]
+  },
+  {
+    "id": "function/vera-native/parseThenScale",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.toNumber"
+    ]
+  },
+  {
+    "id": "function/vera-native/valuesWithinBounds",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": []
+  },
+  {
+    "id": "function/vera-native/countWithinBounds",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": []
+  },
+  {
+    "id": "function/vera-native/clampEachValue",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min",
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/roundEachValue",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.round"
+    ]
+  },
+  {
+    "id": "function/vera-native/absoluteDifferences",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.abs"
+    ]
+  },
+  {
+    "id": "function/vera-native/sumAbsoluteDifferences",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.abs"
+    ]
+  },
+  {
+    "id": "function/vera-native/maximumOrFallback",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/minimumOrFallback",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min"
+    ]
+  },
+  {
+    "id": "function/vera-native/valueRange",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.min",
+      "math.max"
+    ]
+  },
+  {
+    "id": "function/vera-native/numericFields",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.toNumber"
+    ]
+  },
+  {
+    "id": "function/vera-native/sumNumericFields",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.toNumber"
+    ]
+  },
+  {
+    "id": "function/vera-native/lengthsOfFields",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.length"
+    ]
+  },
+  {
+    "id": "function/vera-native/matchingFields",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.contains"
+    ]
+  },
+  {
+    "id": "function/vera-native/firstMatchingField",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "strings.split",
+      "strings.contains"
+    ]
+  },
+  {
+    "id": "function/vera-native/seedBucketAfterStep",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.randomBelow",
+      "math.randomStep"
+    ]
+  },
+  {
+    "id": "function/vera-native/seedSequence",
+    "origin": "authored-vera-native",
+    "accepted": true,
+    "constructs": [
+      "math.randomStep"
+    ]
+  }
+]

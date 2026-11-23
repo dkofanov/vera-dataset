@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "36a329561865fabf5cbec3f93bd78f3dff1e1b196fb9f503ea7a96de0ddbb128",
+  "contracts": [
+    {
+      "name": "trimUnicodeSpace",
+      "signature": "function trimUnicodeSpace(text: string): string",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(text)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

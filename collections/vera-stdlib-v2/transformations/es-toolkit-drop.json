@@ -1,0 +1,65 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "a83937835b0db4077d963b72e7770b9ccbef3afe8a4bc56d82d09c804781e399",
+  "programSha256": "0c992b739b8e50e422135f918f62d3d4d9411163f060b1ee392c7a7d4831d6ca",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "drop",
+      "signature": "function drop(arr: number[], itemsCount: number): number[]",
+      "paramNames": [
+        "arr",
+        "itemsCount"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "math.max",
+      "sourceApi": "Math.max",
+      "strategy": "direct",
+      "domain": "finite numeric inputs and results",
+      "text": "Math.max(itemsCount, 0)",
+      "start": 83,
+      "end": 106
+    },
+    {
+      "rule": "array.slice",
+      "sourceApi": "Array.prototype.slice",
+      "strategy": "arraySlice",
+      "domain": "dense primitive arrays; finite indices; shallow copy",
+      "text": "arr.slice(itemsCount)",
+      "start": 118,
+      "end": 139
+    }
+  ],
+  "helpers": [
+    {
+      "id": "index",
+      "sha256": "4e0e10af29fa424c94825e37fdd33e3b4cf8d4be8134c15b3c91cc0abccce0af"
+    },
+    {
+      "id": "arraySliceNumber",
+      "sha256": "b5e115048fe797489b5d4707850e34bd0039039ab26c0e960b3d183397a7ff7d"
+    }
+  ],
+  "normalization": {
+    "source": "export function drop(arr: number[], itemsCount: number): number[] {\n  itemsCount = Math.max(itemsCount, 0);\n\n  return arr.slice(itemsCount);\n}\n",
+    "sourceSha256": "a83937835b0db4077d963b72e7770b9ccbef3afe8a4bc56d82d09c804781e399",
+    "adaptations": [
+      "Instantiate upstream generic T as number; remove readonly annotation without changing input immutability contract."
+    ]
+  },
+  "originalDeclarationSha256": "b63aeffdd6c27fb1bc214877d74df4b8f0cbc1d62573f9c16c990b2d9e80322d"
+}

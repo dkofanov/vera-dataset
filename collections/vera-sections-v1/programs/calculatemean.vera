@@ -1,0 +1,7 @@
+function calculateMean(numbers: number[]): number {
+  let sum: number = 0;
+  for (let value: number of numbers) {
+    sum = sum + value;
+  }
+  return sum / numbers.length();
+}

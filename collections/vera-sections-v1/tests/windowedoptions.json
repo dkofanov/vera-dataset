@@ -1,0 +1,86 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeWindowedOptions",
+      "args": [
+        [
+          "b",
+          true
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:WindowedOptions",
+        [
+          [
+            "partialWindows",
+            [
+              "b",
+              true
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read partialWindows",
+      "function": "WindowedOptionsPartialWindows",
+      "args": [
+        [
+          "o",
+          "local:WindowedOptions",
+          [
+            [
+              "partialWindows",
+              [
+                "b",
+                true
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withWindowedOptionsPartialWindows",
+      "args": [
+        [
+          "o",
+          "local:WindowedOptions",
+          [
+            [
+              "partialWindows",
+              [
+                "b",
+                true
+              ]
+            ]
+          ]
+        ],
+        [
+          "b",
+          false
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:WindowedOptions",
+        [
+          [
+            "partialWindows",
+            [
+              "b",
+              false
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

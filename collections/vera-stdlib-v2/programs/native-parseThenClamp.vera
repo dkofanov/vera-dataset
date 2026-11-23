@@ -1,0 +1,3 @@
+function parseThenClamp(text: string, fallback: number, lower: number, upper: number): number {
+  return math.min(upper, math.max(lower, strings.toNumber(text, fallback)));
+}

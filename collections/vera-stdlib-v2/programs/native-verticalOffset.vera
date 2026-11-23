@@ -1,0 +1,3 @@
+function verticalOffset(radius: number, angle: number): number {
+  return radius * math.sin(angle);
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "5fecf201bd214607a545d2cd31331be7770e6cfca1867a068350b760c54b1623",
+  "contracts": [
+    {
+      "name": "joinFieldsWith",
+      "signature": "function joinFieldsWith(text: string, separator: string, joiner: string): string",
+      "paramNames": [
+        "text",
+        "separator",
+        "joiner"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty."
+  ]
+}

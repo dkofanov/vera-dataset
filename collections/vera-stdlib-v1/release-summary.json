@@ -1,0 +1,16 @@
+{
+  "name": "vera-stdlib-v1",
+  "path": "collections/vera-stdlib-v1",
+  "records": 20,
+  "examples": 60,
+  "examplesBySplit": {
+    "train": 36,
+    "validation": 3,
+    "test": 21
+  },
+  "testCases": 1219,
+  "recordsSourceSha256": "78287e5d62e0ff24ae09d01e086ff385f3512b96384d168d358ce41e0f20a2da",
+  "programsAndTestsBytePreserved": true,
+  "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+  "origin": "20 genuine TypeScript function adaptations"
+}

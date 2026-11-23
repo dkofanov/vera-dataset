@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "62e9e3212549f3cededa45c6f26561a2e9bf1a21e232b8b68ff00789ed6e5484",
+  "contracts": [
+    {
+      "name": "roundToStep",
+      "signature": "function roundToStep(value: number, step: number): number",
+      "paramNames": [
+        "value",
+        "step"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.round",
+      "text": "math.round(value / step)"
+    }
+  ],
+  "preconditions": [
+    "Value is finite between -1000 and 1000; step is finite between 0.01 and 100."
+  ]
+}

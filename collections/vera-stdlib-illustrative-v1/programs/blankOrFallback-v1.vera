@@ -1,0 +1,7 @@
+function evaluateBlankOrFallback(backup: string, content: string): string {
+  let stripped: string = strings.trim(content);
+  if (strings.length(stripped) === 0) {
+    return backup;
+  }
+  return stripped;
+}

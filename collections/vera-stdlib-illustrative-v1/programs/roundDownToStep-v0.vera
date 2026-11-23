@@ -1,0 +1,5 @@
+function inspectRoundDownToStep(amount: number, stepInput: number): number {
+  let quotient: number = amount / stepInput;
+  let floored: number = math.floor(quotient);
+  return floored * stepInput;
+}

@@ -1,0 +1,6 @@
+function inverseLerp(start: number, stop: number, value: number): number {
+  if (start === stop) {
+    return 0;
+  }
+  return (value - start) / (stop - start);
+}

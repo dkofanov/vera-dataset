@@ -1,0 +1,5 @@
+function measureContainsAfterLowercase(keyword: string, phrase: string): boolean {
+  let lowerPhrase: string = strings.toLowerCase(phrase);
+  let lowerKeyword: string = strings.toLowerCase(keyword);
+  return strings.contains(lowerPhrase, lowerKeyword);
+}

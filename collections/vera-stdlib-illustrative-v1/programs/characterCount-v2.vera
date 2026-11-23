@@ -1,0 +1,4 @@
+function measureCharacterCount(phrase: string): number {
+  let result: number = strings.length(phrase);
+  return result;
+}

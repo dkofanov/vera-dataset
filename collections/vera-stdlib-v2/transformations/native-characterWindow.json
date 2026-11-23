@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "dd36950e508eeaf9229a5fe40d90b1664b71f8bf3e6da1d64692bb68f5588a1b",
+  "contracts": [
+    {
+      "name": "characterWindow",
+      "signature": "function characterWindow(text: string, start: number, end: number): string",
+      "paramNames": [
+        "text",
+        "start",
+        "end"
+      ],
+      "paramTypes": [
+        "string",
+        "number",
+        "number"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, start, end)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded. Start and end are integers with 0 <= start <= end <= the code-point length of text."
+  ]
+}

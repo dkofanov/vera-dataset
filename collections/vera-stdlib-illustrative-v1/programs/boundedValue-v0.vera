@@ -1,0 +1,10 @@
+function inspectBoundedValue(amount: number, lowerInput: number, upperInput: number): number {
+  let result: number = amount;
+  if (result < lowerInput) {
+    result = lowerInput;
+  }
+  if (result > upperInput) {
+    result = upperInput;
+  }
+  return result;
+}

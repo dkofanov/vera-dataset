@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "8b99b84f87f4b5a5c7494627417976337f3ad984ba18e80406d7dd7aa354d9be",
+  "contracts": [
+    {
+      "name": "replacePathSeparator",
+      "signature": "function replacePathSeparator(path: string, oldSeparator: string, newSeparator: string): string",
+      "paramNames": [
+        "path",
+        "oldSeparator",
+        "newSeparator"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(path, oldSeparator, newSeparator)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. OldSeparator is nonempty."
+  ]
+}

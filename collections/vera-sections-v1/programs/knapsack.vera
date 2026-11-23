@@ -1,0 +1,36 @@
+function knapsack(capacity: number, weights: number[], values: number[]): number {
+  let numberOfItems: number = weights.length();
+  let dp: number[] = [];
+  let cols: number = capacity + 1;
+  let total: number = (numberOfItems + 1) * cols;
+  let i: number = 0;
+  while (i < total) {
+    dp.push(0);
+    i = i + 1;
+  }
+  let itemIndex: number = 1;
+  while (itemIndex <= numberOfItems) {
+    let weight: number = weights[itemIndex - 1];
+    let value: number = values[itemIndex - 1];
+    let currentCapacity: number = 1;
+    while (currentCapacity <= capacity) {
+      let idx: number = itemIndex * cols + currentCapacity;
+      let prevIdx: number = (itemIndex - 1) * cols + currentCapacity;
+      if (weight <= currentCapacity) {
+        let includeIdx: number = (itemIndex - 1) * cols + (currentCapacity - weight);
+        let includeVal: number = value + dp[includeIdx];
+        let excludeVal: number = dp[prevIdx];
+        if (includeVal > excludeVal) {
+          dp[idx] = includeVal;
+        } else {
+          dp[idx] = excludeVal;
+        }
+      } else {
+        dp[idx] = dp[prevIdx];
+      }
+      currentCapacity = currentCapacity + 1;
+    }
+    itemIndex = itemIndex + 1;
+  }
+  return dp[numberOfItems * cols + capacity];
+}

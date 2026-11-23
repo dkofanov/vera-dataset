@@ -1,0 +1,8 @@
+{
+  "tests": [
+    {"name": "range width", "function": "rangeWidth", "args": [["o", "local:RangeCov", [["startOffset", ["n", 2]], ["endOffset", ["n", 7]], ["count", ["n", 3]]]]], "expect": ["n", 5]},
+    {"name": "function range count", "function": "functionRangeCount", "args": [["o", "local:FunctionCov", [["functionName", ["s", "run"]], ["ranges", ["a", [["o", "local:RangeCov", [["startOffset", ["n", 0]], ["endOffset", ["n", 2]], ["count", ["n", 1]]]], ["o", "local:RangeCov", [["startOffset", ["n", 2]], ["endOffset", ["n", 4]], ["count", ["n", 1]]]]]]], ["isBlockCoverage", ["b", true]]]]], "expect": ["n", 2]},
+    {"name": "script function count", "function": "scriptFunctionCount", "args": [["o", "local:ScriptCov", [["scriptId", ["s", "1"]], ["url", ["s", "app.js"]], ["functions", ["a", [["o", "local:FunctionCov", [["functionName", ["s", "run"]], ["ranges", ["a", []]], ["isBlockCoverage", ["b", false]]]]]]]]]], "expect": ["n", 1]},
+    {"name": "process script count", "function": "processScriptCount", "args": [["o", "local:ProcessCov", [["result", ["a", [["o", "local:ScriptCov", [["scriptId", ["s", "1"]], ["url", ["s", "app.js"]], ["functions", ["a", []]]]]]]]]]], "expect": ["n", 1]}
+  ]
+}

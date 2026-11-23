@@ -1,0 +1,60 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "eb8f771c2bdd3883a6686737f5291a1370b03615acca09e9a2eb1354951c7aa5",
+  "programSha256": "5bdcdd2607cb19c4e188c1e2a93a27f03fbb064975cfec30e2d8486e0e43473c",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "perfectSquare",
+      "signature": "function perfectSquare(num: number): boolean",
+      "paramNames": [
+        "num"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "math.sqrt",
+      "sourceApi": "Math.sqrt",
+      "strategy": "direct",
+      "domain": "finite numeric inputs and results",
+      "text": "Math.sqrt(num)",
+      "start": 80,
+      "end": 94
+    },
+    {
+      "rule": "number.isInteger",
+      "sourceApi": "Number.isInteger",
+      "strategy": "integer",
+      "domain": "finite numeric operands; no coercion",
+      "text": "Number.isInteger(Math.sqrt(num))",
+      "start": 63,
+      "end": 95
+    }
+  ],
+  "helpers": [
+    {
+      "id": "isInteger",
+      "sha256": "63221b4ab3745cd5042f1a0f4ed165180872c1987f21bbcde8a8b1f650a30eb1"
+    }
+  ],
+  "normalization": {
+    "source": "export function perfectSquare(num: number): boolean {\n  return Number.isInteger(Math.sqrt(num))\n}\n",
+    "sourceSha256": "eb8f771c2bdd3883a6686737f5291a1370b03615acca09e9a2eb1354951c7aa5",
+    "adaptations": [
+      "Lift arrow-function block to a named function; body is unchanged.",
+      "Select the actual implementation body, not overload-only declarations."
+    ]
+  },
+  "originalDeclarationSha256": "6fc8ab2cf2f53a968d1fc42372d3bae704fe56b7faeeca56520c1d8e9151272e"
+}

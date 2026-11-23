@@ -1,0 +1,3 @@
+function fieldCount(text: string, separator: string): number {
+  return strings.split(text, separator).length();
+}

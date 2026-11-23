@@ -1,0 +1,5 @@
+function evaluateRoundDownToStep(stepValue: number, reading: number): number {
+  let scaled: number = reading / stepValue;
+  let base: number = math.floor(scaled);
+  return base * stepValue;
+}

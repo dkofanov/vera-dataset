@@ -1,0 +1,8 @@
+function nonblankFields(text: string, separator: string): string[] {
+  let result: string[] = [];
+  for (let field: string of strings.split(text, separator)) {
+    let cleaned: string = strings.trim(field);
+    if (strings.length(cleaned) > 0) { result.push(cleaned); }
+  }
+  return result;
+}

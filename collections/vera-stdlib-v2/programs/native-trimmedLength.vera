@@ -1,0 +1,3 @@
+function trimmedLength(text: string): number {
+  return strings.length(strings.trim(text));
+}

@@ -1,0 +1,5 @@
+function absoluteDifferences(values: number[], target: number): number[] {
+  let result: number[] = [];
+  for (let value: number of values) { result.push(math.abs(value - target)); }
+  return result;
+}

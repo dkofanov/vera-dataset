@@ -1,0 +1,298 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          -1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 14",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          -2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 11",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          -5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 12",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "curated 6",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          16
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          32
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          64
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 10",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          128
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 11",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          256
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 12",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          1023
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 13",
+      "function": "isPowerOfTwo",
+      "args": [
+        [
+          "n",
+          1024
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

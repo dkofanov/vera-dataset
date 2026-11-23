@@ -1,0 +1,18 @@
+function factorialValue(number: number): number {
+  let result: number = 1;
+  let i: number = 1;
+  while (i <= number) {
+    result = result * i;
+    i = i + 1;
+  }
+  return result;
+}
+
+function binomialCoefficient(n: number, k: number): number {
+  if (k > n || k < 0) {
+    return 0;
+  }
+  let numerator: number = factorialValue(n);
+  let denominator: number = factorialValue(k) * factorialValue(n - k);
+  return numerator / denominator;
+}

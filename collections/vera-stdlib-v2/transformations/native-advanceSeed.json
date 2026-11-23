@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "89cec68428cc29142e2ab2b2bfbc82a6dd4761ce9865662569ed56e2d1eb51bd",
+  "contracts": [
+    {
+      "name": "advanceSeed",
+      "signature": "function advanceSeed(seed: number): number",
+      "paramNames": [
+        "seed"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.randomStep",
+      "text": "math.randomStep(seed)"
+    }
+  ],
+  "preconditions": [
+    "Seed is an integer in the signed 32-bit range."
+  ]
+}

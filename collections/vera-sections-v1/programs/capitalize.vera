@@ -1,0 +1,10 @@
+import * as strings from "std/strings"
+
+function capitalize(str: string): string {
+  if (str.length() === 0) {
+    return "";
+  }
+  let first: string = strings.substring(str, 0, 1);
+  let rest: string = strings.substring(str, 1, str.length());
+  return strings.toUpperCase(first) + strings.toLowerCase(rest);
+}

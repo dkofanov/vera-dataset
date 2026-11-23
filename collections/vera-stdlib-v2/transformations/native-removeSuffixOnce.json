@@ -1,0 +1,43 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "e4c9349cf9faf357622fb023cb5702097ae5e56ff5c07f22b671d22c6153188a",
+  "contracts": [
+    {
+      "name": "removeSuffixOnce",
+      "signature": "function removeSuffixOnce(text: string, affix: string): string",
+      "paramNames": [
+        "text",
+        "affix"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.endsWith",
+      "text": "strings.endsWith(text, affix)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, 0, strings.length(text) - strings.length(affix))"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(affix)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

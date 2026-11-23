@@ -1,0 +1,905 @@
+{
+  "id": "illustrative/absoluteGap-v2",
+  "cases": [
+    {
+      "args": [
+        0,
+        0
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        4,
+        -3
+      ],
+      "expected": 7,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -3,
+        4
+      ],
+      "expected": 7,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -1000,
+        1000
+      ],
+      "expected": 2000,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        600,
+        295
+      ],
+      "expected": 305,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -587,
+        -161
+      ],
+      "expected": 426,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -273,
+        320
+      ],
+      "expected": 593,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -110,
+        -981
+      ],
+      "expected": 871,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        8,
+        -198
+      ],
+      "expected": 206,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        550,
+        196
+      ],
+      "expected": 354,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -810,
+        575
+      ],
+      "expected": 1385,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -912,
+        -6
+      ],
+      "expected": 906,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -271,
+        688
+      ],
+      "expected": 959,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -763,
+        -812
+      ],
+      "expected": 49,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        435,
+        439
+      ],
+      "expected": 4,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        333,
+        -463
+      ],
+      "expected": 796,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        5,
+        -290
+      ],
+      "expected": 295,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -590,
+        120
+      ],
+      "expected": 710,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -658,
+        -867
+      ],
+      "expected": 209,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        984,
+        960
+      ],
+      "expected": 24,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        77,
+        112
+      ],
+      "expected": 35,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        152,
+        212
+      ],
+      "expected": 60,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -811,
+        -757
+      ],
+      "expected": 54,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -785,
+        -306
+      ],
+      "expected": 479,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        142,
+        -844
+      ],
+      "expected": 986,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        430,
+        48
+      ],
+      "expected": 382,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -575,
+        313
+      ],
+      "expected": 888,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        71,
+        -697
+      ],
+      "expected": 768,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -67,
+        787
+      ],
+      "expected": 854,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -537,
+        -861
+      ],
+      "expected": 324,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -942,
+        -431
+      ],
+      "expected": 511,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -871,
+        -391
+      ],
+      "expected": 480,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -71,
+        -585
+      ],
+      "expected": 514,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        709,
+        -382
+      ],
+      "expected": 1091,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        683,
+        -228
+      ],
+      "expected": 911,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -186,
+        943
+      ],
+      "expected": 1129,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -813,
+        826
+      ],
+      "expected": 1639,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -528,
+        50
+      ],
+      "expected": 578,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -881,
+        181
+      ],
+      "expected": 1062,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        314,
+        528
+      ],
+      "expected": 214,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -204,
+        218
+      ],
+      "expected": 422,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        152,
+        -622
+      ],
+      "expected": 774,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        684,
+        658
+      ],
+      "expected": 26,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        136,
+        982
+      ],
+      "expected": 846,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -38,
+        -641
+      ],
+      "expected": 603,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -903,
+        991
+      ],
+      "expected": 1894,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -916,
+        888
+      ],
+      "expected": 1804,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        283,
+        948
+      ],
+      "expected": 665,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -289,
+        877
+      ],
+      "expected": 1166,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -901,
+        908
+      ],
+      "expected": 1809,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -60,
+        727
+      ],
+      "expected": 787,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -950,
+        -158
+      ],
+      "expected": 792,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -771,
+        -339
+      ],
+      "expected": 432,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -497,
+        104
+      ],
+      "expected": 601,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -74,
+        -325
+      ],
+      "expected": 251,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -545,
+        743
+      ],
+      "expected": 1288,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -190,
+        -593
+      ],
+      "expected": 403,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -54,
+        945
+      ],
+      "expected": 999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        541,
+        -528
+      ],
+      "expected": 1069,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        283,
+        -617
+      ],
+      "expected": 900,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -558,
+        272
+      ],
+      "expected": 830,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -278,
+        -245
+      ],
+      "expected": 33,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        503,
+        -175
+      ],
+      "expected": 678,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        770,
+        -710
+      ],
+      "expected": 1480,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -984,
+        -343
+      ],
+      "expected": 641,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        768,
+        -489
+      ],
+      "expected": 1257,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        769,
+        -750
+      ],
+      "expected": 1519,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        897,
+        -970
+      ],
+      "expected": 1867,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        205,
+        496
+      ],
+      "expected": 291,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        484,
+        -212
+      ],
+      "expected": 696,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -546,
+        606
+      ],
+      "expected": 1152,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        157,
+        -594
+      ],
+      "expected": 751,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -312,
+        638
+      ],
+      "expected": 950,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -7,
+        89
+      ],
+      "expected": 96,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        433,
+        -216
+      ],
+      "expected": 649,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        471,
+        -638
+      ],
+      "expected": 1109,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        367,
+        661
+      ],
+      "expected": 294,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -488,
+        -392
+      ],
+      "expected": 96,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -509,
+        851
+      ],
+      "expected": 1360,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        841,
+        730
+      ],
+      "expected": 111,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        347,
+        -484
+      ],
+      "expected": 831,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        274,
+        -647
+      ],
+      "expected": 921,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -332,
+        130
+      ],
+      "expected": 462,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -397,
+        845
+      ],
+      "expected": 1242,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        401,
+        846
+      ],
+      "expected": 445,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        217,
+        915
+      ],
+      "expected": 698,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        473,
+        544
+      ],
+      "expected": 71,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -878,
+        111
+      ],
+      "expected": 989,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -766,
+        -921
+      ],
+      "expected": 155,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        533,
+        963
+      ],
+      "expected": 430,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        968,
+        773
+      ],
+      "expected": 195,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        654,
+        63
+      ],
+      "expected": 591,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -620,
+        659
+      ],
+      "expected": 1279,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -152,
+        -122
+      ],
+      "expected": 30,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -524,
+        -458
+      ],
+      "expected": 66,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        827,
+        -446
+      ],
+      "expected": 1273,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -277,
+        382
+      ],
+      "expected": 659,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        17,
+        508
+      ],
+      "expected": 491,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -85,
+        -969
+      ],
+      "expected": 884,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -232,
+        -919
+      ],
+      "expected": 687,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    }
+  ]
+}

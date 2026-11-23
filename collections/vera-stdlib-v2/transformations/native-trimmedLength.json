@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "841026822984fb51e479f16908c13297aa92401c3d7823d9b7fca892c3d152f3",
+  "contracts": [
+    {
+      "name": "trimmedLength",
+      "signature": "function trimmedLength(text: string): number",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(strings.trim(text))"
+    },
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

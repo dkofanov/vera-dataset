@@ -1,0 +1,4 @@
+function ensureSuffix(text: string, suffix: string): string {
+  if (strings.endsWith(text, suffix)) { return text; }
+  return text + suffix;
+}

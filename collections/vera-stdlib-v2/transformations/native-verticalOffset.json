@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "6e6722f100521f69175bd1d531e500546ba8c527ff95dc32dbd80bd3b749159b",
+  "contracts": [
+    {
+      "name": "verticalOffset",
+      "signature": "function verticalOffset(radius: number, angle: number): number",
+      "paramNames": [
+        "radius",
+        "angle"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.sin",
+      "text": "math.sin(angle)"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated."
+  ]
+}

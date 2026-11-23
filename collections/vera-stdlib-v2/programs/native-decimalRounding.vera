@@ -1,0 +1,4 @@
+function decimalRounding(value: number, digits: number): number {
+  let factor: number = math.pow(10, digits);
+  return math.round(value * factor) / factor;
+}

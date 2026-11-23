@@ -1,0 +1,3 @@
+function compoundAmount(principal: number, rate: number, periods: number): number {
+  return principal * math.pow(1 + rate, periods);
+}

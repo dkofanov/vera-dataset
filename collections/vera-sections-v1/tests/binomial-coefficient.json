@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {"name": "five choose two", "function": "binomialCoefficient", "args": [["n", 5], ["n", 2]], "expect": ["n", 10]},
+    {"name": "ten choose three", "function": "binomialCoefficient", "args": [["n", 10], ["n", 3]], "expect": ["n", 120]},
+    {"name": "six choose zero", "function": "binomialCoefficient", "args": [["n", 6], ["n", 0]], "expect": ["n", 1]},
+    {"name": "out of range", "function": "binomialCoefficient", "args": [["n", 5], ["n", 6]], "expect": ["n", 0]},
+    {"name": "negative k", "function": "binomialCoefficient", "args": [["n", 10], ["n", -3]], "expect": ["n", 0]}
+  ]
+}

@@ -1,0 +1,3 @@
+function evaluateReplacePlaceholder(reading: string, placeholderValue: string, templateValue: string): string {
+  return strings.replace(templateValue, placeholderValue, reading);
+}

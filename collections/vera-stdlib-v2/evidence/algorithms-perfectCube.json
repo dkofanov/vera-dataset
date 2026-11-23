@@ -1,0 +1,119 @@
+{
+  "id": "function/algorithms/perfectCube",
+  "symbol": {
+    "project": "TheAlgorithms/TypeScript",
+    "repository": "https://github.com/TheAlgorithms/TypeScript",
+    "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+    "path": "maths/perfect_cube.ts",
+    "export": "perfectCube",
+    "sourceFileSha256": "a40e84b3dd6617492c2613ae7435b2cae34115025a49c0c979b91cfb7cf633e3",
+    "declarationSha256": "69e848b3d943000291368e545fbd2b12bd8c4ebe5843e2e798e986faa82eb10f",
+    "start": 121,
+    "end": 207
+  },
+  "documentation": "/**\n * A number is a perfect cube, if the cube root is an integer.\n *\n * @param n The number to check.\n */",
+  "originalSource": "perfectCube = (n: number): boolean => {\n  return Math.round(n ** (1 / 3)) ** 3 === n\n}",
+  "sourceUses": [
+    {
+      "api": "operator.**",
+      "kind": "operator",
+      "receiverKind": "number",
+      "receiverType": null,
+      "sourceSpan": {
+        "sourcePath": "maths/perfect_cube.ts",
+        "start": 170,
+        "end": 199,
+        "startLine": 8,
+        "startColumn": 10,
+        "endLine": 8,
+        "endColumn": 39
+      },
+      "accessSpan": {
+        "sourcePath": "maths/perfect_cube.ts",
+        "start": 170,
+        "end": 199,
+        "startLine": 8,
+        "startColumn": 10,
+        "endLine": 8,
+        "endColumn": 39
+      },
+      "text": "Math.round(n ** (1 / 3)) ** 3",
+      "arguments": []
+    },
+    {
+      "api": "Math.round",
+      "kind": "call",
+      "receiverKind": "math",
+      "receiverType": "Math",
+      "sourceSpan": {
+        "sourcePath": "maths/perfect_cube.ts",
+        "start": 170,
+        "end": 194,
+        "startLine": 8,
+        "startColumn": 10,
+        "endLine": 8,
+        "endColumn": 34
+      },
+      "accessSpan": {
+        "sourcePath": "maths/perfect_cube.ts",
+        "start": 170,
+        "end": 180,
+        "startLine": 8,
+        "startColumn": 10,
+        "endLine": 8,
+        "endColumn": 20
+      },
+      "text": "Math.round(n ** (1 / 3))",
+      "arguments": [
+        "n ** (1 / 3)"
+      ]
+    },
+    {
+      "api": "operator.**",
+      "kind": "operator",
+      "receiverKind": "number",
+      "receiverType": null,
+      "sourceSpan": {
+        "sourcePath": "maths/perfect_cube.ts",
+        "start": 181,
+        "end": 193,
+        "startLine": 8,
+        "startColumn": 21,
+        "endLine": 8,
+        "endColumn": 33
+      },
+      "accessSpan": {
+        "sourcePath": "maths/perfect_cube.ts",
+        "start": 181,
+        "end": 193,
+        "startLine": 8,
+        "startColumn": 21,
+        "endLine": 8,
+        "endColumn": 33
+      },
+      "text": "n ** (1 / 3)",
+      "arguments": []
+    }
+  ],
+  "originalTests": {
+    "path": "maths/test/perfect_cube.test.ts",
+    "sha256": "e13d35f1be8ac69c8239a7adc84ec218ad003b7a76f544aa9cc80e9ca4c6fa2a",
+    "text": "import { perfectCube } from '../perfect_cube'\n\ndescribe('perfect cube tests', () => {\n  it.each([\n    [27, true],\n    [9, false],\n    [8, true],\n    [12, false],\n    [64, true],\n    [151, false],\n    [125, true]\n  ])('The return value of %i should be %s', (n, expectation) => {\n    expect(perfectCube(n)).toBe(expectation)\n  })\n})\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "For a nonnegative integer, raise it to the floating-point power 1/3, round that result to the nearest integer with ties toward positive infinity, cube the rounded result, and return whether that equals the original input. Preserve this computational test rather than substituting a different cube-root algorithm.",
+    "domain": "The argument is an integer between 0 and 1000000000.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "n": "nonnegative integer to test"
+    },
+    "outputRole": "whether the specified rounded-root cubing computation equals the input",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

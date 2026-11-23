@@ -1,0 +1,20 @@
+class Stack {
+  stack: number[];
+  limit: number;
+}
+
+function makeStack(stack: number[], limit: number): Stack {
+  return {stack: stack, limit: limit};
+}
+
+function StackStack(value: Stack): number[] {
+  return value.stack;
+}
+
+function StackLimit(value: Stack): number {
+  return value.limit;
+}
+
+function withStackStack(value: Stack, stack: number[]): Stack {
+  return {stack: stack, limit: value.limit};
+}

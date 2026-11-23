@@ -1,0 +1,28 @@
+{
+  "id": "function/vera-native/characterWindow",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Return the substring from start inclusive to end exclusive, where indices count Unicode code points. Indices are already valid; do not clamp or swap them.",
+    "domain": "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded. Start and end are integers with 0 <= start <= end <= the code-point length of text.",
+    "inputRoles": {
+      "text": "source text",
+      "start": "inclusive code-point start index",
+      "end": "exclusive code-point end index, not a count"
+    },
+    "outputRole": "selected text window",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "(text, start, end) => Array.from(text).slice(start, end).join('')",
+    "sha256": "0e6ebab0ef5d9ad2752176ef23fbd576753403f7086a9420071d3b3eb7a46037"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

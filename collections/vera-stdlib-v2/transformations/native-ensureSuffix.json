@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "d00c34884f943d7bcf1eb54b2f1eb397052a8a0ee2330166acc5774ed4378627",
+  "contracts": [
+    {
+      "name": "ensureSuffix",
+      "signature": "function ensureSuffix(text: string, suffix: string): string",
+      "paramNames": [
+        "text",
+        "suffix"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.endsWith",
+      "text": "strings.endsWith(text, suffix)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

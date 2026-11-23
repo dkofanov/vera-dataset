@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "13528bb685c9d97b53430fc4254ce38a1bdf9b388c35a88ca378050a5c05db42",
+  "contracts": [
+    {
+      "name": "characterCount",
+      "signature": "function characterCount(text: string): number",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

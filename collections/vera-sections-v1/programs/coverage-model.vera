@@ -1,0 +1,67 @@
+class RangeCov {
+  startOffset: number;
+  endOffset: number;
+  count: number;
+}
+
+class FunctionCov {
+  functionName: string;
+  ranges: RangeCov[];
+  isBlockCoverage: boolean;
+}
+
+class ScriptCov {
+  scriptId: string;
+  url: string;
+  functions: FunctionCov[];
+}
+
+class ProcessCov {
+  result: ScriptCov[];
+}
+
+function makeRange(startOffset: number, endOffset: number, count: number): RangeCov {
+  return {
+    startOffset: startOffset,
+    endOffset: endOffset,
+    count: count
+  };
+}
+
+function rangeWidth(range: RangeCov): number {
+  return range.endOffset - range.startOffset;
+}
+
+function makeFunction(functionName: string, ranges: RangeCov[], isBlockCoverage: boolean): FunctionCov {
+  return {
+    functionName: functionName,
+    ranges: ranges,
+    isBlockCoverage: isBlockCoverage
+  };
+}
+
+function functionRangeCount(functionCov: FunctionCov): number {
+  return functionCov.ranges.length();
+}
+
+function makeScript(scriptId: string, url: string, functions: FunctionCov[]): ScriptCov {
+  return {
+    scriptId: scriptId,
+    url: url,
+    functions: functions
+  };
+}
+
+function scriptFunctionCount(scriptCov: ScriptCov): number {
+  return scriptCov.functions.length();
+}
+
+function makeProcess(result: ScriptCov[]): ProcessCov {
+  return {
+    result: result
+  };
+}
+
+function processScriptCount(processCov: ProcessCov): number {
+  return processCov.result.length();
+}

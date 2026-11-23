@@ -1,0 +1,49 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "f7612f4c4795977aab0715316106491c20096769bd57630d64199560bf81a42f",
+  "contracts": [
+    {
+      "name": "replaceFirstLiteral",
+      "signature": "function replaceFirstLiteral(text: string, search: string, replacement: string): string",
+      "paramNames": [
+        "text",
+        "search",
+        "replacement"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(search)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, position, position + width)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, 0, position)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, position + width, size)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

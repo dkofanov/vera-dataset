@@ -1,0 +1,3 @@
+function splitLiteral(text: string, separator: string): string[] {
+  return strings.split(text, separator);
+}

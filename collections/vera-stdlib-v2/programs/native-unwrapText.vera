@@ -1,0 +1,7 @@
+function unwrapText(text: string, opening: string, closing: string): string {
+  let size: number = strings.length(text);
+  let left: number = strings.length(opening);
+  let right: number = strings.length(closing);
+  if (size >= left + right && strings.startsWith(text, opening) && strings.endsWith(text, closing)) { return strings.substring(text, left, size - right); }
+  return text;
+}

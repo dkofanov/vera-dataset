@@ -1,0 +1,28 @@
+{
+  "id": "function/vera-native/valuesWithinBounds",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Return a fresh array containing only values between lower and upper inclusively, preserving original order and duplicates.",
+    "domain": "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Bounds are finite between -100 and 100 with lower <= upper.",
+    "inputRoles": {
+      "values": "source sequence",
+      "lower": "inclusive lower accepted value",
+      "upper": "inclusive upper accepted value"
+    },
+    "outputRole": "fresh subsequence of values inside bounds",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "function(...args) { const cp = s => Array.from(s);\nconst trim = s => s.replace(/^[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+|[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+$/gu, '');\nconst split = (s, sep) => sep === '' ? cp(s) : s.split(sep);\nconst replace = (s, a, b) => a === '' ? s : s.split(a).join(b);\nconst parse = (s, fallback) => { let t = s.replace(/\\s/g, ''); if (!t.includes('.')) t = t.replace(',', '.'); return /^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/.test(t) ? parseFloat(t) : fallback; };\nconst step = seed => { let x = seed | 0; if (x === 0) x = 0x2545F491; x ^= x << 13; x ^= x >>> 17; x ^= x << 5; return x | 0; };\nreturn ((values, lower, upper) => values.filter(value => value >= lower && value <= upper))(...args); }",
+    "sha256": "bb9a33a699d94e38c6a65c95d98acfcfb24ee3ab609fdc4648c65ddc0c5de50a"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

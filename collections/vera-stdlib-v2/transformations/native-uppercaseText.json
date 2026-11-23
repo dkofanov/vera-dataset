@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "af3d219848d75a0e4573e4f777dfcdbfeaecb531641f4ddef8a367a1884abaf9",
+  "contracts": [
+    {
+      "name": "uppercaseText",
+      "signature": "function uppercaseText(text: string): string",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.toUpperCase",
+      "text": "strings.toUpperCase(text)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

@@ -1,0 +1,3 @@
+function characterCount(text: string): number {
+  return strings.length(text);
+}

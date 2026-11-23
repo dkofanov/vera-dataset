@@ -1,0 +1,4 @@
+function inspectCharacterCount(message: string): number {
+  let count: number = strings.length(message);
+  return count;
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "a6c688c6929250c45469b8d0fa6bac2b16e46f1b26c19e4cdb889b81ca70651a",
+  "programSha256": "8f970acb681287f904745759ef9721d2020644df71e56c6011fa845c96edb68e",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "radiansToDegrees",
+      "signature": "function radiansToDegrees(radians: number): number",
+      "paramNames": [
+        "radians"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "math.pi",
+      "sourceApi": "Math.PI",
+      "strategy": "constant",
+      "domain": "unrestricted",
+      "text": "Math.PI",
+      "start": 87,
+      "end": 94
+    }
+  ],
+  "helpers": [],
+  "normalization": {
+    "source": "export function radiansToDegrees(radians: number): number {\n  return (radians * 180) / Math.PI\n}\n",
+    "sourceSha256": "a6c688c6929250c45469b8d0fa6bac2b16e46f1b26c19e4cdb889b81ca70651a",
+    "adaptations": [
+      "Lift arrow-function block to a named function; body is unchanged.",
+      "Select the actual implementation body, not overload-only declarations."
+    ]
+  },
+  "originalDeclarationSha256": "805e271e5ecdf00c24da1a65b59191a4e700c93b2cf8bb8412a5820e31aca143"
+}

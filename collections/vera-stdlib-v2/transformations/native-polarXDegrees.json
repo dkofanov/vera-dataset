@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "c115162e46ec2af2d9d7e9abc570893274c2cb85d5c1519b56c29199e0ef5816",
+  "contracts": [
+    {
+      "name": "polarXDegrees",
+      "signature": "function polarXDegrees(radius: number, degrees: number): number",
+      "paramNames": [
+        "radius",
+        "degrees"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.cos",
+      "text": "math.cos(degrees * math.pi() / 180)"
+    },
+    {
+      "sourceApi": "math.pi",
+      "text": "math.pi()"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Radius is nonnegative."
+  ]
+}

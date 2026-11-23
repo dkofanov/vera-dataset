@@ -1,0 +1,4 @@
+function measureCompleteGroups(groupSizeArg: number, itemsArg: number): number {
+  let teamCount: number = math.floor(itemsArg / groupSizeArg);
+  return teamCount;
+}

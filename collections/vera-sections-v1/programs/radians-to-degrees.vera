@@ -1,0 +1,5 @@
+import * as math from "std/math"
+
+function radiansToDegrees(radians: number): number {
+  return (radians * 180) / math.pi();
+}

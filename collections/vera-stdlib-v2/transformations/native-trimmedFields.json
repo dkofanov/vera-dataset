@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "42cc61429643368b015a48324404aa6750783973d9b0f23ad20dd52cf92b4b68",
+  "contracts": [
+    {
+      "name": "trimmedFields",
+      "signature": "function trimmedFields(text: string, separator: string): string[]",
+      "paramNames": [
+        "text",
+        "separator"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    },
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(field)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty."
+  ]
+}

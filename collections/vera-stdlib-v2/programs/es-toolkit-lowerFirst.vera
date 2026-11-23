@@ -1,0 +1,13 @@
+function compatSubstring(compatLocalText: string, compatLocalStart: number, compatLocalEnd: number, compatLocalHasEnd: boolean): string {
+  let compatLocalLength: number = strings.length(compatLocalText);
+  let compatLocalA: number = math.min(math.max(compatLocalStart, 0), compatLocalLength);
+  let compatLocalB: number = compatLocalLength;
+  compatLocalA = math.floor(compatLocalA);
+  if (compatLocalHasEnd) { compatLocalB = math.floor(math.min(math.max(compatLocalEnd, 0), compatLocalLength)); }
+  if (compatLocalA > compatLocalB) { let compatLocalTemp: number = compatLocalA; compatLocalA = compatLocalB; compatLocalB = compatLocalTemp; }
+  return strings.substring(compatLocalText, compatLocalA, compatLocalB);
+}
+
+function lowerFirst(str: string): string {
+return (strings.toLowerCase(compatSubstring(str, 0, 1, true)) + compatSubstring(str, 1, 0, false));
+}

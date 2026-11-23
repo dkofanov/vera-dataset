@@ -1,0 +1,8 @@
+{
+  "tests": [
+    {"name": "sixteen", "function": "perfectSquare", "args": [["n", 16]], "expect": ["b", true]},
+    {"name": "twelve", "function": "perfectSquare", "args": [["n", 12]], "expect": ["b", false]},
+    {"name": "twenty five", "function": "perfectSquare", "args": [["n", 25]], "expect": ["b", true]},
+    {"name": "forty two", "function": "perfectSquare", "args": [["n", 42]], "expect": ["b", false]}
+  ]
+}

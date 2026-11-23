@@ -1,0 +1,12 @@
+function measureParseThenScale(otherwiseValue: number, factorArg: number, phrase: string): number {
+  let cleaned: string = strings.replace(phrase, " ", "");
+  cleaned = strings.replace(cleaned, "\t", "");
+  cleaned = strings.replace(cleaned, "\n", "");
+  cleaned = strings.replace(cleaned, "\r", "");
+  cleaned = strings.replace(cleaned, "\u00a0", "");
+  if (!strings.contains(cleaned, ".") && strings.contains(cleaned, ",")) {
+    cleaned = strings.replace(cleaned, ",", ".");
+  }
+  let parsed: number = strings.toNumber(cleaned, otherwiseValue);
+  return parsed * factorArg;
+}

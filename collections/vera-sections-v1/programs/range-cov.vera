@@ -1,0 +1,17 @@
+class RangeCov {
+  startOffset: number;
+  endOffset: number;
+  count: number;
+}
+
+function makeRange(startOffset: number, endOffset: number, count: number): RangeCov {
+  return {
+    startOffset: startOffset,
+    endOffset: endOffset,
+    count: count
+  };
+}
+
+function rangeWidth(range: RangeCov): number {
+  return range.endOffset - range.startOffset;
+}

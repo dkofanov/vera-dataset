@@ -1,0 +1,25 @@
+function compatIndex(compatLocalValue: number, compatLocalLength: number): number {
+  let compatLocalIndex: number = math.floor(math.abs(compatLocalValue));
+  if (compatLocalValue < 0) { compatLocalIndex = -compatLocalIndex; }
+  if (compatLocalIndex < 0) { return math.max(compatLocalLength + compatLocalIndex, 0); }
+  return math.min(compatLocalIndex, compatLocalLength);
+}
+
+function compatArraySliceNumber(compatLocalValues: number[], compatLocalStart: number, compatLocalEnd: number, compatLocalHasEnd: boolean): number[] {
+  let compatLocalLength: number = compatLocalValues.length();
+  let compatLocalA: number = compatIndex(compatLocalStart, compatLocalLength);
+  let compatLocalB: number = compatLocalLength;
+  if (compatLocalHasEnd) { compatLocalB = compatIndex(compatLocalEnd, compatLocalLength); }
+  let compatLocalResult: number[] = [];
+  while (compatLocalA < compatLocalB) { compatLocalResult.push(compatLocalValues[compatLocalA]); compatLocalA = compatLocalA + 1; }
+  return compatLocalResult;
+}
+
+function dropRight(arr: number[], itemsCount: number): number[] {
+let compatParameter1: number = itemsCount;
+compatParameter1 = math.min((-compatParameter1), 0);
+if ((compatParameter1 === 0)) {
+return compatArraySliceNumber(arr, 0, 0, false);
+}
+return compatArraySliceNumber(arr, 0, compatParameter1, true);
+}

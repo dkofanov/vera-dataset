@@ -1,0 +1,43 @@
+import * as math from "std/math"
+
+function heapSwap(arr: number[], i: number, j: number): void {
+  let temp: number = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
+}
+
+function heapify(arr: number[], index: number, size: number): void {
+  let largest: number = index;
+  let left: number = 2 * index + 1;
+  let right: number = 2 * index + 2;
+  if (left < size && arr[left] > arr[largest]) {
+    largest = left;
+  }
+  if (right < size && arr[right] > arr[largest]) {
+    largest = right;
+  }
+  if (largest !== index) {
+    heapSwap(arr, index, largest);
+    heapify(arr, largest, size);
+  }
+}
+
+function buildMaxHeap(arr: number[]): void {
+  let n: number = arr.length();
+  let i: number = math.floor(n / 2) - 1;
+  while (i >= 0) {
+    heapify(arr, i, n);
+    i = i - 1;
+  }
+}
+
+function HeapSort(arr: number[]): number[] {
+  buildMaxHeap(arr);
+  let i: number = arr.length() - 1;
+  while (i > 0) {
+    heapSwap(arr, 0, i);
+    heapify(arr, 0, i);
+    i = i - 1;
+  }
+  return arr;
+}

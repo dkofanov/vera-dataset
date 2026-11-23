@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "d05ec20b55cabd199ad40c69cf6f27e3e3e5063bcadaa035b2bab1f3866b4b41",
+  "contracts": [
+    {
+      "name": "ensurePrefix",
+      "signature": "function ensurePrefix(text: string, prefix: string): string",
+      "paramNames": [
+        "text",
+        "prefix"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.startsWith",
+      "text": "strings.startsWith(text, prefix)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

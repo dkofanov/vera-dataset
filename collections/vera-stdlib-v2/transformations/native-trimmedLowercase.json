@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "87eaeeae1d8efedeada4a5eff009fd9e4a2494dd9da91e2f1686b1cdb21d85d1",
+  "contracts": [
+    {
+      "name": "trimmedLowercase",
+      "signature": "function trimmedLowercase(text: string): string",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.toLowerCase",
+      "text": "strings.toLowerCase(strings.trim(text))"
+    },
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

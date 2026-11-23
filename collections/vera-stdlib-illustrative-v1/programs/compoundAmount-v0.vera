@@ -1,0 +1,5 @@
+function inspectCompoundAmount(principalInput: number, rateInput: number, periodsInput: number): number {
+  let growth: number = 1 + rateInput;
+  let factor: number = math.pow(growth, periodsInput);
+  return principalInput * factor;
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "2a12eeb92a49bc39b380513da246b36c2fbea8f5c6868d11084e25e10693567c",
+  "contracts": [
+    {
+      "name": "bucketForSeed",
+      "signature": "function bucketForSeed(seed: number, bound: number): number",
+      "paramNames": [
+        "seed",
+        "bound"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.randomBelow",
+      "text": "math.randomBelow(seed, bound)"
+    }
+  ],
+  "preconditions": [
+    "Seed is a signed 32-bit integer. Bound is an integer between 1 and 1000."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "896dc4b28248c1c87fcf1026070ae87220419ca1904dbe5229213a1d30426afb",
+  "contracts": [
+    {
+      "name": "distanceBetweenPoints",
+      "signature": "function distanceBetweenPoints(x1: number, y1: number, x2: number, y2: number): number",
+      "paramNames": [
+        "x1",
+        "y1",
+        "x2",
+        "y2"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.sqrt",
+      "text": "math.sqrt(dx * dx + dy * dy)"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged."
+  ]
+}

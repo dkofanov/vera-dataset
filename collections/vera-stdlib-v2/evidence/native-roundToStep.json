@@ -1,0 +1,27 @@
+{
+  "id": "function/vera-native/roundToStep",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Divide value by step, round to the nearest integer with ties toward positive infinity, then multiply by step. Keep ordinary binary floating-point behavior, including signed zero.",
+    "domain": "Value is finite between -1000 and 1000; step is finite between 0.01 and 100.",
+    "inputRoles": {
+      "value": "quantity to round",
+      "step": "positive spacing between multiples"
+    },
+    "outputRole": "nearest step multiple with the specified tie behavior",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "(value, step) => Math.round(value / step) * step",
+    "sha256": "d7e2abe9862ddb14a9eeb71b00d1b1a7d5e436576f90bf4fe45f2b7906067ce5"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

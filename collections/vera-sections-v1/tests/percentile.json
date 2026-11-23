@@ -1,0 +1,472 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              1
+            ]
+          ]
+        ],
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              -1
+            ],
+            [
+              "n",
+              0
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        -1
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              10
+            ],
+            [
+              "n",
+              20
+            ],
+            [
+              "n",
+              30
+            ]
+          ]
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ],
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          25
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          50
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          75
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ],
+        [
+          "n",
+          100
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "percentile",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              -5
+            ],
+            [
+              "n",
+              10
+            ],
+            [
+              "n",
+              0
+            ]
+          ]
+        ],
+        [
+          "n",
+          90
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

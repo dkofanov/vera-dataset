@@ -1,0 +1,7 @@
+function inspectBlankOrFallback(message: string, defaultValue: string): string {
+  let cleaned: string = strings.trim(message);
+  if (strings.length(cleaned) === 0) {
+    return defaultValue;
+  }
+  return cleaned;
+}

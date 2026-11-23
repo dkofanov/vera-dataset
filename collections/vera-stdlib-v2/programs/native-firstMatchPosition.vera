@@ -1,0 +1,10 @@
+function firstMatchPosition(text: string, query: string): number {
+  let index: number = 0;
+  let width: number = strings.length(query);
+  let size: number = strings.length(text);
+  while (index + width <= size) {
+    if (strings.substring(text, index, index + width) === query) { return index; }
+    index = index + 1;
+  }
+  return -1;
+}

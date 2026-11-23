@@ -1,0 +1,5 @@
+function roundEachValue(values: number[], step: number): number[] {
+  let result: number[] = [];
+  for (let value: number of values) { result.push(math.round(value / step) * step); }
+  return result;
+}

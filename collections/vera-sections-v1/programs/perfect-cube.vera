@@ -1,0 +1,6 @@
+import * as math from "std/math"
+
+function perfectCube(n: number): boolean {
+  let root: number = math.round(math.pow(n, 1 / 3));
+  return root * root * root === n;
+}

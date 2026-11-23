@@ -1,0 +1,3 @@
+function enclosedText(text: string, opening: string, closing: string): boolean {
+  return strings.startsWith(text, opening) && strings.endsWith(text, closing) && strings.length(text) >= strings.length(opening) + strings.length(closing);
+}

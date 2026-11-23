@@ -1,0 +1,3 @@
+function replacePathSeparator(path: string, oldSeparator: string, newSeparator: string): string {
+  return strings.replace(path, oldSeparator, newSeparator);
+}

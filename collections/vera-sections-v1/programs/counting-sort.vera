@@ -1,0 +1,35 @@
+function countingSort(inputArr: number[], minimum: number, maximum: number): number[] {
+  let count: number[] = [];
+  let countLength: number = maximum - minimum + 1;
+  let i: number = 0;
+  while (i < countLength) {
+    count.push(0);
+    i = i + 1;
+  }
+  i = 0;
+  while (i < inputArr.length()) {
+    let slot: number = inputArr[i] - minimum;
+    count[slot] = count[slot] + 1;
+    i = i + 1;
+  }
+  count[0] = count[0] - 1;
+  i = 1;
+  while (i < count.length()) {
+    count[i] = count[i] + count[i - 1];
+    i = i + 1;
+  }
+  let sorted: number[] = [];
+  i = 0;
+  while (i < inputArr.length()) {
+    sorted.push(0);
+    i = i + 1;
+  }
+  i = inputArr.length() - 1;
+  while (i >= 0) {
+    let slot: number = inputArr[i] - minimum;
+    sorted[count[slot]] = inputArr[i];
+    count[slot] = count[slot] - 1;
+    i = i - 1;
+  }
+  return sorted;
+}

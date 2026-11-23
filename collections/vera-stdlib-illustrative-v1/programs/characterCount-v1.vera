@@ -1,0 +1,4 @@
+function evaluateCharacterCount(content: string): number {
+  let total: number = strings.length(content);
+  return total;
+}

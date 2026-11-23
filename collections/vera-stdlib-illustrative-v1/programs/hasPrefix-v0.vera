@@ -1,0 +1,3 @@
+function inspectHasPrefix(message: string, keyword: string): boolean {
+  return strings.startsWith(message, keyword);
+}

@@ -1,0 +1,3 @@
+function measureReplaceLiteralAll(oldText: string, insertedText: string, phrase: string): string {
+  return strings.replace(phrase, oldText, insertedText);
+}

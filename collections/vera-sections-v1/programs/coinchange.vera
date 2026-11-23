@@ -1,0 +1,20 @@
+class CoinChange {
+  minCoins: number;
+  coins: number[];
+}
+
+function makeCoinChange(minCoins: number, coins: number[]): CoinChange {
+  return {minCoins: minCoins, coins: coins};
+}
+
+function CoinChangeMinCoins(value: CoinChange): number {
+  return value.minCoins;
+}
+
+function CoinChangeCoins(value: CoinChange): number[] {
+  return value.coins;
+}
+
+function withCoinChangeMinCoins(value: CoinChange, minCoins: number): CoinChange {
+  return {minCoins: minCoins, coins: value.coins};
+}

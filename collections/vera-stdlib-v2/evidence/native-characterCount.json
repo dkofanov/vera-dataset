@@ -1,0 +1,26 @@
+{
+  "id": "function/vera-native/characterCount",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Count Unicode code points, not UTF-16 code units. An emoji outside the BMP counts as one; combining marks count separately.",
+    "domain": "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded.",
+    "inputRoles": {
+      "text": "source text"
+    },
+    "outputRole": "Unicode code-point count, not UTF-16 unit count",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "text => Array.from(text).length",
+    "sha256": "0808564e2ed78915a88f484cbb7c73b57fb35ed964b245e5dae093a16cee5024"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "674b5612029b98d4b51865b8ab673ebaf5a6bf74683a707cb4744077411f0937",
+  "contracts": [
+    {
+      "name": "sumNumericFields",
+      "signature": "function sumNumericFields(text: string, separator: string, fallback: number): number",
+      "paramNames": [
+        "text",
+        "separator",
+        "fallback"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    },
+    {
+      "sourceApi": "strings.toNumber",
+      "text": "strings.toNumber(field, fallback)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty; fields have at most 20 characters and accepted values are finite between -1000 and 1000. Fallback is finite between -1000 and 1000."
+  ]
+}

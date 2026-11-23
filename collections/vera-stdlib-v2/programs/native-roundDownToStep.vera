@@ -1,0 +1,3 @@
+function roundDownToStep(value: number, step: number): number {
+  return math.floor(value / step) * step;
+}

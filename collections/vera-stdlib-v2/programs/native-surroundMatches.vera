@@ -1,0 +1,3 @@
+function surroundMatches(text: string, search: string, opening: string, closing: string): string {
+  return strings.replace(text, search, opening + search + closing);
+}

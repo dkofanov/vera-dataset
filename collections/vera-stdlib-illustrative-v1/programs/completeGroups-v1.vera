@@ -1,0 +1,4 @@
+function evaluateCompleteGroups(groupSizeValue: number, itemsValue: number): number {
+  let fullGroups: number = math.floor(itemsValue / groupSizeValue);
+  return fullGroups;
+}

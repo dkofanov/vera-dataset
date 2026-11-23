@@ -1,0 +1,3 @@
+function evaluateContainsText(fragment: string, content: string): boolean {
+  return strings.contains(content, fragment);
+}

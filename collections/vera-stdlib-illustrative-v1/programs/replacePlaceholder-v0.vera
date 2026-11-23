@@ -1,0 +1,3 @@
+function inspectReplacePlaceholder(templateInput: string, placeholderInput: string, amount: string): string {
+  return strings.replace(templateInput, placeholderInput, amount);
+}

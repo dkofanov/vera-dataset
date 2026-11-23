@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "4728c4b4ad89c46ff51d4e04f8b3c6599d3b035f14b11f2a0345446928a85d5d",
+  "contracts": [
+    {
+      "name": "replaceLiteralAll",
+      "signature": "function replaceLiteralAll(text: string, search: string, replacement: string): string",
+      "paramNames": [
+        "text",
+        "search",
+        "replacement"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(text, search, replacement)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded. Search and replacement have the same text restrictions."
+  ]
+}

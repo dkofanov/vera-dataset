@@ -1,0 +1,3 @@
+function remainingCapacity(capacity: number, used: number): number {
+  return math.max(capacity - used, 0);
+}

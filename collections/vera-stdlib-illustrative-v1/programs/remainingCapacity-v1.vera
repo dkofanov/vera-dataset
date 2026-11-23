@@ -1,0 +1,8 @@
+function evaluateRemainingCapacity(usedValue: number, capacityValue: number): number {
+  let leftover: number = capacityValue - usedValue;
+  if (leftover < 0) {
+    return 0;
+  } else {
+    return leftover;
+  }
+}

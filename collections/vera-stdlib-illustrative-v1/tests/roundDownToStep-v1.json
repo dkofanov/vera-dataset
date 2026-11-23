@@ -1,0 +1,905 @@
+{
+  "id": "illustrative/roundDownToStep-v1",
+  "cases": [
+    {
+      "args": [
+        2,
+        5
+      ],
+      "expected": 4,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        2,
+        -5
+      ],
+      "expected": -6,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        3,
+        0
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        1,
+        -0.1
+      ],
+      "expected": -1,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        43.7,
+        -580.2
+      ],
+      "expected": -611.8000000000001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        2.2,
+        -665.5
+      ],
+      "expected": -666.6,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        42.3,
+        462.9
+      ],
+      "expected": 423,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        64.6,
+        -429.5
+      ],
+      "expected": -452.19999999999993,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        27.9,
+        149.5
+      ],
+      "expected": 139.5,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        39.7,
+        -259.9
+      ],
+      "expected": -277.90000000000003,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        62.4,
+        662.5
+      ],
+      "expected": 624,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        46.2,
+        684.2
+      ],
+      "expected": 646.8000000000001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        85.4,
+        206.2
+      ],
+      "expected": 170.8,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        67.5,
+        122.2
+      ],
+      "expected": 67.5,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        47.6,
+        216.5
+      ],
+      "expected": 190.4,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        91.9,
+        -550.3
+      ],
+      "expected": -551.4000000000001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        98.2,
+        -654.9
+      ],
+      "expected": -687.4,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        78.5,
+        -424.5
+      ],
+      "expected": -471,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        76.9,
+        -622.8
+      ],
+      "expected": -692.1,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        64.2,
+        -793.8
+      ],
+      "expected": -834.6,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        89.3,
+        735.1
+      ],
+      "expected": 714.4,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        50.7,
+        -515.1
+      ],
+      "expected": -557.7,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        65.3,
+        -273
+      ],
+      "expected": -326.5,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        34.9,
+        -611.1
+      ],
+      "expected": -628.1999999999999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        27.4,
+        196.7
+      ],
+      "expected": 191.79999999999998,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        72.6,
+        794.2
+      ],
+      "expected": 726,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        21.9,
+        728.6
+      ],
+      "expected": 722.6999999999999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        88.7,
+        611.4
+      ],
+      "expected": 532.2,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        87.6,
+        -933.8
+      ],
+      "expected": -963.5999999999999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        74.3,
+        -99.1
+      ],
+      "expected": -148.6,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        64.6,
+        -99.3
+      ],
+      "expected": -129.2,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        32.7,
+        372.5
+      ],
+      "expected": 359.70000000000005,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        69.6,
+        683.2
+      ],
+      "expected": 626.4,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        65.7,
+        -824.1
+      ],
+      "expected": -854.1,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        89.9,
+        619.7
+      ],
+      "expected": 539.4000000000001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        12.2,
+        -611.2
+      ],
+      "expected": -622.1999999999999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        70.8,
+        503.9
+      ],
+      "expected": 495.59999999999997,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        79.8,
+        108
+      ],
+      "expected": 79.8,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        0.3,
+        -455.9
+      ],
+      "expected": -456,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        32.5,
+        551.1
+      ],
+      "expected": 520,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        16.1,
+        -160
+      ],
+      "expected": -161,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        23.5,
+        -926.9
+      ],
+      "expected": -940,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        86.9,
+        -333.3
+      ],
+      "expected": -347.6,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        87.8,
+        506.6
+      ],
+      "expected": 439,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        44.5,
+        -778.7
+      ],
+      "expected": -801,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        33.6,
+        -270.9
+      ],
+      "expected": -302.40000000000003,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        68.7,
+        989.2
+      ],
+      "expected": 961.8000000000001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        95.4,
+        -133.8
+      ],
+      "expected": -190.8,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        51,
+        -615.6
+      ],
+      "expected": -663,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        39.8,
+        35.2
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        88.4,
+        823.7
+      ],
+      "expected": 795.6,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        36.4,
+        36.1
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        85.5,
+        -114.1
+      ],
+      "expected": -171,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        33.5,
+        -103.5
+      ],
+      "expected": -134,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        63.8,
+        -281.9
+      ],
+      "expected": -319,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        3.1,
+        675.4
+      ],
+      "expected": 672.7,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        7.6,
+        -659.7
+      ],
+      "expected": -661.1999999999999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        43,
+        -566.3
+      ],
+      "expected": -602,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        96,
+        -992.6
+      ],
+      "expected": -1056,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        52.1,
+        -222.6
+      ],
+      "expected": -260.5,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        98,
+        -716
+      ],
+      "expected": -784,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        15,
+        -122.5
+      ],
+      "expected": -135,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        33.5,
+        -11.2
+      ],
+      "expected": -33.5,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        63.9,
+        377.3
+      ],
+      "expected": 319.5,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        25.1,
+        -336.9
+      ],
+      "expected": -351.40000000000003,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        2.2,
+        -912.1
+      ],
+      "expected": -913.0000000000001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        93.1,
+        722.9
+      ],
+      "expected": 651.6999999999999,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        8.8,
+        -116.2
+      ],
+      "expected": -123.20000000000002,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        69.7,
+        -115.1
+      ],
+      "expected": -139.4,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        60,
+        -923.8
+      ],
+      "expected": -960,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        47.6,
+        595.5
+      ],
+      "expected": 571.2,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        20.5,
+        3.8
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        33.5,
+        -940.4
+      ],
+      "expected": -971.5,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        75.4,
+        580.3
+      ],
+      "expected": 527.8000000000001,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        53.2,
+        820.1
+      ],
+      "expected": 798,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        19.5,
+        148.9
+      ],
+      "expected": 136.5,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        97.3,
+        -149
+      ],
+      "expected": -194.6,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        60.1,
+        800.4
+      ],
+      "expected": 781.3000000000001,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        68.2,
+        212.5
+      ],
+      "expected": 204.60000000000002,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        41.9,
+        262.8
+      ],
+      "expected": 251.39999999999998,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        33.5,
+        714.2
+      ],
+      "expected": 703.5,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        44.4,
+        -559.3
+      ],
+      "expected": -577.1999999999999,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        74.3,
+        -505.5
+      ],
+      "expected": -520.1,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        4.2,
+        -238.2
+      ],
+      "expected": -239.4,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        43.7,
+        -76.7
+      ],
+      "expected": -87.4,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        37.8,
+        -13.8
+      ],
+      "expected": -37.8,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        73.5,
+        -268
+      ],
+      "expected": -294,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        66.7,
+        634.3
+      ],
+      "expected": 600.3000000000001,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        93.3,
+        -221.2
+      ],
+      "expected": -279.9,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        71.8,
+        691
+      ],
+      "expected": 646.1999999999999,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        51.5,
+        -644.9
+      ],
+      "expected": -669.5,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        28.6,
+        -259.1
+      ],
+      "expected": -286,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        52.2,
+        -561.1
+      ],
+      "expected": -574.2,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        98.6,
+        -808.4
+      ],
+      "expected": -887.4,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        46.3,
+        -198
+      ],
+      "expected": -231.5,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        80.3,
+        741.1
+      ],
+      "expected": 722.6999999999999,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        42.2,
+        376.9
+      ],
+      "expected": 337.6,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        45.2,
+        745.5
+      ],
+      "expected": 723.2,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        23.5,
+        -210.8
+      ],
+      "expected": -211.5,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        10.7,
+        -356.6
+      ],
+      "expected": -363.79999999999995,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    }
+  ]
+}

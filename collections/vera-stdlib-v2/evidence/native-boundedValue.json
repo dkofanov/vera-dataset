@@ -1,0 +1,28 @@
+{
+  "id": "function/vera-native/boundedValue",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Return min(max(value, lower), upper). Both bounds are inclusive and lower is no greater than upper.",
+    "domain": "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated.",
+    "inputRoles": {
+      "value": "quantity to constrain",
+      "lower": "inclusive lower bound",
+      "upper": "inclusive upper bound"
+    },
+    "outputRole": "constrained quantity",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "(value, lower, upper) => Math.min(Math.max(value, lower), upper)",
+    "sha256": "a9983b54fc99df6c51aef60e32dddbda3373dda9b921cf8656757f00df791816"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

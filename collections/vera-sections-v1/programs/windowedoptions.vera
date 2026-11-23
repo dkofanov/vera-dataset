@@ -1,0 +1,15 @@
+class WindowedOptions {
+  partialWindows: boolean;
+}
+
+function makeWindowedOptions(partialWindows: boolean): WindowedOptions {
+  return {partialWindows: partialWindows};
+}
+
+function WindowedOptionsPartialWindows(value: WindowedOptions): boolean {
+  return value.partialWindows;
+}
+
+function withWindowedOptionsPartialWindows(value: WindowedOptions, partialWindows: boolean): WindowedOptions {
+  return {partialWindows: partialWindows};
+}

@@ -1,0 +1,4 @@
+function measureReplacePathSeparator(oldSeparatorArg: string, newSeparatorArg: string, pathArg: string): string {
+  let output: string = strings.replace(pathArg, oldSeparatorArg, newSeparatorArg);
+  return output;
+}

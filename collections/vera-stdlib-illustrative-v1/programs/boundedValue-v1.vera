@@ -1,0 +1,11 @@
+function evaluateBoundedValue(upperValue: number, lowerValue: number, reading: number): number {
+  let constrained: number = reading;
+  if (constrained < lowerValue) {
+    constrained = lowerValue;
+  } else {
+    if (constrained > upperValue) {
+      constrained = upperValue;
+    }
+  }
+  return constrained;
+}

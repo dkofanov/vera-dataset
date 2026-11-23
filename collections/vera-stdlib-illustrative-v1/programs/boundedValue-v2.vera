@@ -1,0 +1,10 @@
+function measureBoundedValue(lowerArg: number, upperArg: number, sample: number): number {
+  let bounded: number = sample;
+  if (bounded < lowerArg) {
+    bounded = lowerArg;
+  }
+  if (bounded > upperArg) {
+    bounded = upperArg;
+  }
+  return bounded;
+}

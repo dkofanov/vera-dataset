@@ -1,0 +1,6 @@
+function evaluateHeadingRadians(dyValue: number, dxValue: number): number {
+  if (dxValue === 0 && dyValue === 0) {
+    return 0;
+  }
+  return math.atan2(dyValue, dxValue);
+}

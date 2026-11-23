@@ -1,0 +1,4 @@
+function ensurePrefix(text: string, prefix: string): string {
+  if (strings.startsWith(text, prefix)) { return text; }
+  return prefix + text;
+}

@@ -1,0 +1,43 @@
+class TreeNode {
+  value: number;
+  left: number;
+  right: number;
+}
+
+function insertNode(nodes: TreeNode[], rootIndex: number, value: number): number {
+  if (rootIndex === -1) {
+    let node: TreeNode = { value: value, left: -1, right: -1 };
+    nodes.push(node);
+    return nodes.length() - 1;
+  }
+  if (value < nodes[rootIndex].value) {
+    let newLeft: number = insertNode(nodes, nodes[rootIndex].left, value);
+    nodes[rootIndex].left = newLeft;
+  } else {
+    let newRight: number = insertNode(nodes, nodes[rootIndex].right, value);
+    nodes[rootIndex].right = newRight;
+  }
+  return rootIndex;
+}
+
+function inOrder(nodes: TreeNode[], rootIndex: number, result: number[]): void {
+  if (rootIndex === -1) {
+    return;
+  }
+  inOrder(nodes, nodes[rootIndex].left, result);
+  result.push(nodes[rootIndex].value);
+  inOrder(nodes, nodes[rootIndex].right, result);
+}
+
+function treeSort(arr: number[]): number[] {
+  let nodes: TreeNode[] = [];
+  let root: number = -1;
+  let i: number = 0;
+  while (i < arr.length()) {
+    root = insertNode(nodes, root, arr[i]);
+    i = i + 1;
+  }
+  let result: number[] = [];
+  inOrder(nodes, root, result);
+  return result;
+}

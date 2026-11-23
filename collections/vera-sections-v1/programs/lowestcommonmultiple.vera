@@ -1,0 +1,38 @@
+function gcd(a: number, b: number): number {
+  let x: number = a;
+  let y: number = b;
+  if (x < 0) {
+    x = -x;
+  }
+  if (y < 0) {
+    y = -y;
+  }
+  while (y !== 0) {
+    let t: number = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
+
+function binaryLCM(a: number, b: number): number {
+  if (a === 0 || b === 0) {
+    return 0;
+  }
+  let g: number = gcd(a, b);
+  let q: number = a / g;
+  return q * b;
+}
+
+function lowestCommonMultiple(nums: number[]): number {
+  if (nums.length() === 0) {
+    return 0;
+  }
+  let result: number = nums[0];
+  let i: number = 1;
+  while (i < nums.length()) {
+    result = binaryLCM(result, nums[i]);
+    i = i + 1;
+  }
+  return result;
+}

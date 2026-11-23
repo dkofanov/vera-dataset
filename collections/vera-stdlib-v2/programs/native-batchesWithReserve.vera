@@ -1,0 +1,3 @@
+function batchesWithReserve(items: number, reserve: number, batchSize: number): number {
+  return math.ceil((items + reserve) / batchSize);
+}

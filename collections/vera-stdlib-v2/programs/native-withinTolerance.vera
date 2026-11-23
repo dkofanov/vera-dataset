@@ -1,0 +1,3 @@
+function withinTolerance(observed: number, target: number, tolerance: number): boolean {
+  return math.abs(observed - target) <= tolerance;
+}

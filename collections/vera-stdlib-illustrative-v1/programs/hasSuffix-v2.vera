@@ -1,0 +1,3 @@
+function measureHasSuffix(searchText: string, phrase: string): boolean {
+  return strings.endsWith(phrase, searchText);
+}

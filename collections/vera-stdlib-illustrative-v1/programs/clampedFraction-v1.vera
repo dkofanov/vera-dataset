@@ -1,0 +1,10 @@
+function evaluateClampedFraction(upperValue: number, lowerValue: number, reading: number): number {
+  let fraction: number = (reading - lowerValue) / (upperValue - lowerValue);
+  if (fraction < 0) {
+    return 0;
+  }
+  if (fraction > 1) {
+    return 1;
+  }
+  return fraction;
+}

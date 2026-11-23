@@ -1,0 +1,239 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "curated 3",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "curated 7",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "curated 4",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          30
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 10",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          49
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 11",
+      "function": "isSquareFree",
+      "args": [
+        [
+          "n",
+          97
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

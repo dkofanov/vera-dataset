@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "average", "function": "selectionSort", "args": [["a", [["n", 12], ["n", 29], ["n", 25], ["n", 8], ["n", 32], ["n", 17], ["n", 40]]]], "expect": ["a", [["n", 8], ["n", 12], ["n", 17], ["n", 25], ["n", 29], ["n", 32], ["n", 40]]]},
+    {"name": "reverse", "function": "selectionSort", "args": [["a", [["n", 5], ["n", 4], ["n", 3], ["n", 2], ["n", 1]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4], ["n", 5]]]},
+    {"name": "duplicates", "function": "selectionSort", "args": [["a", [["n", 3], ["n", 1], ["n", 3], ["n", 2]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3], ["n", 3]]]}
+  ]
+}

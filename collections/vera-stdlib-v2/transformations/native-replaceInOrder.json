@@ -1,0 +1,39 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "7fbe610e906f6d454b5dcf005f81bbc4dd82ce790dc7bb711c9540e11f016f4a",
+  "contracts": [
+    {
+      "name": "replaceInOrder",
+      "signature": "function replaceInOrder(text: string, first: string, second: string, replacement: string): string",
+      "paramNames": [
+        "text",
+        "first",
+        "second",
+        "replacement"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(strings.replace(text, first, replacement), second, replacement)"
+    },
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(text, first, replacement)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

@@ -1,0 +1,3 @@
+function inspectUppercaseText(message: string): string {
+  return strings.toUpperCase(message);
+}

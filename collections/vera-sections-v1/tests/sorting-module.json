@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "bubble average", "function": "bubbleSort", "args": [["a", [["n", 3], ["n", 1], ["n", 2]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3]]]},
+    {"name": "insertion reverse", "function": "insertionSort", "args": [["a", [["n", 3], ["n", 2], ["n", 1]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3]]]},
+    {"name": "selection duplicates", "function": "selectionSort", "args": [["a", [["n", 3], ["n", 1], ["n", 3], ["n", 2]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3], ["n", 3]]]},
+    {"name": "shell average", "function": "shellSort", "args": [["a", [["n", 4], ["n", 1], ["n", 3], ["n", 2]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]]},
+    {"name": "gnome empty", "function": "gnomeSort", "args": [["a", []]], "expect": ["a", []]},
+    {"name": "gnome average", "function": "gnomeSort", "args": [["a", [["n", 3], ["n", 1], ["n", 2]]]], "expect": ["a", [["n", 1], ["n", 2], ["n", 3]]]}
+  ]
+}

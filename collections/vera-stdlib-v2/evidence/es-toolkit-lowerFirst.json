@@ -1,0 +1,122 @@
+{
+  "id": "function/es-toolkit/lowerFirst",
+  "symbol": {
+    "project": "toss/es-toolkit",
+    "repository": "https://github.com/toss/es-toolkit",
+    "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+    "path": "src/string/lowerFirst.ts",
+    "export": "lowerFirst",
+    "sourceFileSha256": "ccb6e2498e4f918570eef4a80500c03a9b9456bc47b68c20463b91acc527b179",
+    "declarationSha256": "b033e3a63e47c1c5a41098f0a2ac605c47d20b7356f59e679c442c1360b5cd1a",
+    "start": 352,
+    "end": 466
+  },
+  "documentation": "/**\n * Converts the first character of string to lower case.\n *\n * @param str - The string that is to be changed\n * @returns The converted string.\n *\n * @example\n * const convertedStr1 = lowerFirst('fred') // returns 'fred'\n * const convertedStr2 = lowerFirst('Fred') // returns 'fred'\n * const convertedStr3 = lowerFirst('FRED') // returns 'fRED'\n */",
+  "originalSource": "export function lowerFirst(str: string): string {\n  return str.substring(0, 1).toLowerCase() + str.substring(1);\n}",
+  "sourceUses": [
+    {
+      "api": "String.prototype.toLowerCase",
+      "kind": "call",
+      "receiverKind": "string",
+      "receiverType": "string",
+      "sourceSpan": {
+        "sourcePath": "src/string/lowerFirst.ts",
+        "start": 411,
+        "end": 444,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 43
+      },
+      "accessSpan": {
+        "sourcePath": "src/string/lowerFirst.ts",
+        "start": 411,
+        "end": 442,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 41
+      },
+      "text": "str.substring(0, 1).toLowerCase()",
+      "arguments": []
+    },
+    {
+      "api": "String.prototype.substring",
+      "kind": "call",
+      "receiverKind": "string",
+      "receiverType": "string",
+      "sourceSpan": {
+        "sourcePath": "src/string/lowerFirst.ts",
+        "start": 411,
+        "end": 430,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      "accessSpan": {
+        "sourcePath": "src/string/lowerFirst.ts",
+        "start": 411,
+        "end": 424,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 23
+      },
+      "text": "str.substring(0, 1)",
+      "arguments": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "api": "String.prototype.substring",
+      "kind": "call",
+      "receiverKind": "string",
+      "receiverType": "string",
+      "sourceSpan": {
+        "sourcePath": "src/string/lowerFirst.ts",
+        "start": 447,
+        "end": 463,
+        "startLine": 13,
+        "startColumn": 46,
+        "endLine": 13,
+        "endColumn": 62
+      },
+      "accessSpan": {
+        "sourcePath": "src/string/lowerFirst.ts",
+        "start": 447,
+        "end": 460,
+        "startLine": 13,
+        "startColumn": 46,
+        "endLine": 13,
+        "endColumn": 59
+      },
+      "text": "str.substring(1)",
+      "arguments": [
+        "1"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "src/string/lowerFirst.spec.ts",
+    "sha256": "d71eb73afcbd84546205d8a15f6468113915e2c8579a302610be349766ba2791",
+    "text": "import { describe, expect, it } from 'vitest';\nimport { lowerFirst } from './lowerFirst';\n\ndescribe('lowerFirst', () => {\n  it('should change first character of upper case to lower case', () => {\n    expect(lowerFirst('Fred')).toEqual('fred');\n  });\n\n  it('should keep first character of lower case unaltered', () => {\n    expect(lowerFirst('fred')).toEqual('fred');\n  });\n\n  it('should keep all other characters unaltered', () => {\n    expect(lowerFirst('FRED')).toEqual('fRED');\n  });\n\n  it('should work with an empty string', () => {\n    expect(lowerFirst('')).toEqual('');\n  });\n\n  it('should keep white space and not alter string', () => {\n    expect(lowerFirst('  fred')).toEqual('  fred');\n  });\n});\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return the input string with only its first character converted to lower case using Unicode casing. Leave the remainder exactly unchanged; the first character may expand to multiple characters. Return the empty string for empty input.",
+    "domain": "Text contains only BMP characters and no UTF-16 surrogate code units. Text length is at most 128 characters.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "str": "source text"
+    },
+    "outputRole": "text with only its first character lowercased",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "2b163c77e82921233b7895cef172184b42c1db87c7da24093bc8ae5d18b8012f",
+  "contracts": [
+    {
+      "name": "valuesWithinBounds",
+      "signature": "function valuesWithinBounds(values: number[], lower: number, upper: number): number[]",
+      "paramNames": [
+        "values",
+        "lower",
+        "upper"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Bounds are finite between -100 and 100 with lower <= upper."
+  ]
+}

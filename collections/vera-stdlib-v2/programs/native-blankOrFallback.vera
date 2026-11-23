@@ -1,0 +1,5 @@
+function blankOrFallback(text: string, fallback: string): string {
+  let cleaned: string = strings.trim(text);
+  if (strings.length(cleaned) === 0) { return fallback; }
+  return cleaned;
+}

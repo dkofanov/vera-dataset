@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "56703545bf852f6814bcca6741ee12c0d2bc0edd18d9dcc107e6aa7e214babcf",
+  "contracts": [
+    {
+      "name": "withinTolerance",
+      "signature": "function withinTolerance(observed: number, target: number, tolerance: number): boolean",
+      "paramNames": [
+        "observed",
+        "target",
+        "tolerance"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.abs",
+      "text": "math.abs(observed - target)"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Tolerance is nonnegative."
+  ]
+}

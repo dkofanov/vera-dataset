@@ -1,0 +1,55 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "7e39fc7bd994ea1892284b3044939c254b4f621f110864d91f2b17f1ae2abb39",
+  "programSha256": "ab7610cbee3afb0dac3573be3d4a5d7cb25787ddd369f5f433f029567ff9f2b4",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "isPalindrome",
+      "signature": "function isPalindrome(number: number): boolean",
+      "paramNames": [
+        "number"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "math.floor",
+      "sourceApi": "Math.floor",
+      "strategy": "direct",
+      "domain": "finite numeric inputs and results",
+      "text": "Math.floor(number / 10)",
+      "start": 252,
+      "end": 275
+    },
+    {
+      "rule": "math.floor",
+      "sourceApi": "Math.floor",
+      "strategy": "direct",
+      "domain": "finite numeric inputs and results",
+      "text": "Math.floor(reversed / 10)",
+      "start": 324,
+      "end": 349
+    }
+  ],
+  "helpers": [],
+  "normalization": {
+    "source": "export function isPalindrome(number: number): boolean {\n  if (number < 0 || (number % 10 === 0 && number !== 0)) {\n    return false\n  }\n\n  let reversed: number = 0\n  while (number > reversed) {\n    reversed = reversed * 10 + (number % 10)\n    number = Math.floor(number / 10)\n  }\n\n  return number === reversed || number === Math.floor(reversed / 10)\n}\n",
+    "sourceSha256": "7e39fc7bd994ea1892284b3044939c254b4f621f110864d91f2b17f1ae2abb39",
+    "adaptations": [
+      "Lift arrow-function block to a named function; body is unchanged.",
+      "Select the actual implementation body, not overload-only declarations."
+    ]
+  },
+  "originalDeclarationSha256": "58e71d7def123663c794fecc37ca416662256840ea4e88b00b043ddd649e7c0b"
+}

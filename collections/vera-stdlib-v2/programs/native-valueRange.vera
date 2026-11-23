@@ -1,0 +1,7 @@
+function valueRange(values: number[]): number {
+  if (values.length() === 0) { return 0; }
+  let lo: number = values[0];
+  let hi: number = values[0];
+  for (let value: number of values) { lo = math.min(lo, value); hi = math.max(hi, value); }
+  return hi - lo;
+}

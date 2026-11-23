@@ -1,0 +1,3 @@
+function containsAfterLowercase(text: string, query: string): boolean {
+  return strings.contains(strings.toLowerCase(text), strings.toLowerCase(query));
+}

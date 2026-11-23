@@ -1,0 +1,8 @@
+function evaluatePrefixCharacters(wanted: number, content: string): string {
+  let size: number = strings.length(content);
+  let limit: number = wanted;
+  if (limit > size) {
+    limit = size;
+  }
+  return strings.substring(content, 0, limit);
+}

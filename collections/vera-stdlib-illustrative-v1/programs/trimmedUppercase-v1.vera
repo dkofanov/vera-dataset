@@ -1,0 +1,4 @@
+function evaluateTrimmedUppercase(content: string): string {
+  let trimmed: string = strings.trim(content);
+  return strings.toUpperCase(trimmed);
+}

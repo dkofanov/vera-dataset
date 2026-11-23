@@ -1,0 +1,3 @@
+function roundUpToStep(value: number, step: number): number {
+  return math.ceil(value / step) * step;
+}

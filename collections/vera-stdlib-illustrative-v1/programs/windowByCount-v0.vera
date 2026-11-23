@@ -1,0 +1,6 @@
+function inspectWindowByCount(message: string, first: number, width: number): string {
+  let available: number = strings.length(message) - first;
+  let take: number = math.min(width, available);
+  let end: number = first + take;
+  return strings.substring(message, first, end);
+}

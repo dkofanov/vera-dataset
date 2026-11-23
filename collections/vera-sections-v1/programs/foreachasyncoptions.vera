@@ -1,0 +1,15 @@
+class ForEachAsyncOptions {
+  concurrency: number;
+}
+
+function makeForEachAsyncOptions(concurrency: number): ForEachAsyncOptions {
+  return {concurrency: concurrency};
+}
+
+function ForEachAsyncOptionsConcurrency(value: ForEachAsyncOptions): number {
+  return value.concurrency;
+}
+
+function withForEachAsyncOptionsConcurrency(value: ForEachAsyncOptions, concurrency: number): ForEachAsyncOptions {
+  return {concurrency: concurrency};
+}

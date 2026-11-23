@@ -1,0 +1,8 @@
+import * as strings from "std/strings"
+
+function upperFirst(str: string): string {
+  if (str.length() === 0) {
+    return "";
+  }
+  return strings.toUpperCase(strings.substring(str, 0, 1)) + strings.substring(str, 1, str.length());
+}

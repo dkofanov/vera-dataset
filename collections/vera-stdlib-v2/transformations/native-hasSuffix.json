@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "52642e5f5865c3a4e2af7f4eee752aa46b6ece53bd88e3d2423edf8678c120a7",
+  "contracts": [
+    {
+      "name": "hasSuffix",
+      "signature": "function hasSuffix(text: string, needle: string): boolean",
+      "paramNames": [
+        "text",
+        "needle"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.endsWith",
+      "text": "strings.endsWith(text, needle)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

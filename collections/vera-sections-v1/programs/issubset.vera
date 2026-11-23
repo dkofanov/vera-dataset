@@ -1,0 +1,17 @@
+function contains(values: number[], target: number): boolean {
+  for (let v: number of values) {
+    if (v === target) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function isSubset(superset: number[], subset: number[]): boolean {
+  for (let s: number of subset) {
+    if (!contains(superset, s)) {
+      return false;
+    }
+  }
+  return true;
+}

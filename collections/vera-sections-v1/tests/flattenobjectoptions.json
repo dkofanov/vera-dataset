@@ -1,0 +1,148 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeFlattenObjectOptions",
+      "args": [
+        [
+          "s",
+          "alpha"
+        ],
+        [
+          "b",
+          false
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:FlattenObjectOptions",
+        [
+          [
+            "delimiter",
+            [
+              "s",
+              "alpha"
+            ]
+          ],
+          [
+            "preserveArrays",
+            [
+              "b",
+              false
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read delimiter",
+      "function": "FlattenObjectOptionsDelimiter",
+      "args": [
+        [
+          "o",
+          "local:FlattenObjectOptions",
+          [
+            [
+              "delimiter",
+              [
+                "s",
+                "alpha"
+              ]
+            ],
+            [
+              "preserveArrays",
+              [
+                "b",
+                false
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha"
+      ]
+    },
+    {
+      "name": "read preserveArrays",
+      "function": "FlattenObjectOptionsPreserveArrays",
+      "args": [
+        [
+          "o",
+          "local:FlattenObjectOptions",
+          [
+            [
+              "delimiter",
+              [
+                "s",
+                "alpha"
+              ]
+            ],
+            [
+              "preserveArrays",
+              [
+                "b",
+                false
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withFlattenObjectOptionsDelimiter",
+      "args": [
+        [
+          "o",
+          "local:FlattenObjectOptions",
+          [
+            [
+              "delimiter",
+              [
+                "s",
+                "alpha"
+              ]
+            ],
+            [
+              "preserveArrays",
+              [
+                "b",
+                false
+              ]
+            ]
+          ]
+        ],
+        [
+          "s",
+          "beta"
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:FlattenObjectOptions",
+        [
+          [
+            "delimiter",
+            [
+              "s",
+              "beta"
+            ]
+          ],
+          [
+            "preserveArrays",
+            [
+              "b",
+              false
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

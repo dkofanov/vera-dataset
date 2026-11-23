@@ -1,0 +1,8 @@
+function measurePrefixCharacters(lengthToKeep: number, phrase: string): string {
+  let available: number = strings.length(phrase);
+  let take: number = lengthToKeep;
+  if (take > available) {
+    take = available;
+  }
+  return strings.substring(phrase, 0, take);
+}

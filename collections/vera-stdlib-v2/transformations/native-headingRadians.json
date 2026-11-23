@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "2197d4c98d2a016b5892eb146ae868af00d96e5bc3226eb6f775a19deffed037",
+  "contracts": [
+    {
+      "name": "headingRadians",
+      "signature": "function headingRadians(dx: number, dy: number): number",
+      "paramNames": [
+        "dx",
+        "dy"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.atan2",
+      "text": "math.atan2(dy, dx)"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated. Inputs do not contain negative zero."
+  ]
+}

@@ -1,0 +1,3 @@
+function clampedFraction(value: number, lower: number, upper: number): number {
+  return math.min(1, math.max(0, (value - lower) / (upper - lower)));
+}

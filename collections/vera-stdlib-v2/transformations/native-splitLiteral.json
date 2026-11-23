@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "5b14aab660512611f4dcdc06cddbc10bb599783d7739ec4e284ece9ae391a5b9",
+  "contracts": [
+    {
+      "name": "splitLiteral",
+      "signature": "function splitLiteral(text: string, separator: string): string[]",
+      "paramNames": [
+        "text",
+        "separator"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

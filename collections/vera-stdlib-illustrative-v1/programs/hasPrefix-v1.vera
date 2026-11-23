@@ -1,0 +1,3 @@
+function evaluateHasPrefix(fragment: string, content: string): boolean {
+  return strings.startsWith(content, fragment);
+}

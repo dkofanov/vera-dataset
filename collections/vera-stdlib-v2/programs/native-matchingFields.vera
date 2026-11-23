@@ -1,0 +1,5 @@
+function matchingFields(text: string, separator: string, query: string): string[] {
+  let result: string[] = [];
+  for (let field: string of strings.split(text, separator)) { if (strings.contains(field, query)) { result.push(field); } }
+  return result;
+}

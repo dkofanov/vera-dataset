@@ -1,0 +1,37 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "edc436658a3a2cc136c654482e6088f740f86fdf45fb3ac8b55b849b4c217e75",
+  "contracts": [
+    {
+      "name": "clampedFraction",
+      "signature": "function clampedFraction(value: number, lower: number, upper: number): number",
+      "paramNames": [
+        "value",
+        "lower",
+        "upper"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(1, math.max(0, (value - lower) / (upper - lower)))"
+    },
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(0, (value - lower) / (upper - lower))"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Lower is less than upper and they differ by at least 0.1."
+  ]
+}

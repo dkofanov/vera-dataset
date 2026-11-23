@@ -1,0 +1,16 @@
+{
+  "name": "vera-stdlib-v2",
+  "path": "collections/vera-stdlib-v2",
+  "records": 110,
+  "examples": 110,
+  "examplesBySplit": {
+    "train": 92,
+    "validation": 8,
+    "test": 10
+  },
+  "testCases": 7934,
+  "recordsSourceSha256": "6514f6927e7f6f5ef283e83ab13bae749dfb68e2c7e7c9a61e5227b0b63f62c9",
+  "programsAndTestsBytePreserved": true,
+  "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+  "origin": "13 upstream-derived and 97 explicitly authored VERA-native tasks"
+}

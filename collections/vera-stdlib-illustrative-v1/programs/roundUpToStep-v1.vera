@@ -1,0 +1,5 @@
+function evaluateRoundUpToStep(stepValue: number, reading: number): number {
+  let quotient: number = reading / stepValue;
+  let ceiling: number = math.ceil(quotient);
+  return ceiling * stepValue;
+}

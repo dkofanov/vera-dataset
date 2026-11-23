@@ -1,0 +1,65 @@
+{
+  "id": "function/algorithms/degreesToRadians",
+  "symbol": {
+    "project": "TheAlgorithms/TypeScript",
+    "repository": "https://github.com/TheAlgorithms/TypeScript",
+    "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+    "path": "maths/degrees_to_radians.ts",
+    "export": "degreesToRadians",
+    "sourceFileSha256": "dee6c6e6dd0381b7412657bc84fa896fa64cbec59ebe7be2db1b5f2e4ee6605b",
+    "declarationSha256": "4c2a981a1b8527a63c5e0c87c40aca25f1b28e57e5c3b63b83fafe2f3af09eed",
+    "start": 339,
+    "end": 425
+  },
+  "documentation": "/** * A function to get radians from the degrees\n * @param {number} degree - The input integer\n * @return {number} radians of degrees\n * @example degreesToRadians(45) => 0.7853 | degreesToRadians(90) => 1.5708\n * @see https://en.m.wikipedia.org/wiki/Radian\n * @author MohdFaisalBidda <https://github.com/MohdFaisalBidda>\n */",
+  "originalSource": "degreesToRadians = (degrees: number): number => {\n  return (degrees * Math.PI) / 180\n}",
+  "sourceUses": [
+    {
+      "api": "Math.PI",
+      "kind": "access",
+      "receiverKind": "math",
+      "receiverType": "Math",
+      "sourceSpan": {
+        "sourcePath": "maths/degrees_to_radians.ts",
+        "start": 409,
+        "end": 416,
+        "startLine": 10,
+        "startColumn": 21,
+        "endLine": 10,
+        "endColumn": 28
+      },
+      "accessSpan": {
+        "sourcePath": "maths/degrees_to_radians.ts",
+        "start": 409,
+        "end": 416,
+        "startLine": 10,
+        "startColumn": 21,
+        "endLine": 10,
+        "endColumn": 28
+      },
+      "text": "Math.PI",
+      "arguments": []
+    }
+  ],
+  "originalTests": {
+    "path": "maths/test/degrees_to_radians.test.ts",
+    "sha256": "1a7bd84f0d199ac683074a6f631ba1bf414b3a152ecb483561728df780dc2663",
+    "text": "import { degreesToRadians } from '../degrees_to_radians'\n\ntest('DegreesToRadians', () => {\n  expect(degreesToRadians(0)).toBe(0)\n  expect(degreesToRadians(45)).toBe(0.7853981633974483)\n  expect(degreesToRadians(90)).toBe(1.5707963267948966)\n})\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Convert an angle in degrees to radians by multiplying by pi and then dividing by 180.",
+    "domain": "The angle is a finite number between -1000000 and 1000000. Preserve the specified arithmetic order.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "degrees": "angle measured in degrees"
+    },
+    "outputRole": "equivalent angle measured in radians",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

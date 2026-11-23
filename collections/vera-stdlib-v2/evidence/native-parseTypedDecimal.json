@@ -1,0 +1,27 @@
+{
+  "id": "function/vera-native/parseTypedDecimal",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Parse a typed decimal number. Remove every ECMAScript whitespace character, including internal whitespace. If no dot is present, change the first comma to a dot. Accept only an optional sign followed by digits with an optional decimal point, or a decimal point followed by digits. Reject exponent notation, hexadecimal notation, empty input, and other characters by returning fallback. Do not accept a numeric prefix of invalid text.",
+    "domain": "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded. Fallback is finite between -1000 and 1000. Text contains at most 20 characters; accepted decimal values are finite.",
+    "inputRoles": {
+      "text": "typed textual number",
+      "fallback": "numeric result used only on parsing failure"
+    },
+    "outputRole": "parsed number or fallback, not a success flag",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "(text, fallback) => { let normalized = text.replace(/\\s/g, ''); if (!normalized.includes('.')) normalized = normalized.replace(',', '.'); return /^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/.test(normalized) ? parseFloat(normalized) : fallback }",
+    "sha256": "aa33438088ae0ee2667cfdbc11c6b187079c304d3506ace65872a3f62da15324"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

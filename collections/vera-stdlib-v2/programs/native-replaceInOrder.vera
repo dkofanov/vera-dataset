@@ -1,0 +1,3 @@
+function replaceInOrder(text: string, first: string, second: string, replacement: string): string {
+  return strings.replace(strings.replace(text, first, replacement), second, replacement);
+}

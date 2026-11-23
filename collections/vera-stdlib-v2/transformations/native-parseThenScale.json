@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "dfd2de6dc2086a304c032dd417cc3367f07da3f5cb20b0d83dfdf1565930eda2",
+  "contracts": [
+    {
+      "name": "parseThenScale",
+      "signature": "function parseThenScale(text: string, fallback: number, factor: number): number",
+      "paramNames": [
+        "text",
+        "fallback",
+        "factor"
+      ],
+      "paramTypes": [
+        "string",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.toNumber",
+      "text": "strings.toNumber(text, fallback)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Text has at most 20 characters, any accepted value is finite and between -1000 and 1000, and numeric arguments are between -1000 and 1000."
+  ]
+}

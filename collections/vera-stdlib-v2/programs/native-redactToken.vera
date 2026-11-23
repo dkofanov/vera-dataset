@@ -1,0 +1,3 @@
+function redactToken(text: string, token: string, mask: string): string {
+  return strings.replace(text, token, mask);
+}

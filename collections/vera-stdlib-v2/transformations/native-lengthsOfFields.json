@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "2c458b8517668b7436dd2581fd93093d3fe824cab7ffe85a63df2e08ea7528ec",
+  "contracts": [
+    {
+      "name": "lengthsOfFields",
+      "signature": "function lengthsOfFields(text: string, separator: string): number[]",
+      "paramNames": [
+        "text",
+        "separator"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(field)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "tests": [
+    {"name": "zero", "function": "absoluteValue", "args": [["n", 0]], "expect": ["n", 0]},
+    {"name": "negative integer", "function": "absoluteValue", "args": [["n", -34]], "expect": ["n", 34]},
+    {"name": "positive integer", "function": "absoluteValue", "args": [["n", 50]], "expect": ["n", 50]},
+    {"name": "negative fraction", "function": "absoluteValue", "args": [["n", -20.2034]], "expect": ["n", 20.2034]}
+  ]
+}

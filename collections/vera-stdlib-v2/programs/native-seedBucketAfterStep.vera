@@ -1,0 +1,3 @@
+function seedBucketAfterStep(seed: number, bound: number): number {
+  return math.randomBelow(math.randomStep(seed), bound);
+}

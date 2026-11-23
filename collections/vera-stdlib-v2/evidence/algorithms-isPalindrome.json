@@ -1,0 +1,95 @@
+{
+  "id": "function/algorithms/isPalindrome",
+  "symbol": {
+    "project": "TheAlgorithms/TypeScript",
+    "repository": "https://github.com/TheAlgorithms/TypeScript",
+    "revision": "19b4ced86c99815f142d4a46a028f55487b8038a",
+    "path": "maths/is_palindrome.ts",
+    "export": "isPalindrome",
+    "sourceFileSha256": "a2bf9b358cb6454b3fe06ccbfedb99889aa1b36364e8eb1d4afd0e5c4ca8947d",
+    "declarationSha256": "58e71d7def123663c794fecc37ca416662256840ea4e88b00b043ddd649e7c0b",
+    "start": 330,
+    "end": 671
+  },
+  "documentation": "/**\n * A function to see if a number is a palindrome.\n * Note that if the reversed number is larger than MAX_SAFE_INTEGER, rounding errors may occur and the result may be incorrect.\n * Time Complexity: O(log(n))\n *\n * @param number The input number.\n * @return {boolean} Wether the number is a Palindrome or not.\n */",
+  "originalSource": "isPalindrome = (number: number): boolean => {\n  if (number < 0 || (number % 10 === 0 && number !== 0)) {\n    return false\n  }\n\n  let reversed: number = 0\n  while (number > reversed) {\n    reversed = reversed * 10 + (number % 10)\n    number = Math.floor(number / 10)\n  }\n\n  return number === reversed || number === Math.floor(reversed / 10)\n}",
+  "sourceUses": [
+    {
+      "api": "Math.floor",
+      "kind": "call",
+      "receiverKind": "math",
+      "receiverType": "Math",
+      "sourceSpan": {
+        "sourcePath": "maths/is_palindrome.ts",
+        "start": 572,
+        "end": 595,
+        "startLine": 17,
+        "startColumn": 14,
+        "endLine": 17,
+        "endColumn": 37
+      },
+      "accessSpan": {
+        "sourcePath": "maths/is_palindrome.ts",
+        "start": 572,
+        "end": 582,
+        "startLine": 17,
+        "startColumn": 14,
+        "endLine": 17,
+        "endColumn": 24
+      },
+      "text": "Math.floor(number / 10)",
+      "arguments": [
+        "number / 10"
+      ]
+    },
+    {
+      "api": "Math.floor",
+      "kind": "call",
+      "receiverKind": "math",
+      "receiverType": "Math",
+      "sourceSpan": {
+        "sourcePath": "maths/is_palindrome.ts",
+        "start": 644,
+        "end": 669,
+        "startLine": 20,
+        "startColumn": 44,
+        "endLine": 20,
+        "endColumn": 69
+      },
+      "accessSpan": {
+        "sourcePath": "maths/is_palindrome.ts",
+        "start": 644,
+        "end": 654,
+        "startLine": 20,
+        "startColumn": 44,
+        "endLine": 20,
+        "endColumn": 54
+      },
+      "text": "Math.floor(reversed / 10)",
+      "arguments": [
+        "reversed / 10"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "maths/test/is_palindrome.test.ts",
+    "sha256": "581121ee8a1d18bf408b293274de6aa22f35a07b1a00bdea445823587a5795f5",
+    "text": "import { isPalindrome } from '../is_palindrome'\n\ndescribe('isPalindrome', () => {\n  test.each([\n    [0, true],\n    [1, true],\n    [5, true],\n    [1234, false],\n    [12321, true],\n    [31343, false],\n    [-1, false],\n    [-11, false],\n    [10, false]\n  ])('correct output for %i', (nums, expected) => {\n    expect(isPalindrome(nums)).toBe(expected)\n  })\n})\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return whether the base-10 digits of the integer read the same forwards and backwards. Zero is a palindrome; negative integers are not. Do not convert the number to text.",
+    "domain": "The argument is an integer between -1000000000 and 1000000000.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "number": "integer whose base-ten digits are tested"
+    },
+    "outputRole": "whether the integer has palindromic digits under the stated contract",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

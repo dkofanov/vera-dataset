@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "16855b18458f4c35267c4bfe6f131ba8ab1515ee5c1cac86692e501657f7d805",
+  "contracts": [
+    {
+      "name": "hasPrefix",
+      "signature": "function hasPrefix(text: string, needle: string): boolean",
+      "paramNames": [
+        "text",
+        "needle"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.startsWith",
+      "text": "strings.startsWith(text, needle)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

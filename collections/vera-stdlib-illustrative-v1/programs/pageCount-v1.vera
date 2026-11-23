@@ -1,0 +1,8 @@
+function evaluatePageCount(pageSizeValue: number, itemsValue: number): number {
+  let fullPages: number = math.floor(itemsValue / pageSizeValue);
+  let leftover: number = itemsValue % pageSizeValue;
+  if (leftover > 0) {
+    return fullPages + 1;
+  }
+  return fullPages;
+}

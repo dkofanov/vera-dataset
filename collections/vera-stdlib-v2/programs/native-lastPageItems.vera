@@ -1,0 +1,4 @@
+function lastPageItems(items: number, pageSize: number): number {
+  if (items === 0) { return 0; }
+  return items - (math.ceil(items / pageSize) - 1) * pageSize;
+}

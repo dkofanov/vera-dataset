@@ -1,0 +1,3 @@
+function inspectHasSuffix(message: string, keyword: string): boolean {
+  return strings.endsWith(message, keyword);
+}

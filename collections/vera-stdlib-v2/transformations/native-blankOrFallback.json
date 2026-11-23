@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "6ef1add5ca5c9e7c5a1092c7df9e4c6678d2466cdbd185476d374ecff97456e5",
+  "contracts": [
+    {
+      "name": "blankOrFallback",
+      "signature": "function blankOrFallback(text: string, fallback: string): string",
+      "paramNames": [
+        "text",
+        "fallback"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(text)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(cleaned)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

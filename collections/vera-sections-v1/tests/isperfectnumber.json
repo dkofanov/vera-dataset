@@ -1,0 +1,279 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 5",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          -1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 10",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          -2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 11",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          -5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 12",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 3",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          16
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          28
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          100
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          496
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "isPerfectNumber",
+      "args": [
+        [
+          "n",
+          8128
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

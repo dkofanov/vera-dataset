@@ -1,0 +1,4 @@
+function clamp(value: number, bound1: number, bound2: number): number {
+  let result: number = math.min(math.max(value, bound1), bound2);
+  return result;
+}

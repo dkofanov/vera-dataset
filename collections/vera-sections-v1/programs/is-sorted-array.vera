@@ -1,0 +1,10 @@
+function isSortedArray(arr: number[]): boolean {
+  let i: number = 0;
+  while (i < arr.length() - 1) {
+    if (arr[i] >= arr[i + 1]) {
+      return false;
+    }
+    i = i + 1;
+  }
+  return true;
+}

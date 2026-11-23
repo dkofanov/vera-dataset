@@ -1,0 +1,10 @@
+function measureClampedFraction(lowerArg: number, upperArg: number, sample: number): number {
+  let fraction: number = (sample - lowerArg) / (upperArg - lowerArg);
+  if (fraction < 0) {
+    return 0;
+  }
+  if (fraction > 1) {
+    return 1;
+  }
+  return fraction;
+}

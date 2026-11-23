@@ -1,0 +1,5 @@
+function valuesWithinBounds(values: number[], lower: number, upper: number): number[] {
+  let result: number[] = [];
+  for (let value: number of values) { if (value >= lower && value <= upper) { result.push(value); } }
+  return result;
+}

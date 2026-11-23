@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {"name": "iterative middle", "function": "binarySearchIterative", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 2]], "expect": ["n", 1]},
+    {"name": "iterative missing", "function": "binarySearchIterative", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 5]], "expect": ["z"]},
+    {"name": "iterative empty", "function": "binarySearchIterative", "args": [["a", []], ["n", 5]], "expect": ["z"]},
+    {"name": "iterative first", "function": "binarySearchIterative", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 1]], "expect": ["n", 0]},
+    {"name": "recursive middle", "function": "binarySearchRecursive", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 2]], "expect": ["n", 1]},
+    {"name": "recursive missing", "function": "binarySearchRecursive", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 5]], "expect": ["z"]},
+    {"name": "recursive empty", "function": "binarySearchRecursive", "args": [["a", []], ["n", 5]], "expect": ["z"]},
+    {"name": "recursive last", "function": "binarySearchRecursive", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 4]], "expect": ["n", 3]}
+  ]
+}

@@ -1,0 +1,29 @@
+class RangeCov {
+  startOffset: number;
+  endOffset: number;
+  count: number;
+}
+
+class FunctionCov {
+  functionName: string;
+  ranges: RangeCov[];
+  isBlockCoverage: boolean;
+}
+
+class ScriptCov {
+  scriptId: string;
+  url: string;
+  functions: FunctionCov[];
+}
+
+function makeScript(scriptId: string, url: string, functions: FunctionCov[]): ScriptCov {
+  return {
+    scriptId: scriptId,
+    url: url,
+    functions: functions
+  };
+}
+
+function scriptFunctionCount(scriptCov: ScriptCov): number {
+  return scriptCov.functions.length();
+}

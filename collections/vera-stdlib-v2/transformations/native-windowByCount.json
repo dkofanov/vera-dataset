@@ -1,0 +1,41 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "69d2d9000c09359a59e7350f9f684f3e602cbb6e093a192920a8730d5ac9f9e1",
+  "contracts": [
+    {
+      "name": "windowByCount",
+      "signature": "function windowByCount(text: string, start: number, count: number): string",
+      "paramNames": [
+        "text",
+        "start",
+        "count"
+      ],
+      "paramTypes": [
+        "string",
+        "number",
+        "number"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, start, math.min(strings.length(text), start + count))"
+    },
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(strings.length(text), start + count)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Start is an integer between zero and the text length; count is an integer from 0 through 64."
+  ]
+}

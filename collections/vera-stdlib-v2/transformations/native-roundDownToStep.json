@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "c13f352f7515e392aa4c15017f349b905f0f1f1ffbd477f1cd4a117a396cc61f",
+  "contracts": [
+    {
+      "name": "roundDownToStep",
+      "signature": "function roundDownToStep(value: number, step: number): number",
+      "paramNames": [
+        "value",
+        "step"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.floor",
+      "text": "math.floor(value / step)"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Step is from 0.1 through 100."
+  ]
+}

@@ -1,0 +1,9 @@
+function findMin(nums: number[]): number {
+  let minimumSeen: number = nums[0]
+  for (let num: number of nums) {
+    if (num < minimumSeen) {
+      minimumSeen = num
+    }
+  }
+  return minimumSeen
+}

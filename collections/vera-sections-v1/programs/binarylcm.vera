@@ -1,0 +1,25 @@
+function greatestCommonFactor(values: number[]): number {
+  let result: number = 0;
+  for (let v: number of values) {
+    let x: number = math.abs(v);
+    if (result === 0) {
+      result = x;
+    } else {
+      let a: number = result;
+      let b: number = x;
+      while (b !== 0) {
+        let t: number = b;
+        b = a % b;
+        a = t;
+      }
+      result = a;
+    }
+  }
+  return result;
+}
+
+function binaryLCM(a: number, b: number): number {
+  let values: number[] = [a, b];
+  let g: number = greatestCommonFactor(values);
+  return (a * b) / g;
+}

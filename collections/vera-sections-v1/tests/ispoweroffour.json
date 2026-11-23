@@ -1,0 +1,297 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          -1
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 10",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          -2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 11",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          -5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "case 12",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ]
+    },
+    {
+      "name": "curated 6",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          16
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          32
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          64
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 10",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          128
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 11",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          256
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 12",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          1024
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 13",
+      "function": "isPowerOfFour",
+      "args": [
+        [
+          "n",
+          -4
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

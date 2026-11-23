@@ -1,0 +1,28 @@
+{
+  "id": "function/vera-native/withinTolerance",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Return whether abs(observed - target) is no greater than tolerance. The tolerance boundary is inclusive.",
+    "domain": "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Tolerance is nonnegative.",
+    "inputRoles": {
+      "observed": "measured value",
+      "target": "reference value",
+      "tolerance": "maximum allowed absolute deviation"
+    },
+    "outputRole": "whether the absolute deviation is at most tolerance",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "function(...args) { const cp = s => Array.from(s);\nconst trim = s => s.replace(/^[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+|[\\u0009-\\u000D\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+$/gu, '');\nconst split = (s, sep) => sep === '' ? cp(s) : s.split(sep);\nconst replace = (s, a, b) => a === '' ? s : s.split(a).join(b);\nconst parse = (s, fallback) => { let t = s.replace(/\\s/g, ''); if (!t.includes('.')) t = t.replace(',', '.'); return /^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/.test(t) ? parseFloat(t) : fallback; };\nconst step = seed => { let x = seed | 0; if (x === 0) x = 0x2545F491; x ^= x << 13; x ^= x >>> 17; x ^= x << 5; return x | 0; };\nreturn ((observed, target, tolerance) => Math.abs(observed - target) <= tolerance)(...args); }",
+    "sha256": "e0caec4b2bc1155b057b2115537391048f52f94195f56e5977d99596d6cf3312"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

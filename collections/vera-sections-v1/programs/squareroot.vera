@@ -1,0 +1,20 @@
+function squareRoot(num: number, precision: number): number {
+  if (num === 0) {
+    return 0
+  }
+
+  let sqrt: number = num
+  let curr: number = 0
+  let done: boolean = false
+
+  while (!done) {
+    curr = 0.5 * (sqrt + num / sqrt)
+    if (math.abs(curr - sqrt) < precision) {
+      done = true
+    } else {
+      sqrt = curr
+    }
+  }
+
+  return sqrt
+}

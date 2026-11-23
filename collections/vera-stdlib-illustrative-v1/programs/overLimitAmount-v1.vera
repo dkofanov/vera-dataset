@@ -1,0 +1,4 @@
+function evaluateOverLimitAmount(limitValue: number, usedValue: number): number {
+  let excess: number = usedValue - limitValue;
+  return math.max(excess, 0);
+}

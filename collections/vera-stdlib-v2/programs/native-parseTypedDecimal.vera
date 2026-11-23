@@ -1,0 +1,3 @@
+function parseTypedDecimal(text: string, fallback: number): number {
+  return strings.toNumber(text, fallback);
+}

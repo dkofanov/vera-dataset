@@ -1,0 +1,3 @@
+function inspectVerticalOffset(radiusInput: number, angleInput: number): number {
+  return radiusInput * math.sin(angleInput);
+}

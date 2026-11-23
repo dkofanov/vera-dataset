@@ -1,0 +1,3 @@
+function evaluateReplaceLiteralAll(newText: string, patternText: string, content: string): string {
+  return strings.replace(content, patternText, newText);
+}

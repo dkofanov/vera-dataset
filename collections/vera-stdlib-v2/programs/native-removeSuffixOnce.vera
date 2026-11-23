@@ -1,0 +1,4 @@
+function removeSuffixOnce(text: string, affix: string): string {
+  if (strings.endsWith(text, affix)) { return strings.substring(text, 0, strings.length(text) - strings.length(affix)); }
+  return text;
+}

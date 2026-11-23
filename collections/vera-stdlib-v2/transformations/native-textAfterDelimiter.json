@@ -1,0 +1,47 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "1b2c0976214865d8fe430222deada7631001f3f4415fbdb5a77710b06a6155b0",
+  "contracts": [
+    {
+      "name": "textAfterDelimiter",
+      "signature": "function textAfterDelimiter(text: string, delimiter: string): string",
+      "paramNames": [
+        "text",
+        "delimiter"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, delimiter)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, strings.length(parts[0]) + strings.length(delimiter), strings.length(text))"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(parts[0])"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(delimiter)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Delimiter is nonempty."
+  ]
+}

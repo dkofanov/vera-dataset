@@ -1,0 +1,7 @@
+function measureBlankOrFallback(otherwiseValue: string, phrase: string): string {
+  let trimmed: string = strings.trim(phrase);
+  if (strings.length(trimmed) === 0) {
+    return otherwiseValue;
+  }
+  return trimmed;
+}

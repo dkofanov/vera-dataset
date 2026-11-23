@@ -1,0 +1,4 @@
+function evaluateTrimmedLength(content: string): number {
+  let trimmed: string = strings.trim(content);
+  return strings.length(trimmed);
+}

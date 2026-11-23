@@ -1,0 +1,30 @@
+import * as math from "std/math"
+
+function interpolationSearch(array: number[], target: number): number {
+  let low: number = 0;
+  let high: number = array.length() - 1;
+  while (low <= high) {
+    let lowValue: number = array[low];
+    let highValue: number = array[high];
+    if (lowValue === highValue) {
+      if (array[low] === target) {
+        return low;
+      }
+      return -1;
+    }
+    let pos: number = math.round(low + ((target - lowValue) * (high - low)) / (highValue - lowValue));
+    if (pos < 0 || pos >= array.length()) {
+      return -1;
+    }
+    let currentValue: number = array[pos];
+    if (target === currentValue) {
+      return pos;
+    }
+    if (target > currentValue) {
+      low = pos + 1;
+    } else {
+      high = pos - 1;
+    }
+  }
+  return -1;
+}

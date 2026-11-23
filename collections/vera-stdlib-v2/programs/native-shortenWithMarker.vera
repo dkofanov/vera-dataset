@@ -1,0 +1,4 @@
+function shortenWithMarker(text: string, limit: number, marker: string): string {
+  if (strings.length(text) <= limit) { return text; }
+  return strings.substring(text, 0, limit - strings.length(marker)) + marker;
+}

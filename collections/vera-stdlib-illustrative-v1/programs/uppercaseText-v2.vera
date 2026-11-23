@@ -1,0 +1,3 @@
+function measureUppercaseText(phrase: string): string {
+  return strings.toUpperCase(phrase);
+}

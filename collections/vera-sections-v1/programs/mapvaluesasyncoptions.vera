@@ -1,0 +1,15 @@
+class MapValuesAsyncOptions {
+  concurrency: number;
+}
+
+function makeMapValuesAsyncOptions(concurrency: number): MapValuesAsyncOptions {
+  return {concurrency: concurrency};
+}
+
+function MapValuesAsyncOptionsConcurrency(value: MapValuesAsyncOptions): number {
+  return value.concurrency;
+}
+
+function withMapValuesAsyncOptionsConcurrency(value: MapValuesAsyncOptions, concurrency: number): MapValuesAsyncOptions {
+  return {concurrency: concurrency};
+}

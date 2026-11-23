@@ -1,0 +1,5 @@
+function evaluateWindowByCount(wanted: number, beginAt: number, content: string): string {
+  let remaining: number = strings.length(content) - beginAt;
+  let limit: number = math.min(wanted, remaining);
+  return strings.substring(content, beginAt, beginAt + limit);
+}

@@ -1,0 +1,3 @@
+function completeGroups(items: number, groupSize: number): number {
+  return math.floor(items / groupSize);
+}

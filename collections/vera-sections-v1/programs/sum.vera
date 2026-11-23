@@ -1,0 +1,9 @@
+function sum(nums: number[]): number {
+  let result: number = 0;
+  let i: number = 0;
+  while (i < nums.length()) {
+    result = result + nums[i];
+    i = i + 1;
+  }
+  return result;
+}

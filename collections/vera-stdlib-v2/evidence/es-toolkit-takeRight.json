@@ -1,0 +1,94 @@
+{
+  "id": "function/es-toolkit/takeRight",
+  "symbol": {
+    "project": "toss/es-toolkit",
+    "repository": "https://github.com/toss/es-toolkit",
+    "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+    "path": "src/array/takeRight.ts",
+    "export": "takeRight",
+    "sourceFileSha256": "fcb383d481363d7ab0164c223e32977e940bf996d926a9e315d29fbe43cbf020",
+    "declarationSha256": "a7c47a97a6ca378942f1992710e91e7b834b460b222cda6ca06cccd1cdf95d16",
+    "start": 615,
+    "end": 773
+  },
+  "documentation": "/**\n * Returns a new array containing the last `count` elements from the input array `arr`.\n * If `count` is greater than the length of `arr`, the entire array is returned.\n *\n * @template T - The type of elements in the array.\n * @param arr - The array to take elements from.\n * @param count - The number of elements to take.\n * @returns A new array containing the last `count` elements from `arr`.\n *\n * @example\n * // Returns [4, 5]\n * takeRight([1, 2, 3, 4, 5], 2);\n *\n * @example\n * // Returns ['b', 'c']\n * takeRight(['a', 'b', 'c'], 2);\n *\n * @example\n * // Returns [1, 2, 3]\n * takeRight([1, 2, 3], 5);\n */",
+  "originalSource": "export function takeRight<T>(arr: readonly T[], count: number): T[] {\n  if (count <= 0 || arr.length === 0) {\n    return [];\n  }\n  return arr.slice(-count);\n}",
+  "sourceUses": [
+    {
+      "api": "Array.prototype.length",
+      "kind": "access",
+      "receiverKind": "array",
+      "receiverType": "readonly T[]",
+      "sourceSpan": {
+        "sourcePath": "src/array/takeRight.ts",
+        "start": 705,
+        "end": 715,
+        "startLine": 23,
+        "startColumn": 21,
+        "endLine": 23,
+        "endColumn": 31
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/takeRight.ts",
+        "start": 705,
+        "end": 715,
+        "startLine": 23,
+        "startColumn": 21,
+        "endLine": 23,
+        "endColumn": 31
+      },
+      "text": "arr.length",
+      "arguments": []
+    },
+    {
+      "api": "Array.prototype.slice",
+      "kind": "call",
+      "receiverKind": "array",
+      "receiverType": "readonly T[]",
+      "sourceSpan": {
+        "sourcePath": "src/array/takeRight.ts",
+        "start": 753,
+        "end": 770,
+        "startLine": 26,
+        "startColumn": 10,
+        "endLine": 26,
+        "endColumn": 27
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/takeRight.ts",
+        "start": 753,
+        "end": 762,
+        "startLine": 26,
+        "startColumn": 10,
+        "endLine": 26,
+        "endColumn": 19
+      },
+      "text": "arr.slice(-count)",
+      "arguments": [
+        "-count"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "src/array/takeRight.spec.ts",
+    "sha256": "455ace54f70de6f69b6ebc664e24c77ffd107f5250c3ad38eef67a0961bc768c",
+    "text": "import { describe, expect, it } from 'vitest';\nimport { takeRight } from './takeRight';\n\ndescribe('takeRight', () => {\n  it('returns the last n elements from the array', () => {\n    expect(takeRight([1, 2, 3, 4, 5], 2)).toEqual([4, 5]);\n    expect(takeRight(['a', 'b', 'c', 'd'], 2)).toEqual(['c', 'd']);\n    expect(takeRight([true, false, true], 1)).toEqual([true]);\n    expect(takeRight([1, 2, 3], 5)).toEqual([1, 2, 3]);\n    expect(takeRight([1, 2, 3], 0)).toEqual([]);\n    expect(takeRight([], 3)).toEqual([]);\n  });\n\n  it('handles cases where count is greater than array length', () => {\n    expect(takeRight([1, 2, 3], 5)).toEqual([1, 2, 3]);\n  });\n\n  it('handles cases where count is zero', () => {\n    expect(takeRight([1, 2, 3], 0)).toEqual([]);\n  });\n\n  it('handles empty arrays', () => {\n    expect(takeRight([], 3)).toEqual([]);\n  });\n\n  it('handles negative counts', () => {\n    expect(takeRight([1, 2, 3], -1)).toEqual([]);\n    expect(takeRight([1, 2, 3], -5)).toEqual([]);\n  });\n});\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return a copy containing the last count elements in their original order. Return an empty array for count <= 0; counts at least as large as the length return a copy of the entire array.",
+    "domain": "The input is a dense array of at most 128 finite numbers, each between -1000 and 1000. The input must not be modified. Return a fresh array even when its contents are unchanged. The count is an integer between -128 and 256.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "arr": "source sequence",
+      "count": "maximum suffix length; nonpositive selects nothing"
+    },
+    "outputRole": "fresh selected suffix in original order",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

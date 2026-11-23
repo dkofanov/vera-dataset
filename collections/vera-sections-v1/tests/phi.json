@@ -1,0 +1,252 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "n",
+        0
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ]
+    },
+    {
+      "name": "curated 7",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 9",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          -1
+        ]
+      ],
+      "expect": [
+        "n",
+        -1
+      ]
+    },
+    {
+      "name": "case 10",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          -2
+        ]
+      ],
+      "expect": [
+        "n",
+        -2
+      ]
+    },
+    {
+      "name": "case 11",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          -5
+        ]
+      ],
+      "expect": [
+        "n",
+        -5
+      ]
+    },
+    {
+      "name": "case 12",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "n",
+        0.5
+      ]
+    },
+    {
+      "name": "curated 5",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 8",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 9",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          30
+        ]
+      ],
+      "expect": [
+        "n",
+        8
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 10",
+      "function": "phi",
+      "args": [
+        [
+          "n",
+          97
+        ]
+      ],
+      "expect": [
+        "n",
+        96
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "ca1fb6867499a143041abb1885c3897b2e4e4414ea6673c50e9670c7ec47cd98",
+  "contracts": [
+    {
+      "name": "lastPageItems",
+      "signature": "function lastPageItems(items: number, pageSize: number): number",
+      "paramNames": [
+        "items",
+        "pageSize"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.ceil",
+      "text": "math.ceil(items / pageSize)"
+    }
+  ],
+  "preconditions": [
+    "Items is an integer from 0 through 10000; pageSize is an integer from 1 through 1000. Inputs are unchanged."
+  ]
+}

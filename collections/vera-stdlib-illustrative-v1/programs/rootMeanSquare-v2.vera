@@ -1,0 +1,7 @@
+function measureRootMeanSquare(bArg: number, aArg: number): number {
+  let bSquare: number = bArg * bArg;
+  let aSquare: number = aArg * aArg;
+  let combined: number = bSquare + aSquare;
+  let meanSquare: number = combined / 2;
+  return math.sqrt(meanSquare);
+}

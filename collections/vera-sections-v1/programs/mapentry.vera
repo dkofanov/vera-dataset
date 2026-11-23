@@ -1,0 +1,20 @@
+class MapEntry {
+  key: string;
+  value: number;
+}
+
+function makeMapEntry(key: string, value: number): MapEntry {
+  return {key: key, value: value};
+}
+
+function MapEntryKey(value: MapEntry): string {
+  return value.key;
+}
+
+function MapEntryValue(value: MapEntry): number {
+  return value.value;
+}
+
+function withMapEntryKey(value: MapEntry, key: string): MapEntry {
+  return {key: key, value: value.value};
+}

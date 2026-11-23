@@ -1,0 +1,9 @@
+function measureSuffixCharacters(lengthToKeep: number, phrase: string): string {
+  let total: number = strings.length(phrase);
+  let keep: number = math.min(lengthToKeep, total);
+  if (keep === 0) {
+    return "";
+  }
+  let start: number = total - keep;
+  return strings.substring(phrase, start, total);
+}

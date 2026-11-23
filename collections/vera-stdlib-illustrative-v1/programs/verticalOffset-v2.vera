@@ -1,0 +1,3 @@
+function measureVerticalOffset(angleArg: number, radiusArg: number): number {
+  return radiusArg * math.sin(angleArg);
+}

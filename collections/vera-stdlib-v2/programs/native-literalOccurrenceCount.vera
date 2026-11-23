@@ -1,0 +1,3 @@
+function literalOccurrenceCount(text: string, search: string): number {
+  return strings.split(text, search).length() - 1;
+}

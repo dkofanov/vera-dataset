@@ -1,0 +1,11 @@
+function joinFieldsWith(text: string, separator: string, joiner: string): string {
+  let fields: string[] = strings.split(text, separator);
+  let result: string = "";
+  let index: number = 0;
+  while (index < fields.length()) {
+    if (index > 0) { result = result + joiner; }
+    result = result + fields[index];
+    index = index + 1;
+  }
+  return result;
+}

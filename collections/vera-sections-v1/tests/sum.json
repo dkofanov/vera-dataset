@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "simple", "function": "sum", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]]], "expect": ["n", 10]},
+    {"name": "empty", "function": "sum", "args": [["a", []]], "expect": ["n", 0]},
+    {"name": "negative", "function": "sum", "args": [["a", [["n", -1], ["n", -2], ["n", -3], ["n", 4]]]], "expect": ["n", -2]}
+  ]
+}

@@ -1,0 +1,5 @@
+function sumNumericFields(text: string, separator: string, fallback: number): number {
+  let total: number = 0;
+  for (let field: string of strings.split(text, separator)) { total = total + strings.toNumber(field, fallback); }
+  return total;
+}

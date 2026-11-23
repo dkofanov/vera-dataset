@@ -1,0 +1,37 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "720d65769afe26633e79d9e9a27546ff97f73ffee7c371b3dea09a4ac6ff0129",
+  "contracts": [
+    {
+      "name": "boundedValue",
+      "signature": "function boundedValue(value: number, lower: number, upper: number): number",
+      "paramNames": [
+        "value",
+        "lower",
+        "upper"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(math.max(value, lower), upper)"
+    },
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(value, lower)"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated."
+  ]
+}

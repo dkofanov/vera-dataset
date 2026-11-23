@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "a24c6bd6405b4e00d312be7ab77043bb9de265b133a3b686f10716b01b708315",
+  "contracts": [
+    {
+      "name": "circleCircumference",
+      "signature": "function circleCircumference(radius: number): number",
+      "paramNames": [
+        "radius"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.pi",
+      "text": "math.pi()"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Radius is nonnegative."
+  ]
+}

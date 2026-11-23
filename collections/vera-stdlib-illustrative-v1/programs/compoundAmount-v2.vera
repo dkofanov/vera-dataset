@@ -1,0 +1,5 @@
+function measureCompoundAmount(rateArg: number, periodsArg: number, principalArg: number): number {
+  let multiplier: number = 1 + rateArg;
+  let compounded: number = math.pow(multiplier, periodsArg);
+  return principalArg * compounded;
+}

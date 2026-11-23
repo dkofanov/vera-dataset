@@ -1,0 +1,5 @@
+function measureRoundToStep(stepArg: number, sample: number): number {
+  let units: number = sample / stepArg;
+  let nearest: number = math.round(units);
+  return nearest * stepArg;
+}

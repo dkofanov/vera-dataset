@@ -1,0 +1,74 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "34b842a70f84bd3fb0722b3f489333e368babff76a1f351f279e42862a2b8e86",
+  "programSha256": "be782f81a69595438cbce76fb90c4fa9e92bb7cb02494781a578a521d8462522",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "dropRight",
+      "signature": "function dropRight(arr: number[], itemsCount: number): number[]",
+      "paramNames": [
+        "arr",
+        "itemsCount"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "math.min",
+      "sourceApi": "Math.min",
+      "strategy": "direct",
+      "domain": "finite numeric inputs and results",
+      "text": "Math.min(-itemsCount, 0)",
+      "start": 88,
+      "end": 112
+    },
+    {
+      "rule": "array.slice",
+      "sourceApi": "Array.prototype.slice",
+      "strategy": "arraySlice",
+      "domain": "dense primitive arrays; finite indices; shallow copy",
+      "text": "arr.slice()",
+      "start": 152,
+      "end": 163
+    },
+    {
+      "rule": "array.slice",
+      "sourceApi": "Array.prototype.slice",
+      "strategy": "arraySlice",
+      "domain": "dense primitive arrays; finite indices; shallow copy",
+      "text": "arr.slice(0, itemsCount)",
+      "start": 179,
+      "end": 203
+    }
+  ],
+  "helpers": [
+    {
+      "id": "index",
+      "sha256": "4e0e10af29fa424c94825e37fdd33e3b4cf8d4be8134c15b3c91cc0abccce0af"
+    },
+    {
+      "id": "arraySliceNumber",
+      "sha256": "b5e115048fe797489b5d4707850e34bd0039039ab26c0e960b3d183397a7ff7d"
+    }
+  ],
+  "normalization": {
+    "source": "export function dropRight(arr: number[], itemsCount: number): number[] {\n  itemsCount = Math.min(-itemsCount, 0);\n\n  if (itemsCount === 0) {\n    return arr.slice();\n  }\n\n  return arr.slice(0, itemsCount);\n}\n",
+    "sourceSha256": "34b842a70f84bd3fb0722b3f489333e368babff76a1f351f279e42862a2b8e86",
+    "adaptations": [
+      "Instantiate upstream generic T as number; remove readonly annotation without changing input immutability contract."
+    ]
+  },
+  "originalDeclarationSha256": "75ec1891d7e8793f4294108e2deaf4f3c42902364b45651f6666e0a7dac6952b"
+}

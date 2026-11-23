@@ -1,0 +1,224 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeEdge",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          12
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:Edge",
+        [
+          [
+            "a",
+            [
+              "n",
+              4
+            ]
+          ],
+          [
+            "b",
+            [
+              "n",
+              7
+            ]
+          ],
+          [
+            "weight",
+            [
+              "n",
+              12
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read a",
+      "function": "EdgeA",
+      "args": [
+        [
+          "o",
+          "local:Edge",
+          [
+            [
+              "a",
+              [
+                "n",
+                4
+              ]
+            ],
+            [
+              "b",
+              [
+                "n",
+                7
+              ]
+            ],
+            [
+              "weight",
+              [
+                "n",
+                12
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "read b",
+      "function": "EdgeB",
+      "args": [
+        [
+          "o",
+          "local:Edge",
+          [
+            [
+              "a",
+              [
+                "n",
+                4
+              ]
+            ],
+            [
+              "b",
+              [
+                "n",
+                7
+              ]
+            ],
+            [
+              "weight",
+              [
+                "n",
+                12
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        7
+      ]
+    },
+    {
+      "name": "read weight",
+      "function": "EdgeWeight",
+      "args": [
+        [
+          "o",
+          "local:Edge",
+          [
+            [
+              "a",
+              [
+                "n",
+                4
+              ]
+            ],
+            [
+              "b",
+              [
+                "n",
+                7
+              ]
+            ],
+            [
+              "weight",
+              [
+                "n",
+                12
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        12
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withEdgeA",
+      "args": [
+        [
+          "o",
+          "local:Edge",
+          [
+            [
+              "a",
+              [
+                "n",
+                4
+              ]
+            ],
+            [
+              "b",
+              [
+                "n",
+                7
+              ]
+            ],
+            [
+              "weight",
+              [
+                "n",
+                12
+              ]
+            ]
+          ]
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:Edge",
+        [
+          [
+            "a",
+            [
+              "n",
+              7
+            ]
+          ],
+          [
+            "b",
+            [
+              "n",
+              7
+            ]
+          ],
+          [
+            "weight",
+            [
+              "n",
+              12
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+function trimUnicodeSpace(text: string): string {
+  return strings.trim(text);
+}

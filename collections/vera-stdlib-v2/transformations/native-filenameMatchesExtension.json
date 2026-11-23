@@ -1,0 +1,39 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "5c8a7821628b5018ad2c749d5f3a71c850c81a5bf203d2a33538ec32be1d4788",
+  "contracts": [
+    {
+      "name": "filenameMatchesExtension",
+      "signature": "function filenameMatchesExtension(filename: string, extension: string): boolean",
+      "paramNames": [
+        "filename",
+        "extension"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.endsWith",
+      "text": "strings.endsWith(strings.toLowerCase(filename), strings.toLowerCase(extension))"
+    },
+    {
+      "sourceApi": "strings.toLowerCase",
+      "text": "strings.toLowerCase(filename)"
+    },
+    {
+      "sourceApi": "strings.toLowerCase",
+      "text": "strings.toLowerCase(extension)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

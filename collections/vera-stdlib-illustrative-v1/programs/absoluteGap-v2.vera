@@ -1,0 +1,7 @@
+function measureAbsoluteGap(bArg: number, aArg: number): number {
+  let separation: number = aArg - bArg;
+  if (separation < 0) {
+    separation = 0 - separation;
+  }
+  return separation;
+}

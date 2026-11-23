@@ -1,0 +1,4 @@
+function measureHorizontalOffset(angleArg: number, radiusArg: number): number {
+  let displacement: number = radiusArg * math.cos(angleArg);
+  return displacement;
+}

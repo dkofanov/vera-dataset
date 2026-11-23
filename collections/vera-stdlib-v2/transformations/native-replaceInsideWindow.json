@@ -1,0 +1,53 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "8089cf7f2f4897f4ed73a28a0350d61ee4357ebf7efc535f5c04d52db88913dd",
+  "contracts": [
+    {
+      "name": "replaceInsideWindow",
+      "signature": "function replaceInsideWindow(text: string, start: number, end: number, search: string, replacement: string): string",
+      "paramNames": [
+        "text",
+        "start",
+        "end",
+        "search",
+        "replacement"
+      ],
+      "paramTypes": [
+        "string",
+        "number",
+        "number",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, 0, start)"
+    },
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(strings.substring(text, start, end), search, replacement)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, start, end)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, end, strings.length(text))"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Integer indices satisfy 0 <= start <= end <= text length."
+  ]
+}

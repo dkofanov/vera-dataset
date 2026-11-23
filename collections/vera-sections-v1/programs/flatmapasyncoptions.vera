@@ -1,0 +1,15 @@
+class FlatMapAsyncOptions {
+  concurrency: number;
+}
+
+function makeFlatMapAsyncOptions(concurrency: number): FlatMapAsyncOptions {
+  return {concurrency: concurrency};
+}
+
+function FlatMapAsyncOptionsConcurrency(value: FlatMapAsyncOptions): number {
+  return value.concurrency;
+}
+
+function withFlatMapAsyncOptionsConcurrency(value: FlatMapAsyncOptions, concurrency: number): FlatMapAsyncOptions {
+  return {concurrency: concurrency};
+}

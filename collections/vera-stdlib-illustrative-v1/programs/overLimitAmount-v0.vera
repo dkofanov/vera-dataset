@@ -1,0 +1,7 @@
+function inspectOverLimitAmount(usedInput: number, limitInput: number): number {
+  let surplus: number = usedInput - limitInput;
+  if (surplus < 0) {
+    return 0;
+  }
+  return surplus;
+}

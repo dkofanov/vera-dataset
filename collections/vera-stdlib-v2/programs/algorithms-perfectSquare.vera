@@ -1,0 +1,7 @@
+function compatIsInteger(compatLocalValue: number): boolean {
+  return math.floor(compatLocalValue) === compatLocalValue;
+}
+
+function perfectSquare(num: number): boolean {
+return compatIsInteger(math.sqrt(num));
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "55a9d621d5d3f73cd14c6facd0d5802ac39615756a79426d38ffbda1d8bf8415",
+  "contracts": [
+    {
+      "name": "absoluteDifferences",
+      "signature": "function absoluteDifferences(values: number[], target: number): number[]",
+      "paramNames": [
+        "values",
+        "target"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.abs",
+      "text": "math.abs(value - target)"
+    }
+  ],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Target is finite between -100 and 100."
+  ]
+}

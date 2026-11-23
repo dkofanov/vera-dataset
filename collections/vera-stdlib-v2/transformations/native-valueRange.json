@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "7f89ee41c231a50fdaa8e45041978d4b7ccec16fa86eec5c6d587248b79787c8",
+  "contracts": [
+    {
+      "name": "valueRange",
+      "signature": "function valueRange(values: number[]): number",
+      "paramNames": [
+        "values"
+      ],
+      "paramTypes": [
+        "number[]"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.min",
+      "text": "math.min(lo, value)"
+    },
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(hi, value)"
+    }
+  ],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage."
+  ]
+}

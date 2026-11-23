@@ -1,0 +1,69 @@
+{
+  "id": "function/es-toolkit/take",
+  "symbol": {
+    "project": "toss/es-toolkit",
+    "repository": "https://github.com/toss/es-toolkit",
+    "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+    "path": "src/array/take.ts",
+    "export": "take",
+    "sourceFileSha256": "8f2527f0e2f1579f01f6efb22ea75ff3f0fdce43a2b18034077a921487f55444",
+    "declarationSha256": "e4388f2e628b82dc6ae27f32bc4a4097b2f64e11ea864daa7bdbe9608cb992b8",
+    "start": 610,
+    "end": 706
+  },
+  "documentation": "/**\n * Returns a new array containing the first `count` elements from the input array `arr`.\n * If `count` is greater than the length of `arr`, the entire array is returned.\n *\n * @template T - Type of elements in the input array.\n *\n * @param arr - The array to take elements from.\n * @param count - The number of elements to take.\n * @returns A new array containing the first `count` elements from `arr`.\n *\n * @example\n * // Returns [1, 2, 3]\n * take([1, 2, 3, 4, 5], 3);\n *\n * @example\n * // Returns ['a', 'b']\n * take(['a', 'b', 'c'], 2);\n *\n * @example\n * // Returns [1, 2, 3]\n * take([1, 2, 3], 5);\n */",
+  "originalSource": "export function take<T>(arr: readonly T[], count: number): T[] {\n  return arr.slice(0, count);\n}",
+  "sourceUses": [
+    {
+      "api": "Array.prototype.slice",
+      "kind": "call",
+      "receiverKind": "array",
+      "receiverType": "readonly T[]",
+      "sourceSpan": {
+        "sourcePath": "src/array/take.ts",
+        "start": 684,
+        "end": 703,
+        "startLine": 24,
+        "startColumn": 10,
+        "endLine": 24,
+        "endColumn": 29
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/take.ts",
+        "start": 684,
+        "end": 693,
+        "startLine": 24,
+        "startColumn": 10,
+        "endLine": 24,
+        "endColumn": 19
+      },
+      "text": "arr.slice(0, count)",
+      "arguments": [
+        "0",
+        "count"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "src/array/take.spec.ts",
+    "sha256": "a2843d4f87920b93b35074961670450716a9f491d451a39464e17c1fa7f2e234",
+    "text": "import { describe, expect, it } from 'vitest';\nimport { take } from './take';\n\ndescribe('take', () => {\n  it('returns the first n elements from the array', () => {\n    expect(take([1, 2, 3, 4, 5], 3)).toEqual([1, 2, 3]);\n    expect(take(['a', 'b', 'c', 'd'], 2)).toEqual(['a', 'b']);\n    expect(take([true, false, true], 1)).toEqual([true]);\n  });\n\n  it('handles cases where count is greater than array length', () => {\n    expect(take([1, 2, 3], 5)).toEqual([1, 2, 3]);\n  });\n\n  it('handles cases where count is zero', () => {\n    expect(take([1, 2, 3], 0)).toEqual([]);\n  });\n\n  it('handles empty arrays', () => {\n    expect(take([], 3)).toEqual([]);\n  });\n});\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "For a nonnegative count, return a copy of the first count elements, capped at the array length. For a negative count, return all elements except the last abs(count) elements, or an empty array if that removes everything.",
+    "domain": "The input is a dense array of at most 128 finite numbers, each between -1000 and 1000. The input must not be modified. Return a fresh array even when its contents are unchanged. The count is an integer between -128 and 256.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "arr": "source sequence",
+      "count": "end-relative copy boundary when negative, otherwise maximum prefix length"
+    },
+    "outputRole": "fresh selected prefix",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

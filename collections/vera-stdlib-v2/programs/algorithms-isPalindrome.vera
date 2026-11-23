@@ -1,0 +1,12 @@
+function isPalindrome(number: number): boolean {
+let compatParameter0: number = number;
+if (((compatParameter0 < 0) || ((((compatParameter0 % 10) === 0) && (compatParameter0 !== 0))))) {
+return false;
+}
+let reversed: number = 0;
+while ((compatParameter0 > reversed)) {
+reversed = ((reversed * 10) + ((compatParameter0 % 10)));
+compatParameter0 = math.floor((compatParameter0 / 10));
+}
+return ((compatParameter0 === reversed) || (compatParameter0 === math.floor((reversed / 10))));
+}

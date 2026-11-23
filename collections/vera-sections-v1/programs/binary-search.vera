@@ -1,0 +1,49 @@
+import * as math from "std/math"
+
+function binarySearchIterative(array: number[], target: number): number | null {
+  if (array.length() === 0) {
+    return null;
+  }
+  let start: number = 0;
+  let end: number = array.length() - 1;
+  if (target < array[start] || target > array[end]) {
+    return null;
+  }
+  let middle: number = math.floor((start + end) / 2);
+  while (array[middle] !== target && start <= end) {
+    if (target < array[middle]) {
+      end = middle - 1;
+    } else {
+      start = middle + 1;
+    }
+    middle = math.floor((start + end) / 2);
+  }
+  if (array[middle] === target) {
+    return middle;
+  }
+  return null;
+}
+
+function binarySearchRecursiveRange(array: number[], target: number, start: number, end: number): number | null {
+  if (array.length() === 0) {
+    return null;
+  }
+  if (target < array[start] || target > array[end]) {
+    return null;
+  }
+  let middle: number = math.floor((start + end) / 2);
+  if (array[middle] === target) {
+    return middle;
+  }
+  if (start > end) {
+    return null;
+  }
+  if (target < array[middle]) {
+    return binarySearchRecursiveRange(array, target, start, middle - 1);
+  }
+  return binarySearchRecursiveRange(array, target, middle + 1, end);
+}
+
+function binarySearchRecursive(array: number[], target: number): number | null {
+  return binarySearchRecursiveRange(array, target, 0, array.length() - 1);
+}

@@ -1,0 +1,28 @@
+function naiveLCM(nums: number[]): number {
+  let maxNum: number = nums[0];
+  let i: number = 0;
+  while (i < nums.length()) {
+    if (nums[i] > maxNum) {
+      maxNum = nums[i];
+    }
+    i = i + 1;
+  }
+  let current: number = maxNum;
+  let found: boolean = false;
+  while (!found) {
+    let allDivide: boolean = true;
+    let j: number = 0;
+    while (j < nums.length()) {
+      if (current % nums[j] !== 0) {
+        allDivide = false;
+      }
+      j = j + 1;
+    }
+    if (allDivide) {
+      found = true;
+    } else {
+      current = current + maxNum;
+    }
+  }
+  return current;
+}

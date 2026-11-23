@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "02f24a12b0eeced6b415e7a386ac733b37bf1d9b04579bb97b09105cbb3379b8",
+  "contracts": [
+    {
+      "name": "replacePlaceholder",
+      "signature": "function replacePlaceholder(template: string, placeholder: string, value: string): string",
+      "paramNames": [
+        "template",
+        "placeholder",
+        "value"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(template, placeholder, value)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Placeholder is nonempty."
+  ]
+}

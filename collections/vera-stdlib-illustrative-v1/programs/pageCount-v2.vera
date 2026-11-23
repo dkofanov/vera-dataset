@@ -1,0 +1,10 @@
+function measurePageCount(pageSizeArg: number, itemsArg: number): number {
+  if (itemsArg === 0) {
+    return 0;
+  }
+  let base: number = math.floor(itemsArg / pageSizeArg);
+  if (itemsArg - base * pageSizeArg > 0) {
+    base = base + 1;
+  }
+  return base;
+}

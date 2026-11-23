@@ -1,0 +1,11 @@
+function parentPathText(path: string): string {
+  let segments: string[] = strings.split(path, "/");
+  let result: string = "";
+  let index: number = 0;
+  while (index + 1 < segments.length()) {
+    if (index > 0) { result = result + "/"; }
+    result = result + segments[index];
+    index = index + 1;
+  }
+  return result;
+}

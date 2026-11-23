@@ -1,0 +1,122 @@
+{
+  "id": "function/es-toolkit/upperFirst",
+  "symbol": {
+    "project": "toss/es-toolkit",
+    "repository": "https://github.com/toss/es-toolkit",
+    "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+    "path": "src/string/upperFirst.ts",
+    "export": "upperFirst",
+    "sourceFileSha256": "afc2584da491015b29b7bd1383dc8dfabae11671751c1c3c6da5b67953793162",
+    "declarationSha256": "07f61a0dd67267eb93b556e8905acae18c5ec3ec4913d9c46289b6527b90c28c",
+    "start": 352,
+    "end": 466
+  },
+  "documentation": "/**\n * Converts the first character of string to upper case.\n *\n * @param str - The string that is to be changed\n * @returns The converted string.\n *\n * @example\n * const convertedStr1 = upperFirst('fred') // returns 'Fred'\n * const convertedStr2 = upperFirst('Fred') // returns 'Fred'\n * const convertedStr3 = upperFirst('FRED') // returns 'FRED'\n */",
+  "originalSource": "export function upperFirst(str: string): string {\n  return str.substring(0, 1).toUpperCase() + str.substring(1);\n}",
+  "sourceUses": [
+    {
+      "api": "String.prototype.toUpperCase",
+      "kind": "call",
+      "receiverKind": "string",
+      "receiverType": "string",
+      "sourceSpan": {
+        "sourcePath": "src/string/upperFirst.ts",
+        "start": 411,
+        "end": 444,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 43
+      },
+      "accessSpan": {
+        "sourcePath": "src/string/upperFirst.ts",
+        "start": 411,
+        "end": 442,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 41
+      },
+      "text": "str.substring(0, 1).toUpperCase()",
+      "arguments": []
+    },
+    {
+      "api": "String.prototype.substring",
+      "kind": "call",
+      "receiverKind": "string",
+      "receiverType": "string",
+      "sourceSpan": {
+        "sourcePath": "src/string/upperFirst.ts",
+        "start": 411,
+        "end": 430,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      "accessSpan": {
+        "sourcePath": "src/string/upperFirst.ts",
+        "start": 411,
+        "end": 424,
+        "startLine": 13,
+        "startColumn": 10,
+        "endLine": 13,
+        "endColumn": 23
+      },
+      "text": "str.substring(0, 1)",
+      "arguments": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "api": "String.prototype.substring",
+      "kind": "call",
+      "receiverKind": "string",
+      "receiverType": "string",
+      "sourceSpan": {
+        "sourcePath": "src/string/upperFirst.ts",
+        "start": 447,
+        "end": 463,
+        "startLine": 13,
+        "startColumn": 46,
+        "endLine": 13,
+        "endColumn": 62
+      },
+      "accessSpan": {
+        "sourcePath": "src/string/upperFirst.ts",
+        "start": 447,
+        "end": 460,
+        "startLine": 13,
+        "startColumn": 46,
+        "endLine": 13,
+        "endColumn": 59
+      },
+      "text": "str.substring(1)",
+      "arguments": [
+        "1"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "src/string/upperFirst.spec.ts",
+    "sha256": "92be50abc731b174c9d9a5b14d6b592f92f38f5ec5545754d7e2d560dbc7ab77",
+    "text": "import { describe, expect, it } from 'vitest';\nimport { upperFirst } from './upperFirst';\n\ndescribe('upperFirst', () => {\n  it('should change first character of lower case to upper case', () => {\n    expect(upperFirst('fred')).toEqual('Fred');\n  });\n\n  it('should keep first character of upper case unaltered', () => {\n    expect(upperFirst('Fred')).toEqual('Fred');\n  });\n\n  it('should keep first character of all upper case unaltered', () => {\n    expect(upperFirst('FRED')).toEqual('FRED');\n  });\n\n  it('should work with an empty string', () => {\n    expect(upperFirst('')).toEqual('');\n  });\n\n  it('should keep white space and not alter string', () => {\n    expect(upperFirst('  fred')).toEqual('  fred');\n  });\n});\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return the input string with only its first character converted to upper case using Unicode casing. Leave the remainder exactly unchanged; the first character may expand to multiple characters. Return the empty string for empty input.",
+    "domain": "Text contains only BMP characters and no UTF-16 surrogate code units. Text length is at most 128 characters.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "str": "source text"
+    },
+    "outputRole": "text with only its first character uppercased",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

@@ -1,0 +1,4 @@
+function inspectTrimmedLength(message: string): number {
+  let trimmed: string = strings.trim(message);
+  return strings.length(trimmed);
+}

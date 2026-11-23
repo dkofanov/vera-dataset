@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "absolute negative", "function": "absoluteValue", "args": [["n", -3]], "expect": ["n", 3]},
+    {"name": "fib iterative", "function": "nthFibonacci", "args": [["n", 10]], "expect": ["n", 55]},
+    {"name": "fib recursive", "function": "nthFibonacciRecursively", "args": [["n", 10]], "expect": ["n", 55]}
+  ]
+}

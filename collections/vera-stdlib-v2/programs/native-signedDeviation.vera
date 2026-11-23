@@ -1,0 +1,3 @@
+function signedDeviation(observed: number, target: number): number {
+  return observed - target;
+}

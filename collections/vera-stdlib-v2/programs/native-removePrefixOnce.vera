@@ -1,0 +1,4 @@
+function removePrefixOnce(text: string, affix: string): string {
+  if (strings.startsWith(text, affix)) { return strings.substring(text, strings.length(affix), strings.length(text)); }
+  return text;
+}

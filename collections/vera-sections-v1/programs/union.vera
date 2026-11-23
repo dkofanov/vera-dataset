@@ -1,0 +1,29 @@
+function contains(values: number[], target: number): boolean {
+  let i: number = 0;
+  while (i < values.length()) {
+    if (values[i] === target) {
+      return true;
+    }
+    i = i + 1;
+  }
+  return false;
+}
+
+function union(arr1: number[], arr2: number[]): number[] {
+  let result: number[] = [];
+  let i: number = 0;
+  while (i < arr1.length()) {
+    if (!contains(result, arr1[i])) {
+      result.push(arr1[i]);
+    }
+    i = i + 1;
+  }
+  let j: number = 0;
+  while (j < arr2.length()) {
+    if (!contains(result, arr2[j])) {
+      result.push(arr2[j]);
+    }
+    j = j + 1;
+  }
+  return result;
+}

@@ -1,0 +1,3 @@
+function measureContainsText(searchText: string, phrase: string): boolean {
+  return strings.contains(phrase, searchText);
+}

@@ -1,0 +1,4 @@
+function evaluateHorizontalOffset(angleValue: number, radiusValue: number): number {
+  let offset: number = radiusValue * math.cos(angleValue);
+  return offset;
+}

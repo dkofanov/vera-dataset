@@ -1,0 +1,5 @@
+function fieldAt(text: string, separator: string, index: number, fallback: string): string {
+  let fields: string[] = strings.split(text, separator);
+  if (index < 0 || index >= fields.length()) { return fallback; }
+  return fields[index];
+}

@@ -1,0 +1,5 @@
+function measureRoundUpToStep(stepArg: number, sample: number): number {
+  let units: number = sample / stepArg;
+  let nextUnits: number = math.ceil(units);
+  return nextUnits * stepArg;
+}

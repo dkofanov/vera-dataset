@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "start", "function": "inverseLerp", "args": [["n", 0], ["n", 100], ["n", 0]], "expect": ["n", 0]},
+    {"name": "stop", "function": "inverseLerp", "args": [["n", 0], ["n", 100], ["n", 100]], "expect": ["n", 1]},
+    {"name": "middle", "function": "inverseLerp", "args": [["n", 0], ["n", 100], ["n", 50]], "expect": ["n", 0.5]},
+    {"name": "reversed", "function": "inverseLerp", "args": [["n", 100], ["n", 0], ["n", 75]], "expect": ["n", 0.25]},
+    {"name": "outside", "function": "inverseLerp", "args": [["n", 0], ["n", 100], ["n", 150]], "expect": ["n", 1.5]},
+    {"name": "equal endpoints", "function": "inverseLerp", "args": [["n", 5], ["n", 5], ["n", 10]], "expect": ["n", 0]}
+  ]
+}

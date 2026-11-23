@@ -1,0 +1,15 @@
+class ArrayQueue {
+  queue: number[];
+}
+
+function makeArrayQueue(queue: number[]): ArrayQueue {
+  return {queue: queue};
+}
+
+function ArrayQueueQueue(value: ArrayQueue): number[] {
+  return value.queue;
+}
+
+function withArrayQueueQueue(value: ArrayQueue, queue: number[]): ArrayQueue {
+  return {queue: queue};
+}

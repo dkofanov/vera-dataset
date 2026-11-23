@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "78b63795ea3ea66e23e8882a526b469e731912a034987b68f2f647d2e3e784f6",
+  "contracts": [
+    {
+      "name": "textBeforeDelimiter",
+      "signature": "function textBeforeDelimiter(text: string, delimiter: string): string",
+      "paramNames": [
+        "text",
+        "delimiter"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, delimiter)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Delimiter is nonempty."
+  ]
+}

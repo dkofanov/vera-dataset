@@ -1,0 +1,10 @@
+function binaryGCF(a: number, b: number): number {
+  let x: number = a;
+  let y: number = b;
+  while (y !== 0) {
+    let temp: number = y;
+    y = x % y;
+    x = temp;
+  }
+  return x;
+}

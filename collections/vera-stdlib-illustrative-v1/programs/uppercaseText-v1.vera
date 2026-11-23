@@ -1,0 +1,3 @@
+function evaluateUppercaseText(content: string): string {
+  return strings.toUpperCase(content);
+}

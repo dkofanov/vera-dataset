@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {"name": "jump first", "function": "jumpSearch", "args": [["a", [["n", 1], ["n", 2], ["n", 3]]], ["n", 1]], "expect": ["n", 0]},
+    {"name": "jump missing", "function": "jumpSearch", "args": [["a", [["n", 1], ["n", 2], ["n", 3]]], ["n", 4]], "expect": ["n", -1]},
+    {"name": "interpolation middle", "function": "interpolationSearch", "args": [["a", [["n", 1], ["n", 3], ["n", 5], ["n", 7], ["n", 9], ["n", 11]]], ["n", 7]], "expect": ["n", 3]},
+    {"name": "binary iterative", "function": "binarySearchIterative", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 3]], "expect": ["n", 2]},
+    {"name": "binary recursive missing", "function": "binarySearchRecursive", "args": [["a", [["n", 1], ["n", 2], ["n", 3], ["n", 4]]], ["n", 5]], "expect": ["z"]},
+    {"name": "sorted", "function": "isSortedArray", "args": [["a", [["n", 1], ["n", 2], ["n", 3]]]], "expect": ["b", true]},
+    {"name": "unsorted", "function": "isSortedArray", "args": [["a", [["n", 2], ["n", 1]]]], "expect": ["b", false]}
+  ]
+}

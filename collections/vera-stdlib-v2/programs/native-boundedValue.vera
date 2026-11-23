@@ -1,0 +1,3 @@
+function boundedValue(value: number, lower: number, upper: number): number {
+  return math.min(math.max(value, lower), upper);
+}

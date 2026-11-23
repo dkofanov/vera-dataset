@@ -1,0 +1,3 @@
+function pageCount(items: number, pageSize: number): number {
+  return math.ceil(items / pageSize);
+}

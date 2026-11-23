@@ -1,0 +1,16 @@
+{
+  "name": "vera-stdlib-illustrative-v1",
+  "path": "collections/vera-stdlib-illustrative-v1",
+  "records": 111,
+  "examples": 111,
+  "examplesBySplit": {
+    "train": 111,
+    "validation": 0,
+    "test": 0
+  },
+  "testCases": 11338,
+  "recordsSourceSha256": "31aa9209207cf36f4d38b1e706b2b89692c73b4526cac51c17ea5425747eb808",
+  "programsAndTestsBytePreserved": true,
+  "runtimeVerification": "Source collections passed host checkers before packaging; compiler/runtime not bundled.",
+  "origin": "111 teacher-authored training-only variants of 38 existing v2 parents; zero independent new tasks"
+}

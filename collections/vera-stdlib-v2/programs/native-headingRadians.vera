@@ -1,0 +1,3 @@
+function headingRadians(dx: number, dy: number): number {
+  return math.atan2(dy, dx);
+}

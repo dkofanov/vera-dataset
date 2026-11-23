@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "e898c3d19bfba741ce5734da4d8cb57edb0fb9d332168c8c8721f39f10fbcca7",
+  "contracts": [
+    {
+      "name": "trimmedUppercase",
+      "signature": "function trimmedUppercase(text: string): string",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.toUpperCase",
+      "text": "strings.toUpperCase(strings.trim(text))"
+    },
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(text)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

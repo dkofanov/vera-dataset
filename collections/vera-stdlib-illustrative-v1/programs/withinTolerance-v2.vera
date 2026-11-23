@@ -1,0 +1,1 @@
+function measureWithinTolerance(targetArg: number, toleranceArg: number, observedArg: number): boolean { let gap: number = math.abs(observedArg - targetArg); return gap <= toleranceArg; }

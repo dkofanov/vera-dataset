@@ -1,0 +1,5 @@
+function measureWindowByCount(fromPosition: number, lengthToKeep: number, phrase: string): string {
+  let left: number = strings.length(phrase) - fromPosition;
+  let keep: number = math.min(lengthToKeep, left);
+  return strings.substring(phrase, fromPosition, fromPosition + keep);
+}

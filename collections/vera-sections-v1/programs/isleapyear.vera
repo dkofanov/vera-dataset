@@ -1,0 +1,9 @@
+function isLeapYear(year: number): boolean {
+  let divisibleBy4: boolean = year % 4 === 0;
+  let divisibleBy100: boolean = year % 100 === 0;
+  let divisibleBy400: boolean = year % 400 === 0;
+  if (divisibleBy4 && (!divisibleBy100 || divisibleBy400)) {
+    return true;
+  }
+  return false;
+}

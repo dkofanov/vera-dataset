@@ -1,0 +1,3 @@
+function trimmedUppercase(text: string): string {
+  return strings.toUpperCase(strings.trim(text));
+}

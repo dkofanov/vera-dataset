@@ -1,0 +1,25 @@
+function sieveOfEratosthenes(n: number): number[] {
+  let primes: number[] = [];
+  if (n < 2) {
+    return primes;
+  }
+  let flags: boolean[] = [];
+  let i: number = 0;
+  while (i <= n) {
+    flags.push(true);
+    i = i + 1;
+  }
+  let p: number = 2;
+  while (p <= n) {
+    if (flags[p]) {
+      primes.push(p);
+      let j: number = p + p;
+      while (j <= n) {
+        flags[j] = false;
+        j = j + p;
+      }
+    }
+    p = p + 1;
+  }
+  return primes;
+}

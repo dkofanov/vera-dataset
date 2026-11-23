@@ -1,0 +1,3 @@
+function evaluateHasSuffix(fragment: string, content: string): boolean {
+  return strings.endsWith(content, fragment);
+}

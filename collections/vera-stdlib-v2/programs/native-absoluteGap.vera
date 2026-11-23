@@ -1,0 +1,3 @@
+function absoluteGap(a: number, b: number): number {
+  return math.abs(a - b);
+}

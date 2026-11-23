@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "5b8441f52024edd98dda9563b763b83e413af121969a4e3d7a4874d18599cde1",
+  "contracts": [
+    {
+      "name": "maximumOrFallback",
+      "signature": "function maximumOrFallback(values: number[], fallback: number): number",
+      "paramNames": [
+        "values",
+        "fallback"
+      ],
+      "paramTypes": [
+        "number[]",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(best, value)"
+    }
+  ],
+  "preconditions": [
+    "The array is dense, has at most 32 finite numbers between -100 and 100, and must not be modified. Any returned array must be fresh with independent storage. Fallback is finite between -100 and 100."
+  ]
+}

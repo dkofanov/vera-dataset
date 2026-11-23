@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "855d4322b33a82dd1e2457891b568bc53375658d1193869dac5b1622ea2d1adb",
+  "contracts": [
+    {
+      "name": "redactToken",
+      "signature": "function redactToken(text: string, token: string, mask: string): string",
+      "paramNames": [
+        "text",
+        "token",
+        "mask"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(text, token, mask)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Token is nonempty."
+  ]
+}

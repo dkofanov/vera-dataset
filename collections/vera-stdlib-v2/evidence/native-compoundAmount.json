@@ -1,0 +1,28 @@
+{
+  "id": "function/vera-native/compoundAmount",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Return principal times (1 + rate) raised to periods. Do not round the result. Rate is a fractional rate, not a percentage.",
+    "domain": "Principal is between 0 and 1000, rate is between -0.5 and 0.5, and periods is an integer from 0 through 20.",
+    "inputRoles": {
+      "principal": "starting amount",
+      "rate": "fractional rate per period",
+      "periods": "number of periods"
+    },
+    "outputRole": "final compounded amount, not the gain alone",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "(principal, rate, periods) => principal * Math.pow(1 + rate, periods)",
+    "sha256": "d48d5107f3811435c25787c9772e27fef038403d6a90db64a7318bcbca46a6b7"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

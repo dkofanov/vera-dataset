@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "138466a2e51f56a98a6a0f42c0d831414fe4260116e29ee52aae7f036137fe3c",
+  "contracts": [
+    {
+      "name": "rootMeanSquare",
+      "signature": "function rootMeanSquare(a: number, b: number): number",
+      "paramNames": [
+        "a",
+        "b"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.sqrt",
+      "text": "math.sqrt((a * a + b * b) / 2)"
+    }
+  ],
+  "preconditions": [
+    "All numeric arguments are finite and between -1000 and 1000 unless a tighter bound is stated."
+  ]
+}

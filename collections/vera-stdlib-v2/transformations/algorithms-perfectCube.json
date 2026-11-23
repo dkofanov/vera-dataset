@@ -1,0 +1,64 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "2b8296ed62bd518c7038f79f916741d893625f03244e63a87493fd5fd8af8f9d",
+  "programSha256": "bd231146c6776fc0b42d4838a7d80b840015a2149a80015f86b80b797e684aa0",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "perfectCube",
+      "signature": "function perfectCube(n: number): boolean",
+      "paramNames": [
+        "n"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "operator.pow",
+      "sourceApi": "operator.**",
+      "strategy": "direct",
+      "domain": "finite inputs/results",
+      "text": "Math.round(n ** (1 / 3)) ** 3",
+      "start": 59,
+      "end": 88
+    },
+    {
+      "rule": "operator.pow",
+      "sourceApi": "operator.**",
+      "strategy": "direct",
+      "domain": "finite inputs/results",
+      "text": "n ** (1 / 3)",
+      "start": 70,
+      "end": 82
+    },
+    {
+      "rule": "math.round",
+      "sourceApi": "Math.round",
+      "strategy": "direct",
+      "domain": "finite numeric inputs and results",
+      "text": "Math.round(n ** (1 / 3))",
+      "start": 59,
+      "end": 83
+    }
+  ],
+  "helpers": [],
+  "normalization": {
+    "source": "export function perfectCube(n: number): boolean {\n  return Math.round(n ** (1 / 3)) ** 3 === n\n}\n",
+    "sourceSha256": "2b8296ed62bd518c7038f79f916741d893625f03244e63a87493fd5fd8af8f9d",
+    "adaptations": [
+      "Lift arrow-function block to a named function; body is unchanged.",
+      "Select the actual implementation body, not overload-only declarations."
+    ]
+  },
+  "originalDeclarationSha256": "69e848b3d943000291368e545fbd2b12bd8c4ebe5843e2e798e986faa82eb10f"
+}

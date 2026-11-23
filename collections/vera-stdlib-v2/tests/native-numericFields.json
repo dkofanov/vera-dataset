@@ -1,0 +1,1194 @@
+{
+  "tests": [
+    {
+      "suite": "curated",
+      "args": [
+        "1;bad;;2,5",
+        ";",
+        -9
+      ],
+      "expect": [
+        1,
+        -9,
+        -9,
+        2.5
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "",
+        ";",
+        7
+      ],
+      "expect": [
+        7
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "curated",
+      "args": [
+        "-0;1e2",
+        ";",
+        5
+      ],
+      "expect": [
+        0,
+        5
+      ],
+      "negativeZeroPaths": [
+        [
+          0
+        ]
+      ],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "81|bad|bad|bad|bad|17",
+        "|",
+        -72
+      ],
+      "expect": [
+        81,
+        -72,
+        -72,
+        -72,
+        -72,
+        17
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-54;52;bad",
+        ";",
+        -53
+      ],
+      "expect": [
+        -54,
+        52,
+        -53
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;1;-22;-79;96;bad;bad",
+        ";",
+        97
+      ],
+      "expect": [
+        97,
+        97,
+        1,
+        -22,
+        -79,
+        96,
+        97,
+        97
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-11;bad;bad;bad;bad;bad",
+        ";",
+        84
+      ],
+      "expect": [
+        -11,
+        84,
+        84,
+        84,
+        84,
+        84
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-47;bad;41;-45;bad;-76;bad",
+        ";",
+        100
+      ],
+      "expect": [
+        -47,
+        100,
+        41,
+        -45,
+        100,
+        -76,
+        100
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "1|bad",
+        "|",
+        42
+      ],
+      "expect": [
+        1,
+        42
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-100|bad|bad|23|65",
+        "|",
+        -92
+      ],
+      "expect": [
+        -100,
+        -92,
+        -92,
+        23,
+        65
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "98|49|bad|bad|bad|-83|bad|bad",
+        "|",
+        40
+      ],
+      "expect": [
+        98,
+        49,
+        40,
+        40,
+        40,
+        -83,
+        40,
+        40
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-22",
+        ";",
+        29
+      ],
+      "expect": [
+        -22
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad",
+        ";",
+        -31
+      ],
+      "expect": [
+        -31,
+        -31
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "52|bad|bad|bad|-74|bad|bad|bad",
+        "|",
+        56
+      ],
+      "expect": [
+        52,
+        56,
+        56,
+        56,
+        -74,
+        56,
+        56,
+        56
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-43|-61|46",
+        "|",
+        -98
+      ],
+      "expect": [
+        -98,
+        -43,
+        -61,
+        46
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "75|bad|bad|-93|bad|28|-88",
+        "|",
+        86
+      ],
+      "expect": [
+        75,
+        86,
+        86,
+        -93,
+        86,
+        28,
+        -88
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;55",
+        ";",
+        13
+      ],
+      "expect": [
+        13,
+        55
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad;-79;-78",
+        ";",
+        -55
+      ],
+      "expect": [
+        -55,
+        -55,
+        -55,
+        -79,
+        -78
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-15;bad;65;bad;-95;bad",
+        ";",
+        -84
+      ],
+      "expect": [
+        -84,
+        -15,
+        -84,
+        65,
+        -84,
+        -95,
+        -84
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "67;bad;19;45;74;20",
+        ";",
+        -15
+      ],
+      "expect": [
+        67,
+        -15,
+        19,
+        45,
+        74,
+        20
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-19;-84;bad",
+        ";",
+        -58
+      ],
+      "expect": [
+        -19,
+        -84,
+        -58
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;-89;bad;bad;bad;bad",
+        ";",
+        -73
+      ],
+      "expect": [
+        -73,
+        -73,
+        -89,
+        -73,
+        -73,
+        -73,
+        -73
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;71;bad;7;bad;bad;-33;bad",
+        ";",
+        71
+      ],
+      "expect": [
+        71,
+        71,
+        71,
+        7,
+        71,
+        71,
+        -33,
+        71
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-47;-94;99;bad;-50;66;bad",
+        ";",
+        -61
+      ],
+      "expect": [
+        -47,
+        -94,
+        99,
+        -61,
+        -50,
+        66,
+        -61
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-85",
+        "|",
+        87
+      ],
+      "expect": [
+        -85
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad",
+        ";",
+        75
+      ],
+      "expect": [
+        75
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "11;bad;27;bad;bad",
+        ";",
+        -57
+      ],
+      "expect": [
+        11,
+        -57,
+        27,
+        -57,
+        -57
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "7|67|-71|bad",
+        "|",
+        96
+      ],
+      "expect": [
+        7,
+        67,
+        -71,
+        96
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-91;-91",
+        ";",
+        57
+      ],
+      "expect": [
+        57,
+        -91,
+        -91
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad;bad",
+        ";",
+        59
+      ],
+      "expect": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|-8|bad|-3|bad|bad|bad",
+        "|",
+        26
+      ],
+      "expect": [
+        26,
+        26,
+        -8,
+        26,
+        -3,
+        26,
+        26,
+        26
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "36;bad;bad;bad;80",
+        ";",
+        76
+      ],
+      "expect": [
+        36,
+        76,
+        76,
+        76,
+        80
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-63|56",
+        "|",
+        -90
+      ],
+      "expect": [
+        -63,
+        56
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;49;-72;-45;bad;bad;bad",
+        ";",
+        -93
+      ],
+      "expect": [
+        -93,
+        49,
+        -72,
+        -45,
+        -93,
+        -93,
+        -93
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;60;49",
+        ";",
+        67
+      ],
+      "expect": [
+        67,
+        60,
+        49
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "37;12;66;-68;bad",
+        ";",
+        -29
+      ],
+      "expect": [
+        37,
+        12,
+        66,
+        -68,
+        -29
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "51;-15;70",
+        ";",
+        28
+      ],
+      "expect": [
+        51,
+        -15,
+        70
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-8;bad",
+        ";",
+        -28
+      ],
+      "expect": [
+        -28,
+        -8,
+        -28
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "31",
+        ";",
+        -57
+      ],
+      "expect": [
+        31
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad",
+        ";",
+        -34
+      ],
+      "expect": [
+        -34
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-22|bad|34",
+        "|",
+        -93
+      ],
+      "expect": [
+        -93,
+        -22,
+        -93,
+        34
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-30|bad|8|27",
+        "|",
+        -10
+      ],
+      "expect": [
+        -30,
+        -10,
+        8,
+        27
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|-19|bad|-37|bad",
+        "|",
+        -99
+      ],
+      "expect": [
+        -99,
+        -99,
+        -19,
+        -99,
+        -37,
+        -99
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-81;-90;bad",
+        ";",
+        80
+      ],
+      "expect": [
+        -81,
+        -90,
+        80
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-46|bad|bad|bad|bad|bad|85|bad",
+        "|",
+        95
+      ],
+      "expect": [
+        -46,
+        95,
+        95,
+        95,
+        95,
+        95,
+        85,
+        95
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad;bad",
+        ";",
+        -38
+      ],
+      "expect": [
+        -38,
+        -38,
+        -38,
+        -38
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-84|bad|-70",
+        "|",
+        85
+      ],
+      "expect": [
+        -84,
+        85,
+        -70
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;86;bad;bad;bad;bad",
+        ";",
+        -28
+      ],
+      "expect": [
+        -28,
+        -28,
+        86,
+        -28,
+        -28,
+        -28,
+        -28
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;28;-88;76;29;bad;bad;23",
+        ";",
+        70
+      ],
+      "expect": [
+        70,
+        28,
+        -88,
+        76,
+        29,
+        70,
+        70,
+        23
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;bad;-21;bad;bad;bad",
+        ";",
+        100
+      ],
+      "expect": [
+        100,
+        100,
+        100,
+        -21,
+        100,
+        100,
+        100
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|75|bad",
+        "|",
+        26
+      ],
+      "expect": [
+        26,
+        75,
+        26
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "100|bad|-88|bad|-70|bad|-31|bad",
+        "|",
+        66
+      ],
+      "expect": [
+        100,
+        66,
+        -88,
+        66,
+        -70,
+        66,
+        -31,
+        66
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;42;-56;bad;35",
+        ";",
+        -22
+      ],
+      "expect": [
+        -22,
+        42,
+        -56,
+        -22,
+        35
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;-90",
+        ";",
+        77
+      ],
+      "expect": [
+        77,
+        -90
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "50|bad|31|bad|-47",
+        "|",
+        64
+      ],
+      "expect": [
+        50,
+        64,
+        31,
+        64,
+        -47
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-46;bad",
+        ";",
+        -89
+      ],
+      "expect": [
+        -46,
+        -89
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|57",
+        "|",
+        24
+      ],
+      "expect": [
+        24,
+        57
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "28|bad|bad|40|87|88|bad|-24",
+        "|",
+        -14
+      ],
+      "expect": [
+        28,
+        -14,
+        -14,
+        40,
+        87,
+        88,
+        -14,
+        -24
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad;bad;18;bad;bad;bad;bad;bad",
+        ";",
+        -98
+      ],
+      "expect": [
+        -98,
+        -98,
+        18,
+        -98,
+        -98,
+        -98,
+        -98,
+        -98
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "13;bad;bad;bad;-5;86",
+        ";",
+        -48
+      ],
+      "expect": [
+        13,
+        -48,
+        -48,
+        -48,
+        -5,
+        86
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-40;96;88",
+        ";",
+        34
+      ],
+      "expect": [
+        -40,
+        96,
+        88
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-88|bad|bad|bad|bad",
+        "|",
+        -42
+      ],
+      "expect": [
+        -88,
+        -42,
+        -42,
+        -42,
+        -42
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "5|bad|23|bad|bad|bad|bad",
+        "|",
+        74
+      ],
+      "expect": [
+        5,
+        74,
+        23,
+        74,
+        74,
+        74,
+        74
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|-31",
+        "|",
+        77
+      ],
+      "expect": [
+        77,
+        -31
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "-2;-21;65;5;bad;bad",
+        ";",
+        48
+      ],
+      "expect": [
+        -2,
+        -21,
+        65,
+        5,
+        48,
+        48
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "7|83|bad|-98|34|-40|-74",
+        "|",
+        42
+      ],
+      "expect": [
+        7,
+        83,
+        42,
+        -98,
+        34,
+        -40,
+        -74
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    },
+    {
+      "suite": "independent",
+      "args": [
+        "bad|bad|bad|bad|bad|bad|bad",
+        "|",
+        -58
+      ],
+      "expect": [
+        -58,
+        -58,
+        -58,
+        -58,
+        -58,
+        -58,
+        -58
+      ],
+      "negativeZeroPaths": [],
+      "unchangedArgs": true,
+      "freshOutput": true
+    }
+  ]
+}

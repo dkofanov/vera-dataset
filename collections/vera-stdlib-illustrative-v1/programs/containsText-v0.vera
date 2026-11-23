@@ -1,0 +1,3 @@
+function inspectContainsText(message: string, keyword: string): boolean {
+  return strings.contains(message, keyword);
+}

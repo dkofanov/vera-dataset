@@ -1,0 +1,5 @@
+function inspectRoundToStep(amount: number, stepInput: number): number {
+  let quotient: number = amount / stepInput;
+  let rounded: number = math.round(quotient);
+  return rounded * stepInput;
+}

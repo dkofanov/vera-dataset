@@ -1,0 +1,20 @@
+class DisjointSet {
+  head: number[];
+  size: number[];
+}
+
+function makeDisjointSet(head: number[], size: number[]): DisjointSet {
+  return {head: head, size: size};
+}
+
+function DisjointSetHead(value: DisjointSet): number[] {
+  return value.head;
+}
+
+function DisjointSetSize(value: DisjointSet): number[] {
+  return value.size;
+}
+
+function withDisjointSetHead(value: DisjointSet, head: number[]): DisjointSet {
+  return {head: head, size: value.size};
+}

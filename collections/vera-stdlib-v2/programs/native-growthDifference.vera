@@ -1,0 +1,3 @@
+function growthDifference(initial: number, rate: number, periods: number): number {
+  return initial * math.pow(1 + rate, periods) - initial;
+}

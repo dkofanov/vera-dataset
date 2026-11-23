@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "53ae29a5a7a4f2863f5aeceb019022b0232888bb42f40bb3e3b436beb0e19869",
+  "contracts": [
+    {
+      "name": "seedBucketAfterStep",
+      "signature": "function seedBucketAfterStep(seed: number, bound: number): number",
+      "paramNames": [
+        "seed",
+        "bound"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.randomBelow",
+      "text": "math.randomBelow(math.randomStep(seed), bound)"
+    },
+    {
+      "sourceApi": "math.randomStep",
+      "text": "math.randomStep(seed)"
+    }
+  ],
+  "preconditions": [
+    "Seed is a signed 32-bit integer; bound is an integer from 1 through 1000."
+  ]
+}

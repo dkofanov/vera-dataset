@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "zero", "function": "degreesToRadians", "args": [["n", 0]], "expect": ["n", 0]},
+    {"name": "forty five", "function": "degreesToRadians", "args": [["n", 45]], "expect": ["n", 0.7853981633974483]},
+    {"name": "ninety", "function": "degreesToRadians", "args": [["n", 90]], "expect": ["n", 1.5707963267948966]}
+  ]
+}

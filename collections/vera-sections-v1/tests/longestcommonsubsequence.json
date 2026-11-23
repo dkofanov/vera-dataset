@@ -1,0 +1,353 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "a"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a"
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "A"
+        ],
+        [
+          "s",
+          "A"
+        ]
+      ],
+      "expect": [
+        "s",
+        "A"
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "s",
+        "abc"
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "Hello"
+        ],
+        [
+          "s",
+          "Hello"
+        ]
+      ],
+      "expect": [
+        "s",
+        "Hello"
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          " hello "
+        ],
+        [
+          "s",
+          " hello "
+        ]
+      ],
+      "expect": [
+        "s",
+        " hello "
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "racecar"
+        ],
+        [
+          "s",
+          "racecar"
+        ]
+      ],
+      "expect": [
+        "s",
+        "racecar"
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "abba"
+        ],
+        [
+          "s",
+          "abba"
+        ]
+      ],
+      "expect": [
+        "s",
+        "abba"
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "123"
+        ],
+        [
+          "s",
+          "123"
+        ]
+      ],
+      "expect": [
+        "s",
+        "123"
+      ]
+    },
+    {
+      "name": "case 10",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "a,b,c"
+        ],
+        [
+          "s",
+          "a,b,c"
+        ]
+      ],
+      "expect": [
+        "s",
+        "a,b,c"
+      ]
+    },
+    {
+      "name": "case 11",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "The quick brown fox"
+        ],
+        [
+          "s",
+          "The quick brown fox"
+        ]
+      ],
+      "expect": [
+        "s",
+        "The quick brown fox"
+      ]
+    },
+    {
+      "name": "case 12",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "  trim  "
+        ],
+        [
+          "s",
+          "  trim  "
+        ]
+      ],
+      "expect": [
+        "s",
+        "  trim  "
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "abcde"
+        ],
+        [
+          "s",
+          "ace"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ace"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "xyz"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "ABCDGH"
+        ],
+        [
+          "s",
+          "AEDFHR"
+        ]
+      ],
+      "expect": [
+        "s",
+        "ADH"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          ""
+        ],
+        [
+          "s",
+          "abc"
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          ""
+        ]
+      ],
+      "expect": [
+        "s",
+        ""
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "abc"
+        ],
+        [
+          "s",
+          "bac"
+        ]
+      ],
+      "expect": [
+        "s",
+        "bc"
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "longestCommonSubsequence",
+      "args": [
+        [
+          "s",
+          "banana"
+        ],
+        [
+          "s",
+          "atana"
+        ]
+      ],
+      "expect": [
+        "s",
+        "aana"
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

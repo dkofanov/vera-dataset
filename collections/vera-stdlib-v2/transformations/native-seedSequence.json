@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "96cab697eec08c8e1efcf9838bdfe6e91b814ae36991cf3f4712e6a75a20d18d",
+  "contracts": [
+    {
+      "name": "seedSequence",
+      "signature": "function seedSequence(seed: number, count: number): number[]",
+      "paramNames": [
+        "seed",
+        "count"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.randomStep",
+      "text": "math.randomStep(state)"
+    }
+  ],
+  "preconditions": [
+    "Seed is a signed 32-bit integer; count is an integer from 0 through 32."
+  ]
+}

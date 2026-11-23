@@ -1,0 +1,369 @@
+{
+  "schema": "vera-family-splits-v1",
+  "locked": true,
+  "method": "Preserved assignments from pre-isolation combined dataset",
+  "origin": {
+    "dataset": "vera-sections-v1",
+    "recordsSha256": "ccb4b052b18750217e8d0201bf22ca3f0ddcca65387ef2d9cb23328c3416f2bf",
+    "splitsSha256": "69a0e6e0b0057577c9cf5070c98ed43c97f9d9ef483a79dfd22c9e0c82b2680e"
+  },
+  "units": {
+    "function/absolute-value": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "function/nth-fibonacci": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "function/nth-fibonacci-recursive": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "function/bubble-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/insertion-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/selection-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/shell-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/gnome-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/jump-search": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "function/interpolation-search": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "function/binary-search": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "function/is-sorted-array": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "function/degrees-to-radians": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "function/radians-to-degrees": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "function/is-palindrome": {
+      "split": "train",
+      "group": "family-eea21ef436b98526"
+    },
+    "function/exponential-search": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "function/fibonacci-search": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "function/counting-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/heap-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/perfect-square": {
+      "split": "test",
+      "group": "family-0f8b688802d29771"
+    },
+    "function/perfect-cube": {
+      "split": "train",
+      "group": "family-9ac20efa19d82d77"
+    },
+    "function/binomial-coefficient": {
+      "split": "validation",
+      "group": "family-4bfa9fbdc29687cc"
+    },
+    "function/sum": {
+      "split": "train",
+      "group": "family-6e06dd45efe9e692"
+    },
+    "function/inverse-lerp": {
+      "split": "train",
+      "group": "family-68cf3b597247800d"
+    },
+    "function/lerp": {
+      "split": "train",
+      "group": "family-9c9d3ea03b9394ec"
+    },
+    "function/capitalize": {
+      "split": "train",
+      "group": "family-503d1e25808322a5"
+    },
+    "function/lower-first": {
+      "split": "train",
+      "group": "family-503d1e25808322a5"
+    },
+    "function/upper-first": {
+      "split": "train",
+      "group": "family-503d1e25808322a5"
+    },
+    "class/range-cov": {
+      "split": "test",
+      "group": "family-13dc124a6bf6bdff"
+    },
+    "class/function-cov": {
+      "split": "test",
+      "group": "family-13dc124a6bf6bdff"
+    },
+    "class/script-cov": {
+      "split": "test",
+      "group": "family-13dc124a6bf6bdff"
+    },
+    "class/coverage-model": {
+      "split": "test",
+      "group": "family-13dc124a6bf6bdff"
+    },
+    "module/sorting": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "module/searching": {
+      "split": "train",
+      "group": "family-986b9f2c6432b546"
+    },
+    "module/numbers": {
+      "split": "train",
+      "group": "family-83b05ad498c3aa99"
+    },
+    "class/array-queue": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/circular-queue": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/coin-change": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/disjoint-set": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/edge": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/filter-async-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/flat-map-async-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/flatten-object-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/for-each-async-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/map-async-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/map-entry": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/map-keys-async-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/map-values-async-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/stack": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "class/windowed-options": {
+      "split": "train",
+      "group": "family-961f5f5e60e14b0b"
+    },
+    "function/is-even": {
+      "split": "train",
+      "group": "family-f9e31b6fa1d3e10e"
+    },
+    "function/range-right": {
+      "split": "train",
+      "group": "family-5e396466cd24dc4a"
+    },
+    "function/is-power-of-two": {
+      "split": "train",
+      "group": "family-5ef49daeba430e8c"
+    },
+    "function/round": {
+      "split": "test",
+      "group": "family-165946cc25203e41"
+    },
+    "function/aliquot-sum": {
+      "split": "train",
+      "group": "family-76bc0fb6434e6b52"
+    },
+    "function/is-prime": {
+      "split": "train",
+      "group": "family-76bc0fb6434e6b52"
+    },
+    "function/square-root": {
+      "split": "validation",
+      "group": "family-2d924b13f0066592"
+    },
+    "function/reverse-string": {
+      "split": "validation",
+      "group": "family-3813ccb94fb6d6b3"
+    },
+    "function/lowest-common-multiple": {
+      "split": "train",
+      "group": "family-7d7eb28adb27247a"
+    },
+    "function/pascals-triangle": {
+      "split": "validation",
+      "group": "family-4e9d0c103948e14c"
+    },
+    "function/binary-lcm": {
+      "split": "train",
+      "group": "family-7d7eb28adb27247a"
+    },
+    "function/merge-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/is-leap-year": {
+      "split": "train",
+      "group": "family-6c1a6bf9273bbeef"
+    },
+    "function/is-odd": {
+      "split": "train",
+      "group": "family-f9e31b6fa1d3e10e"
+    },
+    "function/longest-common-subsequence": {
+      "split": "train",
+      "group": "family-7fd50cbb85e1a942"
+    },
+    "function/digit-sum": {
+      "split": "train",
+      "group": "family-850d57d2cbeba23b"
+    },
+    "function/phi": {
+      "split": "train",
+      "group": "family-76bc0fb6434e6b52"
+    },
+    "function/is-divisible": {
+      "split": "train",
+      "group": "family-8ccded30c8711edd"
+    },
+    "function/calculate-median": {
+      "split": "train",
+      "group": "family-e4bea2603aab7ec2"
+    },
+    "function/is-perfect-number": {
+      "split": "train",
+      "group": "family-76bc0fb6434e6b52"
+    },
+    "function/calculate-mean": {
+      "split": "train",
+      "group": "family-e4bea2603aab7ec2"
+    },
+    "function/is-power-of-four": {
+      "split": "train",
+      "group": "family-5ef49daeba430e8c"
+    },
+    "function/tree-sort": {
+      "split": "validation",
+      "group": "family-3d8d55a7299475de"
+    },
+    "function/naive-lcm": {
+      "split": "train",
+      "group": "family-7d7eb28adb27247a"
+    },
+    "function/sieve-of-eratosthenes": {
+      "split": "train",
+      "group": "family-76bc0fb6434e6b52"
+    },
+    "function/is-subset": {
+      "split": "test",
+      "group": "family-1226a198b4553272"
+    },
+    "function/find-min": {
+      "split": "train",
+      "group": "family-e4bea2603aab7ec2"
+    },
+    "function/hexagonal-numbers": {
+      "split": "train",
+      "group": "family-dcfce82c79b7eca9"
+    },
+    "function/greatest-common-factor": {
+      "split": "train",
+      "group": "family-7d7eb28adb27247a"
+    },
+    "function/is-square-free": {
+      "split": "train",
+      "group": "family-76bc0fb6434e6b52"
+    },
+    "function/binary-gcf": {
+      "split": "train",
+      "group": "family-7d7eb28adb27247a"
+    },
+    "function/knapsack": {
+      "split": "train",
+      "group": "family-f633f24e38bd2b51"
+    },
+    "function/percentile": {
+      "split": "train",
+      "group": "family-e4bea2603aab7ec2"
+    },
+    "function/union": {
+      "split": "test",
+      "group": "family-1226a198b4553272"
+    },
+    "function/xor": {
+      "split": "test",
+      "group": "family-1226a198b4553272"
+    },
+    "function/clamp": {
+      "split": "train",
+      "group": "family-80ed47cef2b2ff23"
+    },
+    "function/initial": {
+      "split": "train",
+      "group": "family-bf8812313dcf4e50"
+    },
+    "function/drop": {
+      "split": "train",
+      "group": "family-bf8812313dcf4e50"
+    }
+  },
+  "examples": {
+    "train": 161,
+    "validation": 40,
+    "test": 19
+  }
+}

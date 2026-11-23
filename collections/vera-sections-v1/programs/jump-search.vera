@@ -1,0 +1,26 @@
+import * as math from "std/math"
+
+function jumpSearch(array: number[], target: number): number {
+  if (array.length() === 0) {
+    return -1;
+  }
+  let stepSize: number = math.floor(math.sqrt(array.length()));
+  let current: number = 0;
+  let next: number = stepSize;
+  while (array[next - 1] < target) {
+    current = next;
+    next = next + stepSize;
+    if (next > array.length()) {
+      next = array.length();
+      break;
+    }
+  }
+  let index: number = current;
+  while (index < next) {
+    if (array[index] === target) {
+      return index;
+    }
+    index = index + 1;
+  }
+  return -1;
+}

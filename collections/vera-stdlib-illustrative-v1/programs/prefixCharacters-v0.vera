@@ -1,0 +1,8 @@
+function inspectPrefixCharacters(message: string, width: number): string {
+  let total: number = strings.length(message);
+  let end: number = width;
+  if (end > total) {
+    end = total;
+  }
+  return strings.substring(message, 0, end);
+}

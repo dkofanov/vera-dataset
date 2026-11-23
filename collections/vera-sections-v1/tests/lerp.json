@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"name": "start", "function": "lerp", "args": [["n", 0], ["n", 100], ["n", 0]], "expect": ["n", 0]},
+    {"name": "stop", "function": "lerp", "args": [["n", 0], ["n", 100], ["n", 1]], "expect": ["n", 100]},
+    {"name": "middle", "function": "lerp", "args": [["n", 0], ["n", 100], ["n", 0.5]], "expect": ["n", 50]},
+    {"name": "reversed", "function": "lerp", "args": [["n", 100], ["n", 0], ["n", 0.25]], "expect": ["n", 75]},
+    {"name": "outside", "function": "lerp", "args": [["n", 0], ["n", 100], ["n", 1.5]], "expect": ["n", 150]},
+    {"name": "equal endpoints", "function": "lerp", "args": [["n", 5], ["n", 5], ["n", 0.7]], "expect": ["n", 5]}
+  ]
+}

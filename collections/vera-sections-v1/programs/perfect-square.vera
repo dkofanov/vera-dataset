@@ -1,0 +1,6 @@
+import * as math from "std/math"
+
+function perfectSquare(num: number): boolean {
+  let root: number = math.floor(math.sqrt(num));
+  return root * root === num;
+}

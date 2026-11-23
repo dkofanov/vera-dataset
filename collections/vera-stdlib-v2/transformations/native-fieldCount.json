@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "5e6bdd1026c7aa1393dd80644cfb257b1af2ccf99275690c9e9214aca4817c57",
+  "contracts": [
+    {
+      "name": "fieldCount",
+      "signature": "function fieldCount(text: string, separator: string): number",
+      "paramNames": [
+        "text",
+        "separator"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

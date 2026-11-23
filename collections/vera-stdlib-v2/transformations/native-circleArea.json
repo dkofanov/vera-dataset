@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "f2dbfa0bd9fc11f26316d3ea5f2f5c12e88260fcb1c672355c569cd233b71122",
+  "contracts": [
+    {
+      "name": "circleArea",
+      "signature": "function circleArea(radius: number): number",
+      "paramNames": [
+        "radius"
+      ],
+      "paramTypes": [
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.pi",
+      "text": "math.pi()"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Radius is nonnegative."
+  ]
+}

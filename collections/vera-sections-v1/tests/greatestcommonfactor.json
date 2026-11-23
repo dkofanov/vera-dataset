@@ -1,0 +1,318 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              5
+            ],
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              3
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              1
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              1
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              10
+            ],
+            [
+              "n",
+              20
+            ],
+            [
+              "n",
+              30
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              2
+            ],
+            [
+              "n",
+              3
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              4
+            ],
+            [
+              "n",
+              6
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              12
+            ],
+            [
+              "n",
+              18
+            ],
+            [
+              "n",
+              24
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              7
+            ],
+            [
+              "n",
+              5
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              21
+            ],
+            [
+              "n",
+              14
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        7
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "greatestCommonFactor",
+      "args": [
+        [
+          "a",
+          [
+            [
+              "n",
+              48
+            ],
+            [
+              "n",
+              18
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

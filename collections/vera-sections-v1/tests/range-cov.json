@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "range width", "function": "rangeWidth", "args": [["o", "local:RangeCov", [["startOffset", ["n", 2]], ["endOffset", ["n", 7]], ["count", ["n", 3]]]]], "expect": ["n", 5]},
+    {"name": "zero width", "function": "rangeWidth", "args": [["o", "local:RangeCov", [["startOffset", ["n", 4]], ["endOffset", ["n", 4]], ["count", ["n", 0]]]]], "expect": ["n", 0]},
+    {"name": "factory", "function": "makeRange", "args": [["n", 1], ["n", 3], ["n", 9]], "expect": ["o", "local:RangeCov", [["startOffset", ["n", 1]], ["endOffset", ["n", 3]], ["count", ["n", 9]]]]}
+  ]
+}

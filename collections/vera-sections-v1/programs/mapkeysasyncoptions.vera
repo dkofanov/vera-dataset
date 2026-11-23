@@ -1,0 +1,15 @@
+class MapKeysAsyncOptions {
+  concurrency: number;
+}
+
+function makeMapKeysAsyncOptions(concurrency: number): MapKeysAsyncOptions {
+  return {concurrency: concurrency};
+}
+
+function MapKeysAsyncOptionsConcurrency(value: MapKeysAsyncOptions): number {
+  return value.concurrency;
+}
+
+function withMapKeysAsyncOptionsConcurrency(value: MapKeysAsyncOptions, concurrency: number): MapKeysAsyncOptions {
+  return {concurrency: concurrency};
+}

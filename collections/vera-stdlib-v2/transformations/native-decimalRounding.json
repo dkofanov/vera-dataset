@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "1cc531cac6a6cd637ae32e71676e471a1c21ee22e50500609cacf5923cd00123",
+  "contracts": [
+    {
+      "name": "decimalRounding",
+      "signature": "function decimalRounding(value: number, digits: number): number",
+      "paramNames": [
+        "value",
+        "digits"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.pow",
+      "text": "math.pow(10, digits)"
+    },
+    {
+      "sourceApi": "math.round",
+      "text": "math.round(value * factor)"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Digits is an integer from 0 through 4."
+  ]
+}

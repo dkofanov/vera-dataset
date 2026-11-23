@@ -1,0 +1,8 @@
+function lastMatchPosition(text: string, query: string): number {
+  let index: number = strings.length(text) - strings.length(query);
+  while (index >= 0) {
+    if (strings.substring(text, index, index + strings.length(query)) === query) { return index; }
+    index = index - 1;
+  }
+  return -1;
+}

@@ -1,0 +1,3 @@
+function decayedAmount(initial: number, retention: number, periods: number): number {
+  return initial * math.pow(retention, periods);
+}

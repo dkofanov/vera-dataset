@@ -1,0 +1,8 @@
+function measureRemainingCapacity(usedArg: number, capacityArg: number): number {
+  let free: number = capacityArg - usedArg;
+  let result: number = 0;
+  if (free > 0) {
+    result = free;
+  }
+  return result;
+}

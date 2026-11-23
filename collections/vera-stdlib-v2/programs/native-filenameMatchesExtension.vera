@@ -1,0 +1,3 @@
+function filenameMatchesExtension(filename: string, extension: string): boolean {
+  return strings.endsWith(strings.toLowerCase(filename), strings.toLowerCase(extension));
+}

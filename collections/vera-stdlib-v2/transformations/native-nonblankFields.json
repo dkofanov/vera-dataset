@@ -1,0 +1,39 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "1bd860eb942510982f055c833c1c31545411bdd86abac7221dadbcfcd86668e1",
+  "contracts": [
+    {
+      "name": "nonblankFields",
+      "signature": "function nonblankFields(text: string, separator: string): string[]",
+      "paramNames": [
+        "text",
+        "separator"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "string[]"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.split",
+      "text": "strings.split(text, separator)"
+    },
+    {
+      "sourceApi": "strings.trim",
+      "text": "strings.trim(field)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(cleaned)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Separator is nonempty."
+  ]
+}

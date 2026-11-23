@@ -1,0 +1,335 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          5
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 8",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          -1
+        ],
+        [
+          "n",
+          -1
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 9",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          -2
+        ],
+        [
+          "n",
+          -2
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 10",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          -5
+        ],
+        [
+          "n",
+          -5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "case 11",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          0.5
+        ],
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          0
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          -6
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          6
+        ],
+        [
+          "n",
+          -3
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "b",
+        false
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "isDivisible",
+      "args": [
+        [
+          "n",
+          100
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "b",
+        true
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

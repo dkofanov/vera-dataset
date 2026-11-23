@@ -1,0 +1,148 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeMapEntry",
+      "args": [
+        [
+          "s",
+          "alpha"
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:MapEntry",
+        [
+          [
+            "key",
+            [
+              "s",
+              "alpha"
+            ]
+          ],
+          [
+            "value",
+            [
+              "n",
+              7
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read key",
+      "function": "MapEntryKey",
+      "args": [
+        [
+          "o",
+          "local:MapEntry",
+          [
+            [
+              "key",
+              [
+                "s",
+                "alpha"
+              ]
+            ],
+            [
+              "value",
+              [
+                "n",
+                7
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "s",
+        "alpha"
+      ]
+    },
+    {
+      "name": "read value",
+      "function": "MapEntryValue",
+      "args": [
+        [
+          "o",
+          "local:MapEntry",
+          [
+            [
+              "key",
+              [
+                "s",
+                "alpha"
+              ]
+            ],
+            [
+              "value",
+              [
+                "n",
+                7
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        7
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withMapEntryKey",
+      "args": [
+        [
+          "o",
+          "local:MapEntry",
+          [
+            [
+              "key",
+              [
+                "s",
+                "alpha"
+              ]
+            ],
+            [
+              "value",
+              [
+                "n",
+                7
+              ]
+            ]
+          ]
+        ],
+        [
+          "s",
+          "beta"
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:MapEntry",
+        [
+          [
+            "key",
+            [
+              "s",
+              "beta"
+            ]
+          ],
+          [
+            "value",
+            [
+              "n",
+              7
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

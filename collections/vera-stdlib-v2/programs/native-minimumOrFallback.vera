@@ -1,0 +1,6 @@
+function minimumOrFallback(values: number[], fallback: number): number {
+  if (values.length() === 0) { return fallback; }
+  let best: number = values[0];
+  for (let value: number of values) { best = math.min(best, value); }
+  return best;
+}

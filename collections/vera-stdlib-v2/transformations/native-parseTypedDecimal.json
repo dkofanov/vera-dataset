@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "2c4f5d702efd70530c1a714cedb797a031b9ab1fde00894051755636297001f6",
+  "contracts": [
+    {
+      "name": "parseTypedDecimal",
+      "signature": "function parseTypedDecimal(text: string, fallback: number): number",
+      "paramNames": [
+        "text",
+        "fallback"
+      ],
+      "paramTypes": [
+        "string",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.toNumber",
+      "text": "strings.toNumber(text, fallback)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded. Fallback is finite between -1000 and 1000. Text contains at most 20 characters; accepted decimal values are finite."
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "method": "connected implementation families, shared declarations and symbol-canonicalized exact alpha-clones; angle-conversion validation, first-character-casing test, explicitly designated scenario holdouts; remaining families train",
+  "units": {
+    "function/vera-native/rootMeanSquare": {
+      "split": "train",
+      "group": "family-01445c9144b5b3c1"
+    },
+    "function/es-toolkit/drop": {
+      "split": "train",
+      "group": "family-043af5772f00727c"
+    },
+    "function/es-toolkit/dropRight": {
+      "split": "train",
+      "group": "family-043af5772f00727c"
+    },
+    "function/es-toolkit/initial": {
+      "split": "train",
+      "group": "family-043af5772f00727c"
+    },
+    "function/es-toolkit/tail": {
+      "split": "train",
+      "group": "family-043af5772f00727c"
+    },
+    "function/es-toolkit/take": {
+      "split": "train",
+      "group": "family-043af5772f00727c"
+    },
+    "function/es-toolkit/takeRight": {
+      "split": "train",
+      "group": "family-043af5772f00727c"
+    },
+    "function/vera-native/overLimitAmount": {
+      "split": "train",
+      "group": "family-050ff1093ee366a3"
+    },
+    "function/vera-native/remainingCapacity": {
+      "split": "train",
+      "group": "family-050ff1093ee366a3"
+    },
+    "function/algorithms/perfectSquare": {
+      "split": "train",
+      "group": "family-0e21035fa962c31e"
+    },
+    "function/vera-native/filenameMatchesExtension": {
+      "split": "train",
+      "group": "family-1008482599f6196a"
+    },
+    "function/vera-native/polarXDegrees": {
+      "split": "train",
+      "group": "family-1756c5c339f482b1"
+    },
+    "function/vera-native/polarYDegrees": {
+      "split": "train",
+      "group": "family-1756c5c339f482b1"
+    },
+    "function/vera-native/pageCount": {
+      "split": "train",
+      "group": "family-2168c6ced6eb5184"
+    },
+    "function/vera-native/lowercaseText": {
+      "split": "train",
+      "group": "family-24f82ff4bce49304"
+    },
+    "function/vera-native/uppercaseText": {
+      "split": "train",
+      "group": "family-24f82ff4bce49304"
+    },
+    "function/vera-native/lengthsOfFields": {
+      "split": "train",
+      "group": "family-25a28df2d54ee19c"
+    },
+    "function/vera-native/shortenWithMarker": {
+      "split": "train",
+      "group": "family-28a29243956b86ce"
+    },
+    "function/vera-native/removePrefixOnce": {
+      "split": "train",
+      "group": "family-2998fd5dec26875f"
+    },
+    "function/vera-native/removeSuffixOnce": {
+      "split": "train",
+      "group": "family-2998fd5dec26875f"
+    },
+    "function/vera-native/firstMatchPosition": {
+      "split": "validation",
+      "group": "family-29e7ca0e328a2be5"
+    },
+    "function/vera-native/lastMatchPosition": {
+      "split": "validation",
+      "group": "family-29e7ca0e328a2be5"
+    },
+    "function/vera-native/joinFieldsWith": {
+      "split": "train",
+      "group": "family-2a9e87302d7d4d54"
+    },
+    "function/vera-native/absoluteDifferences": {
+      "split": "train",
+      "group": "family-32f9d7011c7156ff"
+    },
+    "function/vera-native/sumAbsoluteDifferences": {
+      "split": "train",
+      "group": "family-32f9d7011c7156ff"
+    },
+    "function/vera-native/boundedValue": {
+      "split": "train",
+      "group": "family-350308a99398a95e"
+    },
+    "function/vera-native/hasPrefix": {
+      "split": "train",
+      "group": "family-46b1976b35df8354"
+    },
+    "function/vera-native/pageOffset": {
+      "split": "train",
+      "group": "family-508cb826c7e63f7d"
+    },
+    "function/vera-native/surroundMatches": {
+      "split": "test",
+      "group": "family-50b522f276689cf7"
+    },
+    "function/vera-native/clampEachValue": {
+      "split": "train",
+      "group": "family-546402afb60c00eb"
+    },
+    "function/vera-native/compoundAmount": {
+      "split": "train",
+      "group": "family-5484cb97c9456c0f"
+    },
+    "function/vera-native/completeGroups": {
+      "split": "train",
+      "group": "family-551a78ea1e3d52a1"
+    },
+    "function/vera-native/trimmedLength": {
+      "split": "train",
+      "group": "family-5f60332f45b76398"
+    },
+    "function/vera-native/numericFields": {
+      "split": "train",
+      "group": "family-63c332b51b485b48"
+    },
+    "function/vera-native/sumNumericFields": {
+      "split": "train",
+      "group": "family-63c332b51b485b48"
+    },
+    "function/vera-native/lastPageItems": {
+      "split": "train",
+      "group": "family-6ac78934692a8f71"
+    },
+    "function/vera-native/growthDifference": {
+      "split": "test",
+      "group": "family-6afcad5672be8a9b"
+    },
+    "function/vera-native/signedDeviation": {
+      "split": "train",
+      "group": "family-6b417ce137ef1d47"
+    },
+    "function/vera-native/containsAfterLowercase": {
+      "split": "train",
+      "group": "family-717f2bc425f4b22d"
+    },
+    "function/vera-native/circleArea": {
+      "split": "train",
+      "group": "family-7442090315b80069"
+    },
+    "function/vera-native/circleCircumference": {
+      "split": "train",
+      "group": "family-7442090315b80069"
+    },
+    "function/vera-native/decimalRounding": {
+      "split": "train",
+      "group": "family-75c661da4955223b"
+    },
+    "function/vera-native/clampedFraction": {
+      "split": "train",
+      "group": "family-7a12b667e71bc2a7"
+    },
+    "function/algorithms/degreesToRadians": {
+      "split": "validation",
+      "group": "family-7a254073d7c566a7"
+    },
+    "function/algorithms/radiansToDegrees": {
+      "split": "validation",
+      "group": "family-7a254073d7c566a7"
+    },
+    "function/vera-native/roundEachValue": {
+      "split": "train",
+      "group": "family-7c3a677446ae6424"
+    },
+    "function/vera-native/splitLiteral": {
+      "split": "train",
+      "group": "family-8199a2777f23bb20"
+    },
+    "function/vera-native/trimUnicodeSpace": {
+      "split": "train",
+      "group": "family-81c4cf54ea3d932f"
+    },
+    "function/vera-native/headingDegrees": {
+      "split": "train",
+      "group": "family-860c4dd35a7d4d0c"
+    },
+    "function/vera-native/headingRadians": {
+      "split": "train",
+      "group": "family-860c4dd35a7d4d0c"
+    },
+    "function/vera-native/nonblankFields": {
+      "split": "train",
+      "group": "family-885a9dfd09c6ef97"
+    },
+    "function/vera-native/trimmedFields": {
+      "split": "train",
+      "group": "family-885a9dfd09c6ef97"
+    },
+    "function/vera-native/blankOrFallback": {
+      "split": "train",
+      "group": "family-885f236a680b731c"
+    },
+    "function/vera-native/bucketForSeed": {
+      "split": "train",
+      "group": "family-89a24afba0ce2450"
+    },
+    "function/vera-native/uppercaseLength": {
+      "split": "train",
+      "group": "family-8af00ed109a4dab5"
+    },
+    "function/vera-native/fieldCount": {
+      "split": "train",
+      "group": "family-8d2e44e18b7b2101"
+    },
+    "function/vera-native/lastPathSegment": {
+      "split": "train",
+      "group": "family-93c5d371d5e3c464"
+    },
+    "function/vera-native/parentPathText": {
+      "split": "train",
+      "group": "family-93c5d371d5e3c464"
+    },
+    "function/vera-native/decayedAmount": {
+      "split": "test",
+      "group": "family-96fc6db63334ea77"
+    },
+    "function/vera-native/textAfterDelimiter": {
+      "split": "test",
+      "group": "family-9723125e1147db0d"
+    },
+    "function/vera-native/textBeforeDelimiter": {
+      "split": "test",
+      "group": "family-9723125e1147db0d"
+    },
+    "function/vera-native/ensurePrefix": {
+      "split": "train",
+      "group": "family-9e885dc21959e4ba"
+    },
+    "function/vera-native/ensureSuffix": {
+      "split": "train",
+      "group": "family-9e885dc21959e4ba"
+    },
+    "function/vera-native/replaceInsideWindow": {
+      "split": "train",
+      "group": "family-a1e30e0987e06f8e"
+    },
+    "function/vera-native/redactToken": {
+      "split": "train",
+      "group": "family-a54bec6902aa149a"
+    },
+    "function/vera-native/replaceLiteralAll": {
+      "split": "train",
+      "group": "family-a54bec6902aa149a"
+    },
+    "function/vera-native/replacePathSeparator": {
+      "split": "train",
+      "group": "family-a54bec6902aa149a"
+    },
+    "function/vera-native/replacePlaceholder": {
+      "split": "train",
+      "group": "family-a54bec6902aa149a"
+    },
+    "function/vera-native/characterWindow": {
+      "split": "train",
+      "group": "family-a73b0e457c86b2d6"
+    },
+    "function/vera-native/parseThenScale": {
+      "split": "train",
+      "group": "family-ac0a55ecf24a39d6"
+    },
+    "function/vera-native/countWithinBounds": {
+      "split": "train",
+      "group": "family-ae3cada2adbbf9b4"
+    },
+    "function/vera-native/valuesWithinBounds": {
+      "split": "train",
+      "group": "family-ae3cada2adbbf9b4"
+    },
+    "function/vera-native/parseTypedDecimal": {
+      "split": "train",
+      "group": "family-afcad06550a09d4d"
+    },
+    "function/vera-native/literalOccurrenceCount": {
+      "split": "train",
+      "group": "family-afcf8cb42df366bc"
+    },
+    "function/vera-native/roundToStep": {
+      "split": "train",
+      "group": "family-b0cc40a4c2ad0777"
+    },
+    "function/vera-native/enclosedText": {
+      "split": "train",
+      "group": "family-bfd5c04f249b8497"
+    },
+    "function/vera-native/unwrapText": {
+      "split": "train",
+      "group": "family-bfd5c04f249b8497"
+    },
+    "function/vera-native/horizontalOffset": {
+      "split": "train",
+      "group": "family-c1d2b24923b726e6"
+    },
+    "function/vera-native/verticalOffset": {
+      "split": "train",
+      "group": "family-c1d2b24923b726e6"
+    },
+    "function/vera-native/parseThenClamp": {
+      "split": "train",
+      "group": "family-c328b5b9bcf4592d"
+    },
+    "function/vera-native/maximumOrFallback": {
+      "split": "train",
+      "group": "family-c41c5b44ec772fe8"
+    },
+    "function/vera-native/minimumOrFallback": {
+      "split": "train",
+      "group": "family-c41c5b44ec772fe8"
+    },
+    "function/vera-native/valueRange": {
+      "split": "train",
+      "group": "family-c41c5b44ec772fe8"
+    },
+    "function/vera-native/containsText": {
+      "split": "train",
+      "group": "family-c53f4cad11587dc2"
+    },
+    "function/vera-native/firstMatchingField": {
+      "split": "validation",
+      "group": "family-cac7aa35dccb8353"
+    },
+    "function/vera-native/matchingFields": {
+      "split": "validation",
+      "group": "family-cac7aa35dccb8353"
+    },
+    "function/vera-native/fieldAt": {
+      "split": "train",
+      "group": "family-cd75709d3dd5e45f"
+    },
+    "function/algorithms/perfectCube": {
+      "split": "train",
+      "group": "family-cdcd902dc80ecbd9"
+    },
+    "function/vera-native/roundDownToStep": {
+      "split": "train",
+      "group": "family-d027281b0bde2555"
+    },
+    "function/vera-native/roundUpToStep": {
+      "split": "train",
+      "group": "family-d027281b0bde2555"
+    },
+    "function/vera-native/batchesWithReserve": {
+      "split": "validation",
+      "group": "family-d07473f6550bbc14"
+    },
+    "function/vera-native/replaceInOrder": {
+      "split": "test",
+      "group": "family-d4dc471a297a2072"
+    },
+    "function/vera-native/seedSequence": {
+      "split": "test",
+      "group": "family-d6216422ae5c66c6"
+    },
+    "function/vera-native/absoluteGap": {
+      "split": "train",
+      "group": "family-d929adaf48deb211"
+    },
+    "function/vera-native/withinTolerance": {
+      "split": "train",
+      "group": "family-db71caf6b6b74ad9"
+    },
+    "function/vera-native/seedBucketAfterStep": {
+      "split": "test",
+      "group": "family-dbb9f21edc189338"
+    },
+    "function/vera-native/advanceSeed": {
+      "split": "train",
+      "group": "family-dc28761b16a11d0d"
+    },
+    "function/vera-native/trimmedLowercase": {
+      "split": "train",
+      "group": "family-de8c24cde11bb187"
+    },
+    "function/vera-native/trimmedUppercase": {
+      "split": "train",
+      "group": "family-de8c24cde11bb187"
+    },
+    "function/vera-native/replaceFirstLiteral": {
+      "split": "validation",
+      "group": "family-df15b417d5a4e49f"
+    },
+    "function/algorithms/isPalindrome": {
+      "split": "train",
+      "group": "family-e1de7cfc3f0f7ca0"
+    },
+    "function/es-toolkit/lowerFirst": {
+      "split": "test",
+      "group": "family-e58e4f37dfc1ae67"
+    },
+    "function/es-toolkit/upperFirst": {
+      "split": "test",
+      "group": "family-e58e4f37dfc1ae67"
+    },
+    "function/vera-native/hasSuffix": {
+      "split": "train",
+      "group": "family-e76f27f7970091b6"
+    },
+    "function/vera-native/interpolateClamped": {
+      "split": "train",
+      "group": "family-ec3a9ae46da3bada"
+    },
+    "function/vera-native/distanceBetweenPoints": {
+      "split": "train",
+      "group": "family-eeac6f96d11c929d"
+    },
+    "function/vera-native/prefixCharacters": {
+      "split": "train",
+      "group": "family-f4e4bbe877b141e8"
+    },
+    "function/vera-native/suffixCharacters": {
+      "split": "train",
+      "group": "family-f4e4bbe877b141e8"
+    },
+    "function/vera-native/windowByCount": {
+      "split": "train",
+      "group": "family-f4e4bbe877b141e8"
+    },
+    "function/vera-native/characterCount": {
+      "split": "train",
+      "group": "family-f6844ba81d5bbd91"
+    }
+  },
+  "examples": {
+    "train": 92,
+    "validation": 8,
+    "test": 10
+  }
+}

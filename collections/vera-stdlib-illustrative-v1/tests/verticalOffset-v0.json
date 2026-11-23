@@ -1,0 +1,923 @@
+{
+  "id": "illustrative/verticalOffset-v0",
+  "cases": [
+    {
+      "args": [
+        0,
+        0
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        1,
+        0
+      ],
+      "expected": 0,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        1,
+        1.5707963267948966
+      ],
+      "expected": 1,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        2,
+        -1
+      ],
+      "expected": -1.682941969615793,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -3,
+        2
+      ],
+      "expected": -2.727892280477045,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        1000,
+        1000
+      ],
+      "expected": 826.8795405320025,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        97,
+        645.2
+      ],
+      "expected": -89.44494288502783,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        972,
+        -71.2
+      ],
+      "expected": -846.3238416087909,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -223,
+        231.9
+      ],
+      "expected": 121.80920279835047,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -128,
+        329.3
+      ],
+      "expected": -68.77398498637723,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -948,
+        777.1
+      ],
+      "expected": 856.0085254263001,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -841,
+        -533.1
+      ],
+      "expected": -694.085779712674,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -712,
+        -762.1
+      ],
+      "expected": 687.3725747709052,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -589,
+        741.6
+      ],
+      "expected": -107.84295432443376,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        834,
+        -807.6
+      ],
+      "expected": 174.41672396043265,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -401,
+        907.7
+      ],
+      "expected": -87.61843121580866,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        436,
+        -243.5
+      ],
+      "expected": 435.8461162717364,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        705,
+        941.5
+      ],
+      "expected": -584.6337423686855,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -289,
+        -965.7
+      ],
+      "expected": -272.4810530772348,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -750,
+        -980.2
+      ],
+      "expected": 17.31752081486113,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        47,
+        383.4
+      ],
+      "expected": 5.89218003626462,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        441,
+        -858.9
+      ],
+      "expected": 417.83070990601317,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -130,
+        274.3
+      ],
+      "expected": 108.06875850248319,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -974,
+        -579.2
+      ],
+      "expected": 887.8151477399196,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        670,
+        -971.2
+      ],
+      "expected": 290.1412442913837,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        586,
+        591
+      ],
+      "expected": 217.67560517956943,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        682,
+        215.5
+      ],
+      "expected": 651.3571787271159,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        348,
+        -262.9
+      ],
+      "expected": 291.65727975067733,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -345,
+        984.3
+      ],
+      "expected": 286.80941955812494,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -756,
+        802.2
+      ],
+      "expected": 671.6391844518428,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        592,
+        122.7
+      ],
+      "expected": -104.75430014001142,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -686,
+        -110.9
+      ],
+      "expected": -555.7022411826287,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        868,
+        -886.7
+      ],
+      "expected": -604.7883465870982,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -850,
+        -105.7
+      ],
+      "expected": -762.9059489381906,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -351,
+        -24.8
+      ],
+      "expected": -114.6489292627575,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        511,
+        -498.7
+      ],
+      "expected": -371.2475257644164,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -991,
+        168.6
+      ],
+      "expected": 857.6388087489331,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -219,
+        68.4
+      ],
+      "expected": 143.58656070631625,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        643,
+        -653.5
+      ],
+      "expected": -31.31974046609374,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        427,
+        438.1
+      ],
+      "expected": -422.06545343388683,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        587,
+        -767.3
+      ],
+      "expected": -400.7196549966128,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -909,
+        204.1
+      ],
+      "expected": -93.93394714809851,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        874,
+        407.8
+      ],
+      "expected": -498.5670729382353,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        512,
+        462.8
+      ],
+      "expected": -426.88422111253215,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -516,
+        285.1
+      ],
+      "expected": -364.69678073304664,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        882,
+        -417.3
+      ],
+      "expected": -447.2669055233168,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        551,
+        -943.2
+      ],
+      "expected": -364.2330351558637,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -150,
+        23.7
+      ],
+      "expected": 148.57282813457348,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -824,
+        893
+      ],
+      "expected": -583.9877045549578,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -218,
+        734.7
+      ],
+      "expected": 91.40874812106878,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -191,
+        172.1
+      ],
+      "expected": -121.22411466788256,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -539,
+        164
+      ],
+      "expected": -320.6687673545094,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -443,
+        -972
+      ],
+      "expected": -420.10170364443223,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -131,
+        -588
+      ],
+      "expected": -65.33826861266347,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        355,
+        991.4
+      ],
+      "expected": -345.8513952558528,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        224,
+        -443.1
+      ],
+      "expected": 30.2449675249645,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        399,
+        7.9
+      ],
+      "expected": 398.577595394069,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        903,
+        -313.6
+      ],
+      "expected": 479.0989545285076,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -265,
+        616.1
+      ],
+      "expected": -90.32998466669854,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        432,
+        665.6
+      ],
+      "expected": -175.22212487346107,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -567,
+        -437.5
+      ],
+      "expected": -414.02592596925456,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        187,
+        171.6
+      ],
+      "expected": 173.43741275916207,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        230,
+        -360.2
+      ],
+      "expected": -203.1913224029351,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        963,
+        -971.5
+      ],
+      "expected": 654.9158338680185,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -941,
+        -974.9
+      ],
+      "expected": 795.0001518855983,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        64,
+        -628.9
+      ],
+      "expected": -35.15215003938123,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        376,
+        -97.6
+      ],
+      "expected": 78.61175128324135,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        85,
+        -329.9
+      ],
+      "expected": 2.785068138652632,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -327,
+        649.3
+      ],
+      "expected": -276.85822209928,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -979,
+        150.9
+      ],
+      "expected": -101.19693772437165,
+      "negativeZero": false,
+      "suite": "seed-persisted"
+    },
+    {
+      "args": [
+        -354,
+        919.4
+      ],
+      "expected": -313.31529453714137,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -83,
+        -244.6
+      ],
+      "expected": -35.67008130020779,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -378,
+        636.8
+      ],
+      "expected": -305.9929261476061,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        312,
+        818.4
+      ],
+      "expected": 311.96436635763615,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -880,
+        431
+      ],
+      "expected": 498.196587306796,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        823,
+        325.4
+      ],
+      "expected": -798.3909978124256,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -494,
+        977.5
+      ],
+      "expected": 221.3816476941281,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -161,
+        -651
+      ],
+      "expected": -102.52230343922764,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -576,
+        -162.4
+      ],
+      "expected": -472.78338348631314,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        871,
+        385.7
+      ],
+      "expected": 571.6320848031628,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -653,
+        -410.5
+      ],
+      "expected": 565.984184677211,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        436,
+        366.2
+      ],
+      "expected": 426.9188216356554,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        410,
+        538.8
+      ],
+      "expected": -409.94172878897336,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        496,
+        -300.4
+      ],
+      "expected": 461.0027045088017,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        666,
+        -958.6
+      ],
+      "expected": 268.06162025840183,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        829,
+        -367.5
+      ],
+      "expected": -54.955918230504714,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        437,
+        968.5
+      ],
+      "expected": 339.43251709578885,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -735,
+        702.4
+      ],
+      "expected": 711.4098237739855,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        907,
+        344.5
+      ],
+      "expected": -797.8710523106472,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        181,
+        -430.8
+      ],
+      "expected": 70.7857631192837,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        611,
+        -307.9
+      ],
+      "expected": -14.613694685839153,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        150,
+        4.9
+      ],
+      "expected": -147.36789189364987,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        988,
+        -888
+      ],
+      "expected": -867.0158723126821,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        179,
+        322
+      ],
+      "expected": 178.98429451707474,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        644,
+        -369.6
+      ],
+      "expected": 576.2368470017374,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        416,
+        23.2
+      ],
+      "expected": -389.0473247209282,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        479,
+        845.8
+      ],
+      "expected": -312.8005456170796,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -260,
+        953
+      ],
+      "expected": 231.40957720632593,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        348,
+        -594.2
+      ],
+      "expected": 147.90837470602477,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        -851,
+        732
+      ],
+      "expected": 7.583767872010178,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        399,
+        -654.9
+      ],
+      "expected": -396.0310070660158,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    },
+    {
+      "args": [
+        341,
+        756.5
+      ],
+      "expected": 199.1943494350421,
+      "negativeZero": false,
+      "suite": "fresh-reference"
+    }
+  ]
+}

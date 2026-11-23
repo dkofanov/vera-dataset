@@ -1,0 +1,8 @@
+function evaluateSuffixCharacters(wanted: number, content: string): string {
+  let total: number = strings.length(content);
+  let keep: number = math.min(wanted, total);
+  if (keep === 0) {
+    return "";
+  }
+  return strings.substring(content, total - keep, total);
+}

@@ -1,0 +1,25 @@
+class Edge {
+  a: number;
+  b: number;
+  weight: number;
+}
+
+function makeEdge(a: number, b: number, weight: number): Edge {
+  return {a: a, b: b, weight: weight};
+}
+
+function EdgeA(value: Edge): number {
+  return value.a;
+}
+
+function EdgeB(value: Edge): number {
+  return value.b;
+}
+
+function EdgeWeight(value: Edge): number {
+  return value.weight;
+}
+
+function withEdgeA(value: Edge, a: number): Edge {
+  return {a: a, b: value.b, weight: value.weight};
+}

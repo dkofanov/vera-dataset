@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "dd58eb7543f2fa577b3d72b96ef0d3f249ab469e54a45ce4076ab36dccc68264",
+  "contracts": [
+    {
+      "name": "containsText",
+      "signature": "function containsText(text: string, needle: string): boolean",
+      "paramNames": [
+        "text",
+        "needle"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.contains",
+      "text": "strings.contains(text, needle)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "ts-vera-compat-v1",
+  "sourceSha256": "4ebea4b1d5f6d47f88a2602c03b590b56eb4cbab67089340ca1dafe61ffc0b18",
+  "programSha256": "36297a88027211a824b441c50c3e0683b98a609069a32ba71672924cedabc169",
+  "textDomain": "unicode",
+  "preconditions": [
+    "finite numeric inputs, intermediates and outputs",
+    "dense primitive arrays, length <= 4096; push must fit capacity",
+    "array indices are valid nonnegative integers",
+    "execution fits VERA resource limits"
+  ],
+  "contracts": [
+    {
+      "name": "tail",
+      "signature": "function tail(arr: number[]): number[]",
+      "paramNames": [
+        "arr"
+      ],
+      "paramTypes": [
+        "number[]"
+      ],
+      "returnType": "number[]"
+    }
+  ],
+  "uses": [
+    {
+      "rule": "array.slice",
+      "sourceApi": "Array.prototype.slice",
+      "strategy": "arraySlice",
+      "domain": "dense primitive arrays; finite indices; shallow copy",
+      "text": "arr.slice(1)",
+      "start": 57,
+      "end": 69
+    }
+  ],
+  "helpers": [
+    {
+      "id": "index",
+      "sha256": "4e0e10af29fa424c94825e37fdd33e3b4cf8d4be8134c15b3c91cc0abccce0af"
+    },
+    {
+      "id": "arraySliceNumber",
+      "sha256": "b5e115048fe797489b5d4707850e34bd0039039ab26c0e960b3d183397a7ff7d"
+    }
+  ],
+  "normalization": {
+    "source": "export function tail(arr: number[]): number[] {\n  return arr.slice(1);\n}\n",
+    "sourceSha256": "4ebea4b1d5f6d47f88a2602c03b590b56eb4cbab67089340ca1dafe61ffc0b18",
+    "adaptations": [
+      "Instantiate upstream generic T as number; remove readonly annotation without changing input immutability contract.",
+      "Select the actual implementation body, not overload-only declarations."
+    ]
+  },
+  "originalDeclarationSha256": "616613175b4da52beb09bba027acf05f4a9dbbf05b9eeb508d16acf6ee20f9b8"
+}

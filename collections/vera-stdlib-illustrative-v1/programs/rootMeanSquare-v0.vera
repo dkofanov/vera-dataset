@@ -1,0 +1,6 @@
+function inspectRootMeanSquare(aInput: number, bInput: number): number {
+  let aSquared: number = aInput * aInput;
+  let bSquared: number = bInput * bInput;
+  let mean: number = (aSquared + bSquared) / 2;
+  return math.sqrt(mean);
+}

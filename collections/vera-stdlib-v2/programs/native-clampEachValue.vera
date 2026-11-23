@@ -1,0 +1,5 @@
+function clampEachValue(values: number[], lower: number, upper: number): number[] {
+  let result: number[] = [];
+  for (let value: number of values) { result.push(math.min(math.max(value, lower), upper)); }
+  return result;
+}

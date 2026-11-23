@@ -1,0 +1,35 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "2daa5ac39ec71ca26418c9c24cff7ed2874878a09bbd73c81d225a1b9328cba5",
+  "contracts": [
+    {
+      "name": "surroundMatches",
+      "signature": "function surroundMatches(text: string, search: string, opening: string, closing: string): string",
+      "paramNames": [
+        "text",
+        "search",
+        "opening",
+        "closing"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.replace",
+      "text": "strings.replace(text, search, opening + search + closing)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh. Search is nonempty."
+  ]
+}

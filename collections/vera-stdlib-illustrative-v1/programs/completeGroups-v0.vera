@@ -1,0 +1,4 @@
+function inspectCompleteGroups(itemsInput: number, groupSizeInput: number): number {
+  let completeGroups: number = math.floor(itemsInput / groupSizeInput);
+  return completeGroups;
+}

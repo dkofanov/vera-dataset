@@ -1,0 +1,4 @@
+function lastPathSegment(path: string): string {
+  let segments: string[] = strings.split(path, "/");
+  return segments[segments.length() - 1];
+}

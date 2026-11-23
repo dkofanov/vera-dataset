@@ -1,0 +1,434 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          0
+        ]
+      ],
+      "expect": [
+        "a",
+        []
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "a",
+        []
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            5
+          ],
+          [
+            "n",
+            7
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "curated 4",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            5
+          ],
+          [
+            "n",
+            7
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          25
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            5
+          ],
+          [
+            "n",
+            7
+          ],
+          [
+            "n",
+            11
+          ],
+          [
+            "n",
+            13
+          ],
+          [
+            "n",
+            17
+          ],
+          [
+            "n",
+            19
+          ],
+          [
+            "n",
+            23
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          50
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            5
+          ],
+          [
+            "n",
+            7
+          ],
+          [
+            "n",
+            11
+          ],
+          [
+            "n",
+            13
+          ],
+          [
+            "n",
+            17
+          ],
+          [
+            "n",
+            19
+          ],
+          [
+            "n",
+            23
+          ],
+          [
+            "n",
+            29
+          ],
+          [
+            "n",
+            31
+          ],
+          [
+            "n",
+            37
+          ],
+          [
+            "n",
+            41
+          ],
+          [
+            "n",
+            43
+          ],
+          [
+            "n",
+            47
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 7",
+      "function": "sieveOfEratosthenes",
+      "args": [
+        [
+          "n",
+          100
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            5
+          ],
+          [
+            "n",
+            7
+          ],
+          [
+            "n",
+            11
+          ],
+          [
+            "n",
+            13
+          ],
+          [
+            "n",
+            17
+          ],
+          [
+            "n",
+            19
+          ],
+          [
+            "n",
+            23
+          ],
+          [
+            "n",
+            29
+          ],
+          [
+            "n",
+            31
+          ],
+          [
+            "n",
+            37
+          ],
+          [
+            "n",
+            41
+          ],
+          [
+            "n",
+            43
+          ],
+          [
+            "n",
+            47
+          ],
+          [
+            "n",
+            53
+          ],
+          [
+            "n",
+            59
+          ],
+          [
+            "n",
+            61
+          ],
+          [
+            "n",
+            67
+          ],
+          [
+            "n",
+            71
+          ],
+          [
+            "n",
+            73
+          ],
+          [
+            "n",
+            79
+          ],
+          [
+            "n",
+            83
+          ],
+          [
+            "n",
+            89
+          ],
+          [
+            "n",
+            97
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

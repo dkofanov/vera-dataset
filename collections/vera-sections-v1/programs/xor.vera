@@ -1,0 +1,31 @@
+function contains(values: number[], target: number): boolean {
+  let i: number = 0;
+  while (i < values.length()) {
+    if (values[i] === target) {
+      return true;
+    }
+    i = i + 1;
+  }
+  return false;
+}
+
+function xor(arr1: number[], arr2: number[]): number[] {
+  let result: number[] = [];
+  let i: number = 0;
+  while (i < arr1.length()) {
+    let v: number = arr1[i];
+    if (!contains(arr2, v) && !contains(result, v)) {
+      result.push(v);
+    }
+    i = i + 1;
+  }
+  let j: number = 0;
+  while (j < arr2.length()) {
+    let w: number = arr2[j];
+    if (!contains(arr1, w) && !contains(result, w)) {
+      result.push(w);
+    }
+    j = j + 1;
+  }
+  return result;
+}

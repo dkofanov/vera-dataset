@@ -1,0 +1,4 @@
+function inspectReplacePathSeparator(pathInput: string, oldSeparatorInput: string, newSeparatorInput: string): string {
+  let result: string = strings.replace(pathInput, oldSeparatorInput, newSeparatorInput);
+  return result;
+}

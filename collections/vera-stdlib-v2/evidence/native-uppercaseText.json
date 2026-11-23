@@ -1,0 +1,26 @@
+{
+  "id": "function/vera-native/uppercaseText",
+  "origin": "authored-vera-native",
+  "nativeRuntime": {
+    "path": "entry/src/main/ets/vera/VeraUi.ets",
+    "sha256": "1c745b2b3c28f7e77abbd53b4eb8a777567cdb5a24e69a8cd869dd5c77e608bb"
+  },
+  "contract": {
+    "method": "authored native behavior contract with independent JS reference",
+    "description": "Convert the entire string to upper case using Unicode default casing, without locale-specific rules. Preserve punctuation and whitespace; casing may expand characters.",
+    "domain": "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded.",
+    "inputRoles": {
+      "text": "source text"
+    },
+    "outputRole": "whole-text uppercase conversion",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  },
+  "roleWitnesses": [],
+  "reference": {
+    "language": "JavaScript",
+    "source": "text => text.toUpperCase()",
+    "sha256": "39aab74d3a01245d8cc61223a911fa28e13ce192394ea30bd72074d8942cfa98"
+  },
+  "documentation": "Native semantics reviewed against VeraCompiler.ets and VeraUi.ets. These tasks are not translated upstream symbols.",
+  "originalSource": null
+}

@@ -1,0 +1,4 @@
+function interpolateClamped(start: number, stop: number, fraction: number): number {
+  let progress: number = math.min(1, math.max(0, fraction));
+  return start + (stop - start) * progress;
+}

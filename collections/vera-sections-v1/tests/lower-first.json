@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {"name": "upper first", "function": "lowerFirst", "args": [["s", "Fred"]], "expect": ["s", "fred"]},
+    {"name": "lower first", "function": "lowerFirst", "args": [["s", "fred"]], "expect": ["s", "fred"]},
+    {"name": "all upper", "function": "lowerFirst", "args": [["s", "FRED"]], "expect": ["s", "fRED"]},
+    {"name": "empty", "function": "lowerFirst", "args": [["s", ""]], "expect": ["s", ""]},
+    {"name": "leading space", "function": "lowerFirst", "args": [["s", "  fred"]], "expect": ["s", "  fred"]}
+  ]
+}

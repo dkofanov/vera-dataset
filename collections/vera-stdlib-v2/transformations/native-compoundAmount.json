@@ -1,0 +1,33 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "5e62d9c3406882630d4aca35d6c1e396a7d7872baff62abfb017e1d93061c51a",
+  "contracts": [
+    {
+      "name": "compoundAmount",
+      "signature": "function compoundAmount(principal: number, rate: number, periods: number): number",
+      "paramNames": [
+        "principal",
+        "rate",
+        "periods"
+      ],
+      "paramTypes": [
+        "number",
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.pow",
+      "text": "math.pow(1 + rate, periods)"
+    }
+  ],
+  "preconditions": [
+    "Principal is between 0 and 1000, rate is between -0.5 and 0.5, and periods is an integer from 0 through 20."
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "tests": [
+    {
+      "name": "curated 1",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            2
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 4",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "curated 4",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            4
+          ],
+          [
+            "n",
+            6
+          ],
+          [
+            "n",
+            4
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 6",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            6
+          ],
+          [
+            "n",
+            15
+          ],
+          [
+            "n",
+            20
+          ],
+          [
+            "n",
+            15
+          ],
+          [
+            "n",
+            6
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "curated 6",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            9
+          ],
+          [
+            "n",
+            36
+          ],
+          [
+            "n",
+            84
+          ],
+          [
+            "n",
+            126
+          ],
+          [
+            "n",
+            126
+          ],
+          [
+            "n",
+            84
+          ],
+          [
+            "n",
+            36
+          ],
+          [
+            "n",
+            9
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "case 8",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          0.5
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "curated 5",
+      "function": "pascalsTriangle",
+      "args": [
+        [
+          "n",
+          8
+        ]
+      ],
+      "expect": [
+        "a",
+        [
+          [
+            "n",
+            1
+          ],
+          [
+            "n",
+            7
+          ],
+          [
+            "n",
+            21
+          ],
+          [
+            "n",
+            35
+          ],
+          [
+            "n",
+            35
+          ],
+          [
+            "n",
+            21
+          ],
+          [
+            "n",
+            7
+          ],
+          [
+            "n",
+            1
+          ]
+        ]
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

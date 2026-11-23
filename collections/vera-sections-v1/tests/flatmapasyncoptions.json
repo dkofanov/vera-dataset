@@ -1,0 +1,86 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeFlatMapAsyncOptions",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:FlatMapAsyncOptions",
+        [
+          [
+            "concurrency",
+            [
+              "n",
+              4
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read concurrency",
+      "function": "FlatMapAsyncOptionsConcurrency",
+      "args": [
+        [
+          "o",
+          "local:FlatMapAsyncOptions",
+          [
+            [
+              "concurrency",
+              [
+                "n",
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withFlatMapAsyncOptionsConcurrency",
+      "args": [
+        [
+          "o",
+          "local:FlatMapAsyncOptions",
+          [
+            [
+              "concurrency",
+              [
+                "n",
+                4
+              ]
+            ]
+          ]
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:FlatMapAsyncOptions",
+        [
+          [
+            "concurrency",
+            [
+              "n",
+              7
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

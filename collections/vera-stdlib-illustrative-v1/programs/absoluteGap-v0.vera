@@ -1,0 +1,7 @@
+function inspectAbsoluteGap(aInput: number, bInput: number): number {
+  let gap: number = aInput - bInput;
+  if (gap < 0) {
+    gap = 0 - gap;
+  }
+  return gap;
+}

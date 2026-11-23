@@ -1,0 +1,6 @@
+function lerp(start: number, stop: number, fraction: number): number {
+  if (fraction === 1) {
+    return stop;
+  }
+  return start + (stop - start) * fraction;
+}

@@ -1,0 +1,20 @@
+function selectionSort(items: number[]): number[] {
+  let i: number = 0;
+  while (i < items.length()) {
+    let minimum: number = i;
+    let j: number = i + 1;
+    while (j < items.length()) {
+      if (items[j] < items[minimum]) {
+        minimum = j;
+      }
+      j = j + 1;
+    }
+    if (i !== minimum) {
+      let temp: number = items[i];
+      items[i] = items[minimum];
+      items[minimum] = temp;
+    }
+    i = i + 1;
+  }
+  return items;
+}

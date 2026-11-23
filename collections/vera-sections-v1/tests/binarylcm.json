@@ -1,0 +1,244 @@
+{
+  "tests": [
+    {
+      "name": "case 1",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          1
+        ]
+      ],
+      "expect": [
+        "n",
+        1
+      ]
+    },
+    {
+      "name": "case 2",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          2
+        ]
+      ],
+      "expect": [
+        "n",
+        2
+      ]
+    },
+    {
+      "name": "case 3",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          3
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        3
+      ]
+    },
+    {
+      "name": "case 4",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "case 5",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          5
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        5
+      ]
+    },
+    {
+      "name": "case 6",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "n",
+        7
+      ]
+    },
+    {
+      "name": "case 7",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          10
+        ],
+        [
+          "n",
+          10
+        ]
+      ],
+      "expect": [
+        "n",
+        10
+      ]
+    },
+    {
+      "name": "curated 1",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          2
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "expect": [
+        "n",
+        6
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 2",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          4
+        ],
+        [
+          "n",
+          6
+        ]
+      ],
+      "expect": [
+        "n",
+        12
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 3",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          12
+        ],
+        [
+          "n",
+          18
+        ]
+      ],
+      "expect": [
+        "n",
+        36
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 4",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          7
+        ],
+        [
+          "n",
+          5
+        ]
+      ],
+      "expect": [
+        "n",
+        35
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 5",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          21
+        ],
+        [
+          "n",
+          14
+        ]
+      ],
+      "expect": [
+        "n",
+        42
+      ],
+      "unchangedArgs": true
+    },
+    {
+      "name": "curated 6",
+      "function": "binaryLCM",
+      "args": [
+        [
+          "n",
+          1
+        ],
+        [
+          "n",
+          9
+        ]
+      ],
+      "expect": [
+        "n",
+        9
+      ],
+      "unchangedArgs": true
+    }
+  ]
+}

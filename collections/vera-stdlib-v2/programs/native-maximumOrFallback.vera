@@ -1,0 +1,6 @@
+function maximumOrFallback(values: number[], fallback: number): number {
+  if (values.length() === 0) { return fallback; }
+  let best: number = values[0];
+  for (let value: number of values) { best = math.max(best, value); }
+  return best;
+}

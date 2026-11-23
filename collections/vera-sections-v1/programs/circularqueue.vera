@@ -1,0 +1,30 @@
+class CircularQueue {
+  queue: number[];
+  frontIndex: number;
+  rearIndex: number;
+  size: number;
+}
+
+function makeCircularQueue(queue: number[], frontIndex: number, rearIndex: number, size: number): CircularQueue {
+  return {queue: queue, frontIndex: frontIndex, rearIndex: rearIndex, size: size};
+}
+
+function CircularQueueQueue(value: CircularQueue): number[] {
+  return value.queue;
+}
+
+function CircularQueueFrontIndex(value: CircularQueue): number {
+  return value.frontIndex;
+}
+
+function CircularQueueRearIndex(value: CircularQueue): number {
+  return value.rearIndex;
+}
+
+function CircularQueueSize(value: CircularQueue): number {
+  return value.size;
+}
+
+function withCircularQueueQueue(value: CircularQueue, queue: number[]): CircularQueue {
+  return {queue: queue, frontIndex: value.frontIndex, rearIndex: value.rearIndex, size: value.size};
+}

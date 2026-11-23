@@ -1,0 +1,6 @@
+function trimmedFields(text: string, separator: string): string[] {
+  let fields: string[] = strings.split(text, separator);
+  let result: string[] = [];
+  for (let field: string of fields) { result.push(strings.trim(field)); }
+  return result;
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "daba62ce19c395bcbe3adea99e5437669a9561d56ee81635671102a16bacdef8",
+  "contracts": [
+    {
+      "name": "firstMatchPosition",
+      "signature": "function firstMatchPosition(text: string, query: string): number",
+      "paramNames": [
+        "text",
+        "query"
+      ],
+      "paramTypes": [
+        "string",
+        "string"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(query)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    },
+    {
+      "sourceApi": "strings.substring",
+      "text": "strings.substring(text, index, index + width)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

@@ -1,0 +1,23 @@
+function pascalsTriangle(n: number): number[] {
+  let lastRow: number[] = [];
+  let i: number = 0;
+  while (i < n) {
+    if (i === 0) {
+      lastRow = [1];
+    } else {
+      let temp: number[] = [];
+      let j: number = 0;
+      while (j < lastRow.length() + 1) {
+        if (j === 0 || j === lastRow.length()) {
+          temp.push(1);
+        } else {
+          temp.push(lastRow[j - 1] + lastRow[j]);
+        }
+        j = j + 1;
+      }
+      lastRow = temp;
+    }
+    i = i + 1;
+  }
+  return lastRow;
+}

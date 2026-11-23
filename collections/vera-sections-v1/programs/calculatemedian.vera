@@ -1,0 +1,10 @@
+function calculateMedian(numbers: number[]): number {
+  let totalNumbers: number = numbers.length();
+  if (totalNumbers % 2 === 0) {
+    let index: number = totalNumbers / 2;
+    return (numbers[index - 1] + numbers[index]) / 2;
+  } else {
+    let index: number = (totalNumbers + 1) / 2;
+    return numbers[index - 1];
+  }
+}

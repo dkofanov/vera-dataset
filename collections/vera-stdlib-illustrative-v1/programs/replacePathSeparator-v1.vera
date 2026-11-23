@@ -1,0 +1,4 @@
+function evaluateReplacePathSeparator(newSeparatorValue: string, oldSeparatorValue: string, pathValue: string): string {
+  let replaced: string = strings.replace(pathValue, oldSeparatorValue, newSeparatorValue);
+  return replaced;
+}

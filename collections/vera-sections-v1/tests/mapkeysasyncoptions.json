@@ -1,0 +1,86 @@
+{
+  "tests": [
+    {
+      "name": "construct",
+      "function": "makeMapKeysAsyncOptions",
+      "args": [
+        [
+          "n",
+          4
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:MapKeysAsyncOptions",
+        [
+          [
+            "concurrency",
+            [
+              "n",
+              4
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "read concurrency",
+      "function": "MapKeysAsyncOptionsConcurrency",
+      "args": [
+        [
+          "o",
+          "local:MapKeysAsyncOptions",
+          [
+            [
+              "concurrency",
+              [
+                "n",
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "expect": [
+        "n",
+        4
+      ]
+    },
+    {
+      "name": "state carry",
+      "function": "withMapKeysAsyncOptionsConcurrency",
+      "args": [
+        [
+          "o",
+          "local:MapKeysAsyncOptions",
+          [
+            [
+              "concurrency",
+              [
+                "n",
+                4
+              ]
+            ]
+          ]
+        ],
+        [
+          "n",
+          7
+        ]
+      ],
+      "expect": [
+        "o",
+        "local:MapKeysAsyncOptions",
+        [
+          [
+            "concurrency",
+            [
+              "n",
+              7
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

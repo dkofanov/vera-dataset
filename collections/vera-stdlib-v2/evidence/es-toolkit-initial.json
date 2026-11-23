@@ -1,0 +1,68 @@
+{
+  "id": "function/es-toolkit/initial",
+  "symbol": {
+    "project": "toss/es-toolkit",
+    "repository": "https://github.com/toss/es-toolkit",
+    "revision": "24e7a7b8cb8035fae1ea2e7b507aab96698a38b9",
+    "path": "src/array/initial.ts",
+    "export": "initial",
+    "sourceFileSha256": "0c12f85a5f45251c16a1512ee26a4b52908c19c2105fe915785d28b3b19a8987",
+    "declarationSha256": "1e534c19b306f1080caf2568eab048b4afb044cb646d3877bdec3eb83035ced8",
+    "start": 2235,
+    "end": 2316
+  },
+  "documentation": "/**\n * Returns a new array containing all elements except the last one from the input array.\n * If the input array is empty or has only one element, the function returns an empty array.\n *\n * @template T The type of elements in the array.\n * @param arr - The input array.\n * @returns A new array containing all but the last element of the input array.\n *\n * @example\n * const arr = [1, 2, 3, 4];\n * const result = initial(arr);\n * // result will be [1, 2, 3]\n */",
+  "originalSource": "export function initial<T>(arr: readonly T[]): T[] {\n  return arr.slice(0, -1);\n}",
+  "sourceUses": [
+    {
+      "api": "Array.prototype.slice",
+      "kind": "call",
+      "receiverKind": "array",
+      "receiverType": "readonly T[]",
+      "sourceSpan": {
+        "sourcePath": "src/array/initial.ts",
+        "start": 2297,
+        "end": 2313,
+        "startLine": 71,
+        "startColumn": 10,
+        "endLine": 71,
+        "endColumn": 26
+      },
+      "accessSpan": {
+        "sourcePath": "src/array/initial.ts",
+        "start": 2297,
+        "end": 2306,
+        "startLine": 71,
+        "startColumn": 10,
+        "endLine": 71,
+        "endColumn": 19
+      },
+      "text": "arr.slice(0, -1)",
+      "arguments": [
+        "0",
+        "-1"
+      ]
+    }
+  ],
+  "originalTests": {
+    "path": "src/array/initial.spec.ts",
+    "sha256": "c3a04a7b4940dff8f18278fb857277ccf25f2031c5f970908736e330a201f16a",
+    "text": "import { describe, expect, it } from 'vitest';\nimport { initial } from './initial';\n\ndescribe('initial', () => {\n  it('returns a new array containing all elements except the last one from the input array', () => {\n    expect(initial([1, 2, 3])).toEqual([1, 2]);\n    expect(initial(['a', 'b', 'c'])).toEqual(['a', 'b']);\n    expect(initial([1, true, 'string'])).toEqual([1, true]);\n    expect(initial([])).toEqual([]);\n  });\n\n  // Edge cases\n  it('returns an empty array for a single-element array', () => {\n    expect(initial(['one'])).toEqual([]);\n  });\n\n  it('returns all elements except the last one for a large array', () => {\n    const largeArray = Array(1000)\n      .fill(0)\n      .map((_, i) => i);\n    const expectedArray = Array(999)\n      .fill(0)\n      .map((_, i) => i);\n    expect(initial(largeArray)).toEqual(expectedArray);\n  });\n\n  it('returns all elements except the last one for a nested array', () => {\n    const nestedArray = [\n      [3, 1],\n      [3, 2],\n      [3, 3],\n    ];\n    expect(initial(nestedArray)).toEqual([\n      [3, 1],\n      [3, 2],\n    ]);\n  });\n});\n",
+    "suiteExecuted": false
+  },
+  "contract": {
+    "method": "source-reviewed curated specification; not automatic extraction",
+    "description": "Return a new array containing all input elements except the last, preserving order and duplicates. Empty and single-element inputs produce an empty array.",
+    "domain": "The input is a dense array of at most 128 finite numbers, each between -1000 and 1000. The input must not be modified. Return a fresh array even when its contents are unchanged.",
+    "evidence": [
+      "implementation",
+      "source documentation",
+      "upstream test source (not suite execution)"
+    ],
+    "inputRoles": {
+      "arr": "source sequence"
+    },
+    "outputRole": "fresh sequence without the last element",
+    "mutationPolicy": "Do not modify inputs; array outputs must be fresh with independent storage."
+  }
+}

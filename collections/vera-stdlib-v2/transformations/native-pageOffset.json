@@ -1,0 +1,26 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "3eb94d818f8d1c93abed13e6fa3a4dd15ad16cba6ebdb60ad2bb2ad9e4f6fc58",
+  "contracts": [
+    {
+      "name": "pageOffset",
+      "signature": "function pageOffset(page: number, pageSize: number): number",
+      "paramNames": [
+        "page",
+        "pageSize"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [],
+  "preconditions": [
+    "Page and pageSize are integers from 1 through 1000. Inputs are unchanged."
+  ]
+}

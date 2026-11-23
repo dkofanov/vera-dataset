@@ -1,0 +1,3 @@
+function measureLowercaseText(phrase: string): string {
+  return strings.toLowerCase(phrase);
+}

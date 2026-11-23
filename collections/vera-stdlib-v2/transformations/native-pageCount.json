@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "8b0e7e23be2ba728afe071393386c4b5b18375c56de838ed2aebd064ddaa182e",
+  "contracts": [
+    {
+      "name": "pageCount",
+      "signature": "function pageCount(items: number, pageSize: number): number",
+      "paramNames": [
+        "items",
+        "pageSize"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.ceil",
+      "text": "math.ceil(items / pageSize)"
+    }
+  ],
+  "preconditions": [
+    "Items is an integer from 0 through 100000; pageSize is an integer from 1 through 1000."
+  ]
+}

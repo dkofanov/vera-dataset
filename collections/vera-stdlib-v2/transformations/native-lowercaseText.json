@@ -1,0 +1,29 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "ee23daaa8e4d75e83976c2265b6a2f6f5df647b037be473a8d5033d8b15ceff3",
+  "contracts": [
+    {
+      "name": "lowercaseText",
+      "signature": "function lowercaseText(text: string): string",
+      "paramNames": [
+        "text"
+      ],
+      "paramTypes": [
+        "string"
+      ],
+      "returnType": "string"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.toLowerCase",
+      "text": "strings.toLowerCase(text)"
+    }
+  ],
+  "preconditions": [
+    "Strings are Unicode text of at most 128 code points. Lone surrogate code units are excluded."
+  ]
+}

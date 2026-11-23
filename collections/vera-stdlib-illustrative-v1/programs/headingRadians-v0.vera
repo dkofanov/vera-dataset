@@ -1,0 +1,6 @@
+function inspectHeadingRadians(dxInput: number, dyInput: number): number {
+  if (dxInput === 0 && dyInput === 0) {
+    return 0;
+  }
+  return math.atan2(dyInput, dxInput);
+}

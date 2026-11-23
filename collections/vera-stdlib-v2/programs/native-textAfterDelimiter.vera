@@ -1,0 +1,5 @@
+function textAfterDelimiter(text: string, delimiter: string): string {
+  let parts: string[] = strings.split(text, delimiter);
+  if (parts.length() === 1) { return ""; }
+  return strings.substring(text, strings.length(parts[0]) + strings.length(delimiter), strings.length(text));
+}

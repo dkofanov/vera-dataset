@@ -1,0 +1,19 @@
+function rangeRight(start: number, end: number, step: number): number[] {
+  let realStart: number = start;
+  let realEnd: number = end;
+  let realStep: number = step;
+  if (realStep === 0) {
+    realStep = 1;
+  }
+  let length: number = math.ceil((realEnd - realStart) / realStep);
+  if (length < 0) {
+    length = 0;
+  }
+  let result: number[] = [];
+  let i: number = 0;
+  while (i < length) {
+    result.push(realStart + (length - i - 1) * realStep);
+    i = i + 1;
+  }
+  return result;
+}

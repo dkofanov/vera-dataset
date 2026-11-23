@@ -1,0 +1,49 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "196477a51dafa1c50e90e59017753b4f936aee5836003e837517d04564285713",
+  "contracts": [
+    {
+      "name": "enclosedText",
+      "signature": "function enclosedText(text: string, opening: string, closing: string): boolean",
+      "paramNames": [
+        "text",
+        "opening",
+        "closing"
+      ],
+      "paramTypes": [
+        "string",
+        "string",
+        "string"
+      ],
+      "returnType": "boolean"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "strings.startsWith",
+      "text": "strings.startsWith(text, opening)"
+    },
+    {
+      "sourceApi": "strings.endsWith",
+      "text": "strings.endsWith(text, closing)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(text)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(opening)"
+    },
+    {
+      "sourceApi": "strings.length",
+      "text": "strings.length(closing)"
+    }
+  ],
+  "preconditions": [
+    "Text arguments contain at most 64 Unicode code points each and no lone surrogate code units. Indices and lengths count code points, not UTF-16 units. Inputs are unchanged; returned arrays are fresh."
+  ]
+}

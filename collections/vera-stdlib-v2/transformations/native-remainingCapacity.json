@@ -1,0 +1,31 @@
+{
+  "schema": "vera-native-authored-v1",
+  "origin": "authored-vera-native",
+  "programSha256": "e4c0aca469d7d8af88475c764d1b709f46303436aac4bbc43935d68631fa1167",
+  "contracts": [
+    {
+      "name": "remainingCapacity",
+      "signature": "function remainingCapacity(capacity: number, used: number): number",
+      "paramNames": [
+        "capacity",
+        "used"
+      ],
+      "paramTypes": [
+        "number",
+        "number"
+      ],
+      "returnType": "number"
+    }
+  ],
+  "helpers": [],
+  "textDomain": "unicode",
+  "uses": [
+    {
+      "sourceApi": "math.max",
+      "text": "math.max(capacity - used, 0)"
+    }
+  ],
+  "preconditions": [
+    "Numeric arguments are finite, between -1000 and 1000, with no negative-zero inputs. Inputs are unchanged. Capacity and used are nonnegative."
+  ]
+}

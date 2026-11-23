@@ -1,0 +1,3 @@
+function inspectRedactToken(message: string, tokenInput: string, maskInput: string): string {
+  return strings.replace(message, tokenInput, maskInput);
+}
